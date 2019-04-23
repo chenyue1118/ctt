@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/chenyue1118/ctt/issues"
   },
-  "homepage": "https://github.com/chenyue1118/ctt#readme"
+  "homepage": "https://github.com/chenyue1118/ctt#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
