@@ -1,0 +1,226 @@
+.banner_ {
+  position: relative;
+  width: 100%;
+  height: 540px; }
+  .banner_ .banner-wra .image {
+    display: block;
+    width: 100%;
+    height: 540px; }
+  .banner_ .train {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 111;
+    width: 1120px;
+    height: 540px;
+    padding-top: 76px;
+    margin-left: -560px;
+    font-size: 0; }
+    .banner_ .train .search {
+      display: inline-block;
+      width: 774px;
+      vertical-align: top; }
+      .banner_ .train .search .search-head {
+        width: 100%;
+        font-size: 0; }
+        .banner_ .train .search .search-head .item {
+          display: inline-block;
+          height: 60px;
+          line-height: 60px;
+          background: rgba(0, 0, 0, 0.7);
+          font-size: 20px;
+          color: #fff;
+          font-weight: 500;
+          text-align: center;
+          cursor: pointer; }
+        .banner_ .train .search .search-head .book {
+          width: 426px;
+          border-radius: 6px 0 0 0; }
+        .banner_ .train .search .search-head .inter {
+          width: 348px;
+          border-radius: 0 6px 0 0; }
+        .banner_ .train .search .search-head .active {
+          height: 66px;
+          line-height: 66px;
+          color: #333;
+          background: #fff;
+          border-radius: 6px 6px 0 0; }
+      .banner_ .train .search .search-content {
+        width: 100%;
+        background: #fff; }
+        .banner_ .train .search .search-content .book {
+          padding: 32px 60px 20px 40px; }
+          .banner_ .train .search .search-content .book .trips {
+            width: 100%; }
+            .banner_ .train .search .search-content .book .trips .trip {
+              font-size: 0;
+              padding-bottom: 14px; }
+              .banner_ .train .search .search-content .book .trips .trip .name {
+                display: inline-block;
+                height: 46px;
+                padding-right: 20px;
+                line-height: 46px;
+                font-size: 18px;
+                color: #000;
+                font-weight: 500; }
+              .banner_ .train .search .search-content .book .trips .trip .trip-from-wra, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra {
+                position: relative;
+                display: inline-block;
+                width: 198px;
+                height: 46px; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-from-wra .trip-from, .banner_ .train .search .search-content .book .trips .trip .trip-from-wra .trip-to, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra .trip-from, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra .trip-to {
+                  display: block;
+                  width: 100%;
+                  height: 46px;
+                  border: 1px solid #AAAAAA;
+                  font-size: 16px;
+                  color: #333333;
+                  text-indent: 1em; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-from-wra:after, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra:after {
+                  position: absolute;
+                  top: 18px;
+                  right: 10px;
+                  z-index: 111;
+                  content: '';
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-top: 8px solid #AAAAAA;
+                  border-left: 8px solid transparent;
+                  border-right: 8px solid transparent; }
+              .banner_ .train .search .search-content .book .trips .trip .trip-time-wra {
+                position: relative;
+                display: inline-block;
+                width: 190px;
+                height: 46px;
+                padding-left: 16px; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-time-wra .trip-time {
+                  display: block;
+                  width: 190px;
+                  height: 46px;
+                  border: 1px solid #AAAAAA;
+                  font-size: 16px;
+                  color: #333333;
+                  text-indent: 1em; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-time-wra:after {
+                  position: absolute;
+                  top: 10px;
+                  right: -14px;
+                  z-index: 111;
+                  content: '';
+                  display: block;
+                  width: 32px;
+                  height: 32px;
+                  background: url(../image/icon-date.png) no-repeat center; }
+          .banner_ .train .search .search-content .book .operation {
+            width: 100%;
+            font-size: 0;
+            padding: 10px 0;
+            text-align: right; }
+            .banner_ .train .search .search-content .book .operation .trip-add {
+              display: inline-block;
+              height: 40px;
+              line-height: 38px;
+              padding: 0 20px;
+              font-size: 16px;
+              color: #fff;
+              background: #1890FF;
+              border: 1px solid #1890FF;
+              margin-right: 16px;
+              margin-top: 4px;
+              vertical-align: top; }
+            .banner_ .train .search .search-content .book .operation .trip-del {
+              display: inline-block;
+              height: 40px;
+              line-height: 38px;
+              padding: 0 20px;
+              font-size: 16px;
+              color: #333;
+              background: #fff;
+              border: 1px solid #aaa;
+              margin-right: 16px;
+              margin-top: 4px;
+              vertical-align: top; }
+            .banner_ .train .search .search-content .book .operation .trip-search {
+              display: inline-block;
+              height: 48px;
+              line-height: 48px;
+              padding: 0 28px;
+              font-size: 16px;
+              color: #fff;
+              background: linear-gradient(87deg, #ef1212, #c00909);
+              border-radius: 24px; }
+              .banner_ .train .search .search-content .book .operation .trip-search .find-icon {
+                display: inline-block;
+                width: 24px;
+                height: 48px;
+                background: url(../image/icon-search.png) no-repeat center;
+                margin-left: 12px;
+                vertical-align: top; }
+      .banner_ .train .search .check-wra {
+        display: block;
+        width: 100%;
+        padding: 0 60px 0 40px;
+        text-align: right;
+        background: #fff; }
+      .banner_ .train .search .check {
+        display: block;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+        border-top: 1px solid #AAAAAA; }
+        .banner_ .train .search .check:hover {
+          color: #f00; }
+    .banner_ .train .info {
+      display: inline-block;
+      width: 332px;
+      height: 300px;
+      margin-top: 66px;
+      margin-left: 14px;
+      background: rgba(156, 0, 0, 0.8);
+      border-radius: 6px;
+      padding: 40px 14px 10px 14px; }
+      .banner_ .train .info .title {
+        height: 70px;
+        line-height: 40px;
+        font-size: 44px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center; }
+      .banner_ .train .info .con {
+        position: relative;
+        display: block;
+        height: 46px;
+        line-height: 20px;
+        padding-left: 24px;
+        font-size: 20px;
+        color: #fff; }
+        .banner_ .train .info .con:after {
+          position: absolute;
+          top: -2px;
+          left: 0;
+          z-index: 111;
+          content: '';
+          display: block;
+          width: 16px;
+          height: 20px;
+          background: url(../image/icon-right.png) no-repeat center; }
+
+.guide_ {
+  width: 100%;
+  padding: 30px 0 52px 0;
+  background: #fff; }
+  .guide_ .guide-wra {
+    width: 1120px;
+    margin: 0 auto; }
+    .guide_ .guide-wra .title {
+      height: 42px;
+      line-height: 20px;
+      font-size: 24px;
+      color: #333333; }
+  .guide_ .about-wra {
+    width: 1120px;
+    margin: 0 auto; }
