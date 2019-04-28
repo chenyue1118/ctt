@@ -52,6 +52,7 @@
           color: #333;
           background: #fff;
           border-radius: 6px 6px 0 0;
+          vertical-align: bottom;
         }
       }
       .search-content {
@@ -420,6 +421,213 @@
         display: block;
         color: #999999;
         font-size: 14px;
+      }
+    }
+  }
+}
+.hotCity_ {
+  width: 100%;
+  background: #F1EEEE;
+  .hotCity-wra {
+    width: 1120px;
+    padding: 14px 0 4px 0;
+    margin: 0 auto;
+    .title {
+      padding: 26px 0 34px 0;
+      font-size: 30px;
+      color: #333333;
+      font-weight: 500;
+    }
+    .citys {
+      width: 100%;
+      padding-bottom: 46px;
+      font-size: 0;
+      .item {
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 36px;
+        border: 1px solid #BDBDBD;
+        background: transparent;
+        font-size: 16px;
+        color: #333333;
+        margin-right: 14px;
+        border-radius: 14px;
+        cursor: pointer;
+        &:hover {
+          color: #fff;
+          background: #D90A0A;
+          border: 1px solid #D90A0A;
+        }
+      }
+      .active {
+        color: #fff;
+        background: #D90A0A;
+        border: 1px solid #D90A0A;
+      }
+    }
+    .trains {
+      width: 100%;
+      font-size: 0;
+      .item {
+        display: inline-block;
+        width: 270px;
+        height: 136px;
+        margin-bottom: 26px;
+        margin-left: 13px;
+        padding: 26px 20px 30px 10px;
+        background: rgba(255,255,255,1);
+        border: 1px solid rgba(237,237,237,1);
+        box-shadow: 0px 1px 6px 0px rgba(93,93,93,0.18);
+        border-radius: 6px;
+        font-size: 0;
+        .icon-train {
+          display: inline-block;
+          width: 30px;
+          height: 100%;
+          background: url(../image/icon-go-back.png) no-repeat center;
+          vertical-align: top;
+        }
+        .cont {
+          display: inline-block;
+          width: 208px;
+          height: 100%;
+          .top {
+            width: 100%;
+            font-size: 0;
+            padding-bottom: 44px;
+            .city {
+              display: inline-block;
+              width: 50%;
+              line-height: 16px;
+              font-size: 16px;
+              color: #333333;
+            }
+            .hour {
+              display: inline-block;
+              width: 50%;
+              line-height: 16px;
+              font-size: 16px;
+              color: #333333;
+              text-align: right;
+            }
+          }
+          .bottom {
+            width: 100%;
+            font-size: 0;
+            .city {
+              display: inline-block;
+              width: 50%;
+              line-height: 20px;
+              font-size: 20px;
+              color: #333333;
+            }
+            .from {
+              display: inline-block;
+              width: 50%;
+              line-height: 20px;
+              font-size: 16px;
+              color: #333333;
+              text-align: right;
+              .price {
+                color: #D90A0A;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+      .item:nth-child(4n+1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.tours_ {
+  width: 100%;
+  background: #fff;
+  .tours-wra {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 50px 0;
+    .head {
+      width: 100%;
+      height: 54px;
+      display: inline-block;
+      .title {
+        display: inline-block;
+        width: 1020px;
+        height: 54px;
+        line-height: 24px;
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+        vertical-align: top;
+      }
+      .more {
+        display: inline-block;
+        width: 94px;
+        height: 54px;
+        line-height: 24px;
+        font-size: 16px;
+        color: #DA0C0C;
+        text-align: right;
+      }
+    }
+  }
+}
+.news_ {
+  width: 100%;
+  background: #F1EEEE;
+  padding: 40px 0 8px 0;
+  .news-wra {
+    width: 1120px;
+    margin: 0 auto;
+    .title {
+      height: 64px;
+      line-height: 28px;
+      font-size: 30px;
+      color: #333;
+      font-weight: 500;
+    }
+    .lists {
+      width: 100%;
+      font-size: 0;
+      .list {
+        padding-bottom: 32px;
+        .head {
+          width: 100%;
+          padding-bottom: 28px;
+          font-size: 0;
+          .icon-new {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(../image/icon-news.png) no-repeat center;
+            vertical-align: top;
+          }
+          .tits {
+            display: inline-block;
+            width: 1000px;
+            padding-left: 16px;
+            .tit1 {
+              padding-bottom: 16px;
+              font-size: 20px;
+              color: #333E42;
+              font-weight: 500;
+            }
+            .time {
+              font-size: 16px;
+              color: #999999;
+            }
+          }
+        }
+        .para {
+          font-size: 16px;
+          color: #333E42;
+          line-height: 24px;
+          padding-bottom: 20px;
+        }
       }
     }
   }
