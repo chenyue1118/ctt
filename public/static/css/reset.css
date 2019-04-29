@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -57,10 +57,10 @@ input {
 	border: none;
 	outline: none;
 	user-select: none;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+	box-shadow: inset 0 1px 1px rgba(216,9,9,.075)
 }
 input:focus {
-	border-color: #66afe9!important;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+	border-color: rgba(216,9,9,1)!important;
+	box-shadow: inset 0 1px 1px rgba(216,9,9,.075), 0 0 8px rgba(216,9,9,.001);
 	outline: none;
 }
