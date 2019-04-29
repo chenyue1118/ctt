@@ -486,6 +486,183 @@
         font-size: 16px;
         color: #DA0C0C;
         text-align: right; }
+    .tours_ .tours-wra .cont {
+      width: 100%;
+      font-size: 0; }
+      .tours_ .tours-wra .cont .cont-left {
+        position: relative;
+        display: inline-block;
+        width: 354px;
+        height: 536px;
+        border-radius: 8px;
+        overflow: hidden;
+        vertical-align: top; }
+        .tours_ .tours-wra .cont .cont-left:hover .tour0-bg {
+          opacity: 0.4; }
+        .tours_ .tours-wra .cont .cont-left:hover .title {
+          bottom: 180px; }
+        .tours_ .tours-wra .cont .cont-left:hover .cout-route {
+          bottom: 0; }
+        .tours_ .tours-wra .cont .cont-left .tour0-icon {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../image/tour01.jpg) no-repeat center; }
+        .tours_ .tours-wra .cont .cont-left .tour0-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 111;
+          width: 100%;
+          height: 100%;
+          background: #9c0000;
+          opacity: 0;
+          transition: all 0.4s; }
+        .tours_ .tours-wra .cont .cont-left .title {
+          position: absolute;
+          bottom: 36px;
+          left: 12px;
+          z-index: 111;
+          width: 90%;
+          transition: all 0.3s; }
+          .tours_ .tours-wra .cont .cont-left .title .tit {
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding-right: 4px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            vertical-align: top; }
+          .tours_ .tours-wra .cont .cont-left .title .label {
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 6px;
+            font-size: 16px;
+            color: #fff;
+            background: linear-gradient(87deg, #fa3f3f, #d80808);
+            border-radius: 10px 10px 10px 0px; }
+        .tours_ .tours-wra .cont .cont-left .cout-route {
+          position: absolute;
+          bottom: -200px;
+          left: 12px;
+          z-index: 111;
+          width: 94%;
+          transition: all 0.3s; }
+          .tours_ .tours-wra .cont .cont-left .cout-route .route {
+            display: block;
+            width: 80%;
+            padding-bottom: 40px;
+            line-height: 20px;
+            font-size: 16px;
+            color: #fff; }
+          .tours_ .tours-wra .cont .cont-left .cout-route .from {
+            padding-bottom: 40px;
+            text-align: right;
+            font-size: 16px;
+            color: #fff; }
+            .tours_ .tours-wra .cont .cont-left .cout-route .from .price {
+              font-size: 24px; }
+      .tours_ .tours-wra .cont .cont-right {
+        display: inline-block;
+        width: 766px;
+        height: 536px;
+        padding-left: 16px; }
+        .tours_ .tours-wra .cont .cont-right .items {
+          width: 100%;
+          font-size: 0; }
+          .tours_ .tours-wra .cont .cont-right .items .item {
+            position: relative;
+            display: inline-block;
+            width: 318px;
+            height: 260px;
+            border-radius: 8px;
+            overflow: hidden;
+            vertical-align: top; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .tour-bg {
+              opacity: 0.4; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .title {
+              bottom: 140px; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .cout-route {
+              bottom: 0; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour-icon {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: url(../image/tour02.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour3-icon {
+              background: url(../image/tour03.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour4-icon {
+              background: url(../image/tour04.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour5-icon {
+              background: url(../image/tour05.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour-bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 111;
+              width: 100%;
+              height: 100%;
+              background: #9c0000;
+              opacity: 0;
+              transition: all 0.4s; }
+            .tours_ .tours-wra .cont .cont-right .items .item .title {
+              position: absolute;
+              bottom: 36px;
+              left: 12px;
+              z-index: 111;
+              width: 90%;
+              transition: all 0.3s; }
+              .tours_ .tours-wra .cont .cont-right .items .item .title .tit {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                padding-right: 4px;
+                font-size: 20px;
+                color: #fff;
+                font-weight: 500;
+                vertical-align: top; }
+              .tours_ .tours-wra .cont .cont-right .items .item .title .label {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                padding: 0 6px;
+                font-size: 16px;
+                color: #fff;
+                background: linear-gradient(87deg, #fa3f3f, #d80808);
+                border-radius: 10px 10px 10px 0px; }
+            .tours_ .tours-wra .cont .cont-right .items .item .cout-route {
+              position: absolute;
+              bottom: -200px;
+              left: 12px;
+              z-index: 111;
+              width: 94%;
+              transition: all 0.3s; }
+              .tours_ .tours-wra .cont .cont-right .items .item .cout-route .route {
+                display: block;
+                width: 80%;
+                padding-bottom: 20px;
+                line-height: 20px;
+                font-size: 16px;
+                color: #fff; }
+              .tours_ .tours-wra .cont .cont-right .items .item .cout-route .from {
+                padding-bottom: 20px;
+                text-align: right;
+                font-size: 16px;
+                color: #fff; }
+                .tours_ .tours-wra .cont .cont-right .items .item .cout-route .from .price {
+                  font-size: 24px; }
+          .tours_ .tours-wra .cont .cont-right .items .item-spe {
+            width: 416px; }
+          .tours_ .tours-wra .cont .cont-right .items .item + .item {
+            margin-left: 16px; }
+        .tours_ .tours-wra .cont .cont-right .items + .items {
+          margin-top: 16px; }
 
 .news_ {
   width: 100%;
