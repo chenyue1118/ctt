@@ -217,7 +217,7 @@
                   font-size: 18px;
                   color: #666666; }
         .order-details_ .order-details-wrapper .details-wra .details .grand-total {
-          padding: 24px 0 50px 0;
+          padding: 24px 0 40px 0;
           line-height: 18px;
           font-size: 20px;
           color: #666666;
@@ -227,8 +227,12 @@
             color: #d80909; }
         .order-details_ .order-details-wrapper .details-wra .details .detail-note {
           width: 100%;
-          padding-bottom: 44px;
-          font-size: 0; }
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 34px;
+          font-size: 0;
+          background: #fff5f5;
+          background: pink; }
           .order-details_ .order-details-wrapper .details-wra .details .detail-note .icon-detail-note {
             display: inline-block;
             width: 46px;
@@ -267,10 +271,16 @@
                 font-weight: 500;
                 vertical-align: top; }
               .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con:nth-child(1) {
-                padding-right: 44px;
-                text-align: right; }
+                width: 184px;
+                padding-right: 14px;
+                text-align: right;
+                background: #fff5f5;
+                background: pink; }
               .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con2:nth-child(2) {
-                width: 800px; }
+                width: 800px;
+                padding-left: 30px; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con:nth-child(2) {
+                padding-left: 30px; }
             .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item + .item {
               border-top: 1px solid #DBDBDB; }
             .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item-spe {
