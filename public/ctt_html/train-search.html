@@ -54,7 +54,7 @@
     </div>
     <!-- 搜索 -->
     <div class="train-search_">
-      <div class="train-search-wra">
+      <div class="search-trip-wra">
         <ul class="head">
           <li class="item">
             <span class="trip">Trip1</span>
@@ -73,34 +73,231 @@
             </a>
           </li>
         </ul>
-        <div class="detail">
-          <i class="icon-sea"></i>
-          <span class="trip">Trip1</span>
-          <span class="detail-address">Beijing</span>
-          <i class="icon-detail-to"></i>
-          <span class="detail-address">Beijing</span>
-          <div class="total">
-            Total Results: <span class="num">0</span>
+      </div>
+      <div class="search-detail-wra">
+        <div class="search-detail-wrapper">
+          <div class="detail">
+            <i class="icon-sea"></i>
+            <span class="trip">Trip1</span>
+            <span class="detail-address">Beijing</span>
+            <i class="icon-detail-to"></i>
+            <span class="detail-address">Beijing</span>
+            <div class="total">
+              Total Results: <span class="num">0</span>
+            </div>
           </div>
         </div>
-        <div class="search-no">
-          <i class="icon-search-no"></i>
-          <h4 class="title">Search No Results</h4>
-          <p class="desc">The train is not daily operation, please select another date.</p>
-          <div class="note-wra">
-            <span class="note-tit">Notes:</span>
-            <ul class="note-list">
-              <li class="list">K3 departs from Beijing Railway Station on Wednesday weekly and arrives at Moscow on next Monday. </li>
-              <li class="list">K19 departs from Beijing Railway Station on Saturday weekly and arrives at Moscow on next Friday.</li>
-            </ul>
-          </div>
-          <div class="error">
-            <i class="icon-remind"></i>
-            <span class="remind">If you find any errors on this page, please kindly submit errors to us, we will make an update immediately. Thank you.</span>
-            <a class="report">
-              <i class="icon-report"></i>
-              Report Errors
-            </a>
+      </div>
+      <div class="search-screen-wra">
+        <div class="search-screen-wra">
+          <ul class="screen-time">
+            <li class="item">Apr 10,Wed</li>
+            <li class="item active">Apr 11,Wed</li>
+            <li class="item">Apr 12,Wed</li>
+            <li class="item">Apr 13,Wed</li>
+            <li class="item">Apr 14,Wed</li>
+            <li class="item">Apr 15,Wed</li>
+            <li class="item">Apr 16,Wed</li>
+          </ul>
+          <ul class="screen-select">
+            <li class="item">
+              <span class="type-name">Train Type:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="trainType"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> G/D/C Trains
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> Z/T/K Trains
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> Other Trains
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> Available  Trains
+              </div>
+            </li>
+            <li class="item">
+              <span class="type-name">Departure Time:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="departureTime" value="0"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="1"> 00：00 -- 08：00
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="2"> 08：01 -- 12：00
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="3"> 12：01 -- 18：00
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="4"> 18：01 -- 23：59
+              </div>
+            </li>
+            <li class="item">
+              <span class="type-name">Departure Stations:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="departureStation" value="0"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureStation" value="1"> Beijing South
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureStation" value="2"> Beijing West
+              </div>
+            </li>
+            <li class="item">
+              <span class="type-name">Arrival Stations:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="arrivalStation" value="0"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="arrivalStation" value="1"> Beijing South
+              </div>
+              <div class="select">
+                <input type="checkbox" name="arrivalStation" value="2"> Beijing West
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search-result-wra">
+        <div class="search-result-wrapper">
+          <ul class="result-head">
+            <li class="item">
+              <span class="txt">Train</span>
+            </li>
+            <li class="item">
+              <span class="txt">Departure</span>
+              <div class="sort">
+                <i class="top"></i>
+                <i class="bottom"></i>
+              </div>
+            </li>
+            <li class="item">
+              <span class="txt">Station</span>
+            </li>
+            <li class="item">
+              <span class="txt">Duration</span>
+              <div class="sort">
+                <i class="top"></i>
+                <i class="bottom"></i>
+              </div>
+            </li>
+            <li class="item">
+              <span class="txt">Available</span>
+            </li>
+            <li class="item">
+              <span class="txt">price</span>
+            </li>
+            <li class="item"><span class="txt"></span></li>
+          </ul>
+          <ul class="result-content">
+            <li class="item">
+              <span class="train-number">G412</span>
+              <div class="lines">
+                <span class="from"></span>
+                <span class="line"></span>
+                <span class="to"></span>
+              </div>
+              <div class="time">
+                <span class="from">08:20</span>
+                <span class="to">18:20</span>
+              </div>
+              <div class="address">
+                <span class="from">South of Beijing</span>
+                <span class="to">Shanghai Hongqiao</span>
+              </div>
+              <div class="dur">
+                05h56m
+              </div>
+              <div class="dur-line"></div>
+              <div class="seat">
+                <span class="seat-type">2nd Cls.</span>
+                <span class="seat-type">1nd Cls.</span>
+                <span class="seat-type">Business Cls</span>
+              </div>
+              <div class="seat-number">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+              </div>
+              <div class="seat-price">
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+              </div>
+              <div class="seat-btn">
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+              </div>
+            </li>
+            <li class="item">
+              <span class="train-number">G412</span>
+              <div class="lines">
+                <span class="from"></span>
+                <span class="line"></span>
+                <span class="to"></span>
+              </div>
+              <div class="time">
+                <span class="from">08:20</span>
+                <span class="to">18:20</span>
+              </div>
+              <div class="address">
+                <span class="from">South of Beijing</span>
+                <span class="to">Shanghai Hongqiao</span>
+              </div>
+              <div class="dur">
+                05h56m
+              </div>
+              <div class="seat">
+                <span class="seat-type">2nd Cls.</span>
+                <span class="seat-type">1nd Cls.</span>
+                <span class="seat-type">Business Cls</span>
+              </div>
+              <div class="seat-number">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+              </div>
+              <div class="seat-price">
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+              </div>
+              <div class="seat-btn">
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search-noresult-wra">
+        <div class="search-noresult-wrapper">
+          <div class="search-no">
+            <i class="icon-search-no"></i>
+            <h4 class="title">Search No Results</h4>
+            <p class="desc">The train is not daily operation, please select another date.</p>
+            <div class="note-wra">
+              <span class="note-tit">Notes:</span>
+              <ul class="note-list">
+                <li class="list">K3 departs from Beijing Railway Station on Wednesday weekly and arrives at Moscow on next Monday. </li>
+                <li class="list">K19 departs from Beijing Railway Station on Saturday weekly and arrives at Moscow on next Friday.</li>
+              </ul>
+            </div>
+            <div class="error">
+              <i class="icon-remind"></i>
+              <span class="remind">If you find any errors on this page, please kindly submit errors to us, we will make an update immediately. Thank you.</span>
+              <a class="report">
+                <i class="icon-report"></i>
+                Report Errors
+              </a>
+            </div>
           </div>
         </div>
       </div>
