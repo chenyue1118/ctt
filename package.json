@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/chenyue1118/ctt#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
   }
 }
