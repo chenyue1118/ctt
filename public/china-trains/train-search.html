@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/train-search.css">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -402,5 +403,27 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <!-- report 弹窗 -->
+    <div class="report-mask">
+      <div class="head">
+        <i class="seize"></i>
+        <span class="txt">Report Errors</span>
+        <i class="seize seize-close"></i>
+      </div>
+      <div class="report-con">
+        <textarea class="report-detail" name="name" placeholder="Details:(1000 characters)"></textarea>
+        <input class="report-name" type="text" placeholder="Name">
+        <input class="report-email " type="text" placeholder="Email">
+      </div>
+      <div class="report-btn">
+        <a class="btn">Submite</a>
+      </div>
+    </div>
+    <div class="mask_"></div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
+    <script type="text/javascript" src="../static/js/app/common.js"></script>
+    <script type="text/javascript" src="../static/js/app/train-search.js"></script>
   </body>
 </html>

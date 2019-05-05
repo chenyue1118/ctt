@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/common.css">
     <link rel="stylesheet" href="static/css/index.css">
+    <!-- <link rel="stylesheet" href="static/css/autocomplete.css"> -->
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -67,7 +69,7 @@
           <ul class="search-content">
             <li class="item book">
               <ul class="trips">
-                <li class="trip">
+                <li class="trip" id="trip1">
                   <span class="name">Trip 1</span>
                   <div class="trip-from-wra">
                     <input class="trip-from" type="text" placeholder="From">
@@ -76,10 +78,10 @@
                     <input class="trip-to" type="text" placeholder="To">
                   </div>
                   <div class="trip-time-wra">
-                    <input class="trip-time" type="text" placeholder="DepartDate">
+                    <input class="trip-time" type="text" readonly="readonly" placeholder="DepartDate">
                   </div>
                 </li>
-                <li class="trip">
+                <!-- <li class="trip">
                   <span class="name">Trip 2</span>
                   <div class="trip-from-wra">
                     <input class="trip-from" type="text" placeholder="From">
@@ -90,11 +92,11 @@
                   <div class="trip-time-wra">
                     <input class="trip-time" type="text" placeholder="DepartDate">
                   </div>
-                </li>
+                </li> -->
               </ul>
               <div class="operation">
                 <a class="trip-add">+ Add a Trip</a>
-                <a class="trip-del">- Delete a Trip</a>
+                <a class="trip-del disable">- Delete a Trip</a>
                 <a class="trip-search">
                   Find Train
                   <i class="find-icon"></i>
@@ -597,5 +599,10 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
+    <script type="text/javascript" src="static/js/app/common.js"></script>
+    <script type="text/javascript" src="static/js/app/index.js"></script>
   </body>
 </html>
