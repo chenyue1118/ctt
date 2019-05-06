@@ -57,6 +57,7 @@ $(function() {
       len = len - 1;
       $(".trips .trip:eq("+len+")").remove();
       if (len == 1) $(this).addClass("disable");
+      if (len < 5) $(".trip-add").removeClass("disable");
     }
   });
 
