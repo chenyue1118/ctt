@@ -3,6 +3,8 @@ $(function() {
   var train_station_py = [];        //所有车站拼音
 
   init();
+  queryHotCity(); // 获取热门城市
+  showInternationalRoutes();  // 国际路线
 
   // 添加 trip
   $(".trip-add").on("click", function() {
@@ -85,6 +87,13 @@ $(function() {
     location.href = "china-trains/train-search.html";
   });
 
+  // 热门城市搜索
+  $(".hotCity-wra .citys").on("click", ".item", function() {
+    var city = $(this).html();
+    $(".hotCity-wra .citys .item").removeClass("active");
+    $(this).addClass("active");
+    queryHotCityTargets(city);
+  });
   // ==================================================
   // 初始化数据
   function init() {
@@ -127,6 +136,110 @@ $(function() {
     });
   }
 
+  // 获取热门城市
+  function queryHotCity() {
+    var url_ = APIURL + "/api/ticket/queryHotCity?" + getSign("get");
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        if (data.code == 1) {
+          if (data.data.length > 0) showHotCity(data.data);
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  }
+
+  // 热门城市渲染
+  function showHotCity(citys) {
+    var str = "";
+    citys && citys.forEach(function(item) {
+      str += '<li class="item" data-name="'+item.CityName+'">'+item.Pingyin+'</li>'
+    })
+    $(".hotCity-wra .citys").html(str);
+    $(".hotCity-wra .citys .item").eq(0).addClass("active");
+    queryHotCityTargets(citys[0].Pingyin);
+  }
+
+  //热门城市目的地
+  function queryHotCityTargets(city) {
+    var url_ = APIURL + "/api/ticket/queryHotCityTargets?HotCityPinyin=" + city + "&" + getSign("get");
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        if (data.code == 1) {
+          showHotCityTargets(city, data.data);
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  }
+
+  // 热门城市目的地 渲染
+  function showHotCityTargets (city, arr) {
+    var str = "";
+    arr && arr.forEach(function(item) {
+      str += '<li class="item">'
+              +'<i class="icon-train"></i>'
+              +'<div class="cont">'
+                +'<div class="top">'
+                  +'<span class="city">'+city+'</span>'
+                  +'<span class="hour">'+item.RunTime+'</span>'
+                +'</div>'
+                +'<div class="bottom">'
+                  +'<span class="city">'+item.Pingyin+'</span>'
+                  +'<div class="from">'
+                    +'From $ <span class="price">'+item.OrderAmountUSD+'</span>'
+                  +'</div>'
+                +'</div>'
+              +'</div>'
+            +'</li>';
+    })
+    $(".hotCityTargets").html(str);
+  }
+
+  // 国际路线推荐
+  function showInternationalRoutes() {
+    var url_ = APIURL + "/api/ticket/showInternationalRoutes?" + getSign("get");
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        if (data.code == 1) {
+          var str = "";
+          data.data && data.data.forEach(function(item) {
+            str += '<li class="item">'
+                     +'<i class="icon-train"></i>'
+                     +'<div class="cont">'
+                       +'<div class="top">'
+                         +'<span class="city">'+item.StartCityPY+'</span>'
+                         +'<span class="hour">'+item.RunTime+'</span>'
+                       +'</div>'
+                       +'<div class="bottom">'
+                         +'<span class="city">'+item.EndCityPY+'</span>'
+                         +'<div class="from">'
+                           +'From $ <span class="price">'+item.OrderAmountUSD+'</span>'
+                         +'</div>'
+                       +'</div>'
+                     +'</div>'
+                   +'</li>';
+          })
+          $(".showInternationalRoutes").html(str);
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  }
+
+  // 时间格式化
   function timeFormat(time) {
     var date = new Date(time);
     var yyyy = date.getFullYear();

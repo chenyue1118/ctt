@@ -278,7 +278,8 @@
       width: 832px;
       height: 410px;
       padding: 76px 60px 0 58px;
-      background: pink;
+      background: url(../image/icon-service-bg.png) no-repeat center;
+      background-size: 100%;
       vertical-align: top; }
       .guide_ .about-wra .about-info .item {
         width: 714px;
