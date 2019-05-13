@@ -247,9 +247,26 @@
           display: inline-block;
           width: 48px;
           height: 48px;
+          padding-top: 11px;
           background: linear-gradient(0deg, #fc8686, #f83b3b);
           border-radius: 50%;
           vertical-align: top; }
+          .guide_ .guide-wra .items .item .bg .gui-icon {
+            display: block;
+            width: 30px;
+            height: 26px;
+            margin: 0 auto;
+            background: url(../image/icon-guide-01.png) no-repeat center;
+            background-size: 25px 26px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon2 {
+            background: url(../image/icon-guide-02.png) no-repeat center;
+            background-size: 26px 22px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon3 {
+            background: url(../image/icon-guide-03.png) no-repeat center;
+            background-size: 30px 18px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon4 {
+            background: url(../image/icon-guide-04.png) no-repeat center;
+            background-size: 26px 26px; }
         .guide_ .guide-wra .items .item .txt {
           display: inline-block;
           width: 180px;

@@ -284,9 +284,30 @@
           display: inline-block;
           width: 48px;
           height: 48px;
+          padding-top: 11px;
           background:linear-gradient(0deg,rgba(252,134,134,1),rgba(248,59,59,1));
           border-radius: 50%;
           vertical-align: top;
+          .gui-icon {
+            display: block;
+            width: 30px;
+            height: 26px;
+            margin: 0 auto;
+            background: url(../image/icon-guide-01.png) no-repeat center;
+            background-size: 25px 26px;
+          }
+          .gui-icon2 {
+            background: url(../image/icon-guide-02.png) no-repeat center;
+            background-size: 26px 22px;
+          }
+          .gui-icon3 {
+            background: url(../image/icon-guide-03.png) no-repeat center;
+            background-size: 30px 18px;
+          }
+          .gui-icon4 {
+            background: url(../image/icon-guide-04.png) no-repeat center;
+            background-size: 26px 26px;
+          }
         }
         .txt {
           display: inline-block;
