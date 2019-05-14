@@ -1,0 +1,43 @@
+.network-anomaly_ {
+  width:100%;
+  background: #f4f4f4;
+  .network-anomaly-wrapper {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 96px 0 70px 0;
+    .icon-network {
+      display: block;
+      width: 528px;
+      height: 328px;
+      margin: 0 auto;
+      background: url(../image/icon-network.png) no-repeat center
+    }
+    .content {
+      padding: 60px 0;
+      line-height: 30px;
+      color: #333333;
+      font-size: 30px;
+      text-align: center;
+      font-weight: 400;
+      .link {
+        color: #1890FF;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .btn-home {
+      display: block;
+      width: 180px;
+      height: 46px;
+      line-height: 46px;
+      margin: 0 auto;
+      background: #1890FF;
+      font-size: 24px;
+      color: #fff;
+      text-align: center;
+      border-radius: 4px;
+    }
+  }
+}

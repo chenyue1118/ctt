@@ -89,6 +89,7 @@
               padding: 10px 16px;
               border: 1px solid #E5E5E5;
               font-size: 0;
+              cursor: pointer;
               .icon-pay-method {
                 display: inline-block;
                 width: 38px;
@@ -116,6 +117,20 @@
                 font-size: 20px;
                 color: #333333;
                 font-weight: bold;
+              }
+            }
+            .active {
+              position: relative;
+              border: 1px solid #D80909;
+              &:after {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: "";
+                display: block;
+                width: 12px;
+                height: 14px;
+                background: url(../image/icon-pay-active.png) no-repeat center;
               }
             }
             .desc {

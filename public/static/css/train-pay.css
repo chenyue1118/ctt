@@ -74,7 +74,8 @@
               width: 200px;
               padding: 10px 16px;
               border: 1px solid #E5E5E5;
-              font-size: 0; }
+              font-size: 0;
+              cursor: pointer; }
               .train-pay_ .pay-wrapper .submite-wra .pay-by .methods .item .method .icon-pay-method {
                 display: inline-block;
                 width: 38px;
@@ -98,6 +99,18 @@
                 font-size: 20px;
                 color: #333333;
                 font-weight: bold; }
+            .train-pay_ .pay-wrapper .submite-wra .pay-by .methods .item .active {
+              position: relative;
+              border: 1px solid #D80909; }
+              .train-pay_ .pay-wrapper .submite-wra .pay-by .methods .item .active:after {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: "";
+                display: block;
+                width: 12px;
+                height: 14px;
+                background: url(../image/icon-pay-active.png) no-repeat center; }
             .train-pay_ .pay-wrapper .submite-wra .pay-by .methods .item .desc {
               display: block;
               padding-top: 14px;

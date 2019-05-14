@@ -88,9 +88,12 @@
           display: inline-block;
           width: 24px;
           height: 80px;
-          background: #D80909;
-          // background: url(../image/common/icon-log.png) no-repeat center;
+          background: url(../image/common/icon-home-page.png) no-repeat center;
           vertical-align: top;
+          cursor: pointer;
+          &:hover {
+            background: url(../image/common/icon-home-page-active.png) no-repeat center;
+          }
         }
         .items {
           display: inline-block;
