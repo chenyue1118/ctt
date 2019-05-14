@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/china-flights.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -32,7 +32,7 @@
               <li class="item">
                 <a class="link" href="../china-trains/train-booking.html">China Trains</a>
               </li>
-              <li class="item">
+              <li class="item active">
                 <a class="link" href="../china-flights/">China Flights</a>
               </li>
               <li class="item">
@@ -53,6 +53,76 @@
       </div>
     </div>
     <div class="header_seize_"></div>
+    <!-- 轮播图位置 -->
+    <div class="banner_">
+      <div class="banner-wra">
+        <img class="image" src="../static/image/flights/icon-flights.jpg" alt="订票">
+      </div>
+      <div class="train">
+        <div class="search">
+          <h4 class="search-title">Domestic Flights</h4>
+          <ul class="search-content">
+            <li class="item book">
+              <ul class="trips">
+                <li class="trip" id="trip1">
+                  <span class="name">Trip 1</span>
+                  <div class="trip-from-wra">
+                    <input class="trip-from" type="text" placeholder="From">
+                  </div>
+                  <div class="trip-to-wra">
+                    <input class="trip-to" type="text" placeholder="To">
+                  </div>
+                  <div class="trip-time-wra">
+                    <input class="trip-time" type="text" readonly="readonly" placeholder="DepartDate">
+                  </div>
+                </li>
+              </ul>
+              <div class="operation">
+                <a class="trip-search">
+                  Find Train
+                  <i class="find-icon"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div class="check-wra">
+            <a class="check">
+              Check My Bookings >>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 热门城市 火车票 -->
+    <div class="hotCity_">
+      <div class="hotCity-wra">
+        <h3 class="title">Hot China Train Routes</h3>
+        <ul class="citys">
+          <li class="item active">Beijing</li>
+          <li class="item">Shanghai</li>
+          <li class="item">Xian</li>
+          <li class="item">Hangzhou</li>
+          <li class="item">Guilin</li>
+          <li class="item">Suzhou</li>
+        </ul>
+        <ul class="flights">
+          <li class="item">
+            <i class="icon-flight"></i>
+            <div class="cont">
+              <div class="info">
+                <span class="address">Shanghai</span>
+                 →
+                <span class="address">Beijing</span>
+              </div>
+              <div class="desc">
+                <span class="time">04-22</span>
+                <a class="price">$ <span class="num">103</span> </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- 公共底部 -->
     <div class="footer_">
       <div class="foot-content">
