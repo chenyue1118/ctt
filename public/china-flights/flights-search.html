@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
-    <link rel="stylesheet" href="../static/css/train-search.css">
+    <link rel="stylesheet" href="../static/css/flights-search.css">
     <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
   </head>
   <body>
@@ -55,7 +55,7 @@
     </div>
     <div class="header_seize_"></div>
     <!-- 搜索 -->
-    <div class="train-search_">
+    <div class="flights-search_">
       <div class="search-trip-wra">
         <ul class="head">
           <li class="item">
@@ -70,7 +70,7 @@
               <input class="trip-time" type="text" placeholder="DepartDate">
             </div>
             <a class="trip-search">
-              Find Train
+              Find Flights
               <i class="find-icon"></i>
             </a>
           </li>
@@ -80,7 +80,6 @@
         <div class="search-detail-wrapper">
           <div class="detail">
             <i class="icon-sea"></i>
-            <span class="trip">Trip1</span>
             <span class="detail-address">Beijing</span>
             <i class="icon-detail-to"></i>
             <span class="detail-address">Beijing</span>
@@ -103,63 +102,51 @@
           </ul>
           <ul class="screen-select">
             <li class="item">
-              <span class="type-name">Train Type:</span>
-              <div class="select select-one">
-                <input type="checkbox" name="trainType"> All
-              </div>
-              <div class="select">
-                <input type="checkbox" name="trainType"> G/D/C Trains
-              </div>
-              <div class="select">
-                <input type="checkbox" name="trainType"> Z/T/K Trains
-              </div>
-              <div class="select">
-                <input type="checkbox" name="trainType"> Other Trains
-              </div>
-              <div class="select">
-                <input type="checkbox" name="trainType"> Available  Trains
-              </div>
-            </li>
-            <li class="item">
-              <span class="type-name">Departure Time:</span>
+              <span class="type-name">Dep. Time:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureTime" value="0"> All
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="1"> 00：00 -- 08：00
+                <input type="checkbox" name="departureTime" id="aa" value="1"> <label for="aa">12：00 -- 16：00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="2"> 08：01 -- 12：00
+                <input type="checkbox" name="departureTime" value="2"> 16：01 -- 20：00
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="3"> 12：01 -- 18：00
-              </div>
-              <div class="select">
-                <input type="checkbox" name="departureTime" value="4"> 18：01 -- 23：59
+                <input type="checkbox" name="departureTime" value="3"> 20：01 -- 23：59
               </div>
             </li>
             <li class="item">
-              <span class="type-name">Departure Stations:</span>
+              <span class="type-name">Class:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="trainType"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> Economy
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> Business
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType"> First Class
+              </div>
+            </li>
+            <li class="item">
+              <span class="type-name">Airline:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureStation" value="0"> All
               </div>
               <div class="select">
-                <input type="checkbox" name="departureStation" value="1"> Beijing South
+                <input type="checkbox" name="departureStation" value="1"> JD
               </div>
               <div class="select">
-                <input type="checkbox" name="departureStation" value="2"> Beijing West
-              </div>
-            </li>
-            <li class="item">
-              <span class="type-name">Arrival Stations:</span>
-              <div class="select select-one">
-                <input type="checkbox" name="arrivalStation" value="0"> All
+                <input type="checkbox" name="departureStation" value="2"> GT
               </div>
               <div class="select">
-                <input type="checkbox" name="arrivalStation" value="1"> Beijing South
+                <input type="checkbox" name="departureStation" value="2"> CA
               </div>
               <div class="select">
-                <input type="checkbox" name="arrivalStation" value="2"> Beijing West
+                <input type="checkbox" name="departureStation" value="2"> HU
               </div>
             </li>
           </ul>
@@ -169,36 +156,44 @@
         <div class="search-result-wrapper">
           <ul class="result-head">
             <li class="item">
-              <span class="txt">Train</span>
+              <span class="txt">Flight</span>
             </li>
             <li class="item">
-              <span class="txt">Departure</span>
+              <span class="txt">Dep./Arr.</span>
               <div class="sort">
                 <i class="top"></i>
                 <i class="bottom"></i>
               </div>
             </li>
             <li class="item">
-              <span class="txt">Station</span>
-            </li>
-            <li class="item">
-              <span class="txt">Duration</span>
+              <span class="txt">Price</span>
               <div class="sort">
                 <i class="top"></i>
                 <i class="bottom"></i>
               </div>
             </li>
+            <li class="item"><span class="txt"></span></li>
             <li class="item">
-              <span class="txt">Available</span>
-            </li>
-            <li class="item">
-              <span class="txt">price</span>
+              <span class="txt">Available Tickets</span>
             </li>
             <li class="item"><span class="txt"></span></li>
           </ul>
           <ul class="result-content">
             <li class="item">
-              <span class="train-number">G412</span>
+              <div class="flight-info">
+                <div class="info-name">
+                  <i class="icon-flight-name"></i>
+                  <span class="txt-flight-name">MU5188</span>
+                </div>
+                <div class="flight-aircraft">
+                  Aircraft: 33H
+                </div>
+                <div class="flight-desc">
+                  <div class="flight-desc-wra">
+                    <span class="flight-desc-txt">China Southern Airlines</span>
+                  </div>
+                </div>
+              </div>
               <div class="lines">
                 <span class="from"></span>
                 <span class="line"></span>
@@ -209,32 +204,24 @@
                 <span class="to">18:20</span>
               </div>
               <div class="address">
-                <span class="from">South of Beijing</span>
-                <span class="to">Shanghai Hongqiao</span>
+                <span class="from">PEK(T2)</span>
+                <span class="to">SHA(T2)</span>
               </div>
-              <div class="dur">
-                05h56m
+              <div class="price-wra">
+                <span class="price">CNY900 (US$136)</span>
               </div>
-              <div class="dur-line"></div>
-              <div class="seat">
-                <span class="seat-type">2nd Cls.</span>
-                <span class="seat-type">1nd Cls.</span>
-                <span class="seat-type">Business Cls</span>
+              <div class="economy-wra">
+                <span class="economy">Economy 39% Off</span>
+                <a class="all-classes">
+                  All classes
+                  <i class="icon-all-classes"></i>
+                </a>
               </div>
-              <div class="seat-number">
-                <span class="number">1</span>
-                <span class="number">2</span>
-                <span class="number">3</span>
-              </div>
-              <div class="seat-price">
-                <span class="price-detail">CNY568/USD87.34</span>
-                <span class="price-detail">CNY568/USD87.34</span>
-                <span class="price-detail">CNY568/USD87.34</span>
+              <div class="flight-tickets">
+                <span class="tickets">>10 Seats</span>
               </div>
               <div class="seat-btn">
-                <a class="btn">Continue</a>
-                <a class="btn">Continue</a>
-                <a class="btn">Continue</a>
+                <a class="btn">book</a>
               </div>
             </li>
             <li class="item">
@@ -424,6 +411,6 @@
     <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
     <script type="text/javascript" src="../static/js/app/common.js"></script>
-    <script type="text/javascript" src="../static/js/app/train-search.js"></script>
+    <script type="text/javascript" src="../static/js/app/flights-search.js"></script>
   </body>
 </html>
