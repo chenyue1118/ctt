@@ -315,24 +315,15 @@
               padding: 6px 0 0 4px;
               color: #666666;
               font-size: 14px; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .train-number {
-            display: inline-block;
-            width: 150px;
-            line-height: 40px;
-            padding-left: 38px;
-            font-size: 20px;
-            color: #1890FF;
-            text-decoration: underline;
-            vertical-align: top; }
           .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .lines {
             display: inline-block;
             padding-top: 10px;
-            padding-right: 16px;
+            padding-right: 10px;
             vertical-align: top; }
             .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .lines .from, .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .lines .to {
               display: block;
-              width: 9px;
-              height: 9px;
+              width: 10px;
+              height: 10px;
               background: #E5E5E5;
               border-radius: 50%; }
             .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .lines .line {
@@ -354,12 +345,14 @@
               font-weight: 500; }
             .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .time .to {
               display: block;
-              padding-top: 28px;
-              font-size: 16px;
-              color: #9A9A9A; }
+              padding-top: 30px;
+              font-size: 20px;
+              color: #9A9A9A;
+              color: #333;
+              font-weight: 500; }
           .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .address {
             display: inline-block;
-            width: 226px;
+            width: 152px;
             vertical-align: top; }
             .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .address .from {
               display: block;
@@ -370,67 +363,52 @@
               font-weight: 500; }
             .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .address .to {
               display: block;
-              padding-top: 28px;
+              padding-top: 32px;
               line-height: 16px;
               font-size: 16px;
               color: #333;
               font-weight: 500; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .dur {
+          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .price-wra {
             display: inline-block;
-            width: 72px;
-            font-size: 16px;
-            color: #333333;
-            padding-top: 6px;
+            width: 202px;
             vertical-align: top; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .dur-line {
-            display: inline-block;
-            width: 1px;
-            height: 86px;
-            margin-top: 8px;
-            background: #eee;
-            vertical-align: top; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat {
-            display: inline-block;
-            width: 196px;
-            padding-left: 16px;
-            padding-top: 6px;
-            vertical-align: top; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat .seat-type {
+            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .price-wra .price {
               display: block;
-              line-height: 14px;
-              font-size: 16px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat .seat-type + .seat-type {
-              padding-top: 26px; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-number {
+              font-size: 16px; }
+          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .economy-wra {
             display: inline-block;
-            padding-top: 6px;
+            width: 206px;
             vertical-align: top; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-number .number {
+            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .economy-wra .economy {
               display: block;
-              width: 22px;
-              line-height: 14px;
-              text-align: center;
-              font-size: 16px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-number .number + .number {
-              padding-top: 26px; }
-          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-price {
+              font-size: 16px; }
+            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .economy-wra .all-classes {
+              font-size: 16px;
+              color: #D80909; }
+              .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .economy-wra .all-classes .icon-all-classes {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 6px solid #D80909;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent; }
+          .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .flight-tickets {
             display: inline-block;
-            width: 256px;
-            padding-top: 6px;
-            padding-left: 76px;
+            width: 162px;
             vertical-align: top; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-price .price-detail {
+            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .flight-tickets .tickets {
               display: block;
-              line-height: 14px;
-              font-size: 16px;
+              padding-left: 21px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-price .price-detail + .price-detail {
-              padding-top: 26px; }
+              font-size: 16px; }
           .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn {
             display: inline-block;
             vertical-align: top; }
@@ -439,15 +417,15 @@
               width: 90px;
               height: 26px;
               line-height: 26px;
+              margin-bottom: 12px;
               text-align: center;
+              background: #D80909;
+              border-radius: 4px;
               color: #fff;
               font-size: 14px;
-              background: #D80909;
-              border-radius: 4px; }
+              font-weight: bold; }
               .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn .btn:hover {
-                background: #b30000; }
-            .flights-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn .btn + .btn {
-              margin-top: 12px; }
+                background: #B30000; }
         .flights-search_ .search-result-wra .search-result-wrapper .result-content .item + .item {
           border-top: 1px solid #DBDBDB; }
   .flights-search_ .search-noresult-wra {

@@ -1,4 +1,4 @@
-// 搜索页面
+// 搜索页面 2019
 .flights-search_ {
   width: 100%;
   background: #f4f4f4;
@@ -371,28 +371,16 @@
               color: #666666;
               font-size: 14px;
             }
-
-          }
-
-          .train-number {
-            display: inline-block;
-            width: 150px;
-            line-height: 40px;
-            padding-left: 38px;
-            font-size: 20px;
-            color: #1890FF;
-            text-decoration: underline;
-            vertical-align: top;
           }
           .lines {
             display: inline-block;
             padding-top: 10px;
-            padding-right: 16px;
+            padding-right: 10px;
             vertical-align: top;
             .from, .to {
               display: block;
-              width: 9px;
-              height: 9px;
+              width: 10px;
+              height: 10px;
               background: #E5E5E5;
               border-radius: 50%;
             }
@@ -418,14 +406,16 @@
             }
             .to {
               display: block;
-              padding-top: 28px;
-              font-size: 16px;
+              padding-top: 30px;
+              font-size: 20px;
               color: #9A9A9A;
+              color: #333;
+              font-weight: 500;
             }
           }
           .address {
             display: inline-block;
-            width: 226px;
+            width: 152px;
             vertical-align: top;
             .from {
               display: block;
@@ -437,78 +427,60 @@
             }
             .to {
               display: block;
-              padding-top: 28px;
+              padding-top: 32px;
               line-height: 16px;
               font-size: 16px;
               color: #333;
               font-weight: 500;
             }
           }
-          .dur {
+          .price-wra {
             display: inline-block;
-            width: 72px;
-            font-size: 16px;
-            color: #333333;
-            padding-top: 6px;
+            width: 202px;
             vertical-align: top;
-          }
-          .dur-line {
-            display: inline-block;
-            width: 1px;
-            height: 86px;
-            margin-top: 8px;
-            background: #eee;
-            vertical-align: top;
-          }
-          .seat {
-            display: inline-block;
-            width: 196px;
-            padding-left: 16px;
-            padding-top: 6px;
-            vertical-align: top;
-            .seat-type {
+            .price {
               display: block;
-              line-height: 14px;
-              font-size: 16px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px;
-            }
-            .seat-type + .seat-type {
-              padding-top: 26px;
+              font-size: 16px;
             }
           }
-          .seat-number {
+          .economy-wra {
             display: inline-block;
-            padding-top: 6px;
+            width: 206px;
             vertical-align: top;
-            .number {
+            .economy {
               display: block;
-              width: 22px;
-              line-height: 14px;
-              text-align: center;
-              font-size: 16px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px;
+              font-size: 16px;
             }
-            .number + .number{
-              padding-top: 26px;
+            .all-classes {
+              font-size: 16px;
+              color: #D80909;
+              .icon-all-classes {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 6px solid #D80909;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+              }
             }
           }
-          .seat-price {
+          .flight-tickets {
             display: inline-block;
-            width: 256px;
-            padding-top: 6px;
-            padding-left: 76px;
+            width: 162px;
             vertical-align: top;
-            .price-detail {
+            .tickets {
               display: block;
-              line-height: 14px;
-              font-size: 16px;
+              padding-left: 21px;
+              padding-bottom: 12px;
+              line-height: 26px;
               color: #333333;
-              font-weight: 500px;
-            }
-            .price-detail + .price-detail {
-              padding-top: 26px;
+              font-size: 16px;
             }
           }
           .seat-btn {
@@ -519,17 +491,16 @@
               width: 90px;
               height: 26px;
               line-height: 26px;
+              margin-bottom: 12px;
               text-align: center;
-              color: #fff;
-              font-size: 14px;
               background: #D80909;
               border-radius: 4px;
+              color: #fff;
+              font-size: 14px;
+              font-weight: bold;
               &:hover {
-                background: #b30000;
+                background: #B30000;
               }
-            }
-            .btn + .btn {
-              margin-top: 12px;
             }
           }
         }
