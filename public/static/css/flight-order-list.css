@@ -1,0 +1,325 @@
+.order-list_ {
+  width: 100%;
+  background: #F4F4F4; }
+  .order-list_ .order-list-wrapper {
+    width: 1120px;
+    margin: 0 auto; }
+    .order-list_ .order-list-wrapper .nav {
+      line-height: 16px;
+      padding: 28px 0;
+      font-size: 16px;
+      color: #000018; }
+      .order-list_ .order-list-wrapper .nav .link:hover {
+        text-decoration: underline; }
+      .order-list_ .order-list-wrapper .nav .link:nth-child(1) {
+        color: #1890FF; }
+      .order-list_ .order-list-wrapper .nav .link:nth-child(2) {
+        color: #D80909; }
+    .order-list_ .order-list-wrapper .list-content {
+      background: #fff;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+      margin-bottom: 78px; }
+      .order-list_ .order-list-wrapper .list-content .lists {
+        width: 100%;
+        padding: 0 46px; }
+        .order-list_ .order-list-wrapper .list-content .lists .item .detail-title {
+          line-height: 20px;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          margin-bottom: 30px;
+          border-bottom: 1px solid #DBDBDB;
+          font-size: 0; }
+          .order-list_ .order-list-wrapper .list-content .lists .item .detail-title .number {
+            display: inline-block;
+            width: 50%;
+            font-size: 20px;
+            color: #000018;
+            font-weight: 500;
+            vertical-align: top; }
+          .order-list_ .order-list-wrapper .list-content .lists .item .detail-title .time {
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            color: #999999;
+            text-align: right;
+            vertical-align: top; }
+        .order-list_ .order-list-wrapper .list-content .lists .item .list {
+          border: 1px solid #797979;
+          border-radius: 4px;
+          overflow: hidden; }
+          .order-list_ .order-list-wrapper .list-content .lists .item .list .head {
+            height: 48px;
+            padding: 0 12px 0 18px;
+            background: #F4F4F4;
+            font-size: 0; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .head .left {
+              display: inline-block;
+              width: 32%;
+              height: 48px; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .head .left .index {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 28px;
+                line-height: 28px;
+                margin-top: 9px;
+                margin-right: 20px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 500;
+                background: #D80909;
+                border-radius: 2px;
+                vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .head .left .index:after {
+                  position: absolute;
+                  top: 8px;
+                  right: -6px;
+                  z-index: 111;
+                  content: "";
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-left: 6px solid #D80909;
+                  border-top: 6px solid transparent;
+                  border-bottom: 4px solid transparent; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .head .left .date {
+                display: inline-block;
+                height: 48px;
+                line-height: 48px;
+                font-size: 18px;
+                color: #333333; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .head .middle {
+              display: inline-block;
+              width: 18%;
+              height: 48px;
+              font-size: 16px;
+              color: #D80909; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right {
+              display: inline-block;
+              width: 50%;
+              height: 48px;
+              text-align: right;
+              vertical-align: top;
+              font-size: 0; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right .status {
+                display: inline-block;
+                padding-right: 20px;
+                line-height: 48px;
+                font-size: 16px;
+                color: #666666; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right .change {
+                display: inline-block;
+                line-height: 48px;
+                padding-right: 14px;
+                font-size: 14px;
+                color: #1890FF;
+                text-decoration: underline; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right .change:hover {
+                  text-decoration: none; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right .del {
+                display: inline-block;
+                width: 22px;
+                height: 48px;
+                background: url(../image/icon-del.png) no-repeat center;
+                vertical-align: top;
+                cursor: pointer; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .head .right .del:hover {
+                  background: url(../image/icon-del-active.png) no-repeat center;
+                  vertical-align: top; }
+          .order-list_ .order-list-wrapper .list-content .lists .item .list .flights {
+            width: 100%;
+            padding: 28px 0 24px 18px;
+            font-size: 0; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info {
+              position: relative;
+              display: inline-block;
+              width: 150px;
+              padding-top: 8px;
+              cursor: pointer;
+              vertical-align: top; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info:hover .flight-desc {
+                position: absolute;
+                top: 44px;
+                left: -30px;
+                z-index: 111;
+                display: block; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info:hover .flight-desc .flight-desc-wra {
+                  position: relative; }
+                  .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info:hover .flight-desc .flight-desc-wra:after {
+                    position: absolute;
+                    top: -10px;
+                    left: 50%;
+                    z-index: 111;
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    margin-left: -30px;
+                    border-bottom: 12px solid #fff;
+                    border-left: 12px solid transparent;
+                    border-right: 12px solid transparent; }
+                  .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info:hover .flight-desc .flight-desc-wra .flight-desc-txt {
+                    display: block;
+                    width: 200px;
+                    padding: 12px;
+                    color: #333333;
+                    font-size: 16px;
+                    background: #fff;
+                    border: 1px solid #eeeeee;
+                    box-shadow: 0px 0px 10px 0px rgba(4, 0, 0, 0.25);
+                    border-radius: 2px; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info .info-name {
+                display: inline-block;
+                padding-bottom: 4px;
+                border-bottom: 1px dashed #333333;
+                font-size: 0; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info .info-name .icon-flight-name {
+                  display: inline-block;
+                  width: 30px;
+                  height: 22px;
+                  background: pink;
+                  vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info .info-name .txt-flight-name {
+                  display: inline-block;
+                  height: 22px;
+                  line-height: 22px;
+                  font-size: 16px;
+                  color: #333;
+                  font-weight: 500; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .flight-info .flight-aircraft {
+                padding: 6px 0 0 4px;
+                color: #666666;
+                font-size: 14px; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info {
+              display: inline-block;
+              font-size: 0;
+              vertical-align: top; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .lines {
+                display: inline-block;
+                padding-right: 8px;
+                padding-top: 6px;
+                vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .lines .from, .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .lines .to {
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  background: #E5E5E5;
+                  border-radius: 50%; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .lines .line {
+                  display: block;
+                  width: 1px;
+                  height: 36px;
+                  background: #E5E5E5;
+                  margin-left: 4px; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .time {
+                display: inline-block;
+                padding-right: 12px;
+                vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .time .from {
+                  display: block;
+                  padding-bottom: 22px;
+                  line-height: 24px;
+                  font-size: 20px;
+                  color: #000018;
+                  font-weight: 500; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .time .to {
+                  display: block;
+                  font-size: 20px;
+                  color: #000018;
+                  font-weight: 500; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .address {
+                display: inline-block;
+                padding-right: 94px;
+                vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .address .from {
+                  display: block;
+                  padding-bottom: 24px;
+                  line-height: 24px;
+                  font-size: 16px;
+                  color: #333333;
+                  font-weight: 500; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .info .address .to {
+                  display: block;
+                  font-size: 16px;
+                  color: #333333;
+                  font-weight: 500; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .time-seating {
+              display: inline-block;
+              width: 280px;
+              padding-top: 24px;
+              padding-left: 12px;
+              color: #333333;
+              font-size: 14px;
+              vertical-align: top; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .time-seating .seating {
+                font-size: 16px; }
+            .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price {
+              display: inline-block;
+              padding-left: 20px;
+              vertical-align: top; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .price-info-wra {
+                width: 100%;
+                font-size: 0; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .price-info-wra .price-name {
+                  display: inline-block;
+                  line-height: 22px;
+                  color: #333333;
+                  font-size: 16px; }
+                .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .price-info-wra .price-info {
+                  display: inline-block;
+                  vertical-align: top; }
+                  .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .price-info-wra .price-info .item {
+                    line-height: 22px;
+                    font-size: 16px;
+                    color: #333333; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .price-tax {
+                padding-bottom: 16px;
+                line-height: 22px;
+                font-size: 16px;
+                color: #333333; }
+              .order-list_ .order-list-wrapper .list-content .lists .item .list .flights .ticket-price .total {
+                padding-top: 12px;
+                border-top: 1px solid #AEAEAE;
+                line-height: 22px;
+                font-size: 18px;
+                color: #666666; }
+        .order-list_ .order-list-wrapper .list-content .lists .item .grand-total {
+          padding: 24px 0 40px 704px;
+          line-height: 18px;
+          font-size: 20px;
+          color: #666666;
+          font-weight: 500; }
+          .order-list_ .order-list-wrapper .list-content .lists .item .grand-total .num {
+            color: #d80909; }
+      .order-list_ .order-list-wrapper .list-content .book-center {
+        padding: 20px 46px 36px 46px;
+        font-size: 0;
+        border-top: 1px solid #DBDBDB; }
+        .order-list_ .order-list-wrapper .list-content .book-center .icon-book-center {
+          display: inline-block;
+          width: 42px;
+          height: 40px;
+          background: url(../image/icon-book-center.png) no-repeat center;
+          vertical-align: top; }
+        .order-list_ .order-list-wrapper .list-content .book-center .center-txt {
+          display: inline-block;
+          padding-left: 14px; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .title {
+            padding: 10px 0;
+            line-height: 20px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: bold; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .tel {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .emails {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+            .order-list_ .order-list-wrapper .list-content .book-center .center-txt .emails .email {
+              color: #1890FF; }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
-    <link rel="stylesheet" href="../static/css/flight-details.css">
+    <link rel="stylesheet" href="../static/css/flight-order-list.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -53,30 +53,34 @@
       </div>
     </div>
     <div class="header_seize_"></div>
-    <!-- 订单详情 -->
-    <div class="order-details_">
-      <div class="order-details-wrapper">
+    <!-- 列表 -->
+    <div class="order-list_">
+      <div class="order-list-wrapper">
         <div class="nav">
           <a class="link">Home</a> >
-          <a class="link">China Train</a> >
-          <a class="link">Order Statuss Check</a>
+          <a class="link">China Flights</a> >
+          <a class="link">Order Status Check</a>
         </div>
-        <div class="details-wra">
-          <div class="details">
-            <h3 class="detail-title">
-              <span class="number">Tarching No.: T1905210512</span>
-              <span class="time">Submit Time: 2019/04/01 10:00:00</span>
-            </h3>
-            <ul class="trips">
-              <li class="trip">
+        <div class="list-content">
+          <ul class="lists">
+            <li class="item">
+              <h3 class="detail-title">
+                <span class="number">Tarching No.: T1905210512</span>
+                <span class="time">Submit Time: 2019/04/01 10:00:00</span>
+              </h3>
+              <div class="list">
                 <div class="head">
                   <div class="left">
                     <span class="index">Trip 1</span>
                     <span class="date">May 22, 2019, Wed.</span>
                   </div>
+                  <div class="middle">
+                    Issued
+                  </div>
                   <div class="right">
                     <span class="status">paid</span>
                     <a class="change">Cancel/Change</a>
+                    <i class="del"></i>
                   </div>
                 </div>
                 <div class="flights">
@@ -129,125 +133,87 @@
                     </div>
                   </div>
                 </div>
-              </li>
-            </ul>
-            <div class="grand-total">
-              Grand Total: <span class="num">CNY800/USD170</span>
-            </div>
-            <div class="detail-traveler">
-              <h4 class="traveler-tit">Traveler Information:</h4>
-              <ul class="traveler-wra">
-                <li class="item">
-                  <span class="con">Status</span>
-                  <a class="con new">New Booking</a>
-                </li>
-                <li class="item">
-                  <span class="con">Flight Journey</span>
-                  <a class="con">
-                    Fight No.
-                    <span class="spe">CA1225</span>
-                    From
-                    <span class="spe">Beijing Capital</span>
-                    To
-                    <span class="spe">Xianyang Airport</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <span class="con">Date&Time</span>
-                  <a class="con">
-                    Departure:
-                    <span class="spe">May 18,2019 15:15</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    Arrival:
-                    <span class="spe">17:30</span>
-                  </a>
-                </li>
-                <li class="item">
-                  <span class="con">Ticket Classs</span>
-                  <a class="con">Economy Class(K)X1</a>
-                </li>
-              </ul>
-            </div>
-            <div class="detail-ticket">
-              <h4 class="ticket-tit">Guest Information</h4>
-              <ul class="ticket-head-wra">
-                <li class="item">
-                  <span class="con">Passenger</span>
-                  <span class="con">Last Name</span>
-                  <span class="con">First Name</span>
-                  <span class="con">Middle Name</span>
-                  <span class="con">Passport No.</span>
-                  <span class="con">Birthday</span>
-                </li>
-              </ul>
-              <ul class="ticket-body-wra">
-                <li class="item">
-                  <span class="con">Adult1.</span>
-                  <span class="con">Susansdhfgfdhsk jfgusans</span>
-                  <span class="con">Susansdhfgfdhsk</span>
-                  <span class="con">Susan</span>
-                  <span class="con">SUnhgr345</span>
-                  <span class="con">01/25/2014</span>
-                </li>
-                <li class="item">
-                  <span class="con">Adult1.</span>
-                  <span class="con">Susansdhfgfdhsk</span>
-                  <span class="con">Susansdhfgfdhsk</span>
-                  <span class="con">Susan</span>
-                  <span class="con">SUnhgr345</span>
-                  <span class="con">01/25/2014</span>
-                </li>
-                <li class="item">
-                  <span class="con">Adult1.</span>
-                  <span class="con">Susansdhfgfdhsk</span>
-                  <span class="con">Susansdhfgfdhsk</span>
-                  <span class="con">Susan</span>
-                  <span class="con">SUnhgr345</span>
-                  <span class="con">01/25/2014</span>
-                </li>
-              </ul>
-            </div>
-            <div class="detail-note">
-              <i class="icon-detail-note"></i>
-              <div class="note-info">
-                If the passenger's personal information is incorrect, please
-                <a class="note-contact">contact us.</a>
               </div>
-            </div>
-            <div class="detail-contact">
-              <h4 class="ticket-tit">Contact Information</h4>
-              <ul class="contact-wra">
-                <li class="item">
-                  <span class="con">Full Name</span>
-                  <span class="con">TIANJING TIAN</span>
-                </li>
-                <li class="item">
-                  <span class="con">Nationality</span>
-                  <span class="con">571949926</span>
-                </li>
-                <li class="item">
-                  <span class="con">E-mail</span>
-                  <span class="con">1152746738@qq.com</span>
-                </li>
-                <li class="item">
-                  <span class="con">2nd Email</span>
-                  <span class="con">1152746738@qq.com</span>
-                </li>
-                <li class="item">
-                  <span class="con">Phone No.</span>
-                  <span class="con">1152746738@qq.com</span>
-                </li>
-                <li class="item">
-                  <span class="con">WhatsApp</span>
-                  <span class="con">1152746738@qq.com</span>
-                </li>
-                <li class="item">
-                  <span class="con">Other Requirements</span>
-                  <span class="con">15asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd010530317</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+              <div class="grand-total">
+                Grand Total: <span class="num">CNY800/USD170</span>
+              </div>
+            </li>
+            <li class="item">
+              <h3 class="detail-title">
+                <span class="number">Tarching No.: T1905210512</span>
+                <span class="time">Submit Time: 2019/04/01 10:00:00</span>
+              </h3>
+              <div class="list">
+                <div class="head">
+                  <div class="left">
+                    <span class="index">Trip 1</span>
+                    <span class="date">May 22, 2019, Wed.</span>
+                  </div>
+                  <div class="middle">
+                    Issued
+                  </div>
+                  <div class="right">
+                    <span class="status">paid</span>
+                    <a class="change">Cancel/Change</a>
+                    <i class="del"></i>
+                  </div>
+                </div>
+                <div class="flights">
+                  <div class="flight-info">
+                    <div class="info-name">
+                      <i class="icon-flight-name"></i>
+                      <span class="txt-flight-name">MU5188</span>
+                    </div>
+                    <div class="flight-aircraft">
+                      Aircraft: 33H
+                    </div>
+                    <div class="flight-desc">
+                      <div class="flight-desc-wra">
+                        <span class="flight-desc-txt">China Southern Airlines</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info">
+                    <div class="lines">
+                      <span class="from"></span>
+                      <span class="line"></span>
+                      <span class="to"></span>
+                    </div>
+                    <div class="time">
+                      <span class="from">06:43</span>
+                      <span class="to">12:40</span>
+                    </div>
+                    <div class="address">
+                      <span class="from">PEK(T2)</span>
+                      <span class="to">PEK(T2)</span>
+                    </div>
+                  </div>
+                  <div class="time-seating">
+                    <span class="time">5h56m</span> | <span class="seating">Medium</span>
+                  </div>
+                  <div class="ticket-price">
+                    <div class="price-info-wra">
+                      <span class="price-name">Price:</span>
+                      <ul class="price-info">
+                        <li class="item">CNY933/US$141 x <span class="num">2</span> Adult</li>
+                        <li class="item">CNY933/US$141 x <span class="num">2</span> Children</li>
+                        <li class="item">CNY933/US$141 x <span class="num">2</span> Infant</li>
+                      </ul>
+                    </div>
+                    <div class="price-tax">
+                      Tax:	CNY50(US$8) x 2 Adult
+                    </div>
+                    <div class="total">
+                      Total: CNY568/USD87.34
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grand-total">
+                Grand Total: <span class="num">CNY800/USD170</span>
+              </div>
+            </li>
+          </ul>
           <div class="book-center">
             <i class="icon-book-center"></i>
             <div class="center-txt">
