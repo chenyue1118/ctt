@@ -16,6 +16,16 @@
   |--订单搜索  http://182.61.175.203:8801/china-trains/train-check.html
 ```
 
+```
+  |--首页        http://182.61.175.203:8801/china-flights
+  |--订单搜索    http://182.61.175.203:8801/china-flights/flight-search.html
+  |--订单预定    http://182.61.175.203:8801/china-flights/flight-booking.html
+  |--订单支付    http://182.61.175.203:8801/china-flights/flight-pay.html
+  |--订单未支付  http://182.61.175.203:8801/china-flights/flight-nopay.html
+  |--订单详情    http://182.61.175.203:8801/china-flights/flight-details.html
+  |--订单列表    http://182.61.175.203:8801/china-flights/flight-order-list.html
+```
+
 ## 项目接口
   ### 首页
   热门城市
