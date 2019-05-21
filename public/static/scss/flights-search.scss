@@ -16,31 +16,11 @@
         .trip {
           position: relative;
           display: inline-block;
-          width: 60px;
-          height: 28px;
-          line-height: 28px;
-          margin-top: 9px;
-          margin-right: 20px;
-          text-align: center;
-          font-size: 18px;
-          color: #fff;
-          font-weight: 500;
-          background: #D80909;
-          border-radius: 2px;
+          width: 80px;
+          height: 46px;
+          background: url(../image/flights/icon-flight-trip.png) no-repeat left center;
+          background-size: 68px 28px;
           vertical-align: top;
-          &:after {
-            position: absolute;
-            top: 6px;
-            right: -6px;
-            z-index: 111;
-            content: "";
-            display: block;
-            width: 0;
-            height: 0;
-            border-left: 6px solid #D80909;
-            border-top: 6px solid transparent;
-            border-bottom: 4px solid transparent;
-          }
         }
         .trip-from-wra, .trip-to-wra {
           position: relative;
@@ -354,7 +334,7 @@
                 display: inline-block;
                 width: 30px;
                 height: 22px;
-                background: pink;
+                background: url(../image/flights/icon-flight-number.png) no-repeat center;
                 vertical-align: top;
               }
               .txt-flight-name {

@@ -51,31 +51,11 @@
               .index {
                 position: relative;
                 display: inline-block;
-                width: 60px;
-                height: 28px;
-                line-height: 28px;
-                margin-top: 9px;
-                margin-right: 20px;
-                text-align: center;
-                font-size: 18px;
-                color: #fff;
-                font-weight: 500;
-                background: #D80909;
-                border-radius: 2px;
+                width: 80px;
+                height: 48px;
+                background: url(../image/flights/icon-flight-trip.png) no-repeat left center;
+                background-size: 68px 28px;
                 vertical-align: top;
-                &:after{
-                  position: absolute;
-                  top: 8px;
-                  right: -6px;
-                  z-index: 111;
-                  content: "";
-                  display: block;
-                  width: 0;
-                  height: 0;
-                  border-left: 6px solid #D80909;
-                  border-top: 6px solid transparent;
-                  border-bottom: 4px solid transparent;
-                }
               }
               .date {
                 display: inline-block;
@@ -207,7 +187,7 @@
                   display: inline-block;
                   width: 30px;
                   height: 22px;
-                  background: pink;
+                  background: url(../image/flights/icon-flight-number.png) no-repeat center;
                   vertical-align: top;
                 }
                 .txt-flight-name {
@@ -375,6 +355,7 @@
                 height: 36px;
                 border: 1px solid #DBDBDB;
                 margin-right: 20px;
+                text-indent: 1em;
               }
             }
           }
@@ -387,6 +368,132 @@
             .spe-num {
               color: #D80909;
             }
+          }
+        }
+      }
+    }
+    .traveler-info {
+      margin-top: 30px;
+      padding: 32px 46px 36px 46px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+      .title {
+        height: 32px;
+        line-height: 20px;
+        font-size: 20px;
+        color: #000018;
+        font-weight: 500;
+        border-bottom: 1px solid #DBDBDB;
+      }
+      .desc {
+        padding: 30px 0;
+        line-height: 16px;
+        font-size: 16px;
+        color: #000018;
+      }
+      .traveler-head {
+        width: 100%;
+        border: 1px solid #DBDBDB;
+        background: #FBF3F1;
+        font-size: 0;
+        .item {
+          display: inline-block;
+          width: 130px;
+          padding: 14px 0 12px 0;
+          line-height: 14px;
+          font-size: 16px;
+          color: #000018;
+          font-weight: 500;
+        }
+        .item:nth-child(2) {
+          width: 120px;
+        }
+        .item:nth-child(3) {
+          width: 182px;
+        }
+        .item:nth-child(4) {
+          width: 234px;
+        }
+        .item:nth-child(5) {
+          width: 150px;
+        }
+        .item:nth-child(6) {
+          width: 170px;
+        }
+      }
+      .traveler-body {
+        width: 100%;
+        padding-bottom: 18px;
+        border: 1px solid #DBDBDB;
+        border-top: none;
+        background: #F4F4F4;
+        .item {
+          width: 100%;
+          padding-top: 20px;
+          font-size: 0;
+          .type {
+            display: inline-block;
+            width: 130px;
+            padding: 10px 0 12px 40px;
+            color: #333333;
+            font-size: 18px;
+            vertical-align: top;
+          }
+          .item-sur {
+            display: inline-block;
+            width: 110px;
+            margin-right: 10px;
+            border: 1px solid #DBDBDB;
+            border-radius: 2px;
+            padding: 12px 0;
+            text-indent: 12px;
+            font-size: 14px;
+            color: #333333;
+            word-break: break-all;
+            word-wrap: break-word;
+          }
+          .item-giv {
+            display: inline-block;
+            width: 170px;
+            margin-right: 10px;
+            border: 1px solid #DBDBDB;
+            border-radius: 2px;
+            padding: 12px 0;
+            text-indent: 12px;
+            font-size: 14px;
+            color: #333333;
+          }
+          .item-nat {
+            display: inline-block;
+            width: 224px;
+            margin-right: 10px;
+            border: 1px solid #DBDBDB;
+            border-radius: 2px;
+            padding: 12px 0;
+            text-indent: 12px;
+            font-size: 14px;
+            color: #333333;
+          }
+          .item-pas {
+            display: inline-block;
+            width: 140px;
+            margin-right: 10px;
+            border: 1px solid #DBDBDB;
+            border-radius: 2px;
+            padding: 12px 0;
+            text-indent: 12px;
+            font-size: 14px;
+            color: #333333;
+          }
+          .item-bir {
+            display: inline-block;
+            width: 170px;
+            border: 1px solid #DBDBDB;
+            border-radius: 2px;
+            padding: 12px 0;
+            text-indent: 12px;
+            font-size: 14px;
+            color: #333333;
           }
         }
       }
