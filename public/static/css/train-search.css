@@ -24,7 +24,7 @@
           font-size: 18px;
           color: #fff;
           font-weight: 500;
-          background: #D80909;
+          background: #D9D9D9;
           border-radius: 2px;
           vertical-align: top; }
           .train-search_ .search-trip-wra .head .item .trip:after {
@@ -36,7 +36,7 @@
             display: block;
             width: 0;
             height: 0;
-            border-left: 6px solid #D80909;
+            border-left: 6px solid #D9D9D9;
             border-top: 6px solid transparent;
             border-bottom: 4px solid transparent; }
         .train-search_ .search-trip-wra .head .item .trip-from-wra, .train-search_ .search-trip-wra .head .item .trip-to-wra {
@@ -91,7 +91,7 @@
             height: 32px;
             background: url(../image/icon-date.png) no-repeat center; }
         .train-search_ .search-trip-wra .head .item .trip-search {
-          display: inline-block;
+          display: none;
           height: 46px;
           line-height: 46px;
           padding: 0 28px;
@@ -107,6 +107,14 @@
             background: url(../image/icon-search.png) no-repeat center;
             margin-left: 12px;
             vertical-align: top; }
+      .train-search_ .search-trip-wra .head .active .trip {
+        background: #D80909; }
+        .train-search_ .search-trip-wra .head .active .trip:after {
+          border-left: 6px solid #D80909;
+          border-top: 6px solid transparent;
+          border-bottom: 4px solid transparent; }
+      .train-search_ .search-trip-wra .head .active .trip-search {
+        display: inline-block; }
   .train-search_ .search-detail-wra {
     width: 100%;
     background: #fff; }

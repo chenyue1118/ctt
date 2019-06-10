@@ -58,7 +58,7 @@
     <div class="train-search_">
       <div class="search-trip-wra">
         <ul class="head">
-          <li class="item">
+          <!-- <li class="item">
             <span class="trip">Trip1</span>
             <div class="trip-from-wra">
               <input class="trip-from" type="text" placeholder="From">
@@ -73,7 +73,23 @@
               Find Train
               <i class="find-icon"></i>
             </a>
-          </li>
+          </li> -->
+          <!-- <li class="item">
+            <span class="trip">Trip1</span>
+            <div class="trip-from-wra">
+              <input class="trip-from" type="text" placeholder="From">
+            </div>
+            <div class="trip-to-wra">
+              <input class="trip-to" type="text" placeholder="To">
+            </div>
+            <div class="trip-time-wra">
+              <input class="trip-time" type="text" placeholder="DepartDate">
+            </div>
+            <a class="trip-search">
+              Find Train
+              <i class="find-icon"></i>
+            </a>
+          </li> -->
         </ul>
       </div>
       <div class="search-detail-wra">
@@ -81,9 +97,9 @@
           <div class="detail">
             <i class="icon-sea"></i>
             <span class="trip">Trip1</span>
-            <span class="detail-address">Beijing</span>
+            <span class="detail-address detail-address-from">Beijing</span>
             <i class="icon-detail-to"></i>
-            <span class="detail-address">Beijing</span>
+            <span class="detail-address detail-address-to">Beijing</span>
             <div class="total">
               Total Results: <span class="num">0</span>
             </div>
@@ -197,7 +213,7 @@
             <li class="item"><span class="txt"></span></li>
           </ul>
           <ul class="result-content">
-            <li class="item">
+            <!-- <li class="item">
               <span class="train-number">G412</span>
               <div class="lines">
                 <span class="from"></span>
@@ -275,7 +291,7 @@
                 <a class="btn">Continue</a>
                 <a class="btn">Continue</a>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -423,6 +439,9 @@
     <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
     <script type="text/javascript" src="../static/js/app/common.js"></script>
     <script type="text/javascript" src="../static/js/app/train-search.js"></script>
   </body>

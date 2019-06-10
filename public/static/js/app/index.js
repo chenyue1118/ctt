@@ -2,6 +2,18 @@ $(function() {
   var train_station    = [];        //所有车站
   var train_station_py = [];        //所有车站拼音
 
+  $.ajax({
+    url: APIURL + "/api/TrainStation?" + getSign("get"),
+    dataType: "json",
+    type: "get",
+    success: function(data) {
+      console.log(data);
+    },
+    error: function(err) {
+      console.log(err);
+    }
+  })
+
   init();
   queryHotCity(); // 获取热门城市
   showInternationalRoutes();  // 国际路线
@@ -84,6 +96,7 @@ $(function() {
       })
     }
     console.log(arr);
+    sessionStorage.setItem("trainInfo", JSON.stringify(arr));
     location.href = "china-trains/train-search.html";
   });
 
@@ -282,11 +295,11 @@ $(function() {
   }
 
   // 车站首字母大写    正则法
-  function firstCap(str){
-    str = str.toLowerCase();
-    var reg = /\b(\w)|\s(\w)/g; //  \b判断边界\s判断空格
-    return str.replace(reg,function(m){
-      return m.toUpperCase()
-    });
-  }
+  // function firstCap(str){
+  //   str = str.toLowerCase();
+  //   var reg = /\b(\w)|\s(\w)/g; //  \b判断边界\s判断空格
+  //   return str.replace(reg,function(m){
+  //     return m.toUpperCase()
+  //   });
+  // }
 });

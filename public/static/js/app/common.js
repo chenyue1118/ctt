@@ -43,6 +43,15 @@ function getTime(index){
   }
 }
 
+// 车站首字母大写    正则法
+function firstCap(str){
+  str = str.toLowerCase();
+  var reg = /\b(\w)|\s(\w)/g; //  \b判断边界\s判断空格
+  return str.replace(reg,function(m){
+    return m.toUpperCase()
+  });
+}
+
 $(function() {
   $(".home-icon").on("click", function() {
     location.href = "/";
