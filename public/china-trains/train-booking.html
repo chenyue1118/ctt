@@ -170,7 +170,7 @@
                 <ul class="types">
                   <li class="type">
                     <span class="name">Adults</span>
-                    <select class="number">
+                    <select class="number adults-select">
                       <option>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -188,7 +188,7 @@
                   </li>
                   <li class="type">
                     <span class="name">Children</span>
-                    <select class="number">
+                    <select class="number children-select">
                       <option>0</option>
                       <option>1</option>
                       <option>2</option>
@@ -243,34 +243,33 @@
             <li class="item">ID Types</li>
             <li class="item">ID Number</li>
           </ul>
-          <ul class="passenger-info">
-            <li class="item">
+          <ul class="passenger-info adult-info">
+            <li class="item item-adult">
               <span class="adu">Adults1.</span>
               <input class="sur" type="text">
               <input class="name" type="text">
               <select class="type">
-                <option value="1">Passport</option>
+                <option value="1">Chinese ID Card</option>
+                <option value="C">Mainland Travel Permit for HK/Macau Residents</option>
+                <option value="B" selected>Passport</option>
+                <option value="G">Mainland Travel Permit for Taiwan Residents</option>
               </select>
               <input class="number" type="text" name="" value="">
             </li>
-            <li class="item">
-              <span class="adu">Adults1.</span>
-              <input class="sur" type="text">
-              <input class="name" type="text">
-              <select class="type">
-                <option value="1">Passport</option>
-              </select>
-              <input class="number" type="text" name="" value="">
-            </li>
-            <li class="item item-child">
+          </ul>
+          <ul class="passenger-info child-info">
+            <!-- <li class="item item-child">
               <span class="adu">Child.</span>
               <input class="sur" type="text">
               <input class="name" type="text">
               <select class="type">
-                <option value="1">Passport</option>
+                <option value="1">Chinese ID Card</option>
+                <option value="C">Mainland Travel Permit for HK/Macau Residents</option>
+                <option value="B" selected>Passport</option>
+                <option value="G">Mainland Travel Permit for Taiwan Residents</option>
               </select>
               <input class="number" type="text" name="" value="">
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="collection">
@@ -334,7 +333,7 @@
             </li>
           </ul>
         </div>
-        <div class="select-seat">
+        <!-- <div class="select-seat">
           <h3 class="title">Select Seats For Free</h3>
           <p class="seat-desc">We will try our best to obtain the selected seats for you. If your first choice is not available, we will book other seats to guarantee your trip.</p>
           <div class="seat-type">
@@ -366,7 +365,7 @@
               <span class="win">Window</span>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="contact-book">
           <h3 class="title">Contact Information</h3>
           <ul class="contact-infos">
