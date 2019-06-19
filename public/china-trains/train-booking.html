@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
     <link rel="stylesheet" href="../static/css/train-booking.css">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -276,8 +277,8 @@
           <h3 class="title">* Ticket Collection</h3>
           <ul class="collection-types">
             <li class="item coll-myself">
-              <div class="head">
-                <i class="icon-coll"></i>
+              <div class="head active">
+                <i class="icon-coll" data-type=1></i>
                 <p class="txt">Collect the ticket(s) by myself</p>
                 <a class="tips">
                   HOW
@@ -301,34 +302,34 @@
             </li>
             <li class="item coll-hotel">
               <div class="head">
-                <i class="icon-coll"></i>
+                <i class="icon-coll" data-type=2></i>
                 <p class="txt">Deliver to my China hotel (US$7 per time)</p>
               </div>
               <div class="deliver-hotel">
-                <input class="deliver-item" type="text" placeholder="* Hotel Name">
-                <input class="deliver-item" type="text" placeholder="* Hotel Address">
-                <input class="deliver-item" type="text" placeholder="* Hotel Phone No. ">
-                <input class="deliver-item" type="text" placeholder="* Booking Agency / Website">
-                <input class="deliver-item" type="text" placeholder="* Booking Name">
+                <input class="deliver-item HotelName" type="text" placeholder="* Hotel Name">
+                <input class="deliver-item HotelAddress" type="text" placeholder="* Hotel Address">
+                <input class="deliver-item HotelPhone" type="text" placeholder="* Hotel Phone No. ">
+                <input class="deliver-item" type="text" placeholder="Booking Agency / Website">
+                <input class="deliver-item BookName" type="text" placeholder="* Booking Name">
                 <div class="deliver-item-spe">
                   <div class="deliver-date-wra">
-                    <input class="deliver-date" type="text"placeholder="* Check In Date">
+                    <input class="deliver-date CheckInDate" type="text"placeholder="* Check In Date">
                   </div>
                   <div class="deliver-date-wra">
-                    <input class="deliver-date" type="text"placeholder="* Check Out Date">
+                    <input class="deliver-date CheckOutDate" type="text"placeholder="* Check Out Date">
                   </div>
                 </div>
               </div>
             </li>
             <li class="item coll-address">
               <div class="head">
-                <i class="icon-coll"></i>
+                <i class="icon-coll" data-type=3></i>
                 <p class="txt">Deliver to a personal address in China (US$7 per time)</p>
               </div>
               <div class="deliver-per-address">
-                <input class="per-address" type="text" placeholder="* Delivery Address">
-                <input class="per-name" type="text" placeholder="* Receiver's Name">
-                <input class="per-phone" type="text" placeholder="* Phone Number">
+                <input class="per-address HomeAddress" type="text" placeholder="* Delivery Address">
+                <input class="per-name ReceiverName" type="text" placeholder="* Receiver's Name">
+                <input class="per-phone ReceiverPhone" type="text" placeholder="* Phone Number">
               </div>
             </li>
           </ul>
@@ -375,11 +376,11 @@
             </li>
             <li class="item">
               <span class="tit">Email</span>
-              <input class="val" type="text">
+              <input class="val book-email" type="text">
             </li>
             <li class="item">
               <span class="tit">Phone No.</span>
-              <input class="val" type="text">
+              <input class="val book-phone" type="text">
             </li>
             <li class="item">
               <span class="tit">Nationality</span>

@@ -401,7 +401,8 @@
               width: 20px;
               height: 38px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
-              vertical-align: top; }
+              vertical-align: top;
+              cursor: pointer; }
             .booking_ .booking-wrapper .collection .collection-types .coll-myself .head .txt {
               display: inline-block;
               padding: 0 14px;
@@ -456,6 +457,8 @@
                     border-bottom: 12px solid #fff;
                     border-left: 12px solid transparent;
                     border-right: 12px solid transparent; }
+          .booking_ .booking-wrapper .collection .collection-types .coll-myself .active .icon-coll {
+            background: url(../image/icon-type-select.png) no-repeat top center; }
           .booking_ .booking-wrapper .collection .collection-types .coll-myself .prompt {
             padding-left: 34px;
             font-size: 0; }
@@ -482,7 +485,8 @@
               width: 20px;
               height: 20px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
-              vertical-align: top; }
+              vertical-align: top;
+              cursor: pointer; }
             .booking_ .booking-wrapper .collection .collection-types .coll-hotel .head .txt {
               display: inline-block;
               height: 20px;
@@ -490,6 +494,8 @@
               font-size: 20px;
               color: #333333;
               padding-left: 16px; }
+          .booking_ .booking-wrapper .collection .collection-types .coll-hotel .active .icon-coll {
+            background: url(../image/icon-type-select.png) no-repeat top center; }
           .booking_ .booking-wrapper .collection .collection-types .coll-hotel .deliver-hotel {
             border-top: 1px solid #DBDBDB;
             padding: 2px 68px 30px 68px;
@@ -545,7 +551,8 @@
               width: 20px;
               height: 20px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
-              vertical-align: top; }
+              vertical-align: top;
+              cursor: pointer; }
             .booking_ .booking-wrapper .collection .collection-types .coll-address .head .txt {
               display: inline-block;
               height: 20px;
@@ -553,6 +560,8 @@
               font-size: 20px;
               color: #333333;
               padding-left: 16px; }
+          .booking_ .booking-wrapper .collection .collection-types .coll-address .active .icon-coll {
+            background: url(../image/icon-type-select.png) no-repeat top center; }
           .booking_ .booking-wrapper .collection .collection-types .coll-address .deliver-per-address {
             border-top: 1px solid #DBDBDB;
             padding: 22px 138px 30px 68px;

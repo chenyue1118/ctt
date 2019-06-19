@@ -3,7 +3,10 @@ $(function(){
   if (orderInfo) orderInfo = JSON.parse(orderInfo);
   var train_station = [];
   var train_station_py = [];
-  var serviceFee = 10;    // 服务费
+  var serviceFee = 10;      // 服务费
+  var delivery_method = 1;  // 票送方式
+
+  console.log(orderInfo);
 
   getStation();
   init();
@@ -22,6 +25,204 @@ $(function(){
     numChange(adultsNum, childrenNum);
     priceChange(adultsNum, childrenNum)
   });
+
+  // 票送方式选择
+  $(".collection-types .item .head .icon-coll").on("click", function() {
+    $(".collection-types .item .head").removeClass("active");
+    $(this).parents(".head").addClass("active");
+    delivery_method = $(this).attr("data-type");
+  });
+
+  // 居住酒店日期
+  $(".deliver-date-wra .deliver-date").datepicker({
+    numberOfMonths: 2,
+    showButtonPanel: false,
+    dateFormat: 'dd.MM.yy',
+    showAnim: 'slideDown',
+    minDate: +0
+  });
+
+  // 提交订单
+  $(".sub-book-btn").on("click", function() {
+    // adult-info
+    // 获取乘客信息
+    var passengers = [];
+    for (var i = 0; i < $(".adult-info .item-adult").length; i++) {
+      var index = parseInt(i) + 1;
+      var sunshuan = $(".adult-info .item-adult:eq("+i+") .sur").val();
+      var given = $(".adult-info .item-adult:eq("+i+") .name").val();
+      var type = $(".adult-info .item-adult:eq("+i+") .type").val();
+      var number = $(".adult-info .item-adult:eq("+i+") .number").val();
+      if (!sunshuan) {
+        $(".adult-info .item-adult:eq("+i+") .sur").focus();
+        return false;
+        break;
+      }
+      if (!given) {
+        $(".adult-info .item-adult:eq("+i+") .name").focus();
+        return false;
+        break;
+      }
+      if (!number) {
+        $(".adult-info .item-adult:eq("+i+") .number").focus();
+        return false;
+        break;
+      }
+      passengers.push({
+        "passengerid": index,
+        "passengersename": sunshuan + "" + given,
+        "piaotype": 1,
+        "piaotypename": "成人票",
+        "passporttypeseid": type,
+        "passporttypeseidname": getCertEn(type),
+        "passportseno": number,
+        "price": number,
+        "zwcode": orderInfo[0].train_zwcode,
+        "zwname": getSeatName(orderInfo[0].train_zwcode)
+      })
+    }
+    // 获取儿童票
+    for (var i = 0; i < $(".child-info .item-child").length; i++) {
+      var index = parseInt(passengers.length) + parseInt(i) + 1;
+      var sunshuan = $(".child-info .item-child:eq("+i+") .sur").val();
+      var given = $(".child-info .item-child:eq("+i+") .name").val();
+      var type = $(".child-info .item-child:eq("+i+") .type").val();
+      var number = $(".child-info .item-child:eq("+i+") .number").val();
+      if (!sunshuan) {
+        $(".child-info .item-child:eq("+i+") .sur").focus();
+        return false;
+        break;
+      }
+      if (!given) {
+        $(".child-info .item-child:eq("+i+") .name").focus();
+        return false;
+        break;
+      }
+      if (!number) {
+        $(".child-info .item-child:eq("+i+") .number").focus();
+        return false;
+        break;
+      }
+      passengers.push({
+        "passengerid": index,
+        "passengersename": sunshuan + "" + given,
+        "piaotype": 2,
+        "piaotypename": "儿童票",
+        "passporttypeseid": type,
+        "passporttypeseidname": getCertEn(type),
+        "passportseno": number,
+        "price": number,
+        "zwcode": orderInfo[0].train_zwcode,
+        "zwname": getSeatName(orderInfo[0].train_zwcode)
+      })
+    }
+    // 获取票送方式 和地址
+    var delivery_address = {};
+    if (delivery_method == 2) {
+      var HotelName = $(".HotelName").val();
+      var HotelAddress = $(".HotelAddress").val();
+      var HotelPhone = $(".HotelPhone").val();
+      var BookName = $(".BookName").val();
+      var CheckInDate = $(".CheckInDate").val();
+      var CheckOutDate = $(".CheckOutDate").val();
+      if (!HotelName) {
+        $(".HotelName").focus();
+        return false;
+      }
+      if (!HotelAddress) {
+        $(".HotelAddress").focus();
+        return false;
+      }
+      if (!HotelPhone) {
+        $(".HotelPhone").focus();
+        return false;
+      }
+      if (!BookName) {
+        $(".BookName").focus();
+        return false;
+      }
+      if (!CheckInDate) {
+        $(".CheckInDate").focus();
+        return false;
+      }
+      if (!CheckOutDate) {
+        $(".CheckOutDate").focus();
+        return false;
+      }
+      delivery_address.HotelName = HotelName;
+      delivery_address.HotelAddress = HotelAddress;
+      delivery_address.HotelPhone = HotelPhone;
+      delivery_address.BookName = BookName;
+      delivery_address.CheckInDate = CheckInDate;
+      delivery_address.CheckOutDate = CheckOutDate;
+    } else if (delivery_method == 3) {
+      var HomeAddress = $(".HomeAddress").val();
+      var ReceiverName = $(".ReceiverName").val();
+      var ReceiverPhone = $(".ReceiverPhone").val();
+      if (!HomeAddress) {
+        $(".HomeAddress").focus();
+        return false;
+      }
+      if (!ReceiverName) {
+        $(".ReceiverName").focus();
+        return false;
+      }
+      if (!ReceiverPhone) {
+        $(".ReceiverPhone").focus();
+        return false;
+      }
+      delivery_address.HomeAddress = HomeAddress;
+      delivery_address.ReceiverName = ReceiverName;
+      delivery_address.ReceiverPhone = ReceiverPhone;
+    }
+    var email_ = $(".book-email").val();
+    var phone_number_ = $(".book-phone").val();
+    if (!email_) {
+      $(".book-email").focus();
+      return false;
+    }
+    if (!phone_number_) {
+      $(".book-phone").focus();
+      return false;
+    }
+    var data_ = {
+      "token": null,
+      "train_date": orderInfo[0].train_time.substr(0,4)+"-"+orderInfo[0].train_time.substr(4,2)+"-"+orderInfo[0].train_time.substr(6,2),
+      "is_accept_standing": "no",
+      "choose_seats": "",
+      "from_station_name": codeGetPy(orderInfo[0].train_from),
+      "from_station_code": orderInfo[0].train_from,
+      "to_station_name": codeGetPy(orderInfo[0].train_to),
+      "to_station_code": orderInfo[0].train_to,
+      "checi": orderInfo[0].train_code,
+      "passengers": passengers,
+      "start_time":  orderInfo[0].start_time,
+      "arrive_time": orderInfo[0].arrive_time,
+      "run_time": orderInfo[0].run_time,
+      "run_time_minute": orderInfo[0].run_time_minute,
+      "arrive_days": orderInfo[0].arrive_days,
+      "distance": orderInfo[0].distance,
+      "delivery_method": delivery_method,
+      "delivery_address": delivery_address,
+      "email": email_,
+      "phone_number": phone_number_
+    }
+    data_ = Object.assign(data_, getSign("post"))
+    console.log(data_);
+    $.ajax({
+      url:  APIURL + "/api/order/create",
+      data: data_,
+      dataType: 'json',
+      type: 'post',
+      success: function(data) {
+        if (data.code == 1) {
+          location.href = 'train-pay.html?id=' + data.data.order_number
+        } else {
+          alert("Failure to submit an order")
+        }
+      }
+    })
+  })
 
   // ===========================================================
   // TODO:发送数据
@@ -57,8 +258,18 @@ $(function(){
       "run_time_minute": 357,
       "arrive_days": 0,
       "distance": 120,
-      "delivery_method": 1,
-      "delivery_address": "BEIJING",
+      "delivery_method": 2,
+      "delivery_address": {
+        "HotelName": "dsadsa",
+        "HotelAddress": "dsada",
+        "HotelPhone": 123456,
+        "BookName": "dsadas",
+        "CheckInDate": "2019-01-10",
+        "CheckOutDate": "2019-01-10",
+        "HomeAddress": "",
+        "ReceiverName": "",
+        "ReceiverPhone": ""
+      },
       "email": "1023581658@qq.com",
       "phone_number": "15600121178",
     }
@@ -80,7 +291,7 @@ $(function(){
   Search()
   function Search() {
     $.ajax({
-      url: APIURL + "/api/order/queryV2?order_number="+"CTT20190619002941853"+"&email="+"1023581658@qq.com"+"&phone_number=" +"15600121178"+ getSign("get"),
+      url: APIURL + "/api/order/queryV2?order_number="+"CTT20190620011807591"+"&email="+"1023581658@qq.com"+"&phone_number=" +"123456"+ getSign("get"),
       dataType: "json",
       type: "get",
       success: function(data) {
@@ -314,6 +525,57 @@ $(function(){
         break;
     }
     return seat;
+  }
+
+  // code 获取证件类型
+  function getCertEn(code) {
+    var str;
+    if(code == "1"){
+      str = "二代身份证";
+    }else if(code == "C"){
+      str = "港澳通行证";
+    }else if(code == "B"){
+      str = "护照";
+    }else if(code == "G"){
+      str = "台湾通行证";
+    }
+    return str;
+  }
+
+  //根据座位简码获取座位名称 M --> 一等座
+  function getSeatName(code){
+    var str = "";
+    var code = ""+code;
+    switch (code) {
+      case "F":
+        str = "动卧";
+        break;
+      case "9":
+        str = "商务座";
+        break;
+      case "P":
+        str = "特等座";
+        break;
+      case "M":
+        str = "一等座";
+        break;
+      case "O":
+        str = "二等座";
+        break;
+      case "4":
+        str = "软卧";
+        break;
+      case "3":
+        str = "硬卧";
+        break;
+      case "2":
+        str = "软座";
+        break;
+      case "1":
+        str = "硬座";
+        break;
+    }
+    return str;
   }
 
 });

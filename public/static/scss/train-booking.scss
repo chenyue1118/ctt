@@ -478,6 +478,7 @@
               height: 38px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
               vertical-align: top;
+              cursor: pointer;
             }
             .txt {
               display: inline-block;
@@ -544,6 +545,11 @@
               }
             }
           }
+          .active {
+            .icon-coll {
+              background: url(../image/icon-type-select.png) no-repeat top center;
+            }
+          }
           .prompt {
             padding-left: 34px;
             font-size: 0;
@@ -575,6 +581,7 @@
               height: 20px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
               vertical-align: top;
+              cursor: pointer;
             }
             .txt {
               display: inline-block;
@@ -583,6 +590,11 @@
               font-size: 20px;
               color: #333333;
               padding-left: 16px;
+            }
+          }
+          .active {
+            .icon-coll {
+              background: url(../image/icon-type-select.png) no-repeat top center;
             }
           }
           .deliver-hotel {
@@ -649,6 +661,7 @@
               height: 20px;
               background: url(../image/icon-type-select-no.png) no-repeat top center;
               vertical-align: top;
+              cursor: pointer;
             }
             .txt {
               display: inline-block;
@@ -657,6 +670,11 @@
               font-size: 20px;
               color: #333333;
               padding-left: 16px;
+            }
+          }
+          .active {
+            .icon-coll {
+              background: url(../image/icon-type-select.png) no-repeat top center;
             }
           }
           .deliver-per-address {
