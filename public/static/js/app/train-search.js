@@ -11,12 +11,24 @@ $(function() {
 
   var trainInfo = sessionStorage.getItem("trainInfo");
   if (trainInfo) trainInfo = JSON.parse(trainInfo);
-  if (trainInfo && trainInfo.length > 0) showTrainSelectInfo(trainInfo);
+  if (trainInfo && trainInfo.length > 0) {
+    showTrainSelectInfo(trainInfo);
+  } else {
+    trainInfo = [{
+      from: '',
+      to: '',
+      time: ''
+    }];
+  }
 
   // 初始化车次查询
   init();
 
-  $(".search-noresult-wra").hide();
+  // 车次搜索初始化
+  trainInit();
+
+
+  // $(".search-noresult-wra").hide();
   // TODO: 2019-05-10  根据时间渲染
   // showTimeList('2019-05-10')
 
@@ -75,30 +87,82 @@ $(function() {
       "train_price": train_price,
       "train_zwcode": train_zwcode
     });
-    ss_index = ss_index + 1;
-    if (trainInfo && trainInfo.length > ss_index) {
-      trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
-      showTimeList(trainInfo[ss_index].time);
-      $(".search-trip-wra .item").removeClass("active");
-      $(".search-trip-wra .item:eq("+ss_index+")").addClass("active");
-    } else {
+    // ss_index = ss_index + 1;
+    // if (trainInfo && trainInfo.length > ss_index) {
+    //   trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
+    //   showTimeList(trainInfo[ss_index].time);
+    //   $(".search-trip-wra .item").removeClass("active");
+    //   $(".search-trip-wra .item:eq("+ss_index+")").addClass("active");
+    // } else {
       console.log(orderInfo);
       alert("下订单页面");
       sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
       location.href = "train-booking.html";
-    }
+    // }
     // sessionStorage.setItem("orderInfoPara",JSON.stringify(orderInfoPara));
   });
 
   // 车次搜索
   $(".search-trip-wra").on("click", ".trip-search", function() {
-    trainInfo[ss_index].from = $(this).parents(".item").find(".trip-from").attr("data-code");
-    trainInfo[ss_index].to = $(this).parents(".item").find(".trip-to").attr("data-code");
-    trainInfo[ss_index].time = $(this).parents(".item").find(".trip-time").val();
+    trainInfo[ss_index].from = $("#search-train-from").attr("data-code");
+    trainInfo[ss_index].to = $("#search-train-to").attr("data-code");
+    trainInfo[ss_index].time = $("#search-train-time").val();
+    // trainInfo[ss_index].from = $(this).parents(".item").find(".trip-from").attr("data-code");
+    // trainInfo[ss_index].to = $(this).parents(".item").find(".trip-to").attr("data-code");
+    // trainInfo[ss_index].time = $(this).parents(".item").find(".trip-time").val();
     init();
   });
 
+  // 数据筛选
+  $("input[name='trainType']").on("change", function() {
+    console.log($(this).val());
+    console.log($(this).prop("checked"));
+    if ($(this).val() == 'all') {
+      $("input[name='trainType']").prop("checked", $(this).prop("checked"));
+    }
+  });
+
   // ==========================================================
+  // 初始化数据
+  function trainInit() {
+    // 车站数据
+    var station_name_arr = station_names.split("|");
+    for(var i=0;i< parseInt((station_name_arr.length-1) / 5);i++){
+      train_station.push({
+        "name": station_name_arr[i*5+1],
+        "code": station_name_arr[i*5+2],
+        "pinyin": station_name_arr[i*5+3]
+      });
+      // train_station_py.push(station_name_arr[i*5+3]);
+      train_station_py.push({
+        label: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")",
+        value: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")"
+      });
+    }
+    // 日期初始化
+    $("#search-train-time").datepicker({
+      numberOfMonths: 2,
+      showButtonPanel: false,
+      dateFormat: 'yy-mm-dd',
+      showAnim: 'slideDown',
+      minDate: +0
+    });
+    // 起点初始化
+    $("#search-train-from").autocomplete({
+      source: train_station_py,
+      select: function(event,ui) {
+        setTrainCode(ui.item.value, $("#search-train-from"));
+      }
+    });
+    // 终点初始化
+    $("#search-train-to").autocomplete({
+      source: train_station_py,
+      select: function(event,ui) {
+        setTrainCode(ui.item.value, $("#search-train-to"));
+      }
+    });
+  }
+
   //获取所有的车站信息
   function getStation(){
     // 车站数据
@@ -122,37 +186,49 @@ $(function() {
     if (trainInfo && trainInfo.length) {
       trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
       showTimeList(trainInfo[ss_index].time);
+    } else {
+
     }
   }
 
   // 展示搜索信息列表
   function showTrainSelectInfo(trainInfo) {
-    var str = "";
-    trainInfo && trainInfo.forEach(function(item, index) {
-      var index_ = index + 1;
-      var active = index == ss_index ? 'active': '';
-      str += '<li class="item '+active+'">'
-        +'<span class="trip">Trip'+index_+'</span>'
-        +'<div class="trip-from-wra">'
-          +'<input class="trip-from" type="text" placeholder="From" data-code="'+item.from+'" value="'+codeGetPy(item.from, "en")+'">'
-        +'</div>'
-        +'<div class="trip-to-wra">'
-          +'<input class="trip-to" type="text" placeholder="To" data-code="'+item.to+'" value="'+codeGetPy(item.to, "en")+'">'
-        +'</div>'
-        +'<div class="trip-time-wra">'
-          +'<input class="trip-time" type="text" placeholder="DepartDate" value="'+item.time+'">'
-        +'</div>'
-        +'<a class="trip-search">'
-          +'Find Train'
-          +'<i class="find-icon"></i>'
-        +'</a>'
-      +'</li>';
-    })
-    $(".search-trip-wra .head").html(str);
+    if (trainInfo && trainInfo.length > 0) {
+      $(".search-trip-wra .head .active .trip-from").val(codeGetPy(trainInfo[0].from, "en"));
+      $(".search-trip-wra .head .active .trip-from").attr("data-code", trainInfo[0].from);
+      $(".search-trip-wra .head .active .trip-to").val(codeGetPy(trainInfo[0].to, "en"));
+      $(".search-trip-wra .head .active .trip-to").attr("data-code", trainInfo[0].to);
+      $(".search-trip-wra .head .active .trip-time").val(trainInfo[0].time);
+    }
+    // var str = "";
+    // trainInfo && trainInfo.forEach(function(item, index) {
+    //   var index_ = index + 1;
+    //   var active = index == ss_index ? 'active': '';
+    //   str += '<li class="item '+active+'">'
+    //     +'<span class="trip">Trip'+index_+'</span>'
+    //     +'<div class="trip-from-wra">'
+    //       +'<input class="trip-from" type="text" placeholder="From" data-code="'+item.from+'" value="'+codeGetPy(item.from, "en")+'">'
+    //     +'</div>'
+    //     +'<div class="trip-to-wra">'
+    //       +'<input class="trip-to" type="text" placeholder="To" data-code="'+item.to+'" value="'+codeGetPy(item.to, "en")+'">'
+    //     +'</div>'
+    //     +'<div class="trip-time-wra">'
+    //       +'<input class="trip-time" type="text" placeholder="DepartDate" value="'+item.time+'">'
+    //     +'</div>'
+    //     +'<a class="trip-search">'
+    //       +'Find Train'
+    //       +'<i class="find-icon"></i>'
+    //     +'</a>'
+    //   +'</li>';
+    // })
+    // $(".search-trip-wra .head").html(str);
   }
 
   // 车次查询
   function trainSearch(from, to, time, index) {
+    if (!from) return false;
+    if (!to) return false;
+    if (!time) return false;
     var index_ = parseInt(index) + 1;
     var url_ = APIURL + "/api/ticket/queryV2?from_station=" + from + "&to_station=" + to + "&train_date=" + time + "&" + getSign("get");
     $(".search-detail-wrapper .trip").html("Trip" + index_);
@@ -166,6 +242,7 @@ $(function() {
         if (data.code == 1) {
           $(".search-detail-wrapper .detail .num").html(data.data.length);
           if (data.data.length > 0) {
+            $(".search-noresult-wra").hide();
             train_data = data.data.slice(0);
             sel_train_data = data.data.slice(0);
             showTrian(train_data);
@@ -353,6 +430,25 @@ $(function() {
     var data_time = getYear + "-" + (getY > 9 ? getY : "0" + getY) + "-" +(getD > 9 ? getD : "0" + getD);
     var itemStr = '<li class="item '+active+'" data-time="'+data_time+'">'+getMonEn(getY)+' '+getD+','+getWeekEn(getW)+'</li>';
     $(".screen-time").append(itemStr);
+  }
+
+  // 根据城市信息来设置对应的CODE   Beijing(北京) --> BJP
+  function setTrainCode(value,dom){
+    var value = value.split("(")[1].split(")")[0];
+    var code = ZhGetCode(value);
+    dom.attr("data-code", code);
+  }
+
+  // 根据城市的中文来查询code
+  function ZhGetCode(zh){
+    var zh = zh;
+    var cityCode = "";
+    train_station.forEach(function(item){
+      if(item.name == zh){
+        cityCode = item.code;
+      }
+    });
+    return cityCode;
   }
 
   //转换月份  1 --> January

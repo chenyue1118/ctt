@@ -233,7 +233,8 @@
           .booking_ .booking-wrapper .mytrip .trips .personnel-price .personnel {
             display: inline-block;
             width: 702px;
-            font-size: 0; }
+            font-size: 0;
+            vertical-align: top; }
             .booking_ .booking-wrapper .mytrip .trips .personnel-price .personnel .types {
               padding-top: 18px;
               padding-left: 18px;

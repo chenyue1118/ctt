@@ -58,22 +58,22 @@
     <div class="train-search_">
       <div class="search-trip-wra">
         <ul class="head">
-          <!-- <li class="item">
+          <li class="item active">
             <span class="trip">Trip1</span>
             <div class="trip-from-wra">
-              <input class="trip-from" type="text" placeholder="From">
+              <input class="trip-from" id="search-train-from" type="text" placeholder="From">
             </div>
             <div class="trip-to-wra">
-              <input class="trip-to" type="text" placeholder="To">
+              <input class="trip-to" id="search-train-to" type="text" placeholder="To">
             </div>
             <div class="trip-time-wra">
-              <input class="trip-time" type="text" placeholder="DepartDate">
+              <input class="trip-time" id="search-train-time" type="text" placeholder="DepartDate">
             </div>
             <a class="trip-search">
               Find Train
               <i class="find-icon"></i>
             </a>
-          </li> -->
+          </li>
           <!-- <li class="item">
             <span class="trip">Trip1</span>
             <div class="trip-from-wra">
@@ -97,9 +97,9 @@
           <div class="detail">
             <i class="icon-sea"></i>
             <span class="trip">Trip1</span>
-            <span class="detail-address detail-address-from">Beijing</span>
+            <span class="detail-address detail-address-from"></span>
             <i class="icon-detail-to"></i>
-            <span class="detail-address detail-address-to">Beijing</span>
+            <span class="detail-address detail-address-to"></span>
             <div class="total">
               Total Results: <span class="num">0</span>
             </div>
@@ -118,43 +118,53 @@
             <li class="item">Apr 16,Wed</li>
           </ul>
           <ul class="screen-select">
-            <li class="item">
+            <li class="item ">
               <span class="type-name">Train Type:</span>
               <div class="select select-one">
-                <input type="checkbox" name="trainType"> All
+                <input type="checkbox" name="trainType" id="type-all" value="all">
+                <label for="type-all"> All</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType"> G/D/C Trains
+                <input type="checkbox" name="trainType" id="type-gdc" value="gdc">
+                <label for="type-gdc"> G/D/C Trains</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType"> Z/T/K Trains
+                <input type="checkbox" name="trainType" id="type-ztk" value="ztk">
+                <label for="type-ztk"> Z/T/K Trains</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType"> Other Trains
+                <input type="checkbox" name="trainType" id="type-other" value="other">
+                <label for="type-other"> Other Trains</label>
               </div>
-              <div class="select">
-                <input type="checkbox" name="trainType"> Available  Trains
-              </div>
+              <!-- <div class="select">
+                <input type="checkbox" name="trainType">
+                <label for="type-other"> Available  Trains</label>
+              </div> -->
             </li>
             <li class="item">
               <span class="type-name">Departure Time:</span>
               <div class="select select-one">
-                <input type="checkbox" name="departureTime" value="0"> All
+                <input type="checkbox" name="departureTime" value="0" id="time-all">
+                <label for="time-all"> All</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="1"> 00：00 -- 08：00
+                <input type="checkbox" name="departureTime" value="1" id="time-08">
+                <label for="time-08"> 00:00 -- 08:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="2"> 08：01 -- 12：00
+                <input type="checkbox" name="departureTime" value="2" id="time-12">
+                <label for="time-12"> 08:01 -- 12:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="3"> 12：01 -- 18：00
+                <input type="checkbox" name="departureTime" value="3" id="time-18">
+                <label for="time-18"> 12:01 -- 18:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="4"> 18：01 -- 23：59
+                <input type="checkbox" name="departureTime" value="4" id="time-24">
+                <label for="time-24"> 18:01 -- 23:59</label>
               </div>
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <span class="type-name">Departure Stations:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureStation" value="0"> All
@@ -165,8 +175,8 @@
               <div class="select">
                 <input type="checkbox" name="departureStation" value="2"> Beijing West
               </div>
-            </li>
-            <li class="item">
+            </li> -->
+            <!-- <li class="item">
               <span class="type-name">Arrival Stations:</span>
               <div class="select select-one">
                 <input type="checkbox" name="arrivalStation" value="0"> All
@@ -177,7 +187,7 @@
               <div class="select">
                 <input type="checkbox" name="arrivalStation" value="2"> Beijing West
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

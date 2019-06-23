@@ -52,6 +52,42 @@ function firstCap(str){
   });
 }
 
+// 获取座位
+function getSeat (type) {
+  var seat = "";
+  switch (type) {
+    case "O":
+      seat = "2nd Cls."
+      break;
+    case "M":
+      seat = "1nd Cls."
+      break;
+    case "9":
+      seat = "Business Cls"
+      break;
+    case "F":
+      seat = "CRH Berth"
+      break;
+    case "4":
+      seat = "Soft Sleeper"
+      break;
+    case "3":
+      seat = "Hard Sleeper"
+      break;
+    case "1":
+      seat = "Soft Seat"
+      break;
+  }
+  return seat;
+}
+
+// 获取url参数
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+
 $(function() {
   $(".home-icon").on("click", function() {
     location.href = "/";

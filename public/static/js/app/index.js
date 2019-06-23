@@ -107,6 +107,11 @@ $(function() {
     $(this).addClass("active");
     queryHotCityTargets(city);
   });
+
+  // 跳转订单搜索
+  $(".check-wra .check").on("click", function() {
+    location.href = "china-trains/train-check.html"
+  });
   // ==================================================
   // 初始化数据
   function init() {

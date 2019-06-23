@@ -137,6 +137,7 @@
             padding: 10px 0;
             text-align: right;
             .trip-add {
+              opacity: 0;
               display: inline-block;
               height: 40px;
               line-height: 38px;
@@ -150,6 +151,7 @@
               vertical-align: top;
             }
             .trip-del {
+              opacity: 0;
               display: inline-block;
               height: 40px;
               line-height: 38px;

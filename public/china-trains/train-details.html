@@ -57,18 +57,18 @@
     <div class="order-details_">
       <div class="order-details-wrapper">
         <div class="nav">
-          <a class="link">Home</a> >
-          <a class="link">China Train</a> >
+          <a class="link home">Home</a> >
+          <a class="link search">China Train</a> >
           <a class="link">Order Statuss Check</a>
         </div>
         <div class="details-wra">
           <div class="details">
             <h3 class="detail-title">
-              <span class="number">Tarching No.: T1905210512</span>
-              <span class="time">Submit Time: 2019/04/01 10:00:00</span>
+              <span class="number order-number">Tarching No.: T1905210512</span>
+              <span class="time order-submit-time">Submit Time: 2019/04/01 10:00:00</span>
             </h3>
             <ul class="trips">
-              <li class="trip">
+              <li class="trip trip-info">
                 <div class="head">
                   <div class="left">
                     <span class="index">Trip 1</span>
@@ -102,6 +102,7 @@
                   <div class="ticket-price">
                     <ul class="price-info">
                       <li class="item">Adult: CNY933/US$141 X <span class="num">2</span></li>
+                      <li class="item">Child: CNY933/US$141 X <span class="num">2</span></li>
                       <li class="item">Service Fee: CNY30/US$5.49 X <span class="num">1</span></li>
                     </ul>
                     <div class="total">
@@ -110,7 +111,7 @@
                   </div>
                 </div>
               </li>
-              <li class="trip">
+              <!-- <li class="trip">
                 <div class="head">
                   <div class="left">
                     <span class="index">Trip 2</span>
@@ -244,7 +245,7 @@
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
             </ul>
             <div class="grand-total">
               Grand Total: <span class="num">CNY800/USD170</span>
@@ -264,7 +265,7 @@
             <div class="detail-traveler">
               <h4 class="traveler-tit">Traveler Information:</h4>
               <ul class="traveler-wra">
-                <li class="item">
+                <!-- <li class="item">
                   <span class="con sex">Adult 1.</span>
                   <span class="con station">TIANJING TIAN</span>
                   <span class="con number">Passport No.: 12345678</span>
@@ -278,7 +279,7 @@
                   <span class="con sex">Child 1.</span>
                   <span class="con name">TIANJING TIAN</span>
                   <span class="con number">Passport No.: 12345678</span>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="detail-contact">
@@ -286,52 +287,66 @@
               <ul class="contact-wra">
                 <li class="item">
                   <span class="con con1 type">Full Name</span>
-                  <span class="con con1 val">TIANdsad</span>
+                  <span class="con con1 val name"></span>
                 </li>
                 <li class="item">
                   <span class="con con1 type">Country of Origin</span>
-                  <span class="con con1 val">China</span>
+                  <span class="con con1 val nationality"></span>
                 </li>
                 <li class="item">
                   <span class="con con1 type">E-mail</span>
-                  <span class="con con1 val">123456@qq.com</span>
+                  <span class="con con1 val email">123456@qq.com</span>
                 </li>
                 <li class="item">
                   <span class="con con1 type">Phone No.</span>
-                  <span class="con con1 val">15600001234</span>
+                  <span class="con con1 val phone">15600001234</span>
                 </li>
               </ul>
             </div>
             <div class="express-contact">
               <h4 class="express-tit">Express information:</h4>
-              <ul class="express-wra">
+              <ul class="express-wra express-wra1">
                 <li class="item">
                   <span class="con con2 type">* Hotel Name</span>
-                  <span class="con con2 val">TIANDSJHSAKHD DHJSAH</span>
+                  <span class="con con2 val val01"></span>
                 </li>
                 <li class="item">
                   <span class="con con2 type">* Hotel Address</span>
-                  <span class="con con2 val">CHINACHINACHINA</span>
+                  <span class="con con2 val val02">CHINACHINACHINA</span>
                 </li>
                 <li class="item">
                   <span class="con con2 type">* Hotel Phone No.</span>
-                  <span class="con con2 val">15600001234</span>
+                  <span class="con con2 val val03">15600001234</span>
                 </li>
                 <li class="item item-spe">
                   <span class="con con2 type">Booking Agency / Website</span>
-                  <span class="con con2 val">15600001234</span>
+                  <span class="con con2 val val04">15600001234</span>
                 </li>
                 <li class="item">
                   <span class="con con2 type">* Booking Name</span>
-                  <span class="con con2 val">15600001234</span>
+                  <span class="con con2 val val05">15600001234</span>
                 </li>
                 <li class="item">
                   <span class="con con2 type">* Check In Date</span>
-                  <span class="con con2 val">15600001234</span>
+                  <span class="con con2 val val06">15600001234</span>
                 </li>
                 <li class="item">
                   <span class="con con2 type">* Check Out Date</span>
-                  <span class="con con2 val">15600001234</span>
+                  <span class="con con2 val val07">15600001234</span>
+                </li>
+              </ul>
+              <ul class="express-wra express-wra2">
+                <li class="item">
+                  <span class="con con2 type">* Delivery Address</span>
+                  <span class="con con2 val val01"></span>
+                </li>
+                <li class="item">
+                  <span class="con con2 type">* Receiver's Name</span>
+                  <span class="con con2 val val02"></span>
+                </li>
+                <li class="item">
+                  <span class="con con2 type">* Phone Number</span>
+                  <span class="con con2 val val03"></span>
                 </li>
               </ul>
             </div>
@@ -448,5 +463,13 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
+    <script type="text/javascript" src="../static/js/app/common.js"></script>
+    <script type="text/javascript" src="../static/js/app/train-details.js"></script>
   </body>
 </html>

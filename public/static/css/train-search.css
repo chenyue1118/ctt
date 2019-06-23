@@ -149,7 +149,7 @@
             position: absolute;
             top: 6px;
             right: -6px;
-            z-index: 111;
+            z-index: 1;
             content: "";
             display: block;
             width: 0;

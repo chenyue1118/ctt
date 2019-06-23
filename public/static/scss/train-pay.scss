@@ -83,21 +83,23 @@
           font-size: 0;
           .item {
             display: inline-block;
-            width: 200px;
+            // width: 200px;
             .method {
-              width: 200px;
-              padding: 10px 16px;
+              // width: 200px;
+              padding: 8px 16px;
               border: 1px solid #E5E5E5;
               font-size: 0;
               cursor: pointer;
               .icon-pay-method {
                 display: inline-block;
-                width: 38px;
-                height: 26px;
-                background: url(../image/icon-methods-visa.png) no-repeat center;
+                width: 266px;
+                height: 30px;
+                background: url(../image/icon-ipaylinks.png) no-repeat center;
                 vertical-align: top;
               }
               .icon-pay-method-pay {
+                width: 30px;
+                height: 30px;
                 background: url(../image/icon-method-pay.png) no-repeat center;
                 background-size: 26px 26px;
               }
@@ -111,8 +113,8 @@
               }
               .txt {
                 display: inline-block;
-                height: 26px;
-                line-height: 26px;
+                height: 30px;
+                line-height: 30px;
                 padding-left: 12px;
                 font-size: 20px;
                 color: #333333;
@@ -231,12 +233,12 @@
 }
 .paid-success {
   display: none;
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 46%;
   left: 50%;
   z-index: 111;
   width: 562px;
-  height: 444px;
+  height: 464px;
   margin-left: -281px;
   margin-top: -222px;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.35);

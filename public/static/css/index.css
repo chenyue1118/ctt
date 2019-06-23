@@ -119,6 +119,7 @@
             padding: 10px 0;
             text-align: right; }
             .banner_ .train .search .search-content .book .operation .trip-add {
+              opacity: 0;
               display: inline-block;
               height: 40px;
               line-height: 38px;
@@ -131,6 +132,7 @@
               margin-top: 4px;
               vertical-align: top; }
             .banner_ .train .search .search-content .book .operation .trip-del {
+              opacity: 0;
               display: inline-block;
               height: 40px;
               line-height: 38px;

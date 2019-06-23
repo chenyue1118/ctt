@@ -216,7 +216,7 @@ $(function(){
       type: 'post',
       success: function(data) {
         if (data.code == 1) {
-          location.href = 'train-pay.html?id=' + data.data.order_number
+          location.href = 'train-pay.html?id=' + data.data.order_number + '&email=' + data.data.email;
         } else {
           alert("Failure to submit an order")
         }
@@ -224,6 +224,13 @@ $(function(){
     })
   })
 
+  // 跳转首页
+  $(".booking_ .nav .home").on("click", function() {
+    location.href = "/";
+  });
+  $(".booking_ .nav .search").on("click", function() {
+    location.href = "train-search.html";
+  });
   // ===========================================================
   // TODO:发送数据
   // Test()
@@ -498,34 +505,34 @@ $(function(){
     return data[0] + "h" + data[1] + "m";
   }
 
-  // 获取座位
-  function getSeat (type) {
-    var seat = "";
-    switch (type) {
-      case "O":
-        seat = "2nd Cls."
-        break;
-      case "M":
-        seat = "1nd Cls."
-        break;
-      case "9":
-        seat = "Business Cls"
-        break;
-      case "F":
-        seat = "CRH Berth"
-        break;
-      case "4":
-        seat = "Soft Sleeper"
-        break;
-      case "3":
-        seat = "Hard Sleeper"
-        break;
-      case "1":
-        seat = "Soft Seat"
-        break;
-    }
-    return seat;
-  }
+  // // 获取座位
+  // function getSeat (type) {
+  //   var seat = "";
+  //   switch (type) {
+  //     case "O":
+  //       seat = "2nd Cls."
+  //       break;
+  //     case "M":
+  //       seat = "1nd Cls."
+  //       break;
+  //     case "9":
+  //       seat = "Business Cls"
+  //       break;
+  //     case "F":
+  //       seat = "CRH Berth"
+  //       break;
+  //     case "4":
+  //       seat = "Soft Sleeper"
+  //       break;
+  //     case "3":
+  //       seat = "Hard Sleeper"
+  //       break;
+  //     case "1":
+  //       seat = "Soft Seat"
+  //       break;
+  //   }
+  //   return seat;
+  // }
 
   // code 获取证件类型
   function getCertEn(code) {
