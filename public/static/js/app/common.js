@@ -1,5 +1,9 @@
 // api地址
 var APIURL = "http://123.57.18.91:1002";
+// 汇率
+var ExchangeRate = 6.9;
+// 服务费
+var ServiceFee = 50;
 
 // 计算签名的方法返回数据
 function getSign(type) {
@@ -86,6 +90,11 @@ function GetQueryString(name) {
     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
     var r = window.location.search.substr(1).match(reg);
     if (r != null) return unescape(r[2]); return null;
+}
+
+// 美元换算
+function priceExchangeRate(num1, num2) {
+  return (num1 / num2).toFixed(2);
 }
 
 $(function() {

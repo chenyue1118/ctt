@@ -3,7 +3,7 @@ $(function(){
   if (orderInfo) orderInfo = JSON.parse(orderInfo);
   var train_station = [];
   var train_station_py = [];
-  var serviceFee = 10;      // 服务费
+  var service_Fee = orderInfo[0].ServiceFee;      // 服务费
   var delivery_method = 1;  // 票送方式
 
   console.log(orderInfo);
@@ -76,7 +76,7 @@ $(function(){
         "passporttypeseid": type,
         "passporttypeseidname": getCertEn(type),
         "passportseno": number,
-        "price": number,
+        "price": orderInfo[0].train_price,
         "zwcode": orderInfo[0].train_zwcode,
         "zwname": getSeatName(orderInfo[0].train_zwcode)
       })
@@ -111,7 +111,7 @@ $(function(){
         "passporttypeseid": type,
         "passporttypeseidname": getCertEn(type),
         "passportseno": number,
-        "price": number,
+        "price": Number(orderInfo[0].train_price / 2),
         "zwcode": orderInfo[0].train_zwcode,
         "zwname": getSeatName(orderInfo[0].train_zwcode)
       })
@@ -295,7 +295,7 @@ $(function(){
   }
 
   // TODO: 查询订单
-  Search()
+  // Search()
   function Search() {
     $.ajax({
       url: APIURL + "/api/order/queryV2?order_number="+"CTT20190620011807591"+"&email="+"1023581658@qq.com"+"&phone_number=" +"123456"+ getSign("get"),
@@ -314,7 +314,7 @@ $(function(){
     var str = "";
     var grandTotal = 0;
     orderInfo.forEach(function(item, index) {
-      grandTotal += Number(item.train_price) + serviceFee;
+      grandTotal += Number(priceExchangeRate(Number(item.train_price) + Number(item.ServiceFee), ExchangeRate));
       var index = index + 1;
       str += '<li class="trip">'
                 +'<div class="head">'
@@ -357,11 +357,12 @@ $(function(){
                   +'</div>'
                   +'<div class="ticket-price">'
                     +'<ul class="price-info">'
-                      +'<li class="item">Adult: US$'+item.train_price+' X <span class="num">1</span></li>'
-                      +'<li class="item">Service Fee: US$'+serviceFee+' X <span class="num">1</span></li>'
+                      +'<li class="item">Adult: US$'+priceExchangeRate(item.train_price, ExchangeRate)+' X <span class="num">1</span></li>'
+                      +'<li class="item">Service Fee: US$'+ priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">1</span></li>'
                     +'</ul>'
                     +'<div class="total">'
-                      +'Total: US$'+ (Number(item.train_price) + serviceFee)
+                      // +'Total: US$'+ (Number(item.train_price) + service_Fee)
+                      +'Total: US$'+ priceExchangeRate(Number(item.train_price) + Number(service_Fee), ExchangeRate)
                     +'</div>'
                   +'</div>'
                 +'</div>'
@@ -442,16 +443,16 @@ $(function(){
     orderInfo.forEach(function (item, index) {
       if (childrenNum > 0) {
         var adandch = Number(adultsNum)+Number(childrenNum)
-        var str = '<li class="item">Adult: US$'+item.train_price+' X <span class="num">'+adultsNum+'</span></li>'
-                  +'<li class="item">Children: US$'+Number(item.train_price)/2+' X <span class="num">'+childrenNum+'</span></li>'
-                  +'<li class="item">Service Fee: US$'+serviceFee+' X <span class="num">'+adandch+'</span></li>';
+        var str = '<li class="item">Adult: US$'+priceExchangeRate(item.train_price, ExchangeRate)+' X <span class="num">'+adultsNum+'</span></li>'
+                  +'<li class="item">Children: US$'+ priceExchangeRate(Number(item.train_price)/2, ExchangeRate)+' X <span class="num">'+childrenNum+'</span></li>'
+                  +'<li class="item">Service Fee: US$'+ priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">'+adandch+'</span></li>';
         $(".trips .trip:eq("+index+") .price-info").html(str);
       } else {
-        var str = '<li class="item">Adult: US$'+item.train_price+' X <span class="num">'+adultsNum+'</span></li>'
-                  +'<li class="item">Service Fee: US$'+serviceFee+' X <span class="num">'+Number(adultsNum)+'</span></li>';
+        var str = '<li class="item">Adult: US$'+priceExchangeRate(Number(item.train_price), ExchangeRate)+' X <span class="num">'+adultsNum+'</span></li>'
+                  +'<li class="item">Service Fee: US$'+priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">'+Number(adultsNum)+'</span></li>';
         $(".trips .trip:eq("+index+") .price-info").html(str);
       }
-      var totalPrice = Number(item.train_price) * Number(adultsNum) + Number(item.train_price) / 2 * Number(childrenNum) + (Number(adultsNum) + Number(childrenNum)) * serviceFee;
+      var totalPrice = priceExchangeRate(Number(item.train_price), ExchangeRate) * Number(adultsNum) +  priceExchangeRate(Number(item.train_price) / 2, ExchangeRate) * Number(childrenNum) + (Number(adultsNum) + Number(childrenNum)) * priceExchangeRate(service_Fee, ExchangeRate);
       grandPrice += totalPrice;
       $(".trips .trip:eq("+index+") .total").html("Total: US$" + totalPrice);
     })

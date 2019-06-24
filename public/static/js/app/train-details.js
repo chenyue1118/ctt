@@ -1,5 +1,5 @@
 $(function() {
-  var serviceFee = 10;      // 服务费
+  // var service_Fee = 10;      // 服务费
   var checkInfo = sessionStorage.getItem("checkInfo");
   console.log(JSON.parse(checkInfo));
   if (checkInfo) init();
@@ -60,11 +60,11 @@ $(function() {
     } else {
       str += '<li class="item">Adult: US$'+str_ad_pr+' X <span class="num">'+str_ad+'</span></li>';
     }
-    str += '<li class="item">Service Fee: US$'+serviceFee+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
+    str += '<li class="item">Service Fee: US$'+priceExchangeRate(ServiceFee, ExchangeRate)+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
     $(".trip-info .ticket .ticket-price .price-info").html(str);
-    // TODO: 价格计算
-    // $(".trip-info .ticket .ticket-price .total").html(0);
-    $(".grand-total .num").html("USD" + checkInfo_.orderamountUSD);
+    var grand_total = Number(checkInfo_.orderamountUSD) + Number(priceExchangeRate(ServiceFee, ExchangeRate))
+    $(".trip-info .ticket .ticket-price .total").html("Total: USD"+grand_total);
+    $(".grand-total .num").html("USD" + grand_total);
     $(".detail-traveler .traveler-wra").append(str_ad_pass);
     $(".detail-traveler .traveler-wra").append(str_ch_pass);
     // TODO: 订票人信息

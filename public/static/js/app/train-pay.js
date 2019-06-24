@@ -3,6 +3,7 @@ $(function() {
   var order_email = GetQueryString("email");
   var pay_by = "ipaylinks";
   var orderInfo = '';
+  var toalPrice = 0;
 
   init();
   initPayState();
@@ -24,8 +25,9 @@ $(function() {
   // 跳转支付
   $(".pay-now-btn").on("click", function() {
     if (pay_by == "ipaylinks") {
-      // var PAYURL = "http://39.105.54.233:1001/ipaylinks/payment?order_number=" + orderInfo.order_number + "&member_id=" + 123456 + "&client_ip=" + "39.105.54.233" + "&token=59226165-f455-4ad5-b984-6c8e5462d7ed"+"&terminal=web" + "&web_url=" + encodeURIComponent("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=ipaylinks&id="+order_no);
-      // window.location.href = PAYURL;
+      // http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number=<这是填入CTT订单号>&email=<这里填入客户下单时的邮件地址>&phone_number=<这里填入客户下单的手机号>&ReturnURL=<支付结果返回后回调显示的URL>&Trans_ID=<客户下单后返回的交易ID>
+      var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://127.0.0.1:8801/china-trains/train-pay.html'+'&Trans_ID='+orderInfo.user_orderid
+      window.location.href = PAYURL;
     } else if (pay_by == "paypal") {
       if (!orderInfo) return false;
       console.log(orderInfo);
@@ -38,7 +40,8 @@ $(function() {
       $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no);
       $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
-      $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
+      // $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
+      $(".p-notify_url").val("https://182.61.175.203:8001/test?id="+order_no);
 
       $("#paypal").submit();
     }
@@ -68,7 +71,19 @@ $(function() {
 
   // 展示价格
   function showPrice() {
-    $(".grand .grand-num").html("USD"+orderInfo.orderamountUSD);
+    var price1 = orderInfo.orderamountUSD;
+    var price2 = priceExchangeRate(ServiceFee, ExchangeRate);
+    var price3 = 7;
+    // $(".grand .grand-num").html("USD"+orderInfo.orderamountUSD);
+    $(".total-price .price1").html("Total Price for Tikets: USD" + price1);
+    $(".total-price .price2").html("Total Price for Tikets: USD" + price2);
+    if (orderInfo.delivery_method == 1) {
+      price3 = 0;
+      $(".total-price .icon3").hide();
+      $(".total-price .price3").hide();
+    }
+    toalPrice = Number(price1) + Number(price2) + Number(price3);
+    $(".grand .grand-num").html("USD"+toalPrice);
   }
 
   // 查询支付状态

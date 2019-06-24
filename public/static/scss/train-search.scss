@@ -263,7 +263,12 @@
             line-height: 16px;
             font-size: 16px;
             color: #333333;
-            cursor: pointer;
+            input {
+              cursor: pointer;
+            }
+            label {
+              cursor: pointer;
+            }
           }
           .select-one {
             width: 74px;
@@ -697,4 +702,25 @@
   left: 0;
   z-index: 11111;
   background: rgba(0, 0, 0, 0.35);
+}
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11111;
+  background: rgba(0, 0, 0, 0.35);
+  .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    z-index: 11111;
+  }
 }

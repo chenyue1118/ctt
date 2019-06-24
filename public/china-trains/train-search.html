@@ -125,15 +125,15 @@
                 <label for="type-all"> All</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType" id="type-gdc" value="gdc">
+                <input type="checkbox" name="trainType" id="type-gdc" value="GDC">
                 <label for="type-gdc"> G/D/C Trains</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType" id="type-ztk" value="ztk">
+                <input type="checkbox" name="trainType" id="type-ztk" value="ZKT">
                 <label for="type-ztk"> Z/T/K Trains</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="trainType" id="type-other" value="other">
+                <input type="checkbox" name="trainType" id="type-other" value="Y126">
                 <label for="type-other"> Other Trains</label>
               </div>
               <!-- <div class="select">
@@ -144,23 +144,23 @@
             <li class="item">
               <span class="type-name">Departure Time:</span>
               <div class="select select-one">
-                <input type="checkbox" name="departureTime" value="0" id="time-all">
+                <input type="checkbox" name="departureTime" value="all" id="time-all">
                 <label for="time-all"> All</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="1" id="time-08">
+                <input type="checkbox" name="departureTime" value="480-0" id="time-08">
                 <label for="time-08"> 00:00 -- 08:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="2" id="time-12">
+                <input type="checkbox" name="departureTime" value="720-481" id="time-12">
                 <label for="time-12"> 08:01 -- 12:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="3" id="time-18">
+                <input type="checkbox" name="departureTime" value="1080-721" id="time-18">
                 <label for="time-18"> 12:01 -- 18:00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="4" id="time-24">
+                <input type="checkbox" name="departureTime" value="1440-1081" id="time-24">
                 <label for="time-24"> 18:01 -- 23:59</label>
               </div>
             </li>
@@ -446,6 +446,10 @@
       </div>
     </div>
     <div class="mask_"></div>
+    <!-- loading等待 -->
+    <div class="loading">
+      <img class="image" src="../static/image/waiting.gif" alt="">
+    </div>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
