@@ -97,6 +97,23 @@ function priceExchangeRate(num1, num2) {
   return (num1 / num2).toFixed(2);
 }
 
+// 写cookies  默认是保存30天
+function setCookie(name, value) {
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+    document.cookie = name + "=" + escape(value) + ";path= /;expires=" + exp.toGMTString();
+}
+
+// 读取cookies
+function getCookie(name) {
+    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+    if (arr = document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
+
 $(function() {
   $(".home-icon").on("click", function() {
     location.href = "/";

@@ -216,6 +216,7 @@ $(function(){
       type: 'post',
       success: function(data) {
         if (data.code == 1) {
+          setCookie('userId', data.data.user_orderid);
           location.href = 'train-pay.html?id=' + data.data.order_number + '&email=' + data.data.email;
         } else {
           alert("Failure to submit an order")
