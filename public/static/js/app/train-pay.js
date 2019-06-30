@@ -34,22 +34,21 @@ $(function() {
       var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://182.61.175.203:8802/china-trains/train-pay.html?pay_type=ipaylinks'+'&Trans_ID='+getCookie('userId');
       // var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://182.61.175.203:8802/china-trains/train-pay.html?pay_type=paypal'+'&Trans_ID='+orderInfo.order_number;
       // var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://127.0.0.1:8801/china-trains/train-pay.html'+'&Trans_ID='+orderInfo.user_orderid;
-      console.log(PAYURL);
-      // window.location.href = PAYURL;
+      window.location.href = PAYURL;
     } else if (pay_by == "paypal") {
       if (!orderInfo) return false;
       console.log(orderInfo);
       // $(".item_name").val(orderInfo.order_number);
       $(".p_item_name").val("CTT_BOOKING");
       // $(".p-amount").val(getPaypalPrice(orderInfo.orderamountUSD));
-      $(".p-amount").val(10.00);
+      $(".p-amount").val(toalPrice);
       $(".p-custom").val(orderInfo.order_number);
       // $(".p-return").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
-      $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no);
+      $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
       $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
       // $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
-      $(".p-notify_url").val("https://182.61.175.203:8001/test?id="+order_no);
+      $(".p-notify_url").val(APIURL + "/api/v_2_0_0/paypal/notify?ordernumber=" + orderInfo.order_number + "&pay_method=paypal&currency=USD&total_fee=" + orderInfo.order_number);
 
       $("#paypal").submit();
     }
@@ -91,6 +90,7 @@ $(function() {
       $(".total-price .price3").hide();
     }
     toalPrice = Number(price1) + Number(price2) + Number(price3);
+    toalPrice = toalPrice.toFixed(2);
     $(".grand .grand-num").html("USD"+toalPrice);
   }
 

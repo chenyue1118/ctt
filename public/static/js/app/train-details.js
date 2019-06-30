@@ -91,6 +91,11 @@ $(function() {
       $(".express-contact .val02").html(checkInfo_.delivery_address.ReceiverName);
       $(".express-contact .val03").html(checkInfo_.delivery_address.ReceiverPhone);
     }
+    if (checkInfo_.status == 0) {
+      $(".details .unpaid").html('<span class="unpaid">Unpaid</span>');
+    } else if (checkInfo_.status == 4) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name">Paid</span></div>');
+    }
   }
 
   // 计算时间
