@@ -38,6 +38,7 @@ $(function() {
     } else if (pay_by == "paypal") {
       if (!orderInfo) return false;
       console.log(orderInfo);
+      var notify_url_ = APIURL_US + "/api/v_2_0_0/paypal/notify?ordernumber=" + orderInfo.order_number + "&pay_method=paypal&currency=use&total_fee=" + orderInfo.orderamountUSD
       // $(".item_name").val(orderInfo.order_number);
       $(".p_item_name").val("CTT_BOOKING");
       // $(".p-amount").val(getPaypalPrice(orderInfo.orderamountUSD));
@@ -48,8 +49,7 @@ $(function() {
       $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
       // $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
-      $(".p-notify_url").val(APIURL + "/api/v_2_0_0/paypal/notify?ordernumber=" + orderInfo.order_number + "&pay_method=paypal&currency=USD&total_fee=" + orderInfo.order_number);
-
+      $(".p-notify_url").val(notify_url_);
       $("#paypal").submit();
     }
   });
