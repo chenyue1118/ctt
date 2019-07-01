@@ -50,6 +50,7 @@ $(function() {
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
       // $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
       $(".p-notify_url").val(notify_url_);
+      alert(notify_url_);
       $("#paypal").submit();
     }
   });
