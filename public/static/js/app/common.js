@@ -1,6 +1,7 @@
 // api地址
 var APIURL = "http://123.57.18.91:1002";
-var APIURL_US = "http://64.50.179.18";
+// var APIURL_US = "http://64.50.179.18";
+var APIURL_US = "http://123.57.18.91:1002";
 // 汇率
 var ExchangeRate = 6.9;
 // 服务费
