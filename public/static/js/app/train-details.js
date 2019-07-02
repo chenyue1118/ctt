@@ -35,10 +35,12 @@ $(function() {
     var str_ch_pr = 0;
     var str_ad_pass = '';
     var str_ch_pass = '';
+    var service_fee = 0
     checkInfo_.passengers.forEach(function(item) {
       if (item.piaotype == 1) {
         str_ad ++;
-        str_ad_pr = item.priceUSD;
+        str_ad_pr = (item.price / ExchangeRate).toFixed(2);
+        service_fee = str_ad_pr - item.priceUSD;
         str_ad_pass += '<li class="item">'
                         +'<span class="con sex">Adult '+str_ad+'.</span>'
                         +'<span class="con station">'+item.passengersename+'</span>'
@@ -46,7 +48,7 @@ $(function() {
                       +'</li>';
       } else if (item.piaotype == 2) {
         str_ch ++;
-        str_ch_pr = item.priceUSD;
+        str_ch_pr = (item.price / ExchangeRate).toFixed(2);
         str_ch_pass += '<li class="item">'
                         +'<span class="con sex">Child '+str_ch+'.</span>'
                         +'<span class="con station">'+item.passengersename+'</span>'
@@ -54,6 +56,7 @@ $(function() {
                       +'</li>';
       }
     })
+
     if (str_ch > 0) {
       str += '<li class="item">Adult: US$'+str_ad_pr+' X <span class="num">'+str_ad+'</span></li>';
       str += '<li class="item">Child: US$'+str_ch_pr+' X <span class="num">'+str_ch+'</span></li>';
@@ -61,8 +64,10 @@ $(function() {
       str += '<li class="item">Adult: US$'+str_ad_pr+' X <span class="num">'+str_ad+'</span></li>';
     }
     str += '<li class="item">Service Fee: US$'+priceExchangeRate(ServiceFee, ExchangeRate)+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
+    // str += '<li class="item">Service Fee: US$'+service_fee+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
     $(".trip-info .ticket .ticket-price .price-info").html(str);
-    var grand_total = Number(checkInfo_.orderamountUSD) + Number(priceExchangeRate(ServiceFee, ExchangeRate))
+    var grand_total = Number(checkInfo_.orderamountUSD);
+    // var grand_total = Number(checkInfo_.orderamountUSD) + Number(priceExchangeRate(ServiceFee, ExchangeRate))
     $(".trip-info .ticket .ticket-price .total").html("Total: USD"+grand_total);
     $(".grand-total .num").html("USD" + grand_total);
     $(".detail-traveler .traveler-wra").append(str_ad_pass);

@@ -6,9 +6,9 @@ $(function() {
   var orderInfo = '';
   var toalPrice = 0;
 
-  if (pay_type) {
-    pay_type = pay_type.s
-  }
+  // if (pay_type) {
+  //   pay_type = pay_type.s
+  // }
 
   init();
   initPayState();
@@ -49,8 +49,8 @@ $(function() {
       $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
       $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
-      // $(".p-notify_url").val("http://192.168.1.104:8801/paypal?id="+order_no);
-      $(".p-notify_url").val(notify_url_);
+      $(".p-notify_url").val("http://182.61.175.203:8801/paypal?id="+order_no);
+      // $(".p-notify_url").val(notify_url_);
       alert(notify_url_);
       $("#paypal").submit();
     }
@@ -85,13 +85,13 @@ $(function() {
     var price3 = 7;
     // $(".grand .grand-num").html("USD"+orderInfo.orderamountUSD);
     $(".total-price .price1").html("Total Price for Tikets: USD" + price1);
-    $(".total-price .price2").html("Total Price for Tikets: USD" + price2);
+    $(".total-price .price2").html("");
     if (orderInfo.delivery_method == 1) {
       price3 = 0;
       $(".total-price .icon3").hide();
       $(".total-price .price3").hide();
     }
-    toalPrice = Number(price1) + Number(price2) + Number(price3);
+    toalPrice = Number(price1) + Number(price3);
     toalPrice = toalPrice.toFixed(2);
     $(".grand .grand-num").html("USD"+toalPrice);
   }

@@ -324,6 +324,7 @@ $(function() {
     arr && arr.forEach(function(item){
       console.log(item.ServiceFee);
       ExchangeRate = item.ExchangeRate;
+      setCookie('ExchangeRate', ExchangeRate);
       ServiceFee = item.ServiceFee;
       $(".search-result-wrapper .result-content").append(accSeat(item));
     });
@@ -364,12 +365,12 @@ $(function() {
                   +'</div>'
                   +'<div class="seat-price">'
                     +'<span class="price-detail">RMB'+item.edz_price+'/USD'+priceExchangeRate(item.edz_price, ExchangeRate)+'</span>'
-                    +'<span class="price-detail">RMB'+item.ydz_num+'/USD'+priceExchangeRate(item.ydz_num, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.ydz_price+'/USD'+priceExchangeRate(item.ydz_price, ExchangeRate)+'</span>'
                     +'<span class="price-detail">RMB'+item.swz_price+'/USD'+priceExchangeRate(item.swz_price, ExchangeRate)+'</span>'
                   +'</div>'
                   +'<div class="seat-btn" data-time="'+item.train_start_date+'" data-fromCode="'+item.from_station_code+'" data-toCode="'+item.to_station_code+'" data-trainCode="'+item.train_code+'" data-duration="'+item.run_time+'" data-start_time="'+item.start_time+'" data-arrive_time="'+item.arrive_time+'" data-arrive_days="'+item.arrive_days+'" data-ServiceFee="'+item.ServiceFee+'">'
                     +'<a class="btn '+setBookSty(item.edz_num)+'" data-price='+item.edz_price+' data-zwcode="O">Continue</a>'
-                    +'<a class="btn '+setBookSty(item.ydz_num)+'" data-price='+item.ydz_num+' data-zwcode="M">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.ydz_num)+'" data-price='+item.ydz_price+' data-zwcode="M">Continue</a>'
                     +'<a class="btn '+setBookSty(item.swz_num)+'" data-price='+item.swz_price+' data-zwcode="9">Continue</a>'
                   +'</div>'
                 +'</li>';

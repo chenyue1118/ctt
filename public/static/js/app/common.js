@@ -4,6 +4,7 @@ var APIURL = "http://123.57.18.91:1002";
 var APIURL_US = "http://123.57.18.91:1002";
 // 汇率
 var ExchangeRate = 6.9;
+if (getCookie('ExchangeRate')) ExchangeRate = getCookie('ExchangeRate');
 // 服务费
 var ServiceFee = 50;
 

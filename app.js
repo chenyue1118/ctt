@@ -11,8 +11,13 @@ app.use(morgan('short', {stream: accessLogStream}));
 
 app.use(express.static('./public'));
 
-app.use('/paypal', (req, res) => {
-  console.log('收到请求');
+app.get('/paypal', (req, res) => {
+  console.log('收到请求--get');
+  console.log(req.query);
+  res.send({state: 1})
+})
+app.post('/paypal', (req, res) => {
+  console.log('收到请求-post');
   console.log(req.query);
   res.send({state: 1})
 })
