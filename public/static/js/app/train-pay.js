@@ -49,9 +49,8 @@ $(function() {
       $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
       $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
-      $(".p-notify_url").val("http://182.61.175.203:8801/paypal?id="+order_no);
-      // $(".p-notify_url").val(notify_url_);
-      alert(notify_url_);
+      // $(".p-notify_url").val("http://182.61.175.203:8801/paypal?id="+order_no);
+      $(".p-notify_url").val(notify_url_);
       $("#paypal").submit();
     }
   });
