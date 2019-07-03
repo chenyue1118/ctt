@@ -6,6 +6,7 @@ $(function() {
   var train_station_py = [];        //所有车站拼音
   var orderInfo = [];
   var ss_index = 0;
+  var departureSequence = true;
 
   getStation();
 
@@ -179,6 +180,25 @@ $(function() {
       })
       showTrian(trainArr);
     }
+  });
+
+  // 到达时间的正序和倒序排列
+  $(".item-departure").on("click", function() {
+    var trainArr = [];
+    var tempTrainData = train_data.slice(0);
+    departureSequence = !departureSequence;
+    if (departureSequence) {
+      // 正序
+      trainArr = tempTrainData;
+      $(".item-departure .active").removeClass("active");
+      $(".item-departure .bottom").addClass("active");
+    } else {
+      // 倒序 reverse
+      trainArr = tempTrainData.reverse();
+      $(".item-departure .active").removeClass("active");
+      $(".item-departure .top").addClass("active");
+    }
+    showTrian(trainArr);
   });
 
   // ==========================================================

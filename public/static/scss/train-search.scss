@@ -307,7 +307,7 @@
             width: 8px;
             .top {
               display: block;
-              border-bottom: 6px solid #1890FF;
+              border-bottom: 6px solid #BFBFBF;
               border-left: 4px solid transparent;
               border-right: 4px solid transparent;
             }
@@ -317,6 +317,12 @@
               border-top: 6px solid #BFBFBF;
               border-left: 4px solid transparent;
               border-right: 4px solid transparent;
+            }
+            .top.active {
+              border-bottom: 6px solid #1890FF;
+            }
+            .bottom.active {
+              border-top: 6px solid #1890FF;
             }
           }
         }
@@ -335,6 +341,10 @@
         }
         .item:nth-child(5) {
           width: 122px;
+        }
+        .item-departure {
+          cursor: pointer;
+          user-select: none;
         }
       }
       .result-content {
