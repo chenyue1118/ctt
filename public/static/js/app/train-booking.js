@@ -5,10 +5,12 @@ $(function(){
   var train_station_py = [];
   var service_Fee = orderInfo[0].ServiceFee;      // 服务费
   var delivery_method = 1;  // 票送方式
+  var timeBeyond = false;
 
   console.log(orderInfo);
 
   getStation();
+  computingTime();
   init();
 
   // 成年人数改变的时候
@@ -28,6 +30,7 @@ $(function(){
 
   // 票送方式选择
   $(".collection-types .item .head .icon-coll").on("click", function() {
+    if (!timeBeyond) return false;
     $(".collection-types .item .head").removeClass("active");
     $(this).parents(".head").addClass("active");
     delivery_method = $(this).attr("data-type");
@@ -372,6 +375,20 @@ $(function(){
     $(".mytrip .trips .trip").remove();
     $(".mytrip .trips").prepend(str);
     $(".price .detail").html("US$" + grandTotal);
+  }
+
+  // 计算时间 小于72个小时不能选择快递
+  function computingTime() {
+    if (!orderInfo) return false;
+    var ymsTime = orderInfo[0].train_time.substr(0, 4) + '/' + orderInfo[0].train_time.substr(4, 2) + '/' + orderInfo[0].train_time.substr(6, 2) +' ' + orderInfo[0].start_time;
+    var startTime = new Date(ymsTime).getTime();
+    var newTime = new Date().getTime();
+    if ((startTime - newTime) > 72*60*60*1000) {
+      timeBeyond = true;
+    } else {
+      $(".collection-types .coll-hotel").addClass("method-disable");
+      $(".collection-types .coll-address").addClass("method-disable");
+    }
   }
 
   // 当人数发生改变时候

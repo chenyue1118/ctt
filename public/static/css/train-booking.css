@@ -119,6 +119,7 @@
                       border-left: 12px solid transparent;
                       border-right: 12px solid transparent; }
               .booking_ .booking-wrapper .mytrip .trips .trip .head .right .del {
+                opacity: 0;
                 display: inline-block;
                 width: 22px;
                 height: 48px;
@@ -588,6 +589,8 @@
               border: 1px solid #DBDBDB; }
             .booking_ .booking-wrapper .collection .collection-types .coll-address .deliver-per-address .per-phone {
               margin-left: 20px; }
+        .booking_ .booking-wrapper .collection .collection-types .method-disable {
+          background: #f2f2f2; }
     .booking_ .booking-wrapper .select-seat {
       padding: 32px 46px 36px 46px;
       background: white;
