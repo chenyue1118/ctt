@@ -688,7 +688,7 @@
           .booking_ .booking-wrapper .contact-book .contact-infos .item .val {
             display: block;
             width: 288px;
-            height: 48px;
+            height: 40px;
             border: 1px solid #DBDBDB;
             text-indent: 12px;
             font-size: 16px; }
@@ -714,8 +714,8 @@
       .booking_ .booking-wrapper .sub-book .sub-book-btn {
         display: block;
         width: 646px;
-        height: 58px;
-        line-height: 58px;
+        height: 48px;
+        line-height: 48px;
         margin: 0 auto;
         text-align: center;
         font-size: 20px;

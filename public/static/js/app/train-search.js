@@ -99,7 +99,6 @@ $(function() {
     //   $(".search-trip-wra .item:eq("+ss_index+")").addClass("active");
     // } else {
       console.log(orderInfo);
-      alert("下订单页面");
       sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
       location.href = "train-booking.html";
     // }
