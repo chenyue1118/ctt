@@ -7,6 +7,7 @@ $(function() {
   var orderInfo = [];
   var ss_index = 0;
   var departureSequence = true;
+  var durationSequence = true;
 
   getStation();
 
@@ -99,7 +100,6 @@ $(function() {
     //   $(".search-trip-wra .item").removeClass("active");
     //   $(".search-trip-wra .item:eq("+ss_index+")").addClass("active");
     // } else {
-      console.log(orderInfo);
       sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
       location.href = "train-booking.html";
     // }
@@ -119,6 +119,7 @@ $(function() {
 
   // 数据筛选
   $("input[name='trainType']").on("change", function() {
+    if (!train_data) return false;
     if ($(this).val() == 'all') {
       $("input[name='trainType']").prop("checked", true);
       sel_train_data = train_data.slice(0);
@@ -138,7 +139,6 @@ $(function() {
       if ($("#type-other").prop("checked")) {
         str += $("#type-other").val();
       }
-      console.log(str);
       train_data.forEach(function(item) {
         if (str.indexOf(item.train_type) > -1) trainArr.push(item)
       })
@@ -147,6 +147,7 @@ $(function() {
   });
   // 数据筛选
   $("input[name='departureTime']").on("change", function() {
+    if (!train_data) return false;
     if ($(this).val() == 'all') {
       $("input[name='departureTime']").prop("checked", true);
       sel_train_data = train_data.slice(0);
@@ -184,6 +185,7 @@ $(function() {
 
   // 到达时间的正序和倒序排列
   $(".item-departure").on("click", function() {
+    if (!train_data) return false;
     var trainArr = [];
     var tempTrainData = train_data.slice(0);
     departureSequence = !departureSequence;
@@ -197,6 +199,40 @@ $(function() {
       trainArr = tempTrainData.reverse();
       $(".item-departure .active").removeClass("active");
       $(".item-departure .top").addClass("active");
+    }
+    showTrian(trainArr);
+  });
+
+  // 耗时排序
+  $(".item-duration").on("click", function() {
+    if (!train_data) return false;
+    var trainArr = [];
+    var tempTrainData = train_data.slice(0);
+    var durTrainData = [];
+    tempTrainData.forEach(function(item) {
+      durTrainData.push(Number(item.run_time_minute))
+    })
+    durTrainData.sort();
+    durationSequence = !durationSequence;
+    if (durationSequence) {
+      // 正序
+      durTrainData.forEach(function(item) {
+        tempTrainData.forEach(function(list) {
+          if (list.run_time_minute == item) trainArr.push(list)
+        })
+      })
+      $(".item-duration .active").removeClass("active");
+      $(".item-duration .bottom").addClass("active");
+    } else {
+      // 倒序 reverse
+      durTrainData.forEach(function(item) {
+        tempTrainData.forEach(function(list) {
+          if (list.run_time_minute == item) trainArr.push(list)
+        })
+      })
+      trainArr = trainArr.reverse();
+      $(".item-duration .active").removeClass("active");
+      $(".item-duration .top").addClass("active");
     }
     showTrian(trainArr);
   });
@@ -341,7 +377,6 @@ $(function() {
   function showTrian(arr) {
     $(".search-result-wrapper .result-content .item").remove();      //先清空车次信息
     arr && arr.forEach(function(item){
-      console.log(item.ServiceFee);
       ExchangeRate = item.ExchangeRate;
       setCookie('ExchangeRate', ExchangeRate);
       ServiceFee = item.ServiceFee;
