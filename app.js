@@ -22,6 +22,11 @@ app.post('/paypal', (req, res) => {
   res.send({state: 1})
 })
 
+app.use('/china-trains/train-pay.html', (req, res) => {
+  let query = req.query.query;
+  res.redirect(`/china-trains/train-pay.html?query=${query}`);
+})
+
 const PORT = 8801;
 app.listen(PORT, () => {
   console.log(`Server at ${PORT}`);
