@@ -114,6 +114,19 @@ $(function() {
           $(".loading").hide();
         }, 4000)
       });
+    } else if (pay_type == 'ipaylinks') {
+      $(".paid-success").show();
+      $(".mask_").show();
+      $(".paid-success .link-page").off().on("click", function() {
+        location.href = '/'
+      });
+      $(".paid-success .link-order").off().on("click", function() {
+        $(".loading").show();
+        setTimeout(function() {
+          init('ok');
+          $(".loading").hide();
+        }, 4000)
+      });
     }
   }
 });
