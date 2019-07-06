@@ -23,6 +23,7 @@ app.post('/paypal', (req, res) => {
 })
 
 app.use('/china-trains/train-pay.html', (req, res) => {
+  console.log('收到请求');
   let query = req.query.query;
   res.redirect(`/china-trains/train-pay.html?query=${query}`);
 })
