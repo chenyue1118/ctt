@@ -1,1 +1,607 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(J(){J n(b,a){w(!c)z!1;H d=$(".E-y .s-E").19,e=$(".D-y .s-D").19;w(b>d){b-=d;U(H h="",f=0;f<b;f++){H g=d+f+1;h+=\'<I j="s s-E"><o j="2V">3I\'+g+\'.</o><1a j="1b" R="17"><1a j="Z" R="17"><12 j="R"><Q W="1">2I 2G 2E</Q><Q W="C">1x 1z 1k U 2C/2B 1v</Q><Q W="B" 2t>2p</Q><Q W="G">1x 1z 1k U 2j 1v</Q></12><1a j="15" R="17" Z="" W=""></I>\'}$(".E-y").2f(h)}1m w(b<d)U(f=d-b;0<f;f--)g=K(b)+f-1,1o.1r(g),$(".E-y .s-E:L("+g+")").23();w(a>e){a-=e;g="";U(f=0;f<a;f++)d=e+f+1,g+=\'<I j="s s-D"><o j="2V">4Q.\'+d+\'.</o><1a j="1b" R="17"><1a j="Z" R="17"><12 j="R"><Q W="1">2I 2G 2E</Q><Q W="C">1x 1z 1k U 2C/2B 1v</Q><Q W="B" 2t>2p</Q><Q W="G">1x 1z 1k U 2j 1v</Q></12><1a j="15" R="17" Z="" W=""></I>\';$(".D-y").2f(g)}1m w(a<e)U(f=e-a;0<f;f--)d=K(a)+f-1,$(".D-y .s-D:L("+d+")").23()}J p(b,a){w(!c)z!1;1o.1r(c);H d=0;c.25(J(e,c){w(0<a){H f=K(b)+K(a);f=\'<I j="s">26: V$\'+T(e.Y,S)+\' X <o j="16">\'+b+\'</o></I><I j="s">3i: V$\'+T(K(e.Y)/2,S)+\' X <o j="16">\'+a+\'</o></I><I j="s">1p 27: V$\'+T(k,S)+\' X <o j="16">\'+f+"</o></I>"}1m f=\'<I j="s">26: V$\'+T(K(e.Y),S)+\' X <o j="16">\'+b+\'</o></I><I j="s">1p 27: V$\'+T(k,S)+\' X <o j="16">\'+K(b)+"</o></I>";$(".1s .1t:L("+c+") .14-y").1c(f);e=T(K(e.Y),S)*K(b)+T(K(e.Y)/2,S)*K(a)+(K(b)+K(a))*T(k,S);d+=e;$(".1s .1t:L("+c+") .2b").1c("2e: V$"+e)});$(".14 .2l").1c("V$"+d)}J l(b,a){a=a||"";b=b||"";H d="";q.25(J(e){e.1T==b&&(d=a?1B(e.1Q)+"("+e.Z+")":1B(e.1Q))});z d}J r(b){H a;"1"==b?a="\\2w\\4G\\4F\\43\\1H":"C"==b?a="\\42\\41\\2U\\2T\\1H":"B"==b?a="\\3Z\\3Y":"G"==b&&(a="\\3X\\3W\\2U\\2T\\1H");z a}J t(b){H a="";3o(""+b){10"F":a="\\3c\\1S";11;10"9":a="\\3b\\39\\1e";11;10"P":a="\\3q\\1Z\\1e";11;10"M":a="\\3k\\1Z\\1e";11;10"O":a="\\2w\\1Z\\1e";11;10"4":a="\\2k\\1S";11;10"3":a="\\2d\\1S";11;10"2":a="\\2k\\1e";11;10"1":a="\\2d\\1e"}z a}H c=3J.3h("3S");c&&(c=3e.3t(c));H q=[],v=[],k=c[0].2a,m=1,u=!1;1o.1r(c);(J(){U(H b=3d.2c("|"),a=0;a<1q((b.19-1)/5);a++)q.1y({Z:b[5*a+1],1T:b[5*a+2],1Q:b[5*a+3]}),v.1y({3Q:1B(b[5*a+3])+" ("+b[5*a+1]+")",W:1B(b[5*a+3])+" ("+b[5*a+1]+")"})})();(J(){w(!c)z!1;H b=c[0].13.1d(0,4)+"/"+c[0].13.1d(4,2)+"/"+c[0].13.1d(6,2)+" "+c[0].1l;b=(2g 2h(b)).2i();H a=(2g 2h).2i();3K<b-a?u=!0:($(".1C-1A .22-37").21("2m-2n"),$(".1C-1A .22-2o").21("2m-2n"))})();(J(){w(!c)z!1;H b="",a=0;c.25(J(d,e){a+=K(T(K(d.Y)+K(d.2a),S));H c=b;e=\'<I j="1t"><x j="1w"><x j="3l"><o j="3m">3n \'+(e+1)+\'</o><o j="20">\';H f=d.13;f=f.1Y(0,4)+"-"+f.1Y(4,6)+"-"+f.1Y(6,8);e=e+f+\'</o></x><x j="3u"><x j="1X"><x j="1X-3G"><x j="1X-2q"><2r j="3L">3M 3P:</2r><p j="2s">1. 3R-1h-3T 24/7 40 44 1p.</p><p j="2s">2. 45 4i-4j 4k 4l 4s 4x-4H 4P.</p></x></x></x><i j="36"></i></x></x><x j="2u"><o j="15">\'+d.2v+\'</o><x j="y"><x j="38"><o j="1W"></o><o j="3a"></o><o j="1h"></o></x><x j="1V"><o j="1W">\'+d.1l+\'</o><o j="1h">\'+d.1U+\'</o></x><x j="2o"><o j="1W">\'+l(d.1R)+\'</o><o j="1h">\'+l(d.1D)+\'</o></x></x><x j="1V-2x"><o j="1V">\';f=d.3f.2c(":");b=c+(e+(f[0]+"h"+f[1]+"m")+\'</o> | <o j="2x">\'+3g(d.1g)+\'</o></x><x j="2u-14"><2y j="14-y"><I j="s">26: V$\'+T(d.Y,S)+\' X <o j="16">1</o></I><I j="s">1p 27: V$\'+T(k,S)+\' X <o j="16">1</o></I></2y><x j="2b">2e: V$\'+T(K(d.Y)+K(k),S)+"</x></x></x></I>")});$(".2z .1s .1t").23();$(".2z .1s").3j(b);$(".14 .2l").1c("V$"+a)})();$(".2A-12").18("28",J(){H b=$(1n).A(),a=$(".2D-12").A();n(b,a);p(b,a)});$(".2D-12").18("28",J(){H b=$(1n).A(),a=$(".2A-12").A();n(a,b);p(a,b)});$(".1C-1A .s .1w .3p-22").18("1u",J(){w(!u)z!1;$(".1C-1A .s .1w").3r("2F");$(1n).3s(".1w").21("2F");m=$(1n).4S("1i-R")});$(".2H-20-2q .2H-20").3v({3w:2,3x:!1,3y:"3z.3A.3B",3C:"3D",3E:0});$(".3F-1f-3H").18("1u",J(){U(H b=[],a=0;a<$(".E-y .s-E").19;a++){H d=1q(a)+1,e=$(".E-y .s-E:L("+a+") .1b").A(),h=$(".E-y .s-E:L("+a+") .Z").A(),f=$(".E-y .s-E:L("+a+") .R").A(),g=$(".E-y .s-E:L("+a+") .15").A();w(!e)z $(".E-y .s-E:L("+a+") .1b").N(),!1;w(!h)z $(".E-y .s-E:L("+a+") .Z").N(),!1;w(!g)z $(".E-y .s-E:L("+a+") .15").N(),!1;b.1y({2J:d,2K:e+""+h,2L:1,2M:"\\3N\\3O\\2N",2O:f,2P:r(f),2Q:g,14:c[0].Y,2R:c[0].1g,2S:t(c[0].1g)})}U(a=0;a<$(".D-y .s-D").19;a++){d=1q(b.19)+1q(a)+1;e=$(".D-y .s-D:L("+a+") .1b").A();h=$(".D-y .s-D:L("+a+") .Z").A();f=$(".D-y .s-D:L("+a+") .R").A();g=$(".D-y .s-D:L("+a+") .15").A();w(!e)z $(".D-y .s-D:L("+a+") .1b").N(),!1;w(!h)z $(".D-y .s-D:L("+a+") .Z").N(),!1;w(!g)z $(".D-y .s-D:L("+a+") .15").N(),!1;b.1y({2J:d,2K:e+""+h,2L:2,2M:"\\3U\\3V\\2N",2O:f,2P:r(f),2Q:g,14:K(c[0].Y/2),2R:c[0].1g,2S:t(c[0].1g)})}a={};w(2==m){d=$(".1P").A();e=$(".1O").A();h=$(".1N").A();f=$(".1M").A();g=$(".1L").A();H k=$(".1K").A();w(!d)z $(".1P").N(),!1;w(!e)z $(".1O").N(),!1;w(!h)z $(".1N").N(),!1;w(!f)z $(".1M").N(),!1;w(!g)z $(".1L").N(),!1;w(!k)z $(".1K").N(),!1;a.1P=d;a.1O=e;a.1N=h;a.1M=f;a.1L=g;a.1K=k}1m w(3==m){d=$(".1J").A();e=$(".1I").A();h=$(".1G").A();w(!d)z $(".1J").N(),!1;w(!e)z $(".1I").N(),!1;w(!h)z $(".1G").N(),!1;a.1J=d;a.1I=e;a.1G=h}d=$(".1f-1j").A();e=$(".1f-2W").A();w(!d)z $(".1f-1j").N(),!1;w(!e)z $(".1f-2W").N(),!1;b={46:47,48:c[0].13.1d(0,4)+"-"+c[0].13.1d(4,2)+"-"+c[0].13.1d(6,2),49:"4a",4b:"",4c:l(c[0].1R),4d:c[0].1R,4e:l(c[0].1D),4f:c[0].1D,4g:c[0].2v,4h:b,1l:c[0].1l,1U:c[0].1U,2X:c[0].2X,2Y:c[0].2Y,2Z:c[0].2Z,30:c[0].30,4m:m,4n:a,1j:d,4o:e};b=4p.4q(b,4r("31"));1o.1r(b);$.4t({4u:4v+"/4w/32/4y",1i:b,4z:"4A",R:"31",4B:J(a){1==a.1T?(4C("4D",a.1i.4E),1F.1E="33-4I.1c?4J="+a.1i.4K+"&1j="+a.1i.1j):4L("4M 1h 4N 4O 32")}})});$(".34 .35 .4R").18("1u",J(){1F.1E="/"});$(".34 .35 .29").18("1u",J(){1F.1E="33-29.1c"})});',62,303,'|||||||||||||||||||class|||||span||||item||||if|div|info|return|val|||child|adult|||var|li|function|Number|eq||focus|||option|type|ExchangeRate|priceExchangeRate|for|US|value||train_price|name|case|break|select|train_time|price|number|num|text|on|length|input|sur|html|substr|u5ea7|book|train_zwcode|to|data|email|Permit|start_time|else|this|console|Service|parseInt|log|trips|trip|click|Residents|head|Mainland|push|Travel|types|firstCap|collection|train_to|href|location|ReceiverPhone|u8bc1|ReceiverName|HomeAddress|CheckOutDate|CheckInDate|BookName|HotelPhone|HotelAddress|HotelName|pinyin|train_from|u5367|code|arrive_time|time|from|doubt|slice|u7b49|date|addClass|coll|remove||forEach|Adult|Fee|change|search|ServiceFee|total|split|u786c|Total|append|new|Date|getTime|Taiwan|u8f6f|detail|method|disable|address|Passport|wra|h4|con|selected|ticket|train_code|u4e8c|seating|ul|mytrip|adults|Macau|HK|children|Card|active|ID|deliver|Chinese|passengerid|passengersename|piaotype|piaotypename|u7968|passporttypeseid|passporttypeseidname|passportseno|zwcode|zwname|u884c|u901a|adu|phone|run_time|run_time_minute|arrive_days|distance|post|order|train|booking_|nav|del|hotel|lines|u52a1|line|u5546|u52a8|station_names|JSON|train_duration|getSeat|getItem|Children|prepend|u4e00|left|index|Trip|switch|icon|u7279|removeClass|parents|parse|right|datepicker|numberOfMonths|showButtonPanel|dateFormat|dd|MM|yy|showAnim|slideDown|minDate|sub|wrapper|btn|Adults|sessionStorage|2592E5|tit|We|u6210|u4eba|offer|label|One|orderInfo|one|u513f|u7ae5|u6e7e|u53f0|u7167|u62a4|English|u6fb3|u6e2f|u4efd|Expert|Experienced|token|null|train_date|is_accept_standing|no|choose_seats|from_station_name|from_station_code|to_station_name|to_station_code|checi|passengers|pre|booking|consultation|and|delivery_method|delivery_address|phone_number|Object|assign|getSign|efficient|ajax|url|APIURL|api|after|create|dataType|json|success|setCookie|userId|user_orderid|u8eab|u4ee3|sale|pay|id|order_number|alert|Failure|submit|an|support|Child|home|attr'.split('|'),0,{}))
+$(function(){
+  var orderInfo = sessionStorage.getItem("orderInfo");
+  if (orderInfo) orderInfo = JSON.parse(orderInfo);
+  var train_station = [];
+  var train_station_py = [];
+  var service_Fee = orderInfo[0].ServiceFee;      // 服务费
+  var delivery_method = 1;  // 票送方式
+  var timeBeyond = false;
+
+  console.log(orderInfo);
+
+  getStation();
+  computingTime();
+  init();
+
+  // 成年人数改变的时候
+  $(".adults-select").on("change", function() {
+    var adultsNum = $(this).val();
+    var childrenNum = $(".children-select").val();
+    numChange(adultsNum, childrenNum);
+    priceChange(adultsNum, childrenNum)
+  });
+  // 未成年人数改变的时候
+  $(".children-select").on("change", function() {
+    var childrenNum = $(this).val();
+    var adultsNum = $(".adults-select").val();
+    numChange(adultsNum, childrenNum);
+    priceChange(adultsNum, childrenNum)
+  });
+
+  // 票送方式选择
+  $(".collection-types .item .head .icon-coll").on("click", function() {
+    if (!timeBeyond) return false;
+    $(".collection-types .item .head").removeClass("active");
+    $(this).parents(".head").addClass("active");
+    delivery_method = $(this).attr("data-type");
+  });
+
+  // 居住酒店日期
+  $(".deliver-date-wra .deliver-date").datepicker({
+    numberOfMonths: 2,
+    showButtonPanel: false,
+    dateFormat: 'dd.MM.yy',
+    showAnim: 'slideDown',
+    minDate: +0
+  });
+
+  // 提交订单
+  $(".sub-book-btn").on("click", function() {
+    // adult-info
+    // 获取乘客信息
+    var passengers = [];
+    for (var i = 0; i < $(".adult-info .item-adult").length; i++) {
+      var index = parseInt(i) + 1;
+      var sunshuan = $(".adult-info .item-adult:eq("+i+") .sur").val();
+      var given = $(".adult-info .item-adult:eq("+i+") .name").val();
+      var type = $(".adult-info .item-adult:eq("+i+") .type").val();
+      var number = $(".adult-info .item-adult:eq("+i+") .number").val();
+      if (!sunshuan) {
+        $(".adult-info .item-adult:eq("+i+") .sur").focus();
+        return false;
+        break;
+      }
+      if (!given) {
+        $(".adult-info .item-adult:eq("+i+") .name").focus();
+        return false;
+        break;
+      }
+      if (!number) {
+        $(".adult-info .item-adult:eq("+i+") .number").focus();
+        return false;
+        break;
+      }
+      passengers.push({
+        "passengerid": index,
+        "passengersename": sunshuan + "" + given,
+        "piaotype": 1,
+        "piaotypename": "成人票",
+        "passporttypeseid": type,
+        "passporttypeseidname": getCertEn(type),
+        "passportseno": number,
+        "price": orderInfo[0].train_price,
+        "zwcode": orderInfo[0].train_zwcode,
+        "zwname": getSeatName(orderInfo[0].train_zwcode)
+      })
+    }
+    // 获取儿童票
+    for (var i = 0; i < $(".child-info .item-child").length; i++) {
+      var index = parseInt(passengers.length) + parseInt(i) + 1;
+      var sunshuan = $(".child-info .item-child:eq("+i+") .sur").val();
+      var given = $(".child-info .item-child:eq("+i+") .name").val();
+      var type = $(".child-info .item-child:eq("+i+") .type").val();
+      var number = $(".child-info .item-child:eq("+i+") .number").val();
+      if (!sunshuan) {
+        $(".child-info .item-child:eq("+i+") .sur").focus();
+        return false;
+        break;
+      }
+      if (!given) {
+        $(".child-info .item-child:eq("+i+") .name").focus();
+        return false;
+        break;
+      }
+      if (!number) {
+        $(".child-info .item-child:eq("+i+") .number").focus();
+        return false;
+        break;
+      }
+      passengers.push({
+        "passengerid": index,
+        "passengersename": sunshuan + "" + given,
+        "piaotype": 2,
+        "piaotypename": "儿童票",
+        "passporttypeseid": type,
+        "passporttypeseidname": getCertEn(type),
+        "passportseno": number,
+        "price": Number(orderInfo[0].train_price / 2),
+        "zwcode": orderInfo[0].train_zwcode,
+        "zwname": getSeatName(orderInfo[0].train_zwcode)
+      })
+    }
+    // 获取票送方式 和地址
+    var delivery_address = {};
+    if (delivery_method == 2) {
+      var HotelName = $(".HotelName").val();
+      var HotelAddress = $(".HotelAddress").val();
+      var HotelPhone = $(".HotelPhone").val();
+      var BookName = $(".BookName").val();
+      var CheckInDate = $(".CheckInDate").val();
+      var CheckOutDate = $(".CheckOutDate").val();
+      if (!HotelName) {
+        $(".HotelName").focus();
+        return false;
+      }
+      if (!HotelAddress) {
+        $(".HotelAddress").focus();
+        return false;
+      }
+      if (!HotelPhone) {
+        $(".HotelPhone").focus();
+        return false;
+      }
+      if (!BookName) {
+        $(".BookName").focus();
+        return false;
+      }
+      if (!CheckInDate) {
+        $(".CheckInDate").focus();
+        return false;
+      }
+      if (!CheckOutDate) {
+        $(".CheckOutDate").focus();
+        return false;
+      }
+      delivery_address.HotelName = HotelName;
+      delivery_address.HotelAddress = HotelAddress;
+      delivery_address.HotelPhone = HotelPhone;
+      delivery_address.BookName = BookName;
+      delivery_address.CheckInDate = CheckInDate;
+      delivery_address.CheckOutDate = CheckOutDate;
+    } else if (delivery_method == 3) {
+      var HomeAddress = $(".HomeAddress").val();
+      var ReceiverName = $(".ReceiverName").val();
+      var ReceiverPhone = $(".ReceiverPhone").val();
+      if (!HomeAddress) {
+        $(".HomeAddress").focus();
+        return false;
+      }
+      if (!ReceiverName) {
+        $(".ReceiverName").focus();
+        return false;
+      }
+      if (!ReceiverPhone) {
+        $(".ReceiverPhone").focus();
+        return false;
+      }
+      delivery_address.HomeAddress = HomeAddress;
+      delivery_address.ReceiverName = ReceiverName;
+      delivery_address.ReceiverPhone = ReceiverPhone;
+    }
+    var email_ = $(".book-email").val();
+    var phone_number_ = $(".book-phone").val();
+    if (!email_) {
+      $(".book-email").focus();
+      return false;
+    }
+    if (!phone_number_) {
+      $(".book-phone").focus();
+      return false;
+    }
+    var data_ = {
+      "token": null,
+      "train_date": orderInfo[0].train_time.substr(0,4)+"-"+orderInfo[0].train_time.substr(4,2)+"-"+orderInfo[0].train_time.substr(6,2),
+      "is_accept_standing": "no",
+      "choose_seats": "",
+      "from_station_name": codeGetPy(orderInfo[0].train_from),
+      "from_station_code": orderInfo[0].train_from,
+      "to_station_name": codeGetPy(orderInfo[0].train_to),
+      "to_station_code": orderInfo[0].train_to,
+      "checi": orderInfo[0].train_code,
+      "passengers": passengers,
+      "start_time":  orderInfo[0].start_time,
+      "arrive_time": orderInfo[0].arrive_time,
+      "run_time": orderInfo[0].run_time,
+      "run_time_minute": orderInfo[0].run_time_minute,
+      "arrive_days": orderInfo[0].arrive_days,
+      "distance": orderInfo[0].distance,
+      "delivery_method": delivery_method,
+      "delivery_address": delivery_address,
+      "email": email_,
+      "phone_number": phone_number_
+    }
+    data_ = Object.assign(data_, getSign("post"))
+    console.log(data_);
+    $.ajax({
+      url:  APIURL + "/api/order/create",
+      data: data_,
+      dataType: 'json',
+      type: 'post',
+      success: function(data) {
+        if (data.code == 1) {
+          setCookie('userId', data.data.user_orderid);
+          location.href = 'train-pay.html?id=' + data.data.order_number + '&email=' + data.data.email;
+        } else {
+          alert("Failure to submit an order")
+        }
+      }
+    })
+  })
+
+  // 跳转首页
+  $(".booking_ .nav .home").on("click", function() {
+    location.href = "/";
+  });
+  $(".booking_ .nav .search").on("click", function() {
+    location.href = "train-search.html";
+  });
+  // ===========================================================
+  // TODO:发送数据
+  // Test()
+  function Test() {
+    var data = {
+      "token": null,
+      "train_date": "2019-06-18",
+      "is_accept_standing": "no",
+      "choose_seats": "",
+      "from_station_name": codeGetPy("VNP"),
+      "from_station_code": "VNP",
+      "to_station_name": codeGetPy("AOH"),
+      "to_station_code": "AOH",
+      "checi": "G101",
+      "passengers": [
+        {
+          "passengerid": 1,
+          "passengersename": "CHENXIAO",
+          "piaotype": 1,
+          "piaotypename": "成人票",
+          "passporttypeseid": "B",
+          "passporttypeseidname": "护照",
+          "passportseno": "12345678",
+          "price": 120,
+          "zwcode": "O",
+          "zwname": "二等座"
+        }
+      ],
+      "start_time": "06:43",
+      "arrive_time": "12:40",
+      "run_time": "05:57",
+      "run_time_minute": 357,
+      "arrive_days": 0,
+      "distance": 120,
+      "delivery_method": 2,
+      "delivery_address": {
+        "HotelName": "dsadsa",
+        "HotelAddress": "dsada",
+        "HotelPhone": 123456,
+        "BookName": "dsadas",
+        "CheckInDate": "2019-01-10",
+        "CheckOutDate": "2019-01-10",
+        "HomeAddress": "",
+        "ReceiverName": "",
+        "ReceiverPhone": ""
+      },
+      "email": "1023581658@qq.com",
+      "phone_number": "15600121178",
+    }
+    data = Object.assign(data, getSign("post"))
+    console.log(data);
+    // return false;
+    $.ajax({
+      url:  APIURL + "/api/order/create",
+      data: data,
+      dataType: 'json',
+      type: 'post',
+      success: function(data) {
+        console.log(data);
+      }
+    })
+  }
+
+  // TODO: 查询订单
+  // Search()
+  function Search() {
+    $.ajax({
+      url: APIURL + "/api/order/queryV2?order_number="+"CTT20190620011807591"+"&email="+"1023581658@qq.com"+"&phone_number=" +"123456"+ getSign("get"),
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        console.log(data);
+      }
+    })
+  }
+
+  // 初始化数据
+  function init() {
+    // +'<li class="item">Children: CNY933/US$141 X <span class="num">0</span></li>'
+    if (!orderInfo) return false;
+    var str = "";
+    var grandTotal = 0;
+    orderInfo.forEach(function(item, index) {
+      grandTotal += Number(priceExchangeRate(Number(item.train_price) + Number(item.ServiceFee), ExchangeRate));
+      var index = index + 1;
+      str += '<li class="trip">'
+                +'<div class="head">'
+                  +'<div class="left">'
+                    +'<span class="index">Trip '+index+'</span>'
+                    +'<span class="date">'+timeFormat(item.train_time)+'</span>'
+                  +'</div>'
+                  +'<div class="right">'
+                    +'<div class="doubt">'
+                      +'<div class="doubt-wrapper">'
+                        +'<div class="doubt-wra">'
+                          +'<h4 class="tit">We offer:</h4>'
+                          +'<p class="con">1. One-to-one 24/7 English Expert Service.</p>'
+                          +'<p class="con">2. Experienced pre-booking consultation and efficient after-sale support.</p>'
+                        +'</div>'
+                      +'</div>'
+                    +'</div>'
+                    +'<i class="del"></i>'
+                  +'</div>'
+                +'</div>'
+                +'<div class="ticket">'
+                  +'<span class="number">'+item.train_code+'</span>'
+                  +'<div class="info">'
+                    +'<div class="lines">'
+                      +'<span class="from"></span>'
+                      +'<span class="line"></span>'
+                      +'<span class="to"></span>'
+                    +'</div>'
+                    +'<div class="time">'
+                      +'<span class="from">'+item.start_time+'</span>'
+                      +'<span class="to">'+item.arrive_time+'</span>'
+                    +'</div>'
+                    +'<div class="address">'
+                      +'<span class="from">'+codeGetPy(item.train_from)+'</span>'
+                      +'<span class="to">'+codeGetPy(item.train_to)+'</span>'
+                    +'</div>'
+                  +'</div>'
+                  +'<div class="time-seating">'
+                    +'<span class="time">'+getDuration(item.train_duration)+'</span> | <span class="seating">'+getSeat(item.train_zwcode)+'</span>'
+                  +'</div>'
+                  +'<div class="ticket-price">'
+                    +'<ul class="price-info">'
+                      +'<li class="item">Adult: US$'+priceExchangeRate(item.train_price, ExchangeRate)+' X <span class="num">1</span></li>'
+                      +'<li class="item">Service Fee: US$'+ priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">1</span></li>'
+                    +'</ul>'
+                    +'<div class="total">'
+                      // +'Total: US$'+ (Number(item.train_price) + service_Fee)
+                      +'Total: US$'+ priceExchangeRate(Number(item.train_price) + Number(service_Fee), ExchangeRate)
+                    +'</div>'
+                  +'</div>'
+                +'</div>'
+              +'</li>'
+    })
+    $(".mytrip .trips .trip").remove();
+    $(".mytrip .trips").prepend(str);
+    $(".price .detail").html("US$" + grandTotal);
+  }
+
+  // 计算时间 小于72个小时不能选择快递
+  function computingTime() {
+    if (!orderInfo) return false;
+    var ymsTime = orderInfo[0].train_time.substr(0, 4) + '/' + orderInfo[0].train_time.substr(4, 2) + '/' + orderInfo[0].train_time.substr(6, 2) +' ' + orderInfo[0].start_time;
+    var startTime = new Date(ymsTime).getTime();
+    var newTime = new Date().getTime();
+    if ((startTime - newTime) > 72*60*60*1000) {
+      timeBeyond = true;
+    } else {
+      $(".collection-types .coll-hotel").addClass("method-disable");
+      $(".collection-types .coll-address").addClass("method-disable");
+    }
+  }
+
+  // 当人数发生改变时候
+  function numChange(num1, num2) {
+    if (!orderInfo) return false;
+    // 成人/未成年人  删除 / 添加
+    var itemadult = $(".adult-info .item-adult").length;
+    var itemchild = $(".child-info .item-child").length;
+    if (num1 > itemadult) {
+      var diff1 = num1 - itemadult;
+      var str1 = "";
+      for (var i = 0; i < diff1; i++) {
+        var index1 = itemadult + i + 1;
+        str1 += '<li class="item item-adult">'
+                  +'<span class="adu">Adults'+index1+'.</span>'
+                  +'<input class="sur" type="text">'
+                  +'<input class="name" type="text">'
+                  +'<select class="type">'
+                    +'<option value="1">Chinese ID Card</option>'
+                    +'<option value="C">Mainland Travel Permit for HK/Macau Residents</option>'
+                    +'<option value="B" selected>Passport</option>'
+                    +'<option value="G">Mainland Travel Permit for Taiwan Residents</option>'
+                  +'</select>'
+                  +'<input class="number" type="text" name="" value="">'
+                +'</li>'
+      }
+      $(".adult-info").append(str1);
+    } else if (num1 < itemadult) {
+      var diff1 = itemadult - num1;
+      for (var i = diff1; i > 0; i--) {
+        var index1 = Number(num1) + i - 1;
+        console.log(index1);
+        $(".adult-info .item-adult:eq("+index1+")").remove();
+      }
+    }
+    // 未成年人
+    if (num2 > itemchild) {
+      var diff2 = num2 - itemchild;
+      var str2 = "";
+      for (var i = 0; i < diff2; i++) {
+        var index2 = itemchild + i + 1;
+        str2 += '<li class="item item-child">'
+                  +'<span class="adu">Child.'+index2+'.</span>'
+                  +'<input class="sur" type="text">'
+                  +'<input class="name" type="text">'
+                  +'<select class="type">'
+                    +'<option value="1">Chinese ID Card</option>'
+                    +'<option value="C">Mainland Travel Permit for HK/Macau Residents</option>'
+                    +'<option value="B" selected>Passport</option>'
+                    +'<option value="G">Mainland Travel Permit for Taiwan Residents</option>'
+                  +'</select>'
+                  +'<input class="number" type="text" name="" value="">'
+                +'</li>'
+      }
+      $(".child-info").append(str2);
+    } else if (num2 < itemchild) {
+      var diff2 = itemchild - num2;
+      for (var i = diff2; i > 0; i--) {
+        var index2 = Number(num2) + i - 1;
+        $(".child-info .item-child:eq("+index2+")").remove();
+      }
+    }
+  }
+
+  // 价格计算
+  function priceChange(adultsNum, childrenNum) {
+    if (!orderInfo) return false;
+    console.log(orderInfo);
+    var grandPrice = 0;
+    orderInfo.forEach(function (item, index) {
+      if (childrenNum > 0) {
+        var adandch = Number(adultsNum)+Number(childrenNum)
+        var str = '<li class="item">Adult: US$'+priceExchangeRate(item.train_price, ExchangeRate)+' X <span class="num">'+adultsNum+'</span></li>'
+                  +'<li class="item">Children: US$'+ priceExchangeRate(Number(item.train_price)/2, ExchangeRate)+' X <span class="num">'+childrenNum+'</span></li>'
+                  +'<li class="item">Service Fee: US$'+ priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">'+adandch+'</span></li>';
+        $(".trips .trip:eq("+index+") .price-info").html(str);
+      } else {
+        var str = '<li class="item">Adult: US$'+priceExchangeRate(Number(item.train_price), ExchangeRate)+' X <span class="num">'+adultsNum+'</span></li>'
+                  +'<li class="item">Service Fee: US$'+priceExchangeRate(service_Fee, ExchangeRate)+' X <span class="num">'+Number(adultsNum)+'</span></li>';
+        $(".trips .trip:eq("+index+") .price-info").html(str);
+      }
+      var totalPrice = priceExchangeRate(Number(item.train_price), ExchangeRate) * Number(adultsNum) +  priceExchangeRate(Number(item.train_price) / 2, ExchangeRate) * Number(childrenNum) + (Number(adultsNum) + Number(childrenNum)) * priceExchangeRate(service_Fee, ExchangeRate);
+      grandPrice += totalPrice;
+      $(".trips .trip:eq("+index+") .total").html("Total: US$" + totalPrice);
+    })
+    $(".price .detail").html("US$" + grandPrice)
+  }
+
+  //获取所有的车站信息
+  function getStation(){
+    // 车站数据
+    var station_name_arr = station_names.split("|");
+    for(var i=0;i< parseInt((station_name_arr.length-1) / 5);i++){
+      train_station.push({
+        "name": station_name_arr[i*5+1],
+        "code": station_name_arr[i*5+2],
+        "pinyin": station_name_arr[i*5+3]
+      });
+      // train_station_py.push(station_name_arr[i*5+3]);
+      train_station_py.push({
+        label: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")",
+        value: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")"
+      });
+    }
+  }
+
+  // 时间格式化
+  function timeFormat(time) {
+    return time.slice(0, 4) + '-' + time.slice(4, 6) + '-' + time.slice(6, 8);
+  }
+
+  // 根据该城市的code查询拼音
+  function codeGetPy(code, en){
+    var en = en || "";
+    // train_station
+    var code = code || "";
+    var cityPy = "";
+    train_station.forEach(function(item){
+      if(item.code == code){
+        if(en){
+          cityPy = firstCap(item.pinyin)+"("+item.name+")";
+        }else{
+          cityPy = firstCap(item.pinyin);
+        }
+      }
+    });
+    return cityPy;
+  }
+
+  // 耗时转换
+  function getDuration(str) {
+    var data = str.split(":");
+    return data[0] + "h" + data[1] + "m";
+  }
+
+  // // 获取座位
+  // function getSeat (type) {
+  //   var seat = "";
+  //   switch (type) {
+  //     case "O":
+  //       seat = "2nd Cls."
+  //       break;
+  //     case "M":
+  //       seat = "1nd Cls."
+  //       break;
+  //     case "9":
+  //       seat = "Business Cls"
+  //       break;
+  //     case "F":
+  //       seat = "CRH Berth"
+  //       break;
+  //     case "4":
+  //       seat = "Soft Sleeper"
+  //       break;
+  //     case "3":
+  //       seat = "Hard Sleeper"
+  //       break;
+  //     case "1":
+  //       seat = "Soft Seat"
+  //       break;
+  //   }
+  //   return seat;
+  // }
+
+  // code 获取证件类型
+  function getCertEn(code) {
+    var str;
+    if(code == "1"){
+      str = "二代身份证";
+    }else if(code == "C"){
+      str = "港澳通行证";
+    }else if(code == "B"){
+      str = "护照";
+    }else if(code == "G"){
+      str = "台湾通行证";
+    }
+    return str;
+  }
+
+  //根据座位简码获取座位名称 M --> 一等座
+  function getSeatName(code){
+    var str = "";
+    var code = ""+code;
+    switch (code) {
+      case "F":
+        str = "动卧";
+        break;
+      case "9":
+        str = "商务座";
+        break;
+      case "P":
+        str = "特等座";
+        break;
+      case "M":
+        str = "一等座";
+        break;
+      case "O":
+        str = "二等座";
+        break;
+      case "4":
+        str = "软卧";
+        break;
+      case "3":
+        str = "硬卧";
+        break;
+      case "2":
+        str = "软座";
+        break;
+      case "1":
+        str = "硬座";
+        break;
+    }
+    return str;
+  }
+
+});

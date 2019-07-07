@@ -1,1 +1,38 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(2(){$(".o-F-E").8("9",2(){w b=$(".0-6").7(),c=$(".0-3").7();d(!b)e $(".0-6").f(),!1;d(!c)e $(".0-3").f(),!1;b=p+"/n/k/y?l="+b+"&3="+c+"&"+m("i");g.h(b);$.q({r:b,s:"t",u:"i",v:2(a){g.h(a);1==a.x?(a=a.j,z.A("B",C.D(a)),5.4="G-H.I"):J(a.K)}})});$(".0-L .M").8("9",2(){5.4="/"})});',49,49,'check||function|email|href|location|no|val|on|click||||if|return|focus|console|log|get|data|order|order_number|getSign|api|con|APIURL|ajax|url|dataType|json|type|success|var|code|queryV2|sessionStorage|setItem|checkInfo|JSON|stringify|btn|search|train|details|html|alert|message|order_|home'.split('|'),0,{}))
+$(function(){
+  // 搜索订单详情
+  $(".con-search-btn").on("click", function() {
+    var checkNo = $(".check-no").val();
+    var checkEmail = $(".check-email").val();
+    if (!checkNo) {
+      $(".check-no").focus();
+      return false;
+    }
+    if (!checkEmail) {
+      $(".check-email").focus();
+      return false;
+    }
+    // var url_ = APIURL + "/api/order/queryV2?order_number="+checkNo+"&email="+checkEmail+"&phone_number="+checkPhone+"&" + getSign("get");
+    var url_ = APIURL + "/api/order/queryV2?order_number="+checkNo+"&email="+checkEmail+"&" + getSign("get");
+    console.log(url_);
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        console.log(data);
+        if (data.code == 1) {
+          var data = data.data;
+          sessionStorage.setItem("checkInfo", JSON.stringify(data));
+          location.href = 'train-details.html';
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  });
+
+  // 跳转首页
+  $(".check-order_ .home").on("click", function() {
+    location.href = "/";
+  });
+});

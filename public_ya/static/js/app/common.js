@@ -1,9 +1,8 @@
 // api地址
 var APIURL = "http://123.57.18.91:1002";
-// var APIURL_US = "http://64.50.179.18";
-var APIURL_US = "http://123.57.18.91:1002";
-var APIURL_IPAYLINK = "http://39.105.54.233:1004";
-var APIURL_BACK = "http://64.50.179.33";
+var APIURL_IPLINKS = "http://39.105.54.233:1004";
+var APIURL_PAYPAL_RETURN = "http://64.50.179.33";
+var APIURL_IPAYLINKS_RETURN = "http://64.50.179.33";
 // 汇率
 var ExchangeRate = 6.9;
 if (getCookie('ExchangeRate')) ExchangeRate = getCookie('ExchangeRate');

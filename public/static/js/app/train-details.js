@@ -11,6 +11,11 @@ $(function() {
   $(".order-details_ .nav .search").on("click", function() {
     location.href = "train-search.html";
   });
+
+  // 退票
+  $(".details .unpaid").on("click", ".link", function() {
+    location.href = "train-cancel.html?id=" + JSON.parse(checkInfo).user_orderid + "&order="+JSON.parse(checkInfo).order_number;
+  });
   // ==================================================
 
   function init() {
@@ -100,6 +105,9 @@ $(function() {
       $(".details .unpaid").html('<span class="unpaid">Unpaid</span>');
     } else if (checkInfo_.status == 4) {
       $(".details .unpaid").html('<div class="haspaid"><span class="name">Paid</span></div>');
+    } else if (checkInfo_.status == 5) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span></div>');
+      // $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span><a class="link">Cancel</a></div>');
     }
   }
 

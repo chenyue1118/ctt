@@ -1,1 +1,125 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(r(){r l(){B a=11.P(e);$(".G-F").5("10 E.: "+a.14);$(".G-1Z-q").5("10 E.: "+a.14);$(".o-i .1C .1S .1Y").5(a.I);$(".o-i .j .F").5(a.1y);$(".o-i .j .i .q .17").5(a.19);$(".o-i .j .i .q .1a").5(a.1j);$(".o-i .j .i .O .17").5(a.2d);$(".o-i .j .i .O .1a").5(a.2e);B b=m(a.I+" "+a.19,a.I+" "+a.1j,a.1Q);$(".o-i .j .q-C .q").5(b);$(".o-i .j .q-C .C").5(1U(a.A[0].22));$(".o-i .j .q-C .w").5(" x "+a.A.18);b="";B c=0,d=0,f=0,g=0,h="",k="";a.A.1X(r(a){1==a.Z?(c++,f=(a.y/H).13(2),h+=\'<n 8="t"><6 8="u 1w">J \'+c+\'.</6><6 8="u Q">\'+a.R+\'</6><6 8="u F">S E.: \'+a.T+"</6></n>"):2==a.Z&&(d++,g=(a.y/H).13(2),k+=\'<n 8="t"><6 8="u 1w">U \'+d+\'.</6><6 8="u Q">\'+a.R+\'</6><6 8="u F">S E.: \'+a.T+"</6></n>")});b=(0<d?b+(\'<n 8="t">J: z$\'+f+\' X <6 8="w">\'+c+"</6></n>")+(\'<n 8="t">U: z$\'+g+\' X <6 8="w">\'+d+"</6></n>"):b+(\'<n 8="t">J: z$\'+f+\' X <6 8="w">\'+c+"</6></n>"))+(\'<n 8="t">2f 2g: z$\'+1x(2h,H)+\' X <6 8="w">\'+a.A.18+"</6></n>");$(".o-i .j .j-y .y-i").5(b);b=1z(a.1A);$(".o-i .j .j-y .W").5("1E: Y"+b);$(".1R-W .w").5("Y"+b);$(".s-D .D-v").12(h);$(".s-D .D-v").12(k);$(".s-7 .7-v .K").5(a.K);$(".s-7 .7-v .15").5(a.15);$(".s-7 .7-v .16").5(a.16);$(".s-7 .7-v .2a").5(a.2c);1==a.L?$(".9-7").M():2==a.L&&a.p?($(".9-7 .9-1b").1c(),$(".9-7 .9-1d").M(),$(".9-7 .1e").5(a.p.1B),$(".9-7 .1f").5(a.p.1D),$(".9-7 .1g").5(a.p.1F),$(".9-7 .1G").5(""),$(".9-7 .1H").5(a.p.1I),$(".9-7 .1J").5(a.p.1K),$(".9-7 .1L").5(a.p.1M)):3==a.L&&a.p&&($(".9-7 .9-1d").1c(),$(".9-7 .9-1b").M(),$(".9-7 .1e").5(a.p.1N),$(".9-7 .1f").5(a.p.1O),$(".9-7 .1g").5(a.p.1P));0==a.1h?$(".1i .N").5(\'<6 8="N">1T</6>\'):4==a.1h&&$(".1i .N").5(\'<1k 8="1V"><6 8="K">1W</6></1k>\')}r m(a,b,c){a=(1l 1m(a)).1n();c=((1l 1m(b)).1n()+20*c-a)/21;b=1o(c/1p);c=1o(c%1p);24 b+"h"+c+"m"}B e=25.26("27");28.29(11.P(e));e&&l();$(".G-1q .1r .2b").1s("1t",r(){1u.1v="/"});$(".G-1q .1r .V").1s("1t",r(){1u.1v="23-V.5"})});',62,142,'|||||html|span|contact|class|express|||||||||info|ticket||||li|trip|delivery_address|time|function|detail|item|con|wra|num||price|US|passengers|var|seating|traveler|No|number|order|ExchangeRate|train_date|Adult|name|delivery_method|hide|unpaid|address|parse|station|passengersename|Passport|passportseno|Child|search|total||USD|piaotype|Tarching|JSON|append|toFixed|order_number|nationality|email|from|length|start_time|to|wra1|show|wra2|val01|val02|val03|status|details|arrive_time|div|new|Date|getTime|parseInt|60|details_|nav|on|click|location|href|sex|priceExchangeRate|checi|Number|orderamountUSD|HotelName|head|HotelAddress|Total|HotelPhone|val04|val05|BookName|val06|CheckInDate|val07|CheckOutDate|HomeAddress|ReceiverName|ReceiverPhone|arrive_days|grand|left|Unpaid|getSeat|haspaid|Paid|forEach|date|submit|864E5|6E4|zwcode|train|return|sessionStorage|getItem|checkInfo|console|log|phone|home|phone_number|from_station_name|to_station_name|Service|Fee|ServiceFee'.split('|'),0,{}))
+$(function() {
+  // var service_Fee = 10;      // 服务费
+  var checkInfo = sessionStorage.getItem("checkInfo");
+  console.log(JSON.parse(checkInfo));
+  if (checkInfo) init();
+
+  // 跳转首页
+  $(".order-details_ .nav .home").on("click", function() {
+    location.href = "/";
+  });
+  $(".order-details_ .nav .search").on("click", function() {
+    location.href = "train-search.html";
+  });
+
+  // 退票
+  $(".details .unpaid").on("click", ".link", function() {
+    location.href = "train-cancel.html?id=" + JSON.parse(checkInfo).user_orderid + "&order="+JSON.parse(checkInfo).order_number;
+  });
+  // ==================================================
+
+  function init() {
+    var checkInfo_ = JSON.parse(checkInfo);
+    $(".order-number").html("Tarching No.: "+checkInfo_.order_number);
+    $(".order-submit-time").html("Tarching No.: "+checkInfo_.order_number);
+    $(".trip-info .head .left .date").html(checkInfo_.train_date);
+    // TODO: status
+    $(".trip-info .ticket .number").html(checkInfo_.checi);
+    $(".trip-info .ticket .info .time .from").html(checkInfo_.start_time);
+    $(".trip-info .ticket .info .time .to").html(checkInfo_.arrive_time);
+    $(".trip-info .ticket .info .address .from").html(checkInfo_.from_station_name);
+    $(".trip-info .ticket .info .address .to").html(checkInfo_.to_station_name);
+    var durTime = computingTime(checkInfo_.train_date + " " + checkInfo_.start_time, checkInfo_.train_date + " " + checkInfo_.arrive_time, checkInfo_.arrive_days);
+    $(".trip-info .ticket .time-seating .time").html(durTime);
+    $(".trip-info .ticket .time-seating .seating").html(getSeat(checkInfo_.passengers[0].zwcode));
+    $(".trip-info .ticket .time-seating .num").html(' x ' + checkInfo_.passengers.length);
+    var str = "";
+    var str_ad = 0;
+    var str_ch = 0;
+    var str_ad_pr = 0;
+    var str_ch_pr = 0;
+    var str_ad_pass = '';
+    var str_ch_pass = '';
+    var service_fee = 0
+    checkInfo_.passengers.forEach(function(item) {
+      if (item.piaotype == 1) {
+        str_ad ++;
+        str_ad_pr = (item.price / ExchangeRate).toFixed(2);
+        service_fee = str_ad_pr - item.priceUSD;
+        str_ad_pass += '<li class="item">'
+                        +'<span class="con sex">Adult '+str_ad+'.</span>'
+                        +'<span class="con station">'+item.passengersename+'</span>'
+                        +'<span class="con number">Passport No.: '+item.passportseno+'</span>'
+                      +'</li>';
+      } else if (item.piaotype == 2) {
+        str_ch ++;
+        str_ch_pr = (item.price / ExchangeRate).toFixed(2);
+        str_ch_pass += '<li class="item">'
+                        +'<span class="con sex">Child '+str_ch+'.</span>'
+                        +'<span class="con station">'+item.passengersename+'</span>'
+                        +'<span class="con number">Passport No.: '+item.passportseno+'</span>'
+                      +'</li>';
+      }
+    })
+
+    if (str_ch > 0) {
+      str += '<li class="item">Adult: US$'+str_ad_pr+' X <span class="num">'+str_ad+'</span></li>';
+      str += '<li class="item">Child: US$'+str_ch_pr+' X <span class="num">'+str_ch+'</span></li>';
+    } else {
+      str += '<li class="item">Adult: US$'+str_ad_pr+' X <span class="num">'+str_ad+'</span></li>';
+    }
+    str += '<li class="item">Service Fee: US$'+priceExchangeRate(ServiceFee, ExchangeRate)+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
+    // str += '<li class="item">Service Fee: US$'+service_fee+' X <span class="num">'+checkInfo_.passengers.length+'</span></li>';
+    $(".trip-info .ticket .ticket-price .price-info").html(str);
+    var grand_total = Number(checkInfo_.orderamountUSD);
+    // var grand_total = Number(checkInfo_.orderamountUSD) + Number(priceExchangeRate(ServiceFee, ExchangeRate))
+    $(".trip-info .ticket .ticket-price .total").html("Total: USD"+grand_total);
+    $(".grand-total .num").html("USD" + grand_total);
+    $(".detail-traveler .traveler-wra").append(str_ad_pass);
+    $(".detail-traveler .traveler-wra").append(str_ch_pass);
+    // TODO: 订票人信息
+    $(".detail-contact .contact-wra .name").html(checkInfo_.name);
+    $(".detail-contact .contact-wra .nationality").html(checkInfo_.nationality);
+    $(".detail-contact .contact-wra .email").html(checkInfo_.email);
+    $(".detail-contact .contact-wra .phone").html(checkInfo_.phone_number);
+    if (checkInfo_.delivery_method == 1) {
+      $(".express-contact").hide();
+    } else if (checkInfo_.delivery_method == 2 && checkInfo_.delivery_address) {
+      $(".express-contact .express-wra1").show();
+      $(".express-contact .express-wra2").hide();
+      $(".express-contact .val01").html(checkInfo_.delivery_address.HotelName);
+      $(".express-contact .val02").html(checkInfo_.delivery_address.HotelAddress);
+      $(".express-contact .val03").html(checkInfo_.delivery_address.HotelPhone);
+      $(".express-contact .val04").html('');
+      $(".express-contact .val05").html(checkInfo_.delivery_address.BookName);
+      $(".express-contact .val06").html(checkInfo_.delivery_address.CheckInDate);
+      $(".express-contact .val07").html(checkInfo_.delivery_address.CheckOutDate);
+    } else if (checkInfo_.delivery_method == 3 && checkInfo_.delivery_address) {
+      $(".express-contact .express-wra2").show();
+      $(".express-contact .express-wra1").hide();
+      $(".express-contact .val01").html(checkInfo_.delivery_address.HomeAddress);
+      $(".express-contact .val02").html(checkInfo_.delivery_address.ReceiverName);
+      $(".express-contact .val03").html(checkInfo_.delivery_address.ReceiverPhone);
+    }
+    if (checkInfo_.status == 0) {
+      $(".details .unpaid").html('<span class="unpaid">Unpaid</span>');
+    } else if (checkInfo_.status == 4) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name">Paid</span></div>');
+    } else if (checkInfo_.status == 5) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span></div>');
+      // $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span><a class="link">Cancel</a></div>');
+    }
+  }
+
+  // 计算时间
+  function computingTime(time1, time2, index) {
+    var times1 = new Date(time1).getTime()
+    var times2 = new Date(time2).getTime()
+    var timeDiff = 24 * 60 * 60 * 1000 * index;
+    var times2_ = times2 + timeDiff;
+    var diff = (times2_ - times1) / (1000 * 60);
+    var h = parseInt(diff / 60);
+    var m = parseInt(diff % 60);
+    return h + 'h' + m + 'm';
+  }
+});

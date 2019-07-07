@@ -37,7 +37,8 @@ $(function() {
   $(".pay-now-btn").on("click", function() {
     if (pay_by == "ipaylinks") {
       // http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number=<这是填入CTT订单号>&email=<这里填入客户下单时的邮件地址>&phone_number=<这里填入客户下单的手机号>&ReturnURL=<支付结果返回后回调显示的URL>&Trans_ID=<客户下单后返回的交易ID>
-      var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://182.61.175.203:8802/china-trains/train-pay.html?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
+      var PAYURL = APIURL_IPLINKS + '/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+APIURL+'/api/OrderPay?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
+      // var PAYURL = APIURL_IPLINKS + '/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+APIURL_IPAYLINKS_RETURN+'/china-trains/train-pay.html?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
       // var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://182.61.175.203:8802/china-trains/train-pay.html?pay_type=ipaylinks'+'&Trans_ID='+getCookie('userId');
       window.location.href = PAYURL;
     } else if (pay_by == "paypal") {
@@ -51,9 +52,9 @@ $(function() {
       $(".p-amount").val(toalPrice);
       $(".p-custom").val(orderInfo.order_number);
       // $(".p-return").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
-      $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
-      $(".p-return").val("http://182.61.175.203:8802/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
-      $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
+      // $(".p-return").val("http://127.0.0.1:8801/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
+      $(".p-return").val(APIURL_PAYPAL_RETURN + "/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
+      $(".cancel_return").val(APIURL_PAYPAL_RETURN + "/china-trains/train-pay.html?pay_type=paypal&id="+order_no+"&email="+orderInfo.email);
       // $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
       // $(".p-notify_url").val("http://182.61.175.203:8801/paypal?id="+order_no);
       $(".p-notify_url").val(notify_url_);
@@ -135,11 +136,11 @@ $(function() {
 
   // 占座
   function seatOcc(time){
-    alert(time)
-    var now = new Date().getTime() + 30 * 60 * 60 * 1000;
+    // var now = new Date().getTime();
+    var now = new Date().getTime() + 30 * 24 * 60 * 60 * 1000;
     var cTime = new Date(time.replace('-', '/').replace('-', '/') + ' 00:00:00').getTime();
     // 支付成功
-    if ((pay_type == 'paypal' || pay_type == 'ipaylinks') && cTime > now) {
+    if ((pay_type == 'paypal' || pay_type == 'ipaylinks') && now > cTime) {
       // TODO:
       $(".wait-loading").show();
       submitNew();
@@ -167,10 +168,13 @@ $(function() {
       dataType: "json",
       type: "post",
       success: function(data) {
-        if (data.code == 1) {
-        } else {
-          alert(data.message);
-        }
+        orderStatusJH()
+        // if (data.code == 1) {
+        //   orderStatusJH()
+        // } else {
+        //   alert(data.message);
+        //   $(".wait-loading").hide();
+        // }
       }
     })
   }
@@ -191,8 +195,47 @@ $(function() {
       type: "post",
       success: function(data) {
         if (data.code == 1) {
+          if (data.data == 2) {
+            orderticketpay()
+          } else if (data.data == 1) {
+            setTimeout(function() {
+              orderStatusJH()
+            }, 5000)
+          } else {
+            alert(data.message);
+            $(".wait-loading").hide();
+          }
         } else {
           alert(data.message);
+          $(".wait-loading").hide();
+        }
+      }
+    })
+  }
+
+  // 占座成功---去出票http://64.50.179.33/api/ticket/pay----支付完成就会出票
+  function orderticketpay() {
+    var url_ = APIURL + "/api/ticket/pay";
+    var data = {
+      order_number: order_no
+    }
+    data = Object.assign(data, getSign("post"))
+    $.ajax({
+      url: url_,
+      data: data,
+      dataType: "json",
+      type: "post",
+      success: function(data) {
+        if (data.code == 1) {
+          alert('Successful ticket issuance')
+          $(".loading").show();
+          setTimeout(function() {
+            init('ok');
+            $(".loading").hide();
+          }, 4000)
+        } else {
+          alert(data.message);
+          $(".wait-loading").hide();
         }
       }
     })
