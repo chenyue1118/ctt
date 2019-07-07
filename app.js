@@ -32,12 +32,12 @@ app.use('/china-trains/train-pay.html', (req, res) => {
 app.get('/ipaylinks', (req, res) => {
   console.log(req.query);
   console.log('method----get');
-  res.send({'state', true})
+  res.send({'state': true})
 })
 app.post('/ipaylinks', (req, res) => {
   console.log(req.query);
   console.log('method----post');
-  res.send({'state', true})
+  res.send({'state': true})
 })
 
 const PORT = 8801;
