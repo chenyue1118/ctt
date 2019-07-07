@@ -202,7 +202,7 @@ $(function() {
               orderStatusJH()
             }, 5000)
           } else {
-            alert(data.message);
+            // alert(data.message);
             $(".wait-loading").hide();
           }
         } else {
