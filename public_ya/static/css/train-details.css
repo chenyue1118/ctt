@@ -1,0 +1,322 @@
+.order-details_ {
+  width: 100%;
+  background: #F4F4F4; }
+  .order-details_ .order-details-wrapper {
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 56px; }
+    .order-details_ .order-details-wrapper .nav {
+      line-height: 16px;
+      padding: 28px 0;
+      font-size: 16px;
+      color: #000018; }
+      .order-details_ .order-details-wrapper .nav .link:hover {
+        text-decoration: underline; }
+      .order-details_ .order-details-wrapper .nav .link:nth-child(1) {
+        color: #1890FF; }
+      .order-details_ .order-details-wrapper .nav .link:nth-child(2) {
+        color: #D80909; }
+    .order-details_ .order-details-wrapper .details-wra {
+      width: 100%;
+      background: #fff;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+      .order-details_ .order-details-wrapper .details-wra .details {
+        padding: 32px 46px 36px 46px; }
+        .order-details_ .order-details-wrapper .details-wra .details .detail-title {
+          height: 32px;
+          line-height: 20px;
+          margin-bottom: 32px;
+          border-bottom: 1px solid #DBDBDB;
+          font-size: 0; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-title .number {
+            display: inline-block;
+            width: 50%;
+            font-size: 20px;
+            color: #000018;
+            font-weight: 500;
+            vertical-align: top; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-title .time {
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            color: #999999;
+            text-align: right;
+            vertical-align: top; }
+        .order-details_ .order-details-wrapper .details-wra .details .trips {
+          border: 1px solid #D9D9D9;
+          border-radius: 4px 4px 0 0; }
+          .order-details_ .order-details-wrapper .details-wra .details .trips .trip {
+            width: 100%; }
+            .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head {
+              height: 48px;
+              padding: 0 12px 0 18px;
+              background: #F4F4F4;
+              font-size: 0; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .left {
+                display: inline-block;
+                width: 26%;
+                height: 48px; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .left .index {
+                  position: relative;
+                  display: inline-block;
+                  width: 60px;
+                  height: 28px;
+                  line-height: 28px;
+                  margin-top: 9px;
+                  margin-right: 20px;
+                  text-align: center;
+                  font-size: 18px;
+                  color: #fff;
+                  font-weight: 500;
+                  background: #D80909;
+                  border-radius: 2px;
+                  vertical-align: top; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .left .index:after {
+                    position: absolute;
+                    top: 8px;
+                    right: -6px;
+                    z-index: 111;
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-left: 6px solid #D80909;
+                    border-top: 6px solid transparent;
+                    border-bottom: 4px solid transparent; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .left .date {
+                  display: inline-block;
+                  height: 48px;
+                  line-height: 48px;
+                  font-size: 18px;
+                  color: #333333; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .middle {
+                display: inline-block;
+                width: 50%;
+                height: 48px;
+                line-height: 48px;
+                font-size: 16px;
+                color: #d80909;
+                vertical-align: top; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right {
+                display: inline-block;
+                width: 24%;
+                height: 48px;
+                line-height: 48px;
+                text-align: right;
+                vertical-align: top;
+                font-size: 0; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right .unpaid {
+                  font-size: 16px;
+                  color: #666666; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right .haspaid {
+                  font-size: 16px; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right .haspaid .name {
+                    color: #666; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right .haspaid .link {
+                    padding-left: 6px;
+                    font-size: 14px;
+                    color: #1890ff;
+                    text-decoration: underline; }
+                    .order-details_ .order-details-wrapper .details-wra .details .trips .trip .head .right .haspaid .link:hover {
+                      text-decoration: none; }
+            .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket {
+              width: 100%;
+              height: 132px;
+              font-size: 0; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .number {
+                display: inline-block;
+                width: 108px;
+                height: 132px;
+                line-height: 132px;
+                font-size: 20px;
+                color: #1890FF;
+                text-indent: 18px;
+                font-weight: 500;
+                vertical-align: top; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info {
+                display: inline-block;
+                height: 132px;
+                padding-top: 38px;
+                font-size: 0;
+                vertical-align: top; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .lines {
+                  display: inline-block;
+                  padding-right: 8px;
+                  padding-top: 6px;
+                  vertical-align: top; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .lines .from, .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .lines .to {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background: #E5E5E5;
+                    border-radius: 50%; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .lines .line {
+                    display: block;
+                    width: 1px;
+                    height: 24px;
+                    background: #E5E5E5;
+                    margin-left: 4px; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .time {
+                  display: inline-block;
+                  padding-right: 20px;
+                  vertical-align: top; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .time .from {
+                    display: block;
+                    padding-bottom: 14px;
+                    line-height: 24px;
+                    font-size: 24px;
+                    color: #000018;
+                    font-weight: 500; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .time .to {
+                    display: block;
+                    font-size: 16px;
+                    font-size: 16px;
+                    color: #000018;
+                    font-weight: 500; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .address {
+                  display: inline-block;
+                  padding-right: 94px;
+                  vertical-align: top; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .address .from {
+                    display: block;
+                    padding-bottom: 14px;
+                    line-height: 24px;
+                    font-size: 16px;
+                    color: #000018;
+                    font-weight: 500; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .info .address .to {
+                    display: block;
+                    font-size: 16px;
+                    font-size: 16px;
+                    color: #000018;
+                    font-weight: 500; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .time-seating {
+                display: inline-block;
+                height: 132px;
+                line-height: 132px;
+                color: #333333;
+                font-size: 14px;
+                padding-right: 84px;
+                vertical-align: top; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .time-seating .seating, .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .time-seating .num {
+                  font-size: 16px; }
+              .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .ticket-price {
+                display: inline-block;
+                padding-top: 24px;
+                padding-left: 20px;
+                vertical-align: top; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .ticket-price .price-info {
+                  padding-bottom: 6px;
+                  border-bottom: 1px solid #AEAEAE; }
+                  .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .ticket-price .price-info .item {
+                    line-height: 20px;
+                    font-size: 16px;
+                    color: #333333; }
+                .order-details_ .order-details-wrapper .details-wra .details .trips .trip .ticket .ticket-price .total {
+                  line-height: 44px;
+                  font-size: 18px;
+                  color: #666666; }
+        .order-details_ .order-details-wrapper .details-wra .details .grand-total {
+          padding: 24px 0 40px 0;
+          line-height: 18px;
+          font-size: 20px;
+          color: #666666;
+          font-weight: 500;
+          text-align: right; }
+          .order-details_ .order-details-wrapper .details-wra .details .grand-total .num {
+            color: #d80909; }
+        .order-details_ .order-details-wrapper .details-wra .details .detail-note {
+          width: 100%;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-bottom: 34px;
+          font-size: 0;
+          background: #fff5f5; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-note .icon-detail-note {
+            display: inline-block;
+            width: 46px;
+            height: 26px;
+            background: url(../image/icon-remind.png) no-repeat center;
+            vertical-align: top; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-note .note-info {
+            display: inline-block; }
+            .order-details_ .order-details-wrapper .details-wra .details .detail-note .note-info .note-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-note .note-info .note-content {
+              line-height: 26px;
+              font-size: 16px;
+              color: #333333; }
+        .order-details_ .order-details-wrapper .details-wra .details .detail-traveler, .order-details_ .order-details-wrapper .details-wra .details .detail-contact, .order-details_ .order-details-wrapper .details-wra .details .express-contact {
+          width: 100%;
+          border: 1px solid #DBDBDB;
+          border-radius: 8px 8px 0 0;
+          overflow: hidden; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-tit, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-tit, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-tit, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-tit, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-tit {
+            background: #f4f4f4;
+            height: 46px;
+            line-height: 46px;
+            padding-left: 18px;
+            font-size: 18px;
+            color: #333333; }
+          .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra {
+            width: 100%; }
+            .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item {
+              font-size: 0; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con {
+                display: inline-block;
+                width: 214px;
+                line-height: 40px;
+                font-size: 16px;
+                color: #333333;
+                font-weight: 500;
+                vertical-align: top; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con:nth-child(1), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con:nth-child(1) {
+                width: 184px;
+                padding-right: 14px;
+                text-align: right;
+                background: #fff5f5; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con1:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con2:nth-child(2) {
+                width: 800px;
+                padding-left: 30px; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item .con:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item .con:nth-child(2) {
+                padding-left: 30px; }
+            .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item + .item, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item + .item {
+              border-top: 1px solid #DBDBDB; }
+            .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item-spe, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item-spe {
+              height: 68px;
+              padding-top: 6px; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item-spe .con2, .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item-spe .con2 {
+                line-height: 28px; }
+              .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .traveler-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .contact-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-traveler .express-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .traveler-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .contact-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .detail-contact .express-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .traveler-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .contact-wra .item-spe .con2:nth-child(2), .order-details_ .order-details-wrapper .details-wra .details .express-contact .express-wra .item-spe .con2:nth-child(2) {
+                line-height: 68px; }
+        .order-details_ .order-details-wrapper .details-wra .details .detail-traveler, .order-details_ .order-details-wrapper .details-wra .details .detail-contact {
+          margin-bottom: 30px; }
+      .order-details_ .order-details-wrapper .details-wra .book-center {
+        padding: 20px 46px 36px 46px;
+        font-size: 0;
+        border-top: 1px solid #DBDBDB; }
+        .order-details_ .order-details-wrapper .details-wra .book-center .icon-book-center {
+          display: inline-block;
+          width: 42px;
+          height: 40px;
+          background: url(../image/icon-book-center.png) no-repeat center;
+          vertical-align: top; }
+        .order-details_ .order-details-wrapper .details-wra .book-center .center-txt {
+          display: inline-block;
+          padding-left: 14px; }
+          .order-details_ .order-details-wrapper .details-wra .book-center .center-txt .title {
+            padding: 10px 0;
+            line-height: 20px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: bold; }
+          .order-details_ .order-details-wrapper .details-wra .book-center .center-txt .tel {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+          .order-details_ .order-details-wrapper .details-wra .book-center .center-txt .emails {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+            .order-details_ .order-details-wrapper .details-wra .book-center .center-txt .emails .email {
+              color: #1890FF; }

@@ -9,7 +9,8 @@ let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {
 
 app.use(morgan('short', {stream: accessLogStream}));
 
-app.use(express.static('./public'));
+// app.use(express.static('./public'));
+app.use(express.static('./public_ya'));
 
 app.get('/paypal', (req, res) => {
   console.log('收到请求--get');
@@ -26,6 +27,17 @@ app.use('/china-trains/train-pay.html', (req, res) => {
   console.log('收到请求');
   let query = req.query.query;
   res.redirect(`/china-trains/train-pay.html?query=${query}`);
+})
+
+app.get('/ipaylinks', (req, res) => {
+  console.log(req.query);
+  console.log('method----get');
+  res.send({'state', true})
+})
+app.post('/ipaylinks', (req, res) => {
+  console.log(req.query);
+  console.log('method----post');
+  res.send({'state', true})
 })
 
 const PORT = 8801;

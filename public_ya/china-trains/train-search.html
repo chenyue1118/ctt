@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>Book China Train Tickets, Search China Train Price, schedule, Timetable, Help travellers take train travel in China</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/train-search.css">
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  </head>
+  <body>
+    <!-- 公共头部 -->
+    <div class="header_">
+      <div class="top-wra">
+        <div class="top">
+          <h1 class="title">China Train, China Train Tickets, China Train Tours!</h1>
+          <div class="contact">
+            <i class="contact-icon"></i>
+            <a class="text">Contact Us</a>
+            <span class="line">|</span>
+            <i class="icon-back"></i>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wra">
+        <div class="nav">
+          <i class="nav-icon"></i>
+          <div class="list">
+            <i class="home-icon"></i>
+            <ul class="items">
+              <li class="item active">
+                <a class="link" href="../china-trains/train-search.html">China Trains</a>
+              </li>
+              <li class="item">
+                <a class="link" href="../china-flights/">China Flights</a>
+              </li>
+              <li class="item">
+                <a class="link" href="https://www.mychinataxi.com">China Car</a>
+              </li>
+              <li class="item">
+                <a class="link" href="../china-train-tour/">China Tours</a>
+              </li>
+              <li class="item">
+                <a class="link" href="diytrip/index.html">Customize China Tours</a>
+              </li>
+              <li class="item">
+                <a class="link" href="../tibet-travel/">Tibet Train Tours</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_seize_"></div>
+    <!-- 搜索 -->
+    <div class="train-search_">
+      <div class="search-trip-wra">
+        <ul class="head">
+          <li class="item active">
+            <span class="trip">Trip1</span>
+            <div class="trip-from-wra">
+              <input class="trip-from" id="search-train-from" type="text" placeholder="From">
+            </div>
+            <div class="trip-to-wra">
+              <input class="trip-to" id="search-train-to" type="text" placeholder="To">
+            </div>
+            <div class="trip-time-wra">
+              <input class="trip-time" id="search-train-time" type="text" placeholder="DepartDate">
+            </div>
+            <a class="trip-search">
+              Find Train
+              <i class="find-icon"></i>
+            </a>
+          </li>
+          <!-- <li class="item">
+            <span class="trip">Trip1</span>
+            <div class="trip-from-wra">
+              <input class="trip-from" type="text" placeholder="From">
+            </div>
+            <div class="trip-to-wra">
+              <input class="trip-to" type="text" placeholder="To">
+            </div>
+            <div class="trip-time-wra">
+              <input class="trip-time" type="text" placeholder="DepartDate">
+            </div>
+            <a class="trip-search">
+              Find Train
+              <i class="find-icon"></i>
+            </a>
+          </li> -->
+        </ul>
+      </div>
+      <div class="search-detail-wra">
+        <div class="search-detail-wrapper">
+          <div class="detail">
+            <i class="icon-sea"></i>
+            <span class="trip">Trip1</span>
+            <span class="detail-address detail-address-from"></span>
+            <i class="icon-detail-to"></i>
+            <span class="detail-address detail-address-to"></span>
+            <div class="total">
+              Total Results: <span class="num">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-screen-wra">
+        <div class="search-screen-wra">
+          <ul class="screen-time">
+            <li class="item">Apr 10,Wed</li>
+            <li class="item active">Apr 11,Wed</li>
+            <li class="item">Apr 12,Wed</li>
+            <li class="item">Apr 13,Wed</li>
+            <li class="item">Apr 14,Wed</li>
+            <li class="item">Apr 15,Wed</li>
+            <li class="item">Apr 16,Wed</li>
+          </ul>
+          <ul class="screen-select">
+            <li class="item ">
+              <span class="type-name">Train Type:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="trainType" id="type-all" value="all">
+                <label for="type-all"> All</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType" id="type-gdc" value="GDC">
+                <label for="type-gdc"> G/D/C Trains</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType" id="type-ztk" value="ZKT">
+                <label for="type-ztk"> Z/T/K Trains</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="trainType" id="type-other" value="Y126">
+                <label for="type-other"> Other Trains</label>
+              </div>
+              <!-- <div class="select">
+                <input type="checkbox" name="trainType">
+                <label for="type-other"> Available  Trains</label>
+              </div> -->
+            </li>
+            <li class="item">
+              <span class="type-name">Departure Time:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="departureTime" value="all" id="time-all">
+                <label for="time-all"> All</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="480-0" id="time-08">
+                <label for="time-08"> 00:00 -- 08:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="720-481" id="time-12">
+                <label for="time-12"> 08:01 -- 12:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="1080-721" id="time-18">
+                <label for="time-18"> 12:01 -- 18:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="1440-1081" id="time-24">
+                <label for="time-24"> 18:01 -- 23:59</label>
+              </div>
+            </li>
+            <!-- <li class="item">
+              <span class="type-name">Departure Stations:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="departureStation" value="0"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureStation" value="1"> Beijing South
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureStation" value="2"> Beijing West
+              </div>
+            </li> -->
+            <!-- <li class="item">
+              <span class="type-name">Arrival Stations:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="arrivalStation" value="0"> All
+              </div>
+              <div class="select">
+                <input type="checkbox" name="arrivalStation" value="1"> Beijing South
+              </div>
+              <div class="select">
+                <input type="checkbox" name="arrivalStation" value="2"> Beijing West
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="search-result-wra">
+        <div class="search-result-wrapper">
+          <ul class="result-head">
+            <li class="item">
+              <span class="txt">Train</span>
+            </li>
+            <li class="item item-departure">
+              <span class="txt">Departure</span>
+              <div class="sort">
+                <i class="top"></i>
+                <i class="bottom active"></i>
+              </div>
+            </li>
+            <li class="item">
+              <span class="txt">Station</span>
+            </li>
+            <li class="item item-duration">
+              <span class="txt">Duration</span>
+              <div class="sort">
+                <i class="top"></i>
+                <i class="bottom active"></i>
+              </div>
+            </li>
+            <li class="item">
+              <span class="txt">Available</span>
+            </li>
+            <li class="item">
+              <span class="txt">price</span>
+            </li>
+            <li class="item"><span class="txt"></span></li>
+          </ul>
+          <ul class="result-content">
+            <!-- <li class="item">
+              <span class="train-number">G412</span>
+              <div class="lines">
+                <span class="from"></span>
+                <span class="line"></span>
+                <span class="to"></span>
+              </div>
+              <div class="time">
+                <span class="from">08:20</span>
+                <span class="to">18:20</span>
+              </div>
+              <div class="address">
+                <span class="from">South of Beijing</span>
+                <span class="to">Shanghai Hongqiao</span>
+              </div>
+              <div class="dur">
+                05h56m
+              </div>
+              <div class="dur-line"></div>
+              <div class="seat">
+                <span class="seat-type">2nd Cls.</span>
+                <span class="seat-type">1nd Cls.</span>
+                <span class="seat-type">Business Cls</span>
+              </div>
+              <div class="seat-number">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+              </div>
+              <div class="seat-price">
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+              </div>
+              <div class="seat-btn">
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+              </div>
+            </li>
+            <li class="item">
+              <span class="train-number">G412</span>
+              <div class="lines">
+                <span class="from"></span>
+                <span class="line"></span>
+                <span class="to"></span>
+              </div>
+              <div class="time">
+                <span class="from">08:20</span>
+                <span class="to">18:20</span>
+              </div>
+              <div class="address">
+                <span class="from">South of Beijing</span>
+                <span class="to">Shanghai Hongqiao</span>
+              </div>
+              <div class="dur">
+                05h56m
+              </div>
+              <div class="seat">
+                <span class="seat-type">2nd Cls.</span>
+                <span class="seat-type">1nd Cls.</span>
+                <span class="seat-type">Business Cls</span>
+              </div>
+              <div class="seat-number">
+                <span class="number">1</span>
+                <span class="number">2</span>
+                <span class="number">3</span>
+              </div>
+              <div class="seat-price">
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+                <span class="price-detail">CNY568/USD87.34</span>
+              </div>
+              <div class="seat-btn">
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+                <a class="btn">Continue</a>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="search-noresult-wra">
+        <div class="search-noresult-wrapper">
+          <div class="search-no">
+            <i class="icon-search-no"></i>
+            <h4 class="title">Search No Results</h4>
+            <p class="desc">The train is not daily operation, please select another date.</p>
+            <div class="note-wra">
+              <span class="note-tit">Notes:</span>
+              <ul class="note-list">
+                <li class="list">K3 departs from Beijing Railway Station on Wednesday weekly and arrives at Moscow on next Monday. </li>
+                <li class="list">K19 departs from Beijing Railway Station on Saturday weekly and arrives at Moscow on next Friday.</li>
+              </ul>
+            </div>
+            <div class="error">
+              <i class="icon-remind"></i>
+              <span class="remind">If you find any errors on this page, please kindly submit errors to us, we will make an update immediately. Thank you.</span>
+              <a class="report">
+                <i class="icon-report"></i>
+                Report Errors
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 公共底部 -->
+    <div class="footer_">
+      <div class="foot-content">
+        <ul class="info">
+          <li class="item online">
+            <h3 class="title">Book China Train Tickets Online</h3>
+            <div class="wra">
+              <i class="safe-icon"></i>
+              <div class="online-desc">
+                <a class="online-link" href="http://www.chinatraintickets.net/china-train-travel/train-accident-insurance.html">BEST PRICE</a>
+    						<a class="online-link" href="http://www.chinatraintickets.net/china-train-travel/train-accident-insurance.html">TRAVEL SAFE</a>
+    						<a class="online-link" href="http://www.chinatraintickets.net/china-train-travel/train-accident-insurance.html">MONEY BACK</a>
+    						<a class="online-link" href="http://www.chinatraintickets.net/china-train-travel/train-accident-insurance.html">TRAIN MAP TIMETABLE</a>
+              </div>
+            </div>
+          </li>
+          <li class="item related">
+            <h3 class="title">Related Links</h3>
+            <a class="related-link" href="http://www.china-flights.cn" target="_blank">http://www.china-flights.cn</a>
+						<a class="related-link" href="http://www.chinapleasuretour.com" target="_blank">http://www.chinapleasuretour.com</a>
+						<a class="related-link" href="http://www.cina-viaggio.com" target="_blank">http://www.cina-viaggio.com</a>
+						<a class="related-link" href="http://www.chinatraintickets.net/shangri-la-oriental-express/">Shangri-La Express</a>
+            <a class="related-link" href="http://www.chinatraintickets.net/international-train/">International Train</a>
+          </li>
+          <li class="item trip">
+            <i class="trip-icon"></i>
+            <a class="trip-link" target="_blank" href="https://www.tripadvisor.com/Travel-g294211-c148494/China:How.To.Travel.By.Train.In.China.html">How train travel works in China </a>
+            <h4 class="trip-title">Trains - Siberian Train Tickets</h4>
+            <a class="trip-link2" href="http://www.chinatraintickets.net/trans-siberian-train/beijing-moscow.html">Beijing to Moscow;</a>
+						<a class="trip-link2" href="http://www.chinatraintickets.net/trans-siberian-train/beijing-ulan-bator-K23.html">Beijing to Ulaanbaatar;</a>
+            <h4 class="trip-title">Luggage Service</h4>
+            <a class="trip-link2" href="http://www.chinatraintickets.net/Luggage/index.html">China Train Station Luggage Services </a>
+						<a class="trip-link2" href="http://www.chinatraintickets.net/station-transfer/">China Train Station Transfer Service</a>
+          </li>
+        </ul>
+        <div class="hot-city">
+          <a href="http://www.chinatraintickets.net/china-train-travel/"> China Train Travel </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/beijing.html"> Beijing Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/shanghai.html"> Shanghai Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/xian.html"> Xian Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/guilin.html"> Guilin Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/hongkong.html"> Hong Kong Train Tickets </a><label>|</label><br />
+					<a href="http://www.chinatraintickets.net/china-trains/hangzhou.html"> Hangzhou Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-trains/suzhou.html"> Suzhou Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/beijing-lhasa-train-ticket/index.html"> Beijing Lhasa Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/trans-siberian-train/index.html"> Trans-Siberian Train Tickets </a><label>|</label><br />
+					<a href="http://www.chinatraintickets.net/trans-siberian-train/beijing-moscow.html"> Beijing Moscow Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/trans-siberian-train/beijing-ulan-bator-K23.html"> Beijing Ulaanbaatar Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/nanning-hanoi-train-ticket/index.html"> Beijing Nanning Hanoi Train Tickets </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/beijing-kowloon-hongkong-train/"> Beijing Kowloon Train Tickets </a><label>|</label><br />
+					<a href="http://www.chinatraintickets.net/shanghai-kowloon-train-ticket/index.html"> Shanghai Kowloon Train Tickets </a>
+        </div>
+        <div class="pay-by">
+          <a href="http://www.pata.org/" target="_blank">
+						<div class="img3"></div>
+					</a>
+					<a href="http://cats.org.cn/" target="_blank">
+						<div class="img4"></div>
+					</a>
+					<a href="http://www.iata.org/Pages/default.aspx" target="_blank">
+						<div class="img5"></div>
+					</a>
+					<a href="http://www.paypal.com/" target="_blank">
+						<div class="img6"></div>
+					</a>
+					<a href="http://www.visa.com.cn/index.shtml" target="_blank">
+						<div class="img7"></div>
+					</a>
+					<a href="http://www.mastercard.com" target="_blank">
+						<div class="img8"></div>
+					</a>
+					<a href="https://www.westernunion.com" target="_blank">
+						<div class="img9"></div>
+					</a>
+        </div>
+        <div class="links">
+          <a href="http://www.chinatraintickets.net/index.html"> HOME </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/contact-us/"> CONTACT US </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/terms-conditions/"> TERMS AND CONDITIONS </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/privacy-policy.html"> PRIVACY POLICY </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/testimonial/"> TESTIMONIAL </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/china-taxi-phone.html"> China-taxi </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/links/"> LINKS </a><label>|</label>
+					<a href="http://www.chinatraintickets.net/sitemap.html"> SITE MAP</a><label>|</label>
+					<a href="http://www.chinatraintickets.net/terms_condition.html"> Terms&Conditions</a><label></label>
+        </div>
+        <div class="reserved">2007 - 2019 © www.ChinaTrainTickets.net  CTT. All rights reserved.</div>
+      </div>
+    </div>
+    <!-- 联系我们 -->
+    <div class="customer_">
+      <a class="cus-link" href="../contact-us/">
+        <div class="cus-wra">
+          <i class="cus-icon"></i>
+        </div>
+        <i class="line"></i>
+        <span class="text">Contact Us</span>
+      </a>
+    </div>
+    <!-- report 弹窗 -->
+    <div class="report-mask">
+      <div class="head">
+        <i class="seize"></i>
+        <span class="txt">Report Errors</span>
+        <i class="seize seize-close"></i>
+      </div>
+      <div class="report-con">
+        <textarea class="report-detail" name="name" placeholder="Details:(1000 characters)"></textarea>
+        <input class="report-name" type="text" placeholder="Name">
+        <input class="report-email " type="text" placeholder="Email">
+      </div>
+      <div class="report-btn">
+        <a class="btn">Submite</a>
+      </div>
+    </div>
+    <div class="mask_"></div>
+    <!-- loading等待 -->
+    <div class="loading">
+      <img class="image" src="../static/image/waiting.gif" alt="">
+    </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://kyfw.12306.cn/otn/resources/js/framework/station_name.js?station_version=1.9046"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
+    <script type="text/javascript" src="../static/js/app/common.js"></script>
+    <script type="text/javascript" src="../static/js/app/train-search.js"></script>
+  </body>
+</html>

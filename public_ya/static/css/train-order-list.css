@@ -1,0 +1,259 @@
+.order-list_ {
+  width: 100%;
+  background: #F4F4F4; }
+  .order-list_ .order-list-wrapper {
+    width: 1120px;
+    margin: 0 auto; }
+    .order-list_ .order-list-wrapper .nav {
+      line-height: 16px;
+      padding: 28px 0;
+      font-size: 16px;
+      color: #000018; }
+      .order-list_ .order-list-wrapper .nav .link:hover {
+        text-decoration: underline; }
+      .order-list_ .order-list-wrapper .nav .link:nth-child(1) {
+        color: #1890FF; }
+      .order-list_ .order-list-wrapper .nav .link:nth-child(2) {
+        color: #D80909; }
+    .order-list_ .order-list-wrapper .list-content {
+      background: #fff;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+      margin-bottom: 78px; }
+      .order-list_ .order-list-wrapper .list-content .lists {
+        padding: 0 46px; }
+        .order-list_ .order-list-wrapper .list-content .lists .list {
+          width: 100%;
+          padding-bottom: 22px; }
+          .order-list_ .order-list-wrapper .list-content .lists .list .list-head {
+            padding: 32px 0 44px 0;
+            font-size: 0; }
+            .order-list_ .order-list-wrapper .list-content .lists .list .list-head .order-number {
+              display: inline-block;
+              width: 50%;
+              line-height: 20px;
+              font-size: 20px;
+              color: #000018;
+              font-weight: 500; }
+            .order-list_ .order-list-wrapper .list-content .lists .list .list-head .subtime {
+              display: inline-block;
+              width: 50%;
+              text-align: right;
+              line-height: 20px;
+              font-size: 16px;
+              color: #999999; }
+          .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists {
+            border: 1px solid #D9D9D9;
+            border-radius: 4px 4px 0 0;
+            overflow: hidden; }
+            .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list {
+              width: 100%; }
+              .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head {
+                height: 48px;
+                padding: 0 12px 0 18px;
+                background: #F4F4F4;
+                font-size: 0; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .left {
+                  display: inline-block;
+                  width: 26%;
+                  height: 48px; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .left .index {
+                    position: relative;
+                    display: inline-block;
+                    width: 60px;
+                    height: 28px;
+                    line-height: 28px;
+                    margin-top: 9px;
+                    margin-right: 20px;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 500;
+                    background: #D80909;
+                    border-radius: 2px;
+                    vertical-align: top; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .left .index:after {
+                      position: absolute;
+                      top: 8px;
+                      right: -6px;
+                      z-index: 111;
+                      content: "";
+                      display: block;
+                      width: 0;
+                      height: 0;
+                      border-left: 6px solid #D80909;
+                      border-top: 6px solid transparent;
+                      border-bottom: 4px solid transparent; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .left .date {
+                    display: inline-block;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 18px;
+                    color: #333333; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .middle {
+                  display: inline-block;
+                  width: 50%;
+                  height: 48px;
+                  line-height: 48px;
+                  font-size: 16px;
+                  color: #d80909;
+                  vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right {
+                  display: inline-block;
+                  width: 24%;
+                  height: 48px;
+                  line-height: 48px;
+                  text-align: right;
+                  vertical-align: top;
+                  font-size: 0; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right .unpaid {
+                    font-size: 16px;
+                    color: #666666; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right .haspaid {
+                    font-size: 16px; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right .haspaid .name {
+                      color: #666; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right .haspaid .link {
+                      padding-left: 6px;
+                      font-size: 14px;
+                      color: #1890ff;
+                      text-decoration: underline; }
+                      .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .head .right .haspaid .link:hover {
+                        text-decoration: none; }
+              .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket {
+                width: 100%;
+                height: 132px;
+                font-size: 0; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .number {
+                  display: inline-block;
+                  width: 108px;
+                  height: 132px;
+                  line-height: 132px;
+                  font-size: 20px;
+                  color: #1890FF;
+                  text-indent: 18px;
+                  font-weight: 500;
+                  vertical-align: top; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info {
+                  display: inline-block;
+                  height: 132px;
+                  padding-top: 38px;
+                  font-size: 0;
+                  vertical-align: top; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .lines {
+                    display: inline-block;
+                    padding-right: 8px;
+                    padding-top: 6px;
+                    vertical-align: top; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .lines .from, .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .lines .to {
+                      display: block;
+                      width: 10px;
+                      height: 10px;
+                      background: #E5E5E5;
+                      border-radius: 50%; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .lines .line {
+                      display: block;
+                      width: 1px;
+                      height: 24px;
+                      background: #E5E5E5;
+                      margin-left: 4px; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .time {
+                    display: inline-block;
+                    padding-right: 20px;
+                    vertical-align: top; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .time .from {
+                      display: block;
+                      padding-bottom: 14px;
+                      line-height: 24px;
+                      font-size: 24px;
+                      color: #000018;
+                      font-weight: 500; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .time .to {
+                      display: block;
+                      font-size: 16px;
+                      font-size: 16px;
+                      color: #000018;
+                      font-weight: 500; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .address {
+                    display: inline-block;
+                    padding-right: 94px;
+                    vertical-align: top; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .address .from {
+                      display: block;
+                      padding-bottom: 14px;
+                      line-height: 24px;
+                      font-size: 16px;
+                      color: #000018;
+                      font-weight: 500; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .info .address .to {
+                      display: block;
+                      font-size: 16px;
+                      font-size: 16px;
+                      color: #000018;
+                      font-weight: 500; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .time-seating {
+                  display: inline-block;
+                  height: 132px;
+                  line-height: 132px;
+                  color: #333333;
+                  font-size: 14px;
+                  padding-right: 84px;
+                  vertical-align: top; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .time-seating .seating, .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .time-seating .num {
+                    font-size: 16px; }
+                .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .ticket-price {
+                  display: inline-block;
+                  padding-top: 24px;
+                  padding-left: 20px;
+                  vertical-align: top; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .ticket-price .price-info {
+                    padding-bottom: 6px;
+                    border-bottom: 1px solid #AEAEAE; }
+                    .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .ticket-price .price-info .item {
+                      line-height: 20px;
+                      font-size: 16px;
+                      color: #333333; }
+                  .order-list_ .order-list-wrapper .list-content .lists .list .detail-lists .detail-list .ticket .ticket-price .total {
+                    line-height: 44px;
+                    font-size: 18px;
+                    color: #666666; }
+          .order-list_ .order-list-wrapper .list-content .lists .list .grand-to {
+            padding-top: 26px;
+            padding-right: 20px;
+            line-height: 20px;
+            text-align: right;
+            font-size: 20px;
+            color: #666666;
+            font-weight: bold; }
+            .order-list_ .order-list-wrapper .list-content .lists .list .grand-to .num {
+              color: #D80909; }
+      .order-list_ .order-list-wrapper .list-content .book-center {
+        padding: 20px 46px 36px 46px;
+        font-size: 0;
+        border-top: 1px solid #DBDBDB; }
+        .order-list_ .order-list-wrapper .list-content .book-center .icon-book-center {
+          display: inline-block;
+          width: 42px;
+          height: 40px;
+          background: url(../image/icon-book-center.png) no-repeat center;
+          vertical-align: top; }
+        .order-list_ .order-list-wrapper .list-content .book-center .center-txt {
+          display: inline-block;
+          padding-left: 14px; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .title {
+            padding: 10px 0;
+            line-height: 20px;
+            font-size: 20px;
+            color: #333333;
+            font-weight: bold; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .tel {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+          .order-list_ .order-list-wrapper .list-content .book-center .center-txt .emails {
+            line-height: 30px;
+            font-size: 18px;
+            color: #333333;
+            font-weight: 500; }
+            .order-list_ .order-list-wrapper .list-content .book-center .center-txt .emails .email {
+              color: #1890FF; }

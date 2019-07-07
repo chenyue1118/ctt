@@ -1,0 +1,303 @@
+.header_ {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 11111;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
+  .header_ .top-wra {
+    width: 100%;
+    height: 50px;
+    background: #121a2c; }
+    .header_ .top-wra .top {
+      width: 1120px;
+      margin: 0 auto;
+      font-size: 0; }
+      .header_ .top-wra .top .title {
+        display: inline-block;
+        width: 50%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+        color: #ebebeb;
+        vertical-align: top; }
+      .header_ .top-wra .top .contact {
+        display: inline-block;
+        width: 50%;
+        height: 42px;
+        padding-top: 8px;
+        text-align: right;
+        font-size: 0; }
+        .header_ .top-wra .top .contact .contact-icon {
+          display: inline-block;
+          width: 30px;
+          height: 34px;
+          background: url(../image/common/icon-cus.png) no-repeat center;
+          vertical-align: top; }
+        .header_ .top-wra .top .contact .text {
+          display: inline-block;
+          height: 34px;
+          line-height: 34px;
+          padding-left: 4px;
+          font-size: 16px;
+          color: #d60c0c;
+          vertical-align: top; }
+        .header_ .top-wra .top .contact .line {
+          display: inline-block;
+          width: 2px;
+          height: 34px;
+          margin: 0 20px;
+          background: #1890ff;
+          vertical-align: top; }
+        .header_ .top-wra .top .contact .icon-back {
+          display: inline-block;
+          width: 22px;
+          height: 34px;
+          background: url(../image/common/icon-back.png) no-repeat center; }
+  .header_ .nav-wra {
+    width: 100%; }
+    .header_ .nav-wra .nav {
+      width: 1120px;
+      margin: 0 auto;
+      height: 80px;
+      font-size: 0; }
+      .header_ .nav-wra .nav .nav-icon {
+        display: inline-block;
+        width: 168px;
+        height: 80px;
+        background: url(../image/common/icon-log.png) no-repeat center;
+        vertical-align: top;
+        cursor: pointer; }
+      .header_ .nav-wra .nav .list {
+        display: inline-block;
+        width: 952px;
+        height: 80px;
+        padding-left: 68px;
+        font-size: 0; }
+        .header_ .nav-wra .nav .list .home-icon {
+          display: inline-block;
+          width: 24px;
+          height: 80px;
+          background: url(../image/common/icon-home-page.png) no-repeat center;
+          vertical-align: top;
+          cursor: pointer; }
+          .header_ .nav-wra .nav .list .home-icon:hover {
+            background: url(../image/common/icon-home-page-active.png) no-repeat center; }
+        .header_ .nav-wra .nav .list .items {
+          display: inline-block;
+          width: 860px;
+          font-size: 0; }
+          .header_ .nav-wra .nav .list .items .item {
+            display: inline-block;
+            height: 80px;
+            padding-left: 39px; }
+            .header_ .nav-wra .nav .list .items .item .link {
+              display: block;
+              height: 80px;
+              line-height: 80px;
+              color: #333333;
+              font-size: 16px;
+              font-weight: 500;
+              border-bottom: 2px solid #fff; }
+              .header_ .nav-wra .nav .list .items .item .link:hover {
+                color: #D80909;
+                border-bottom: 2px solid #D80909; }
+          .header_ .nav-wra .nav .list .items .active .link {
+            color: #D80909;
+            border-bottom: 2px solid #D80909; }
+
+.header_seize_ {
+  width: 100%;
+  height: 130px; }
+
+.footer_ {
+  width: 100%;
+  background: #333E42; }
+  .footer_ .foot-content {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 18px 0; }
+    .footer_ .foot-content .info {
+      width: 100%;
+      font-size: 0; }
+      .footer_ .foot-content .info .item {
+        display: inline-block;
+        width: 33.3%;
+        height: 225px;
+        vertical-align: top; }
+        .footer_ .foot-content .info .item .title {
+          height: 30px;
+          line-height: 30px;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 300; }
+      .footer_ .foot-content .info .item + .item {
+        padding-left: 20px;
+        border-left: 1px solid #fff; }
+      .footer_ .foot-content .info .online .wra {
+        width: 100%;
+        padding-top: 8px;
+        font-size: 0; }
+        .footer_ .foot-content .info .online .wra .safe-icon {
+          display: inline-block;
+          width: 172px;
+          height: 172px;
+          background: url(../image/common/end1.jpg) no-repeat center;
+          vertical-align: top; }
+        .footer_ .foot-content .info .online .wra .online-desc {
+          display: inline-block;
+          padding-top: 12px;
+          padding-left: 8px; }
+          .footer_ .foot-content .info .online .wra .online-desc .online-link {
+            display: block;
+            height: 36px;
+            line-height: 36px;
+            font-size: 16px;
+            color: #fff; }
+            .footer_ .foot-content .info .online .wra .online-desc .online-link:hover {
+              color: #f00; }
+      .footer_ .foot-content .info .related .title {
+        margin-bottom: 10px; }
+      .footer_ .foot-content .info .related .related-link {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+        color: #fff; }
+        .footer_ .foot-content .info .related .related-link:hover {
+          color: #f00; }
+      .footer_ .foot-content .info .trip .trip-icon {
+        display: block;
+        width: 100%;
+        height: 52px;
+        background: url(../image/common/end2.jpg) no-repeat top;
+        background-size: 100%; }
+      .footer_ .foot-content .info .trip .trip-link {
+        display: block;
+        line-height: 18px;
+        color: #fff;
+        font-size: 14px; }
+        .footer_ .foot-content .info .trip .trip-link:hover {
+          color: #f00; }
+      .footer_ .foot-content .info .trip .trip-title {
+        padding-top: 4px;
+        line-height: 24px;
+        font-size: 18px;
+        color: #fff; }
+      .footer_ .foot-content .info .trip .trip-link2 {
+        display: block;
+        line-height: 24px;
+        color: #fff;
+        font-size: 14px; }
+        .footer_ .foot-content .info .trip .trip-link2:hover {
+          color: #f00; }
+    .footer_ .foot-content .hot-city {
+      width: 100%;
+      padding: 20px 0 30px 0;
+      border-bottom: 1px #445257 solid;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff; }
+      .footer_ .foot-content .hot-city a {
+        color: #fff;
+        font-size: 16px;
+        word-spacing: 1px;
+        letter-spacing: 1px; }
+        .footer_ .foot-content .hot-city a:hover {
+          color: #f00; }
+    .footer_ .foot-content .pay-by {
+      width: 100%;
+      padding: 30px 0;
+      border-bottom: 1px #445257 solid;
+      font-size: 0; }
+      .footer_ .foot-content .pay-by a {
+        display: inline-block; }
+        .footer_ .foot-content .pay-by a div {
+          display: inline-block;
+          width: 120px;
+          height: 86px; }
+        .footer_ .foot-content .pay-by a .img3 {
+          background: url(../image/common/end3.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img4 {
+          background: url(../image/common/end4.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img5 {
+          background: url(../image/common/end5.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img6 {
+          background: url(../image/common/end6.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img7 {
+          background: url(../image/common/end7.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img8 {
+          background: url(../image/common/end8.png) no-repeat center; }
+        .footer_ .foot-content .pay-by a .img9 {
+          background: url(../image/common/end9.jpg) no-repeat center; }
+      .footer_ .foot-content .pay-by a + a {
+        padding-left: 46.66px; }
+    .footer_ .foot-content .links {
+      width: 100%;
+      padding: 20px 0 14px 0;
+      text-align: center;
+      color: #cccccc; }
+      .footer_ .foot-content .links a {
+        font-size: 14px;
+        color: #cccccc; }
+        .footer_ .foot-content .links a:hover {
+          color: #f00; }
+    .footer_ .foot-content .reserved {
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #cccccc; }
+
+.customer_ {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 111; }
+  .customer_ .cus-link {
+    display: block;
+    width: 96px;
+    height: 132px; }
+    .customer_ .cus-link .cus-wra {
+      width: 96px;
+      height: 96px;
+      background: #ad0000; }
+      .customer_ .cus-link .cus-wra .cus-icon {
+        display: block;
+        width: 96px;
+        height: 96px;
+        background: url(../image/common/china_taxi2.jpg) no-repeat center; }
+    .customer_ .cus-link .line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: transparent; }
+    .customer_ .cus-link .text {
+      display: block;
+      width: 100%;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      background: #ad0000; }
+
+.loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11111;
+  background: rgba(0, 0, 0, 0.35); }
+  .loading .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    z-index: 11111; }

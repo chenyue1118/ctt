@@ -1,0 +1,739 @@
+.banner_ {
+  position: relative;
+  width: 100%;
+  height: 540px; }
+  .banner_ .banner-wra .image {
+    display: block;
+    width: 100%;
+    height: 540px; }
+  .banner_ .train {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    width: 1120px;
+    height: 540px;
+    padding-top: 76px;
+    margin-left: -560px;
+    font-size: 0; }
+    .banner_ .train .search {
+      display: inline-block;
+      width: 774px;
+      vertical-align: top; }
+      .banner_ .train .search .search-head {
+        width: 100%;
+        font-size: 0; }
+        .banner_ .train .search .search-head .item {
+          display: inline-block;
+          height: 60px;
+          line-height: 60px;
+          background: rgba(0, 0, 0, 0.7);
+          font-size: 20px;
+          color: #fff;
+          font-weight: 500;
+          text-align: center;
+          cursor: pointer; }
+        .banner_ .train .search .search-head .book {
+          width: 426px;
+          border-radius: 6px 0 0 0; }
+        .banner_ .train .search .search-head .inter {
+          width: 348px;
+          border-radius: 0 6px 0 0; }
+        .banner_ .train .search .search-head .active {
+          height: 66px;
+          line-height: 66px;
+          color: #333;
+          background: #fff;
+          border-radius: 6px 6px 0 0;
+          vertical-align: bottom; }
+      .banner_ .train .search .search-content {
+        width: 100%;
+        background: #fff; }
+        .banner_ .train .search .search-content .book {
+          padding: 32px 60px 20px 40px; }
+          .banner_ .train .search .search-content .book .trips {
+            width: 100%; }
+            .banner_ .train .search .search-content .book .trips .trip {
+              font-size: 0;
+              padding-bottom: 14px; }
+              .banner_ .train .search .search-content .book .trips .trip .name {
+                display: inline-block;
+                height: 40px;
+                padding-right: 20px;
+                line-height: 40px;
+                font-size: 18px;
+                color: #000;
+                font-weight: 500; }
+              .banner_ .train .search .search-content .book .trips .trip .trip-from-wra, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra {
+                position: relative;
+                display: inline-block;
+                width: 198px;
+                height: 40px; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-from-wra .trip-from, .banner_ .train .search .search-content .book .trips .trip .trip-from-wra .trip-to, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra .trip-from, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra .trip-to {
+                  display: block;
+                  width: 100%;
+                  height: 40px;
+                  border: 1px solid #AAAAAA;
+                  font-size: 16px;
+                  color: #333333;
+                  text-indent: 1em; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-from-wra:after, .banner_ .train .search .search-content .book .trips .trip .trip-to-wra:after {
+                  position: absolute;
+                  top: 16px;
+                  right: 10px;
+                  z-index: 111;
+                  content: '';
+                  display: block;
+                  width: 0;
+                  height: 0;
+                  border-top: 8px solid #AAAAAA;
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent; }
+              .banner_ .train .search .search-content .book .trips .trip .trip-time-wra {
+                position: relative;
+                display: inline-block;
+                width: 190px;
+                height: 40px;
+                padding-left: 16px; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-time-wra .trip-time {
+                  display: block;
+                  width: 190px;
+                  height: 40px;
+                  border: 1px solid #AAAAAA;
+                  font-size: 16px;
+                  color: #333333;
+                  text-indent: 1em; }
+                .banner_ .train .search .search-content .book .trips .trip .trip-time-wra:after {
+                  position: absolute;
+                  top: 4px;
+                  right: -14px;
+                  z-index: 111;
+                  content: '';
+                  display: block;
+                  width: 32px;
+                  height: 32px;
+                  background: url(../image/icon-date.png) no-repeat center; }
+          .banner_ .train .search .search-content .book .operation {
+            width: 100%;
+            font-size: 0;
+            padding: 10px 0;
+            text-align: right; }
+            .banner_ .train .search .search-content .book .operation .trip-add {
+              opacity: 0;
+              display: inline-block;
+              height: 40px;
+              line-height: 38px;
+              padding: 0 20px;
+              font-size: 16px;
+              color: #fff;
+              background: #1890FF;
+              border: 1px solid #1890FF;
+              margin-right: 16px;
+              margin-top: 4px;
+              vertical-align: top; }
+            .banner_ .train .search .search-content .book .operation .trip-del {
+              opacity: 0;
+              display: inline-block;
+              height: 40px;
+              line-height: 38px;
+              padding: 0 20px;
+              font-size: 16px;
+              color: #333;
+              background: #fff;
+              border: 1px solid #aaa;
+              margin-right: 16px;
+              margin-top: 4px;
+              vertical-align: top; }
+            .banner_ .train .search .search-content .book .operation .disable {
+              background: #EEEEEE;
+              color: #999999;
+              border: 1px solid #EEEEEE;
+              cursor: not-allowed; }
+            .banner_ .train .search .search-content .book .operation .trip-search {
+              display: inline-block;
+              height: 42px;
+              line-height: 42px;
+              padding: 0 28px;
+              font-size: 16px;
+              color: #fff;
+              background: linear-gradient(87deg, #ef1212, #c00909);
+              border-radius: 24px; }
+              .banner_ .train .search .search-content .book .operation .trip-search .find-icon {
+                display: inline-block;
+                width: 24px;
+                height: 42px;
+                background: url(../image/icon-search.png) no-repeat center;
+                margin-left: 12px;
+                vertical-align: top; }
+      .banner_ .train .search .check-wra {
+        display: block;
+        width: 100%;
+        padding: 0 60px 0 40px;
+        text-align: right;
+        background: #fff; }
+      .banner_ .train .search .check {
+        display: block;
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+        font-size: 18px;
+        color: #333;
+        font-weight: 500;
+        border-top: 1px solid #AAAAAA; }
+        .banner_ .train .search .check:hover {
+          color: #f00; }
+    .banner_ .train .info {
+      display: inline-block;
+      width: 332px;
+      height: 300px;
+      margin-top: 66px;
+      margin-left: 14px;
+      background: rgba(156, 0, 0, 0.8);
+      border-radius: 6px;
+      padding: 40px 14px 10px 14px; }
+      .banner_ .train .info .title {
+        height: 70px;
+        line-height: 40px;
+        font-size: 44px;
+        font-weight: 600;
+        color: #fff;
+        text-align: center; }
+      .banner_ .train .info .con {
+        position: relative;
+        display: block;
+        height: 46px;
+        line-height: 20px;
+        padding-left: 24px;
+        font-size: 20px;
+        color: #fff; }
+        .banner_ .train .info .con:after {
+          position: absolute;
+          top: -2px;
+          left: 0;
+          z-index: 111;
+          content: '';
+          display: block;
+          width: 16px;
+          height: 20px;
+          background: url(../image/icon-right.png) no-repeat center; }
+
+.guide_ {
+  width: 100%;
+  padding: 30px 0 52px 0;
+  background: #fff; }
+  .guide_ .guide-wra {
+    width: 1120px;
+    margin: 0 auto; }
+    .guide_ .guide-wra .title {
+      height: 42px;
+      line-height: 20px;
+      font-size: 24px;
+      color: #333333; }
+    .guide_ .guide-wra .items {
+      width: 100%;
+      font-size: 0; }
+      .guide_ .guide-wra .items .item {
+        display: inline-block;
+        width: 270px;
+        height: 90px;
+        padding: 20px;
+        border: 1px solid #DCDCDC;
+        background: #fff;
+        vertical-align: top;
+        font-size: 0;
+        cursor: pointer;
+        transition: all 0.4s; }
+        .guide_ .guide-wra .items .item:hover {
+          background: #DCDCDC; }
+        .guide_ .guide-wra .items .item .bg {
+          display: inline-block;
+          width: 48px;
+          height: 48px;
+          padding-top: 11px;
+          background: linear-gradient(0deg, #fc8686, #f83b3b);
+          border-radius: 50%;
+          vertical-align: top; }
+          .guide_ .guide-wra .items .item .bg .gui-icon {
+            display: block;
+            width: 30px;
+            height: 26px;
+            margin: 0 auto;
+            background: url(../image/icon-guide-01.png) no-repeat center;
+            background-size: 25px 26px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon2 {
+            background: url(../image/icon-guide-02.png) no-repeat center;
+            background-size: 26px 22px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon3 {
+            background: url(../image/icon-guide-03.png) no-repeat center;
+            background-size: 30px 18px; }
+          .guide_ .guide-wra .items .item .bg .gui-icon4 {
+            background: url(../image/icon-guide-04.png) no-repeat center;
+            background-size: 26px 26px; }
+        .guide_ .guide-wra .items .item .txt {
+          display: inline-block;
+          width: 180px;
+          line-height: 26px;
+          padding-left: 14px;
+          font-size: 18px;
+          font-weight: 500;
+          color: #333333; }
+      .guide_ .guide-wra .items .item:nth-child(2) .bg {
+        background: linear-gradient(0deg, #72b2f0, #a6d0ec); }
+      .guide_ .guide-wra .items .item:nth-child(3) .bg {
+        background: linear-gradient(0deg, #fba770, #fccd83); }
+      .guide_ .guide-wra .items .item:nth-child(4) .bg {
+        background: linear-gradient(0deg, #838afd, #9ec2ff); }
+      .guide_ .guide-wra .items .item + .item {
+        margin-left: 13px; }
+      .guide_ .guide-wra .items .active {
+        background: #DCDCDC; }
+  .guide_ .about-wra {
+    width: 1120px;
+    margin: 0 auto;
+    font-size: 0;
+    margin-top: 60px; }
+    .guide_ .about-wra .about-info {
+      display: inline-block;
+      width: 832px;
+      height: 410px;
+      padding: 76px 60px 0 58px;
+      background: url(../image/icon-service-bg.png) no-repeat center;
+      background-size: 100%;
+      vertical-align: top; }
+      .guide_ .about-wra .about-info .item {
+        width: 714px;
+        height: 270px;
+        padding: 28px 28px 0 40px;
+        background: rgba(0, 0, 0, 0.6); }
+        .guide_ .about-wra .about-info .item .title {
+          height: 54px;
+          line-height: 20px;
+          font-size: 24px;
+          color: #fff;
+          font-weight: 500; }
+        .guide_ .about-wra .about-info .item .items {
+          width: 100%;
+          font-size: 0; }
+          .guide_ .about-wra .about-info .item .items .item-con {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            height: 36px;
+            padding-left: 20px; }
+            .guide_ .about-wra .about-info .item .items .item-con:after {
+              position: absolute;
+              top: 5px;
+              left: 0;
+              z-index: 111;
+              content: '';
+              display: block;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: #fff; }
+            .guide_ .about-wra .about-info .item .items .item-con .about-link {
+              font-size: 18px;
+              color: #fff; }
+              .guide_ .about-wra .about-info .item .items .item-con .about-link:hover {
+                text-decoration: underline; }
+    .guide_ .about-wra .advisor {
+      display: inline-block;
+      width: 280px;
+      height: 410px;
+      padding: 18px;
+      margin-left: 8px;
+      border: 1px solid #9EC292; }
+      .guide_ .about-wra .advisor .adv-icon {
+        display: block;
+        width: 100%;
+        height: 60px;
+        background: url(../image/icon-adv.png) no-repeat center; }
+      .guide_ .about-wra .advisor .adv-desc {
+        display: block;
+        width: 100%;
+        line-height: 18px;
+        font-size: 14px;
+        color: #666666;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #BCBCBC; }
+      .guide_ .about-wra .advisor .adv-tour {
+        display: inline-block;
+        padding-top: 20px;
+        line-height: 20px;
+        font-size: 18px;
+        color: #333333; }
+        .guide_ .about-wra .advisor .adv-tour:hover {
+          text-decoration: underline; }
+      .guide_ .about-wra .advisor .adv-tit {
+        padding: 20px 0 14px 0;
+        font-size: 14px;
+        color: #333333;
+        font-weight: bold; }
+      .guide_ .about-wra .advisor .adv-desc-con {
+        line-height: 22px;
+        color: #666666;
+        font-size: 16px; }
+      .guide_ .about-wra .advisor .adv-read {
+        display: block;
+        padding: 24px 0 20px 0;
+        color: #1890FF;
+        font-size: 14px; }
+      .guide_ .about-wra .advisor .adv-info {
+        display: block;
+        color: #999999;
+        font-size: 14px; }
+
+.hotCity_ {
+  width: 100%;
+  background: #F1EEEE; }
+  .hotCity_ .hotCity-wra {
+    width: 1120px;
+    padding: 14px 0 4px 0;
+    margin: 0 auto; }
+    .hotCity_ .hotCity-wra .title {
+      padding: 26px 0 34px 0;
+      font-size: 30px;
+      color: #333333;
+      font-weight: 500; }
+    .hotCity_ .hotCity-wra .citys {
+      width: 100%;
+      padding-bottom: 46px;
+      font-size: 0; }
+      .hotCity_ .hotCity-wra .citys .item {
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 36px;
+        border: 1px solid #BDBDBD;
+        background: transparent;
+        font-size: 16px;
+        color: #333333;
+        margin-right: 14px;
+        border-radius: 14px;
+        cursor: pointer; }
+        .hotCity_ .hotCity-wra .citys .item:hover {
+          color: #fff;
+          background: #D90A0A;
+          border: 1px solid #D90A0A; }
+      .hotCity_ .hotCity-wra .citys .active {
+        color: #fff;
+        background: #D90A0A;
+        border: 1px solid #D90A0A; }
+    .hotCity_ .hotCity-wra .trains {
+      width: 100%;
+      font-size: 0; }
+      .hotCity_ .hotCity-wra .trains .item {
+        display: inline-block;
+        width: 270px;
+        height: 136px;
+        margin-bottom: 26px;
+        margin-left: 13px;
+        padding: 26px 20px 30px 10px;
+        background: white;
+        border: 1px solid #ededed;
+        box-shadow: 0px 1px 6px 0px rgba(93, 93, 93, 0.18);
+        border-radius: 6px;
+        font-size: 0;
+        cursor: pointer; }
+        .hotCity_ .hotCity-wra .trains .item:hover {
+          background: #efefef; }
+        .hotCity_ .hotCity-wra .trains .item .icon-train {
+          display: inline-block;
+          width: 30px;
+          height: 100%;
+          background: url(../image/icon-go-back.png) no-repeat center;
+          vertical-align: top; }
+        .hotCity_ .hotCity-wra .trains .item .cont {
+          display: inline-block;
+          width: 208px;
+          height: 100%; }
+          .hotCity_ .hotCity-wra .trains .item .cont .top {
+            width: 100%;
+            font-size: 0;
+            padding-bottom: 44px; }
+            .hotCity_ .hotCity-wra .trains .item .cont .top .city {
+              display: inline-block;
+              width: 50%;
+              line-height: 16px;
+              font-size: 16px;
+              color: #333333; }
+            .hotCity_ .hotCity-wra .trains .item .cont .top .hour {
+              display: inline-block;
+              width: 50%;
+              line-height: 16px;
+              font-size: 16px;
+              color: #333333;
+              text-align: right; }
+          .hotCity_ .hotCity-wra .trains .item .cont .bottom {
+            width: 100%;
+            font-size: 0; }
+            .hotCity_ .hotCity-wra .trains .item .cont .bottom .city {
+              display: inline-block;
+              width: 50%;
+              line-height: 20px;
+              font-size: 20px;
+              color: #333333; }
+            .hotCity_ .hotCity-wra .trains .item .cont .bottom .from {
+              display: inline-block;
+              width: 50%;
+              line-height: 20px;
+              font-size: 16px;
+              color: #333333;
+              text-align: right; }
+              .hotCity_ .hotCity-wra .trains .item .cont .bottom .from .price {
+                color: #D90A0A;
+                font-size: 24px; }
+      .hotCity_ .hotCity-wra .trains .item:nth-child(4n+1) {
+        margin-left: 0; }
+
+.tours_ {
+  width: 100%;
+  background: #fff; }
+  .tours_ .tours-wra {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 50px 0; }
+    .tours_ .tours-wra .head {
+      width: 100%;
+      height: 54px;
+      display: inline-block; }
+      .tours_ .tours-wra .head .title {
+        display: inline-block;
+        width: 1020px;
+        height: 54px;
+        line-height: 24px;
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+        vertical-align: top; }
+      .tours_ .tours-wra .head .more {
+        display: inline-block;
+        width: 94px;
+        height: 54px;
+        line-height: 24px;
+        font-size: 16px;
+        color: #DA0C0C;
+        text-align: right; }
+    .tours_ .tours-wra .cont {
+      width: 100%;
+      font-size: 0; }
+      .tours_ .tours-wra .cont .cont-left {
+        position: relative;
+        display: inline-block;
+        width: 354px;
+        height: 536px;
+        border-radius: 8px;
+        overflow: hidden;
+        vertical-align: top; }
+        .tours_ .tours-wra .cont .cont-left:hover .tour0-bg {
+          opacity: 0.4; }
+        .tours_ .tours-wra .cont .cont-left:hover .title {
+          bottom: 180px; }
+        .tours_ .tours-wra .cont .cont-left:hover .cout-route {
+          bottom: 0; }
+        .tours_ .tours-wra .cont .cont-left .tour0-icon {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url(../image/tour01.jpg) no-repeat center; }
+        .tours_ .tours-wra .cont .cont-left .tour0-bg {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 111;
+          width: 100%;
+          height: 100%;
+          background: #9c0000;
+          opacity: 0;
+          transition: all 0.4s; }
+        .tours_ .tours-wra .cont .cont-left .title {
+          position: absolute;
+          bottom: 36px;
+          left: 12px;
+          z-index: 111;
+          width: 90%;
+          transition: all 0.3s; }
+          .tours_ .tours-wra .cont .cont-left .title .tit {
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding-right: 4px;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            vertical-align: top; }
+          .tours_ .tours-wra .cont .cont-left .title .label {
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            padding: 0 6px;
+            font-size: 16px;
+            color: #fff;
+            background: linear-gradient(87deg, #fa3f3f, #d80808);
+            border-radius: 10px 10px 10px 0px; }
+        .tours_ .tours-wra .cont .cont-left .cout-route {
+          position: absolute;
+          bottom: -200px;
+          left: 12px;
+          z-index: 111;
+          width: 94%;
+          transition: all 0.3s; }
+          .tours_ .tours-wra .cont .cont-left .cout-route .route {
+            display: block;
+            width: 80%;
+            padding-bottom: 40px;
+            line-height: 20px;
+            font-size: 16px;
+            color: #fff; }
+          .tours_ .tours-wra .cont .cont-left .cout-route .from {
+            padding-bottom: 40px;
+            text-align: right;
+            font-size: 16px;
+            color: #fff; }
+            .tours_ .tours-wra .cont .cont-left .cout-route .from .price {
+              font-size: 24px; }
+      .tours_ .tours-wra .cont .cont-right {
+        display: inline-block;
+        width: 766px;
+        height: 536px;
+        padding-left: 16px; }
+        .tours_ .tours-wra .cont .cont-right .items {
+          width: 100%;
+          font-size: 0; }
+          .tours_ .tours-wra .cont .cont-right .items .item {
+            position: relative;
+            display: inline-block;
+            width: 318px;
+            height: 260px;
+            border-radius: 8px;
+            overflow: hidden;
+            vertical-align: top; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .tour-bg {
+              opacity: 0.4; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .title {
+              bottom: 140px; }
+            .tours_ .tours-wra .cont .cont-right .items .item:hover .cout-route {
+              bottom: 0; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour-icon {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background: url(../image/tour02.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour3-icon {
+              background: url(../image/tour03.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour4-icon {
+              background: url(../image/tour04.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour5-icon {
+              background: url(../image/tour05.jpg) no-repeat center;
+              background-size: cover; }
+            .tours_ .tours-wra .cont .cont-right .items .item .tour-bg {
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 111;
+              width: 100%;
+              height: 100%;
+              background: #9c0000;
+              opacity: 0;
+              transition: all 0.4s; }
+            .tours_ .tours-wra .cont .cont-right .items .item .title {
+              position: absolute;
+              bottom: 36px;
+              left: 12px;
+              z-index: 111;
+              width: 90%;
+              transition: all 0.3s; }
+              .tours_ .tours-wra .cont .cont-right .items .item .title .tit {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                padding-right: 4px;
+                font-size: 20px;
+                color: #fff;
+                font-weight: 500;
+                vertical-align: top; }
+              .tours_ .tours-wra .cont .cont-right .items .item .title .label {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                padding: 0 6px;
+                font-size: 16px;
+                color: #fff;
+                background: linear-gradient(87deg, #fa3f3f, #d80808);
+                border-radius: 10px 10px 10px 0px; }
+            .tours_ .tours-wra .cont .cont-right .items .item .cout-route {
+              position: absolute;
+              bottom: -200px;
+              left: 12px;
+              z-index: 111;
+              width: 94%;
+              transition: all 0.3s; }
+              .tours_ .tours-wra .cont .cont-right .items .item .cout-route .route {
+                display: block;
+                width: 80%;
+                padding-bottom: 20px;
+                line-height: 20px;
+                font-size: 16px;
+                color: #fff; }
+              .tours_ .tours-wra .cont .cont-right .items .item .cout-route .from {
+                padding-bottom: 20px;
+                text-align: right;
+                font-size: 16px;
+                color: #fff; }
+                .tours_ .tours-wra .cont .cont-right .items .item .cout-route .from .price {
+                  font-size: 24px; }
+          .tours_ .tours-wra .cont .cont-right .items .item-spe {
+            width: 416px; }
+          .tours_ .tours-wra .cont .cont-right .items .item + .item {
+            margin-left: 16px; }
+        .tours_ .tours-wra .cont .cont-right .items + .items {
+          margin-top: 16px; }
+
+.news_ {
+  width: 100%;
+  background: #F1EEEE;
+  padding: 40px 0 8px 0; }
+  .news_ .news-wra {
+    width: 1120px;
+    margin: 0 auto; }
+    .news_ .news-wra .title {
+      height: 64px;
+      line-height: 28px;
+      font-size: 30px;
+      color: #333;
+      font-weight: 500; }
+    .news_ .news-wra .lists {
+      width: 100%;
+      font-size: 0; }
+      .news_ .news-wra .lists .list {
+        padding-bottom: 32px; }
+        .news_ .news-wra .lists .list .head {
+          width: 100%;
+          padding-bottom: 28px;
+          font-size: 0; }
+          .news_ .news-wra .lists .list .head .icon-new {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url(../image/icon-news.png) no-repeat center;
+            vertical-align: top; }
+          .news_ .news-wra .lists .list .head .tits {
+            display: inline-block;
+            width: 1000px;
+            padding-left: 16px; }
+            .news_ .news-wra .lists .list .head .tits .tit1 {
+              padding-bottom: 16px;
+              font-size: 20px;
+              color: #333E42;
+              font-weight: 500; }
+            .news_ .news-wra .lists .list .head .tits .time {
+              font-size: 16px;
+              color: #999999; }
+        .news_ .news-wra .lists .list .para {
+          font-size: 16px;
+          color: #333E42;
+          line-height: 24px;
+          padding-bottom: 20px; }

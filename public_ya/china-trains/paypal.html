@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" http-equiv="Content-Type" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>Book China Train Tickets, Search China Train Price, schedule, Timetable, Help travellers take train travel in China</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../static/css/reset.css">
+  </head>
+  <body>
+    <div class="">
+      <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="paypal" style="display:none"> -->
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="paypal" style="display:none">
+        <input type="hidden" name="cmd" value="_xclick">
+        <!--商户邮箱-->
+        <!-- <input class="business" type="hidden" name="business" value="chinapleasuretour@gmail.com"> -->
+        <input class="business" type="hidden" name="business" value="1023581658-buyer@qq.com">
+        <input type="hidden" name="lc" value="US"><!--币种-->
+        <input class="p_item_name" type="hidden" name="item_name" value=""><!--商品名称-->
+        <input class="p-amount" type="hidden" name="amount" value=""><!--总价-->
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="0.000"><!--税率-->
+        <input type="hidden" name="shipping" value="0.00"><!--运费-->
+        <input class="p-custom" type="hidden" name="custom" value="">
+        <input class="p-return" type="hidden" value="" name="return"/>
+        <input class="p-cancel_return" type="hidden" value="" name="cancel_return"/>
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+        <input class="p-notify_url" type="hidden" name="notify_url" value="">
+      </form>
+    </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+
+        $(".item_name").val("CTT:"+info.data.orderid);
+        $(".p-amount").val(getPaypalPrice(info.data.orderamount));
+        $(".p-custom").val(info.data.ordernumber);
+        $(".p-return").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
+        // $(".p-return").val("http://127.0.0.1:8089/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
+        $(".cancel_return").val("http://www.chinatraintickets.net/china-trains/my-order.html");
+        $(".p-notify_url").val("http://www.chinatraintickets.net/china-trains/pay_ok.html?pay_type=paypal&orderid="+GetQueryString("orderid"));
+
+        $("#paypal").submit();
+      })
+    </script>
+  </body>
+</html>
