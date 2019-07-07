@@ -2,15 +2,21 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
+var bodyParser = require('body-parser');
 
 const app = express();
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
+
+// parse application/json
+app.use(bodyParser.json())
 
 let accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {flags: 'a'});
 
 app.use(morgan('short', {stream: accessLogStream}));
 
-// app.use(express.static('./public'));
-app.use(express.static('./public_ya'));
+app.use(express.static('./public'));
+// app.use(express.static('./public_ya'));
 
 app.get('/paypal', (req, res) => {
   console.log('收到请求--get');
@@ -36,6 +42,7 @@ app.get('/ipaylinks', (req, res) => {
 })
 app.post('/ipaylinks', (req, res) => {
   console.log(req.query);
+  console.log(req.body);
   console.log('method----post');
   res.send({'state': true})
 })

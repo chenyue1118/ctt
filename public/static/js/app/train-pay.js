@@ -5,6 +5,7 @@ $(function() {
   var pay_by = "ipaylinks";
   var orderInfo = '';
   var toalPrice = 0;
+  var timer = null;
 
   if (GetQueryString("query")) {
     var queryArr = GetQueryString("query").split("**");
@@ -74,6 +75,7 @@ $(function() {
           var data_ = data.data;
           sessionStorage.setItem("checkInfo", JSON.stringify(data_));
           if (link) location.href = 'train-details.html';
+          seatOcc(data.data.train_date);
           showPrice();
         } else {
           alert(data.message);
@@ -130,4 +132,71 @@ $(function() {
       });
     }
   }
+
+  // 占座
+  function seatOcc(time){
+    alert(time)
+    var now = new Date().getTime() + 30 * 60 * 60 * 1000;
+    var cTime = new Date(time.replace('-', '/').replace('-', '/') + ' 00:00:00').getTime();
+    // 支付成功
+    if ((pay_type == 'paypal' || pay_type == 'ipaylinks') && cTime > now) {
+      // TODO:
+      $(".wait-loading").show();
+      submitNew();
+    }
+  }
+
+  function compute30(time) {
+    var now = new Date().getTime() + 30 * 60 * 60 * 1000;
+    var cTime = new Date(time.replace('-', '/').replace('-', '/') + ' 00:00:00');
+    return cTime > cTime ? true : false;
+  }
+
+  // 提交订单占座(新) '&phone_number='+orderInfo.phone_number
+  function submitNew() {
+    var url_ = APIURL + "/api/order/submitNew";
+    var data = {
+      order_number: order_no,
+      email: order_email,
+      phone_number: orderInfo.phone_number
+    }
+    data = Object.assign(data, getSign("post"))
+    $.ajax({
+      url: url_,
+      data: data,
+      dataType: "json",
+      type: "post",
+      success: function(data) {
+        if (data.code == 1) {
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  }
+
+  // 聚合查询占座接口   api/order/orderStatusJH
+  function orderStatusJH() {
+    var url_ = APIURL + "/api/order/orderStatusJH";
+    var data = {
+      order_number: order_no,
+      email: order_email,
+      phone_number: orderInfo.phone_number
+    }
+    data = Object.assign(data, getSign("post"))
+    $.ajax({
+      url: url_,
+      data: data,
+      dataType: "json",
+      type: "post",
+      success: function(data) {
+        if (data.code == 1) {
+        } else {
+          alert(data.message);
+        }
+      }
+    })
+  }
+
+
 });
