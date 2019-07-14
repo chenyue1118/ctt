@@ -512,6 +512,13 @@
             .btn + .btn {
               margin-top: 12px;
             }
+            .show-item-disable {
+              background: #d2d2d2;
+              &:hover {
+                background: #d2d2d2;
+                cursor: not-allowed;
+              }
+            }
           }
         }
         .item + .item {

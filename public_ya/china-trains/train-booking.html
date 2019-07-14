@@ -272,6 +272,9 @@
               <input class="number" type="text" name="" value="">
             </li> -->
           </ul>
+          <div class="traveler-txt">
+            As China Railway applies strict real-name system, passengers will be rejected to collect the paper tickets and board the train if there were any inconsistance between the name used for booking and that shows on the passport. Please double check and make sure all the information of passenger is correct.
+          </div>
         </div>
         <div class="collection">
           <h3 class="title">* Ticket Collection</h3>
@@ -297,7 +300,7 @@
               </div>
               <div class="prompt">
                 <i class="icon-prompt"></i>
-                <span class="txt">温馨提示：离出发时间≤72小时的只能自取</span>
+                <span class="txt">Tips: Only take off from the departure time ≤ 72 hours</span>
               </div>
             </li>
             <li class="item coll-hotel">
@@ -371,15 +374,23 @@
           <h3 class="title">Contact Information</h3>
           <ul class="contact-infos">
             <li class="item">
-              <span class="tit">Name</span>
-              <input class="val" type="text">
+              <span class="tit">
+                Name
+                <i class="tip">*</i>
+              </span>
+              <input class="val book-name" type="text">
             </li>
             <li class="item">
-              <span class="tit">Email</span>
+              <span class="tit">
+                Email
+                <i class="tip">*</i>
+              </span>
               <input class="val book-email" type="text">
             </li>
             <li class="item">
-              <span class="tit">Phone No.</span>
+              <span class="tit">Phone No.
+                <i class="tip">*</i>
+              </span>
               <input class="val book-phone" type="text">
             </li>
             <li class="item">
@@ -393,9 +404,9 @@
         </div>
         <div class="sub-book">
           <div class="notice">
-            <input class="selet" type="checkbox">
+            <input class="selet book-terms-condition" type="checkbox">
             <span class="con">I have read and accepted booking</span>
-            <a class="link">terms and conditions.</a>
+            <a class="link" target="_blank" href="train-terms-conditions.html">terms and conditions.</a>
           </div>
           <a class="sub-book-btn">Submite my booking </a>
         </div>
