@@ -430,6 +430,11 @@
                 background: #b30000; }
             .train-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn .btn + .btn {
               margin-top: 12px; }
+            .train-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn .show-item-disable {
+              background: #d2d2d2; }
+              .train-search_ .search-result-wra .search-result-wrapper .result-content .item .seat-btn .show-item-disable:hover {
+                background: #d2d2d2;
+                cursor: not-allowed; }
         .train-search_ .search-result-wra .search-result-wrapper .result-content .item + .item {
           border-top: 1px solid #DBDBDB; }
   .train-search_ .search-noresult-wra {

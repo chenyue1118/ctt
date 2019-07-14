@@ -69,6 +69,8 @@ $(function() {
 
   // 车次选择
   $(".search-result-wrapper .result-content").on("click", ".btn", function() {
+    console.log($(this).hasClass('show-item-disable'));
+    if ($(this).hasClass('show-item-disable')) return false;
     var train_time   = $(this).parents(".seat-btn").attr("data-time");
     var train_from   = $(this).parents(".seat-btn").attr("data-fromCode");
     var train_to     = $(this).parents(".seat-btn").attr("data-toCode");
@@ -423,7 +425,7 @@ $(function() {
                     +'<span class="price-detail">RMB'+item.swz_price+'/USD'+priceExchangeRate(item.swz_price, ExchangeRate)+'</span>'
                   +'</div>'
                   +'<div class="seat-btn" data-time="'+item.train_start_date+'" data-fromCode="'+item.from_station_code+'" data-toCode="'+item.to_station_code+'" data-trainCode="'+item.train_code+'" data-duration="'+item.run_time+'" data-start_time="'+item.start_time+'" data-arrive_time="'+item.arrive_time+'" data-arrive_days="'+item.arrive_days+'" data-ServiceFee="'+item.ServiceFee+'">'
-                    +'<a class="btn '+setBookSty(item.edz_num)+'" data-price='+item.edz_price+' data-zwcode="O">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.edz_num)+'" data-price='+item.edz_price+' data-zwcode="O" disable="">Continue</a>'
                     +'<a class="btn '+setBookSty(item.ydz_num)+'" data-price='+item.ydz_price+' data-zwcode="M">Continue</a>'
                     +'<a class="btn '+setBookSty(item.swz_num)+'" data-price='+item.swz_price+' data-zwcode="9">Continue</a>'
                   +'</div>'

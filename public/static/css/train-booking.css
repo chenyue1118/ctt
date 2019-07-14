@@ -374,6 +374,12 @@
             font-size: 16px;
             color: #333333;
             text-indent: 16px; }
+      .booking_ .booking-wrapper .traveler-info .traveler-txt {
+        padding: 12px 0;
+        line-height: 24px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600; }
     .booking_ .booking-wrapper .collection {
       margin-top: 30px;
       padding: 28px 46px 36px 46px;
@@ -685,6 +691,8 @@
             line-height: 14px;
             color: #333333;
             font-size: 16px; }
+            .booking_ .booking-wrapper .contact-book .contact-infos .item .tit .tip {
+              color: #f00; }
           .booking_ .booking-wrapper .contact-book .contact-infos .item .val {
             display: block;
             width: 288px;

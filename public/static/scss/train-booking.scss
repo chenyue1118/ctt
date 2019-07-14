@@ -446,6 +446,13 @@
           }
         }
       }
+      .traveler-txt {
+        padding: 12px 0;
+        line-height: 24px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+      }
     }
     .collection {
       margin-top: 30px;
@@ -821,6 +828,9 @@
             line-height: 14px;
             color: #333333;
             font-size: 16px;
+            .tip {
+              color: #f00;
+            }
           }
           .val {
             display: block;

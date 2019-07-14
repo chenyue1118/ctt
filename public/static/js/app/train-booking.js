@@ -47,6 +47,9 @@ $(function(){
 
   // 提交订单
   $(".sub-book-btn").on("click", function() {
+    console.log($(".book-terms-condition").val());
+    console.log($(".book-terms-condition").prop("checked"));
+    return false;
     // adult-info
     // 获取乘客信息
     var passengers = [];
@@ -179,13 +182,23 @@ $(function(){
       delivery_address.ReceiverPhone = ReceiverPhone;
     }
     var email_ = $(".book-email").val();
+    var name_ = $(".book-name").val();
     var phone_number_ = $(".book-phone").val();
+    if (!name_) {
+      $(".book-name").focus();
+      return false;
+    }
     if (!email_) {
       $(".book-email").focus();
       return false;
     }
     if (!phone_number_) {
       $(".book-phone").focus();
+      return false;
+    }
+    var terms_condition = $(".book-terms-condition").prop("checked");
+    if (!terms_condition) {
+      alert("Please to learn Terms and Conditions for China Train Tickets Booking Service!");
       return false;
     }
     var data_ = {
