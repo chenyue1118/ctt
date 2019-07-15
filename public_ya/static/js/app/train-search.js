@@ -1,1 +1,669 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(s(){s r(){15(d&&d.1E){t(d[0].16,d[0].19,d[0].B,0);P a=d[0].B;a=a.4m(/-/g,"/");$(".2d-B .S").2R();P b=1U.2c(a);a=1U.2c(a+" 23:2Q:2Q");P c=1U.2c(2S 1U);a=L(a)-L(c);15(1v>a)1L(e(b,"J"),a=1;7>a;a++)e(L(b)+1v*a);1G 15(1v<a&&20>a)1L(e(L(b)-1v),e(L(b),"J"),a=1;6>a;a++)e(L(b)+1v*a);1G 15(20<a&&2q>a)1L(e(L(b)-20),e(L(b)-1v),e(L(b),"J"),a=1;5>a;a++)e(L(b)+1v*a);1G 15(2q<a)1L(e(L(b)-2q),e(L(b)-20),e(L(b)-1v),e(L(b),"J"),a=1;4>a;a++)e(L(b)+1v*a)}}s y(a){a&&0<a.1E&&($(".I-17-1u .1P .J .17-16").R(l(a[0].16,"2Z")),$(".I-17-1u .1P .J .17-16").W("j-1m",a[0].16),$(".I-17-1u .1P .J .17-19").R(l(a[0].19,"2Z")),$(".I-17-1u .1P .J .17-19").W("j-1m",a[0].19),$(".I-17-1u .1P .J .17-B").R(a[0].B))}s t(a,b,c,n){15(!a||!b||!c)1j!1;n=L(n)+1;c=4k+"/4j/4i/4g?4f="+a+"&4e="+b+"&4d="+c+"&"+4b("2L");$(".I-14-1F .17").1Q("4a"+n);$(".I-14-1F .14-2i-16").1Q(l(a));$(".I-14-1F .14-2i-19").1Q(l(b));$(".2W").1D();$.49({48:c,47:"46",V:"2L",45:s(a){$(".2W").1A();1==a.1m?($(".I-14-1F .14 .44").1Q(a.j.1E),0<a.j.1E?($(".I-2H-1u").1A(),g=a.j.1N(0),m=a.j.1N(0),k(g)):$(".I-2H-1u").1D()):43("3Q 3P 3M 3L 3K!")}})}s k(a){$(".I-1J-1F .1J-2s .S").2R();a&&a.1g(s(a){1c=a.1c;3H("1c",1c);1l=a.1l;$(".I-1J-1F .1J-2s").2v(z(a))})}s z(a){P b=a.1O.1h(":")[0]+"h"+a.1O.1h(":")[1]+"m";b=\'<1H o="S"><i o="1i-1b">\'+a.1S+\'</i><E o="3G"><i o="16"></i><i o="2Y"></i><i o="19"></i></E><E o="B"><i o="16">\'+a.1d+\'</i><i o="19">\'+a.1r+\'</i></E><E o="2i"><i o="16">\'+1B(l(a.22))+\'</i><i o="19">\'+1B(l(a.25))+\'</i></E><E o="31">\'+b+\'</E><E o="31-2Y"></E>\';15("G"==a.1e||"C"==a.1e)P c=\'<E o="H"><i o="H-V">2w 1W.</i><i o="H-V">2E 1W.</i><i o="H-V">32 1W</i></E><E o="H-1b"><i o="1b">\'+a.1Y+\'</i><i o="1b">\'+a.1Z+\'</i><i o="1b">\'+a.2P+\'</i></E><E o="H-Q"><i o="Q-14">1n\'+a.1K+"/1x"+1o(a.1K,1c)+\'</i><i o="Q-14">1n\'+a.1M+"/1x"+1o(a.1M,1c)+\'</i><i o="Q-14">1n\'+a.2g+"/1x"+1o(a.2g,1c)+\'</i></E><E o="H-N" j-B="\'+a.2n+\'" j-28="\'+a.22+\'" j-29="\'+a.25+\'" j-2a="\'+a.1S+\'" j-1s="\'+a.1O+\'" j-1d="\'+a.1d+\'" j-1r="\'+a.1r+\'" j-1z="\'+a.1z+\'" j-1l="\'+a.1l+\'"><a o="N \'+h(a.1Y)+\'" j-Q=\'+a.1K+\' j-1k="O" 2e="">1t</a><a o="N \'+h(a.1Z)+\'" j-Q=\'+a.1M+\' j-1k="M">1t</a><a o="N \'+h(a.2P)+\'" j-Q=\'+a.2g+\' j-1k="9">1t</a></E></1H>\';1G 15("D"==a.1e)c=\'<E o="H"><i o="H-V">2w 1W.</i><i o="H-V">2E 1W.</i><i o="H-V">3E 3D</i></E><E o="H-1b"><i o="1b">\'+a.1Y+\'</i><i o="1b">\'+a.1Z+\'</i><i o="1b">\'+a.2A+\'</i></E><E o="H-Q"><i o="Q-14">1n\'+a.1K+"/1x"+1o(a.1K,1c)+\'</i><i o="Q-14">1n\'+a.1M+"/1x"+1o(a.1M,1c)+\'</i><i o="Q-14">1n\'+a.2f+"/1x"+1o(a.2f,1c)+\'</i></E><E o="H-N" j-B="\'+a.2n+\'" j-28="\'+a.22+\'" j-29="\'+a.25+\'" j-2a="\'+a.1S+\'" j-1s="\'+a.1O+\'" j-1d="\'+a.1d+\'" j-1r="\'+a.1r+\'" j-1z="\'+a.1z+\'" j-1l="\'+a.1l+\'"><a o="N \'+h(a.1Y)+\'" j-Q=\'+a.1K+\' j-1k="O">1t</a><a o="N \'+h(a.1Z)+\'" j-Q=\'+a.1M+\' j-1k="M">1t</a><a o="N \'+h(a.2A)+\'" j-Q=\'+a.2f+\' j-1k="F">1t</a></E></1H>\';1G 15("Z"==a.1e||"K"==a.1e||"T"==a.1e||"1"==a.1e||"2"==a.1e||"Y"==a.1e||"6"==a.1e)c=\'<E o="H"><i o="H-V">2I 2J</i><i o="H-V">3q 2J</i><i o="H-V">2I 3p</i></E><E o="H-1b"><i o="1b">\'+a.2M+\'</i><i o="1b">\'+a.2N+\'</i><i o="1b">\'+a.2O+\'</i></E><E o="H-Q"><i o="Q-14">1n\'+a.2j+"/1x"+1o(a.2j,1c)+\'</i><i o="Q-14">1n\'+a.2k+"/1x"+1o(a.2k,1c)+\'</i><i o="Q-14">1n\'+a.2l+"/1x"+1o(a.2l,1c)+\'</i></E><E o="H-N" j-B="\'+a.2n+\'" j-28="\'+a.22+\'" j-29="\'+a.25+\'" j-2a="\'+a.1S+\'" j-1s="\'+a.1O+\'" j-1d="\'+a.1d+\'" j-1r="\'+a.1r+\'" j-1z="\'+a.1z+\'" j-1l="\'+a.1l+\'"><a o="N \'+h(a.2M)+\'" j-Q=\'+a.2j+\' j-1k="4">1t</a><a o="N \'+h(a.2N)+\'" j-Q=\'+a.2k+\' j-1k="3">1t</a><a o="N \'+h(a.2O)+\'" j-Q=\'+a.2l+\' j-1k="1">1t</a></E></1H>\';1j b+c}s h(a){1j 0==a||"--"==a?"1D-S-2e":""}s e(a,b){(b=b||"")&&(b="J");P c=2S 1U(a),n=c.3o(),d=c.3n()+1;a=c.3m();c=c.3l();b=\'<1H o="S \'+b+\'" j-B="\'+(n+"-"+(9<d?d:"0"+d)+"-"+(9<c?c:"0"+c))+\'">\';d=L(d);2X(d){U 1:P f="3k";13;U 2:f="3j";13;U 3:f="3i";13;U 4:f="3h";13;U 5:f="38";13;U 6:f="33";13;U 7:f="3F";13;U 8:f="34";13;U 9:f="35";13;U 10:f="36";13;U 11:f="37";13;U 12:f="39"}f=b+f+" "+c+",";a=L(a);2X(a){U 0:P e="3a";13;U 1:e="3b";13;U 2:e="3c";13;U 3:e="3d";13;U 4:e="3e";13;U 5:e="3f";13;U 6:e="3g"}e=f+e+"</1H>";$(".2d-B").2v(e)}s u(a,b){a=a.1h("(")[1].1h(")")[0];a=A(a);b.W("j-1m",a)}s A(a){P b="";p.1g(s(c){c.1C==a&&(b=c.1m)});1j b}s l(a,b){b=b||"";a=a||"";P c="";p.1g(s(d){d.1m==a&&(c=b?1B(d.21)+"("+d.1C+")":1B(d.21))});1j c}P g=[],m=[],p=[],q=[],v=[],w=!0,x=!0;(s(){1L(P a=2K.1h("|"),b=0;b<L((a.1E-1)/5);b++)p.1a({1C:a[5*b+1],1m:a[5*b+2],21:a[5*b+3]}),q.1a({2F:1B(a[5*b+3])+" ("+a[5*b+1]+")",26:1B(a[5*b+3])+" ("+a[5*b+1]+")"})})();P d=2D.3r("3s");d&&(d=2C.2c(d));d&&0<d.1E?y(d):d=[{16:"",19:"",B:""}];r();(s(){1L(P a=2K.1h("|"),b=0;b<L((a.1E-1)/5);b++)p.1a({1C:a[5*b+1],1m:a[5*b+2],21:a[5*b+3]}),q.1a({2F:1B(a[5*b+3])+" ("+a[5*b+1]+")",26:1B(a[5*b+3])+" ("+a[5*b+1]+")"});$("#I-1i-B").3t({3u:2,3v:!1,3w:"3x-3y-3z",3A:"3B",3C:0});$("#I-1i-16").2z({2y:q,2x:s(a,b){u(b.S.26,$("#I-1i-16"))}});$("#I-1i-19").2z({2y:q,2x:s(a,b){u(b.S.26,$("#I-1i-19"))}})})();$(".1I").1f("1q",s(){$(".1V").1D();$(".1I-2b").1D()});$(".3I-3J").1f("1q",s(){$(".1V").1A();$(".1I-2b").1A()});$(".1V").1f("1q",s(){$(".1V").1A();$(".1I-2b").1A()});$(".1I-N .N").1f("1q",s(){$(".1V").1A();$(".1I-2b").1A()});$(".2d-B").1f("1q",".S",s(){P a=$(X).W("j-B");$(".I-17-1u .J .17-B").R(a);d[0].B=a;$(".2d-B .S").1R("J");$(X).1T("J");t(d[0].16,d[0].19,d[0].B,0)});$(".I-1J-1F .1J-2s").1f("1q",".N",s(){3N.3O($(X).2U("1D-S-2e"));15($(X).2U("1D-S-2e"))1j!1;P a=$(X).1p(".H-N").W("j-B"),b=$(X).1p(".H-N").W("j-28"),c=$(X).1p(".H-N").W("j-29"),d=$(X).1p(".H-N").W("j-2a"),e=$(X).1p(".H-N").W("j-1s"),f=$(X).1p(".H-N").W("j-1d"),g=$(X).1p(".H-N").W("j-1r"),h=$(X).1p(".H-N").W("j-1z"),k=$(X).1p(".H-N").W("j-1l"),l=$(X).W("j-Q"),m=$(X).W("j-1k");v.1a({3R:a,3S:b,3T:c,1S:d,3U:e,1d:f,1r:g,3V:l,3W:m,1z:h,1l:k});2D.3X("3Y",2C.3Z(v));40.41="1i-42.1Q"});$(".I-17-1u").1f("1q",".17-I",s(){d[0].16=$("#I-1i-16").W("j-1m");d[0].19=$("#I-1i-19").W("j-1m");d[0].B=$("#I-1i-B").R();r()});$("27[1C=\'2G\']").1f("2u",s(){15(!g)1j!1;15("30"==$(X).R())$("27[1C=\'2G\']").1w("1y",!0),m=g.1N(0),k(m);1G{$("#V-2h").R();$("#V-2m").R();$("#V-2o").R();P a=[],b="";$("#V-2h").1w("1y")&&(b+=$("#V-2h").R());$("#V-2m").1w("1y")&&(b+=$("#V-2m").R());$("#V-2o").1w("1y")&&(b+=$("#V-2o").R());g.1g(s(c){-1<b.4c(c.1e)&&a.1a(c)});k(a)}});$("27[1C=\'2t\']").1f("2u",s(){15(!g)1j!1;15("30"==$(X).R())$("27[1C=\'2t\']").1w("1y",!0),m=g.1N(0),k(m);1G{$("#B-2p").R();$("#B-12").R();$("#B-18").R();$("#B-24").R();P a=[],b=[];$("#B-2p").1w("1y")&&b.1a($("#B-2p").R());$("#B-12").1w("1y")&&b.1a($("#B-12").R());$("#B-18").1w("1y")&&b.1a($("#B-18").R());$("#B-24").1w("1y")&&b.1a($("#B-24").R());g.1g(s(c){b.1g(s(b){P d=L(b.1h("-")[0]);b=L(b.1h("-")[1]);P e=4h*L(c.1d.1h(":")[0])+L(c.1d.1h(":")[1]);e>=b&&e<d&&a.1a(c)})});k(a)}});$(".S-1X").1f("1q",s(){15(!g)1j!1;P a=g.1N(0);(w=!w)?($(".S-1X .J").1R("J"),$(".S-1X .2V").1T("J")):(a=a.2T(),$(".S-1X .J").1R("J"),$(".S-1X .2B").1T("J"));k(a)});$(".S-1s").1f("1q",s(){15(!g)1j!1;P a=[],b=g.1N(0),c=[];b.1g(s(a){c.1a(4l(a.2r))});c.4n();(x=!x)?(c.1g(s(c){b.1g(s(b){b.2r==c&&a.1a(b)})}),$(".S-1s .J").1R("J"),$(".S-1s .2V").1T("J")):(c.1g(s(c){b.1g(s(b){b.2r==c&&a.1a(b)})}),a=a.2T(),$(".S-1s .J").1R("J"),$(".S-1s .2B").1T("J"));k(a)})});',62,272,'||||||||||||||||||span|data|||||class||||function|||||||||time|||div|||seat|search|active||parseInt||btn||var|price|val|item||case|type|attr|this||||||break|detail|if|from|trip||to|push|number|ExchangeRate|start_time|train_type|on|forEach|split|train|return|zwcode|ServiceFee|code|RMB|priceExchangeRate|parents|click|arrive_time|duration|Continue|wra|864E5|prop|USD|checked|arrive_days|hide|firstCap|name|show|length|wrapper|else|li|report|result|edz_price|for|ydz_price|slice|run_time|head|html|removeClass|train_code|addClass|Date|mask_|Cls|departure|edz_num|ydz_num|1728E5|pinyin|from_station_code|||to_station_code|value|input|fromCode|toCode|trainCode|mask|parse|screen|disable|dw_price|swz_price|gdc|address|rw_price|yw_price|yz_price|ztk|train_start_date|other|08|2592E5|run_time_minute|content|departureTime|change|append|2nd|select|source|autocomplete|dw_num|top|JSON|sessionStorage|1nd|label|trainType|noresult|Soft|Sleeper|station_names|get|rw_num|yw_num|yz_num|swz_num|59|remove|new|reverse|hasClass|bottom|loading|switch|line|en|all|dur|Business|June|Aug|Sep|Oct|Nov|May|Dec|Sun|Mon|Tues|Wednes|Thurs|Fri|Satur|Apr|Mar|Feb|Jan|getDate|getDay|getMonth|getFullYear|Seat|Hard|getItem|trainInfo|datepicker|numberOfMonths|showButtonPanel|dateFormat|yy|mm|dd|showAnim|slideDown|minDate|Berth|CRH|July|lines|setCookie|seize|close|found|were|plans|console|log|travel|No|train_time|train_from|train_to|train_duration|train_price|train_zwcode|setItem|orderInfo|stringify|location|href|booking|alert|num|success|json|dataType|url|ajax|Trip|getSign|indexOf|train_date|to_station|from_station|queryV2|60|ticket|api|APIURL|Number|replace|sort'.split('|'),0,{}))
+$(function() {
+
+  var train_data       = [];        //存储车次信息  价格余票等
+  var sel_train_data   = [];        //筛选 车次信息
+  var train_station    = [];        //所有车站
+  var train_station_py = [];        //所有车站拼音
+  var orderInfo = [];
+  var ss_index = 0;
+  var departureSequence = true;
+  var durationSequence = true;
+
+  getStation();
+
+  var trainInfo = sessionStorage.getItem("trainInfo");
+  if (trainInfo) trainInfo = JSON.parse(trainInfo);
+  if (trainInfo && trainInfo.length > 0) {
+    showTrainSelectInfo(trainInfo);
+  } else {
+    trainInfo = [{
+      from: '',
+      to: '',
+      time: ''
+    }];
+  }
+
+  // 初始化车次查询
+  init();
+
+  // 车次搜索初始化
+  trainInit();
+
+
+  // $(".search-noresult-wra").hide();
+  // TODO: 2019-05-10  根据时间渲染
+  // showTimeList('2019-05-10')
+
+  // 弹出 反馈错误窗口
+  $(".report").on("click", function() {
+    $(".mask_").show();
+    $(".report-mask").show();
+  });
+
+  // 关闭 反馈错误窗口
+  $(".seize-close").on("click", function() {
+    $(".mask_").hide();
+    $(".report-mask").hide();
+  });
+  // 关闭 反馈错误窗口
+  $(".mask_").on("click", function() {
+    $(".mask_").hide();
+    $(".report-mask").hide();
+  });
+  // 关闭 反馈错误窗口
+  $(".report-btn .btn").on("click", function() {
+    $(".mask_").hide();
+    $(".report-mask").hide();
+  });
+
+  // start
+  // 时间选择
+  $(".screen-time").on("click", ".item", function() {
+    var time_ = $(this).attr("data-time");
+    $(".search-trip-wra .active .trip-time").val(time_);
+    trainInfo[ss_index].time = time_;
+    $(".screen-time .item").removeClass("active");
+    $(this).addClass("active");
+    trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
+  });
+
+  // 车次选择
+  $(".search-result-wrapper .result-content").on("click", ".btn", function() {
+    console.log($(this).hasClass('show-item-disable'));
+    if ($(this).hasClass('show-item-disable')) return false;
+    var train_time   = $(this).parents(".seat-btn").attr("data-time");
+    var train_from   = $(this).parents(".seat-btn").attr("data-fromCode");
+    var train_to     = $(this).parents(".seat-btn").attr("data-toCode");
+    var train_code   = $(this).parents(".seat-btn").attr("data-trainCode");
+    var train_duration = $(this).parents(".seat-btn").attr("data-duration");
+    var start_time   = $(this).parents(".seat-btn").attr("data-start_time");
+    var arrive_time   = $(this).parents(".seat-btn").attr("data-arrive_time");
+    var arrive_days   = $(this).parents(".seat-btn").attr("data-arrive_days");
+    var service_Fee   = $(this).parents(".seat-btn").attr("data-ServiceFee");
+    var train_price  = $(this).attr("data-price");
+    var train_zwcode = $(this).attr("data-zwcode");
+    orderInfo.push({
+      "train_time": train_time,
+      "train_from": train_from,
+      "train_to": train_to,
+      "train_code": train_code,
+      "train_duration": train_duration,
+      "start_time": start_time,
+      "arrive_time": arrive_time,
+      "train_price": train_price,
+      "train_zwcode": train_zwcode,
+      "arrive_days": arrive_days,
+      "ServiceFee": service_Fee
+    });
+    // ss_index = ss_index + 1;
+    // if (trainInfo && trainInfo.length > ss_index) {
+    //   trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
+    //   showTimeList(trainInfo[ss_index].time);
+    //   $(".search-trip-wra .item").removeClass("active");
+    //   $(".search-trip-wra .item:eq("+ss_index+")").addClass("active");
+    // } else {
+      sessionStorage.setItem("orderInfo", JSON.stringify(orderInfo));
+      location.href = "train-booking.html";
+    // }
+    // sessionStorage.setItem("orderInfoPara",JSON.stringify(orderInfoPara));
+  });
+
+  // 车次搜索
+  $(".search-trip-wra").on("click", ".trip-search", function() {
+    trainInfo[ss_index].from = $("#search-train-from").attr("data-code");
+    trainInfo[ss_index].to = $("#search-train-to").attr("data-code");
+    trainInfo[ss_index].time = $("#search-train-time").val();
+    // trainInfo[ss_index].from = $(this).parents(".item").find(".trip-from").attr("data-code");
+    // trainInfo[ss_index].to = $(this).parents(".item").find(".trip-to").attr("data-code");
+    // trainInfo[ss_index].time = $(this).parents(".item").find(".trip-time").val();
+    init();
+  });
+
+  // 数据筛选
+  $("input[name='trainType']").on("change", function() {
+    if (!train_data) return false;
+    if ($(this).val() == 'all') {
+      $("input[name='trainType']").prop("checked", true);
+      sel_train_data = train_data.slice(0);
+      showTrian(sel_train_data);
+    } else {
+      var gdc = $("#type-gdc").val()
+      var ztk = $("#type-ztk").val()
+      var other = $("#type-other").val()
+      var trainArr = [];
+      var str = "";
+      if ($("#type-gdc").prop("checked")) {
+        str += $("#type-gdc").val();
+      }
+      if ($("#type-ztk").prop("checked")) {
+        str += $("#type-ztk").val();
+      }
+      if ($("#type-other").prop("checked")) {
+        str += $("#type-other").val();
+      }
+      train_data.forEach(function(item) {
+        if (str.indexOf(item.train_type) > -1) trainArr.push(item)
+      })
+      showTrian(trainArr);
+    }
+  });
+  // 数据筛选
+  $("input[name='departureTime']").on("change", function() {
+    if (!train_data) return false;
+    if ($(this).val() == 'all') {
+      $("input[name='departureTime']").prop("checked", true);
+      sel_train_data = train_data.slice(0);
+      showTrian(sel_train_data);
+    } else {
+      var time08 = $("#time-08").val()
+      var time12 = $("#time-12").val()
+      var time18 = $("#time-18").val()
+      var time24 = $("#time-24").val()
+      var trainArr = [];
+      var arr = [];
+      if ($("#time-08").prop("checked")) {
+        arr.push($("#time-08").val());
+      }
+      if ($("#time-12").prop("checked")) {
+        arr.push($("#time-12").val());
+      }
+      if ($("#time-18").prop("checked")) {
+        arr.push($("#time-18").val());
+      }
+      if ($("#time-24").prop("checked")) {
+        arr.push($("#time-24").val());
+      }
+      train_data.forEach(function(item) {
+        arr.forEach(function(list) {
+          var index1 = parseInt(list.split("-")[0]);
+          var index2 = parseInt(list.split("-")[1]);
+          var index3 = parseInt(item.start_time.split(":")[0]) * 60 + parseInt(item.start_time.split(":")[1]);
+          if (index3 >= index2 && index3 < index1) trainArr.push(item)
+        })
+      })
+      showTrian(trainArr);
+    }
+  });
+
+  // 到达时间的正序和倒序排列
+  $(".item-departure").on("click", function() {
+    if (!train_data) return false;
+    var trainArr = [];
+    var tempTrainData = train_data.slice(0);
+    departureSequence = !departureSequence;
+    if (departureSequence) {
+      // 正序
+      trainArr = tempTrainData;
+      $(".item-departure .active").removeClass("active");
+      $(".item-departure .bottom").addClass("active");
+    } else {
+      // 倒序 reverse
+      trainArr = tempTrainData.reverse();
+      $(".item-departure .active").removeClass("active");
+      $(".item-departure .top").addClass("active");
+    }
+    showTrian(trainArr);
+  });
+
+  // 耗时排序
+  $(".item-duration").on("click", function() {
+    if (!train_data) return false;
+    var trainArr = [];
+    var tempTrainData = train_data.slice(0);
+    var durTrainData = [];
+    tempTrainData.forEach(function(item) {
+      durTrainData.push(Number(item.run_time_minute))
+    })
+    durTrainData.sort();
+    durationSequence = !durationSequence;
+    if (durationSequence) {
+      // 正序
+      durTrainData.forEach(function(item) {
+        tempTrainData.forEach(function(list) {
+          if (list.run_time_minute == item) trainArr.push(list)
+        })
+      })
+      $(".item-duration .active").removeClass("active");
+      $(".item-duration .bottom").addClass("active");
+    } else {
+      // 倒序 reverse
+      durTrainData.forEach(function(item) {
+        tempTrainData.forEach(function(list) {
+          if (list.run_time_minute == item) trainArr.push(list)
+        })
+      })
+      trainArr = trainArr.reverse();
+      $(".item-duration .active").removeClass("active");
+      $(".item-duration .top").addClass("active");
+    }
+    showTrian(trainArr);
+  });
+
+  // ==========================================================
+  // 初始化数据
+  function trainInit() {
+    // 车站数据
+    var station_name_arr = station_names.split("|");
+    for(var i=0;i< parseInt((station_name_arr.length-1) / 5);i++){
+      train_station.push({
+        "name": station_name_arr[i*5+1],
+        "code": station_name_arr[i*5+2],
+        "pinyin": station_name_arr[i*5+3]
+      });
+      // train_station_py.push(station_name_arr[i*5+3]);
+      train_station_py.push({
+        label: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")",
+        value: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")"
+      });
+    }
+    // 日期初始化
+    $("#search-train-time").datepicker({
+      numberOfMonths: 2,
+      showButtonPanel: false,
+      dateFormat: 'yy-mm-dd',
+      showAnim: 'slideDown',
+      minDate: +0
+    });
+    // 起点初始化
+    $("#search-train-from").autocomplete({
+      source: train_station_py,
+      select: function(event,ui) {
+        setTrainCode(ui.item.value, $("#search-train-from"));
+      }
+    });
+    // 终点初始化
+    $("#search-train-to").autocomplete({
+      source: train_station_py,
+      select: function(event,ui) {
+        setTrainCode(ui.item.value, $("#search-train-to"));
+      }
+    });
+  }
+
+  //获取所有的车站信息
+  function getStation(){
+    // 车站数据
+    var station_name_arr = station_names.split("|");
+    for(var i=0;i< parseInt((station_name_arr.length-1) / 5);i++){
+      train_station.push({
+        "name": station_name_arr[i*5+1],
+        "code": station_name_arr[i*5+2],
+        "pinyin": station_name_arr[i*5+3]
+      });
+      // train_station_py.push(station_name_arr[i*5+3]);
+      train_station_py.push({
+        label: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")",
+        value: firstCap(station_name_arr[i*5+3]) + " ("+station_name_arr[i*5+1]+")"
+      });
+    }
+  }
+
+  // 初始化车次查询信息
+  function init() {
+    if (trainInfo && trainInfo.length) {
+      trainSearch(trainInfo[ss_index].from, trainInfo[ss_index].to, trainInfo[ss_index].time, ss_index);
+      showTimeList(trainInfo[ss_index].time);
+    } else {
+
+    }
+  }
+
+  // 展示搜索信息列表
+  function showTrainSelectInfo(trainInfo) {
+    if (trainInfo && trainInfo.length > 0) {
+      $(".search-trip-wra .head .active .trip-from").val(codeGetPy(trainInfo[0].from, "en"));
+      $(".search-trip-wra .head .active .trip-from").attr("data-code", trainInfo[0].from);
+      $(".search-trip-wra .head .active .trip-to").val(codeGetPy(trainInfo[0].to, "en"));
+      $(".search-trip-wra .head .active .trip-to").attr("data-code", trainInfo[0].to);
+      $(".search-trip-wra .head .active .trip-time").val(trainInfo[0].time);
+    }
+    // var str = "";
+    // trainInfo && trainInfo.forEach(function(item, index) {
+    //   var index_ = index + 1;
+    //   var active = index == ss_index ? 'active': '';
+    //   str += '<li class="item '+active+'">'
+    //     +'<span class="trip">Trip'+index_+'</span>'
+    //     +'<div class="trip-from-wra">'
+    //       +'<input class="trip-from" type="text" placeholder="From" data-code="'+item.from+'" value="'+codeGetPy(item.from, "en")+'">'
+    //     +'</div>'
+    //     +'<div class="trip-to-wra">'
+    //       +'<input class="trip-to" type="text" placeholder="To" data-code="'+item.to+'" value="'+codeGetPy(item.to, "en")+'">'
+    //     +'</div>'
+    //     +'<div class="trip-time-wra">'
+    //       +'<input class="trip-time" type="text" placeholder="DepartDate" value="'+item.time+'">'
+    //     +'</div>'
+    //     +'<a class="trip-search">'
+    //       +'Find Train'
+    //       +'<i class="find-icon"></i>'
+    //     +'</a>'
+    //   +'</li>';
+    // })
+    // $(".search-trip-wra .head").html(str);
+  }
+
+  // 车次查询
+  function trainSearch(from, to, time, index) {
+    if (!from) return false;
+    if (!to) return false;
+    if (!time) return false;
+    var index_ = parseInt(index) + 1;
+    var url_ = APIURL + "/api/ticket/queryV2?from_station=" + from + "&to_station=" + to + "&train_date=" + time + "&" + getSign("get");
+    $(".search-detail-wrapper .trip").html("Trip" + index_);
+    $(".search-detail-wrapper .detail-address-from").html(codeGetPy(from));
+    $(".search-detail-wrapper .detail-address-to").html(codeGetPy(to));
+    $(".loading").show();
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        $(".loading").hide();
+        if (data.code == 1) {
+          $(".search-detail-wrapper .detail .num").html(data.data.length);
+          if (data.data.length > 0) {
+            $(".search-noresult-wra").hide();
+            train_data = data.data.slice(0);
+            sel_train_data = data.data.slice(0);
+            showTrian(train_data);
+          } else {
+            $(".search-noresult-wra").show();
+          }
+        } else {
+          alert("No travel plans were found!")
+        }
+      }
+    });
+  }
+
+  //根据车次信息  展示信息
+  function showTrian(arr) {
+    $(".search-result-wrapper .result-content .item").remove();      //先清空车次信息
+    arr && arr.forEach(function(item){
+      ExchangeRate = item.ExchangeRate;
+      setCookie('ExchangeRate', ExchangeRate);
+      ServiceFee = item.ServiceFee;
+      $(".search-result-wrapper .result-content").append(accSeat(item));
+    });
+  }
+
+  // 根据车次类型 去显示不同的座位
+  function accSeat(item) {
+    var run_time = item.run_time.split(":")[0] + "h" + item.run_time.split(":")[1] + "m";
+    var str1 = '<li class="item">'
+                  +'<span class="train-number">'+item.train_code+'</span>'
+                  +'<div class="lines">'
+                    +'<span class="from"></span>'
+                    +'<span class="line"></span>'
+                    +'<span class="to"></span>'
+                  +'</div>'
+                  +'<div class="time">'
+                    +'<span class="from">'+item.start_time+'</span>'
+                    +'<span class="to">'+item.arrive_time+'</span>'
+                  +'</div>'
+                  +'<div class="address">'
+                    +'<span class="from">'+firstCap(codeGetPy(item.from_station_code))+'</span>'
+                    +'<span class="to">'+firstCap(codeGetPy(item.to_station_code))+'</span>'
+                  +'</div>'
+                  +'<div class="dur">'
+                    +run_time
+                  +'</div>'
+                  +'<div class="dur-line"></div>';
+    if (item.train_type == "G" || item.train_type == "C") {
+      var str2 = '<div class="seat">'
+                    +'<span class="seat-type">2nd Cls.</span>'
+                    +'<span class="seat-type">1nd Cls.</span>'
+                    +'<span class="seat-type">Business Cls</span>'
+                  +'</div>'
+                  +'<div class="seat-number">'
+                    +'<span class="number">'+item.edz_num+'</span>'
+                    +'<span class="number">'+item.ydz_num+'</span>'
+                    +'<span class="number">'+item.swz_num+'</span>'
+                  +'</div>'
+                  +'<div class="seat-price">'
+                    +'<span class="price-detail">RMB'+item.edz_price+'/USD'+priceExchangeRate(item.edz_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.ydz_price+'/USD'+priceExchangeRate(item.ydz_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.swz_price+'/USD'+priceExchangeRate(item.swz_price, ExchangeRate)+'</span>'
+                  +'</div>'
+                  +'<div class="seat-btn" data-time="'+item.train_start_date+'" data-fromCode="'+item.from_station_code+'" data-toCode="'+item.to_station_code+'" data-trainCode="'+item.train_code+'" data-duration="'+item.run_time+'" data-start_time="'+item.start_time+'" data-arrive_time="'+item.arrive_time+'" data-arrive_days="'+item.arrive_days+'" data-ServiceFee="'+item.ServiceFee+'">'
+                    +'<a class="btn '+setBookSty(item.edz_num)+'" data-price='+item.edz_price+' data-zwcode="O" disable="">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.ydz_num)+'" data-price='+item.ydz_price+' data-zwcode="M">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.swz_num)+'" data-price='+item.swz_price+' data-zwcode="9">Continue</a>'
+                  +'</div>'
+                +'</li>';
+    } else if (item.train_type == "D") {
+      var str2 = '<div class="seat">'
+                    +'<span class="seat-type">2nd Cls.</span>'
+                    +'<span class="seat-type">1nd Cls.</span>'
+                    +'<span class="seat-type">CRH Berth</span>'
+                  +'</div>'
+                  +'<div class="seat-number">'
+                    +'<span class="number">'+item.edz_num+'</span>'
+                    +'<span class="number">'+item.ydz_num+'</span>'
+                    +'<span class="number">'+item.dw_num+'</span>'
+                  +'</div>'
+                  +'<div class="seat-price">'
+                    +'<span class="price-detail">RMB'+item.edz_price+'/USD'+priceExchangeRate(item.edz_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.ydz_price+'/USD'+priceExchangeRate(item.ydz_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.dw_price+'/USD'+priceExchangeRate(item.dw_price, ExchangeRate)+'</span>'
+                  +'</div>'
+                  +'<div class="seat-btn" data-time="'+item.train_start_date+'" data-fromCode="'+item.from_station_code+'" data-toCode="'+item.to_station_code+'" data-trainCode="'+item.train_code+'" data-duration="'+item.run_time+'" data-start_time="'+item.start_time+'" data-arrive_time="'+item.arrive_time+'" data-arrive_days="'+item.arrive_days+'" data-ServiceFee="'+item.ServiceFee+'">'
+                    +'<a class="btn '+setBookSty(item.edz_num)+'" data-price='+item.edz_price+' data-zwcode="O">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.ydz_num)+'" data-price='+item.ydz_price+' data-zwcode="M">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.dw_num)+'" data-price='+item.dw_price+' data-zwcode="F">Continue</a>'
+                  +'</div>'
+                +'</li>';
+    } else if (item.train_type == "Z" || item.train_type == "K" || item.train_type == "T" || item.train_type == "1" || item.train_type == "2" || item.train_type == "Y" || item.train_type == "6") {
+      var str2 = '<div class="seat">'
+                    +'<span class="seat-type">Soft Sleeper</span>'
+                    +'<span class="seat-type">Hard Sleeper</span>'
+                    +'<span class="seat-type">Soft Seat</span>'
+                  +'</div>'
+                  +'<div class="seat-number">'
+                    +'<span class="number">'+item.rw_num+'</span>'
+                    +'<span class="number">'+item.yw_num+'</span>'
+                    +'<span class="number">'+item.yz_num+'</span>'
+                  +'</div>'
+                  +'<div class="seat-price">'
+                    +'<span class="price-detail">RMB'+item.rw_price+'/USD'+priceExchangeRate(item.rw_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.yw_price+'/USD'+priceExchangeRate(item.yw_price, ExchangeRate)+'</span>'
+                    +'<span class="price-detail">RMB'+item.yz_price+'/USD'+priceExchangeRate(item.yz_price, ExchangeRate)+'</span>'
+                  +'</div>'
+                  +'<div class="seat-btn" data-time="'+item.train_start_date+'" data-fromCode="'+item.from_station_code+'" data-toCode="'+item.to_station_code+'" data-trainCode="'+item.train_code+'" data-duration="'+item.run_time+'" data-start_time="'+item.start_time+'" data-arrive_time="'+item.arrive_time+'" data-arrive_days="'+item.arrive_days+'" data-ServiceFee="'+item.ServiceFee+'">'
+                    +'<a class="btn '+setBookSty(item.rw_num)+'" data-price='+item.rw_price+' data-zwcode="4">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.yw_num)+'" data-price='+item.yw_price+' data-zwcode="3">Continue</a>'
+                    +'<a class="btn '+setBookSty(item.yz_num)+'" data-price='+item.yz_price+' data-zwcode="1">Continue</a>'
+                  +'</div>'
+                +'</li>';
+    }
+    return str1+str2;
+  }
+
+  // 如果车票余票为 0 / --  book的样式
+  function setBookSty(num){
+    var num = num;
+    var str;
+    if(num == 0 || num == "--"){
+      str = "show-item-disable";
+    }else{
+      str = "";
+    }
+    return str;
+  }
+
+  //根据时间 显示  time 列表   --> 判断
+  function showTimeList(time){               // time -> 2018-01-20
+    var time = time.replace(/-/g,"/");
+    $(".screen-time .item").remove();          //删除原有的记录
+    var time1 = Date.parse(time);
+    var time2 = Date.parse(time+" 23:59:59");
+    var nowDate = Date.parse(new Date());
+    var timeDiff = parseInt(time2) - parseInt(nowDate);
+    //  当天  第二天  第三天  大于三天
+    if(timeDiff < 24*60*60*1000){
+      timeItem(time1, "active");
+      for (var i = 1; i < 7; i++) {
+        timeItem(parseInt(time1)+24*60*60*1000*i);
+      }
+    }else if(timeDiff>24*60*60*1000 && timeDiff<24*60*60*1000*2){
+      timeItem(parseInt(time1)-24*60*60*1000);
+      timeItem(parseInt(time1), "active");
+      for (var i = 1; i < 6; i++) {
+        timeItem(parseInt(time1)+24*60*60*1000*i);
+      }
+    }else if(timeDiff>24*60*60*1000*2 && timeDiff<24*60*60*1000*3){
+      timeItem(parseInt(time1)-24*60*60*1000*2);
+      timeItem(parseInt(time1)-24*60*60*1000);
+      timeItem(parseInt(time1), "active");
+      for (var i = 1; i < 5; i++) {
+        timeItem(parseInt(time1)+24*60*60*1000*i);
+      }
+    }else if(timeDiff>24*60*60*1000*3){
+      timeItem(parseInt(time1)-24*60*60*1000*3);
+      timeItem(parseInt(time1)-24*60*60*1000*2);
+      timeItem(parseInt(time1)-24*60*60*1000);
+      timeItem(parseInt(time1), "active");
+      for (var i = 1; i < 4; i++) {
+        timeItem(parseInt(time1)+24*60*60*1000*i);
+      }
+    }
+  }
+
+  // 查询车次信息展示
+  // function showTrainInfo(arr, index) {
+  //   var index_ = parseInt(index) + 1;
+  //   $(".trip-from").val(codeGetPy(arr[index].from, "en"));
+  //   $(".trip-from").attr("data-code", arr[index].from);
+  //   $(".trip-to").val(codeGetPy(arr[index].to, "en"));
+  //   $(".trip-to").attr("data-code", arr[index].to);
+  //   $(".trip-time").val(arr[index].time);
+  //   $(".search-trip-wra .head .item .trip").html("Trip"+index_);
+  // }
+
+  //根据时间 显示  time 列表  --> 获取具体元素
+  function timeItem(num, active){
+    var num = num;                           //毫秒数
+    var active = active || "";
+    if(active) active = "active";
+    var getDate = new Date(num);
+    var getYear = getDate.getFullYear();
+    var getY = getDate.getMonth() + 1;      //1 -> 一月份
+    var getW = getDate.getDay();            //0 -> 星期天  1 -> 星期一
+    var getD = getDate.getDate();           //1 -> 1号
+    var data_time = getYear + "-" + (getY > 9 ? getY : "0" + getY) + "-" +(getD > 9 ? getD : "0" + getD);
+    var itemStr = '<li class="item '+active+'" data-time="'+data_time+'">'+getMonEn(getY)+' '+getD+','+getWeekEn(getW)+'</li>';
+    $(".screen-time").append(itemStr);
+  }
+
+  // 根据城市信息来设置对应的CODE   Beijing(北京) --> BJP
+  function setTrainCode(value,dom){
+    var value = value.split("(")[1].split(")")[0];
+    var code = ZhGetCode(value);
+    dom.attr("data-code", code);
+  }
+
+  // 根据城市的中文来查询code
+  function ZhGetCode(zh){
+    var zh = zh;
+    var cityCode = "";
+    train_station.forEach(function(item){
+      if(item.name == zh){
+        cityCode = item.code;
+      }
+    });
+    return cityCode;
+  }
+
+  //转换月份  1 --> January
+  function getMonEn(str){
+    var mon;
+    var str = parseInt(str);
+    switch (str) {
+      case 1:
+        mon = "Jan";
+        break;
+      case 2:
+        mon = "Feb";
+        break;
+      case 3:
+        mon = "Mar";
+        break;
+      case 4:
+        mon = "Apr";
+        break;
+      case 5:
+        mon = "May";
+        break;
+      case 6:
+        mon = "June";
+        break;
+      case 7:
+        mon = "July";
+        break;
+      case 8:
+        mon = "Aug";
+        break;
+      case 9:
+        mon = "Sep";
+        break;
+      case 10:
+        mon = "Oct";
+        break;
+      case 11:
+        mon = "Nov";
+        break;
+      case 12:
+        mon = "Dec";
+        break;
+    }
+    return mon;
+  }
+
+  //转换星期  0 --> Sunday
+  function getWeekEn(str){
+    var week;
+    var str = parseInt(str);
+    switch (str) {
+      case 0:
+        week = "Sun";
+        break;
+      case 1:
+        week = "Mon";
+        break;
+      case 2:
+        week = "Tues";
+        break;
+      case 3:
+        week = "Wednes";
+        break;
+      case 4:
+        week = "Thurs";
+        break;
+      case 5:
+        week = "Fri";
+        break;
+      case 6:
+        week = "Satur";
+        break;
+    }
+    return week;
+  }
+
+  // 根据该城市的code查询拼音
+  function codeGetPy(code, en){
+    var en = en || "";
+    // train_station
+    var code = code || "";
+    var cityPy = "";
+    train_station.forEach(function(item){
+      if(item.code == code){
+        if(en){
+          cityPy = firstCap(item.pinyin)+"("+item.name+")";
+        }else{
+          cityPy = firstCap(item.pinyin);
+        }
+      }
+    });
+    return cityPy;
+  }
+
+});
