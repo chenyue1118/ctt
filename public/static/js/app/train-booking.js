@@ -47,9 +47,6 @@ $(function(){
 
   // 提交订单
   $(".sub-book-btn").on("click", function() {
-    console.log($(".book-terms-condition").val());
-    console.log($(".book-terms-condition").prop("checked"));
-    return false;
     // adult-info
     // 获取乘客信息
     var passengers = [];
