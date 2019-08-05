@@ -69,7 +69,6 @@ $(function() {
 
   // 车次选择
   $(".search-result-wrapper .result-content").on("click", ".btn", function() {
-    console.log($(this).hasClass('show-item-disable'));
     if ($(this).hasClass('show-item-disable')) return false;
     var train_time   = $(this).parents(".seat-btn").attr("data-time");
     var train_from   = $(this).parents(".seat-btn").attr("data-fromCode");

@@ -43,7 +43,6 @@ $(function() {
       window.location.href = PAYURL;
     } else if (pay_by == "paypal") {
       if (!orderInfo) return false;
-      console.log(orderInfo);
       var notify_url_ = APIURL + "/api/v_2_0_0/paypal/Postnotify?ordernumber=" + orderInfo.order_number + "&pay_method=paypal&currency=use&total_fee=" + orderInfo.orderamountUSD;
       // var notify_url_ = "http://182.61.175.203:8802/paypal?ordernumber=" + orderInfo.order_number + "&pay_method=paypal&currency=use&total_fee=" + orderInfo.orderamountUSD;
       // $(".item_name").val(orderInfo.order_number);

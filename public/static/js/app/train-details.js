@@ -1,7 +1,6 @@
 $(function() {
   // var service_Fee = 10;      // 服务费
   var checkInfo = sessionStorage.getItem("checkInfo");
-  console.log(JSON.parse(checkInfo));
   if (checkInfo) init();
 
   // 跳转首页

@@ -1,6 +1,5 @@
 $(function() {
   var checkInfo = sessionStorage.getItem("checkInfo");
-  console.log(JSON.parse(checkInfo));
   // api/ticket/refund
   $(".cancel-info .cancel-number").html(GetQueryString("order"));
   $(".detail-con .detail-time").html(JSON.parse(checkInfo).submit_time);
@@ -25,7 +24,6 @@ $(function() {
       dataType: "json",
       type: "post",
       success: function(data) {
-        console.log(data);
       }
     })
   }

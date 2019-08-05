@@ -7,8 +7,6 @@ $(function(){
   var delivery_method = 1;  // 票送方式
   var timeBeyond = false;
 
-  console.log(orderInfo);
-
   getStation();
   computingTime();
   init();
@@ -221,7 +219,6 @@ $(function(){
       "phone_number": phone_number_
     }
     data_ = Object.assign(data_, getSign("post"))
-    console.log(data_);
     $.ajax({
       url:  APIURL + "/api/order/create",
       data: data_,
@@ -295,7 +292,6 @@ $(function(){
       "phone_number": "15600121178",
     }
     data = Object.assign(data, getSign("post"))
-    console.log(data);
     // return false;
     $.ajax({
       url:  APIURL + "/api/order/create",
@@ -430,7 +426,6 @@ $(function(){
       var diff1 = itemadult - num1;
       for (var i = diff1; i > 0; i--) {
         var index1 = Number(num1) + i - 1;
-        console.log(index1);
         $(".adult-info .item-adult:eq("+index1+")").remove();
       }
     }
@@ -466,7 +461,6 @@ $(function(){
   // 价格计算
   function priceChange(adultsNum, childrenNum) {
     if (!orderInfo) return false;
-    console.log(orderInfo);
     var grandPrice = 0;
     orderInfo.forEach(function (item, index) {
       if (childrenNum > 0) {

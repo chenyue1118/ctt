@@ -13,13 +13,11 @@ $(function(){
     }
     // var url_ = APIURL + "/api/order/queryV2?order_number="+checkNo+"&email="+checkEmail+"&phone_number="+checkPhone+"&" + getSign("get");
     var url_ = APIURL + "/api/order/queryV2?order_number="+checkNo+"&email="+checkEmail+"&" + getSign("get");
-    console.log(url_);
     $.ajax({
       url: url_,
       dataType: "json",
       type: "get",
       success: function(data) {
-        console.log(data);
         if (data.code == 1) {
           var data = data.data;
           sessionStorage.setItem("checkInfo", JSON.stringify(data));
