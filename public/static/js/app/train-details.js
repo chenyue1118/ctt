@@ -103,11 +103,12 @@ $(function() {
     }
     if (checkInfo_.status == 0) {
       $(".details .unpaid").html('<span class="unpaid">Unpaid</span>');
-    } else if (checkInfo_.status == 4) {
+    } else if (checkInfo_.status == 1) {
       $(".details .unpaid").html('<div class="haspaid"><span class="name">Paid</span></div>');
-    } else if (checkInfo_.status == 5) {
-      $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span></div>');
-      // $(".details .unpaid").html('<div class="haspaid"><span class="name">Successful ticketing</span><a class="link">Cancel</a></div>');
+    } else if (checkInfo_.status == 2 || checkInfo_.status == 4) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name" style="color: green">Successful ticketing</span></div>');
+    } else if (checkInfo_.status == 3 || checkInfo_.status == 5) {
+      $(".details .unpaid").html('<div class="haspaid"><span class="name" style="color: red">Fail ticketing</span></div>');
     }
   }
 
