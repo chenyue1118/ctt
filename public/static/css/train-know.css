@@ -1,0 +1,67 @@
+.howto {
+  width: 100%;
+  background: #F4F4F4;
+  padding: 20px 0; }
+  .howto .wrapper {
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    font-size: 0; }
+    .howto .wrapper .title {
+      display: block;
+      height: 86px;
+      line-height: 86px;
+      font-size: 28px;
+      color: #333333; }
+    .howto .wrapper .left {
+      display: inline-block;
+      width: 310px;
+      padding-right: 20px;
+      vertical-align: top; }
+      .howto .wrapper .left .left-content {
+        border: 1px solid #e5e5e5; }
+        .howto .wrapper .left .left-content a {
+          display: block;
+          width: 100%;
+          height: 48px;
+          line-height: 48px;
+          padding-left: 35px;
+          padding-right: 20px;
+          font-size: 14px;
+          color: #333333;
+          background: #f9f9f9;
+          border-bottom: 1px solid #e5e5e5; }
+          .howto .wrapper .left .left-content a:hover {
+            color: #aa0000;
+            background: #ebe9e9; }
+        .howto .wrapper .left .left-content a.active {
+          color: #aa0000;
+          background: #ebe9e9; }
+        .howto .wrapper .left .left-content a.spe {
+          padding-top: 4px;
+          line-height: 20px; }
+    .howto .wrapper .right {
+      display: inline-block;
+      width: 810px;
+      padding: 0 30px;
+      border: 1px solild #ebe9e9;
+      background: #fff; }
+      .howto .wrapper .right .right-tit {
+        display: block;
+        height: 80px;
+        line-height: 80px;
+        font-size: 28px;
+        color: #999999;
+        border-bottom: 1px solid #333; }
+      .howto .wrapper .right .right-dd {
+        display: block;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333; }
+      .howto .wrapper .right .right-dt {
+        display: block;
+        line-height: 36px;
+        font-size: 14px;
+        color: #333333; }
