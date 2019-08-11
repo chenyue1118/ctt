@@ -52,7 +52,7 @@
         line-height: 80px;
         font-size: 28px;
         color: #999999;
-        border-bottom: 1px solid #333; }
+        border-bottom: 1px solid #d2d2d2; }
       .howto .wrapper .right .right-dd {
         display: block;
         padding-top: 30px;
@@ -64,4 +64,151 @@
         display: block;
         line-height: 36px;
         font-size: 14px;
-        color: #333333; }
+        color: #333333;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #d2d2d2; }
+      .howto .wrapper .right .right-dt1 {
+        display: block;
+        line-height: 30px;
+        font-size: 14px;
+        color: #333333;
+        padding-bottom: 12px; }
+        .howto .wrapper .right .right-dt1 .note {
+          display: inline-block;
+          padding: 0 8px;
+          background: #ffab00;
+          color: #fff;
+          border-radius: 4px; }
+      .howto .wrapper .right .right-qus-tit {
+        width: 750px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #fff;
+        background: #326daf;
+        text-align: center;
+        margin: 20px auto; }
+      .howto .wrapper .right .right-qus-wra {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #e5e5e5; }
+        .howto .wrapper .right .right-qus-wra .right-qus-con-tit {
+          line-height: 14px;
+          padding-bottom: 10px;
+          font-size: 14px; }
+          .howto .wrapper .right .right-qus-wra .right-qus-con-tit .tit-ll {
+            padding-right: 4px;
+            color: #aa0000; }
+          .howto .wrapper .right .right-qus-wra .right-qus-con-tit .tit-rr {
+            color: #333333;
+            font-weight: bold; }
+        .howto .wrapper .right .right-qus-wra .right-qus-con-msg {
+          line-height: 14px;
+          padding-bottom: 10px;
+          font-size: 14px;
+          display: flex; }
+          .howto .wrapper .right .right-qus-wra .right-qus-con-msg .tit-ll {
+            flex: 0 0 22px;
+            color: #e08120; }
+          .howto .wrapper .right .right-qus-wra .right-qus-con-msg .tit-rr {
+            flex: 1;
+            color: #333333; }
+      .howto .wrapper .right .right-dt .co-tit {
+        line-height: 48px;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold; }
+        .howto .wrapper .right .right-dt .co-tit span {
+          color: #aa0000; }
+      .howto .wrapper .right .right-dt .co-con {
+        font-size: 14px;
+        color: #333333;
+        line-height: 24px; }
+      .howto .wrapper .right .right-dt .co-con1 {
+        display: flex;
+        padding-bottom: 10px; }
+        .howto .wrapper .right .right-dt .co-con1 .con2 {
+          flex: 0 0 64px;
+          height: 26px;
+          line-height: 26px;
+          font-size: 14px;
+          background: #ffab00;
+          border-radius: 4px;
+          text-align: center;
+          color: #fff; }
+        .howto .wrapper .right .right-dt .co-con1 .con21 {
+          background: #8dca35; }
+        .howto .wrapper .right .right-dt .co-con1 .con22 {
+          background: #00bfdd; }
+        .howto .wrapper .right .right-dt .co-con1 .con3 {
+          flex: 1;
+          padding-left: 10px;
+          line-height: 22px; }
+      .howto .wrapper .right .right-dt .co-con2 {
+        line-height: 28px; }
+        .howto .wrapper .right .right-dt .co-con2 .con2-tt {
+          color: #ff0000; }
+      .howto .wrapper .right .right-dt .read-con {
+        padding: 20px 0;
+        line-height: 22px;
+        color: #333;
+        font-size: 16px; }
+        .howto .wrapper .right .right-dt .read-con span {
+          display: block;
+          height: 12px; }
+      .howto .wrapper .right .right-dt .read-image {
+        width: 100%;
+        padding-bottom: 10px; }
+        .howto .wrapper .right .right-dt .read-image img {
+          display: block;
+          width: 100%; }
+      .howto .wrapper .right .right-dt .read-list dt {
+        padding-top: 20px;
+        line-height: 30px;
+        color: #f00; }
+      .howto .wrapper .right .right-dt .read-list dd {
+        line-height: 24px; }
+      .howto .wrapper .right .right-dt .choose-h {
+        font-size: 14px;
+        padding-top: 26px;
+        line-height: 24px; }
+        .howto .wrapper .right .right-dt .choose-h h4 {
+          color: #f00; }
+        .howto .wrapper .right .right-dt .choose-h i {
+          display: block;
+          height: 10px; }
+      .howto .wrapper .right .right-dt .choose-list .item {
+        padding-top: 6px; }
+        .howto .wrapper .right .right-dt .choose-list .item .item-tit {
+          line-height: 40px;
+          font-size: 16px;
+          color: #326daf;
+          font-weight: bold;
+          text-decoration: underline; }
+        .howto .wrapper .right .right-dt .choose-list .item .msg {
+          color: #333;
+          font-size: 14px;
+          line-height: 24px;
+          padding-bottom: 10px; }
+        .howto .wrapper .right .right-dt .choose-list .item .item-dl dt {
+          padding-top: 20px;
+          line-height: 22px;
+          color: #ff0000;
+          font-size: 14px; }
+        .howto .wrapper .right .right-dt .choose-list .item .item-dl dd {
+          line-height: 22px;
+          color: #333;
+          font-size: 14px; }
+        .howto .wrapper .right .right-dt .choose-list .item .note {
+          width: 100%;
+          margin: 20px auto 24px auto;
+          height: 40px;
+          line-height: 38px;
+          text-align: center;
+          font-size: 16px;
+          color: #f00;
+          background: #fff1cd;
+          border: 1px solid #f5dfa5; }
+        .howto .wrapper .right .right-dt .choose-list .item .ch-image {
+          display: block;
+          width: 100%; }

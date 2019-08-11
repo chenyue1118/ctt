@@ -60,7 +60,7 @@
                 line-height: 80px;
                 font-size: 28px;
                 color: #999999;
-                border-bottom: 1px solid #333;
+                border-bottom: 1px solid #d2d2d2;
             }
             .right-dd {
                 display: block;
@@ -75,6 +75,197 @@
                 line-height: 36px;
                 font-size: 14px;
                 color: #333333;
+                padding-bottom: 12px;
+                border-bottom: 1px solid #d2d2d2;
+            }
+            .right-dt1 {
+                display: block;
+                line-height: 30px;
+                font-size: 14px;
+                color: #333333;
+                padding-bottom: 12px;
+                .note {
+                    display: inline-block;
+                    padding: 0 8px;
+                    background: #ffab00;
+                    color: #fff;
+                    border-radius: 4px;
+                }
+            }
+            .right-qus-tit {
+                width: 750px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #fff;
+                background: #326daf;
+                text-align: center;
+                margin: 20px auto;
+            }
+            .right-qus-wra {
+                width: 100%;
+                padding: 20px;
+                border: 1px solid #e5e5e5;
+                .right-qus-con-tit {
+                    line-height: 14px;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    .tit-ll {
+                        padding-right: 4px;
+                        color: #aa0000;
+                    }
+                    .tit-rr {
+                        color: #333333;
+                        font-weight: bold;
+                    }
+                }
+                .right-qus-con-msg {
+                    line-height: 14px;
+                    padding-bottom: 10px;
+                    font-size: 14px;
+                    display: flex;
+                    .tit-ll {
+                        flex: 0 0 22px;
+                        color: #e08120;
+                    }
+                    .tit-rr {
+                        flex: 1;
+                        color: #333333;
+                    }
+                }
+            }
+            .right-dt {
+                .co-tit {
+                    line-height: 48px;
+                    color: #333;
+                    font-size: 16px;
+                    font-weight: bold;
+                    span {
+                        color: #aa0000;
+                    }
+                }
+                .co-con {
+                    font-size: 14px;
+                    color: #333333;
+                    line-height: 24px;
+                }
+                .co-con1 {
+                    display: flex;
+                    padding-bottom: 10px;
+                    .con2 {
+                        flex: 0 0 64px;
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 14px;
+                        background: #ffab00;
+                        border-radius: 4px;
+                        text-align: center;
+                        color: #fff;
+                    }
+                    .con21 {
+                        background: #8dca35;
+                    }
+                    .con22 {
+                        background: #00bfdd;
+                    }
+                    .con3 {
+                        flex: 1;
+                        padding-left: 10px;
+                        line-height: 22px;
+                    }
+                }
+                .co-con2 {
+                    line-height: 28px;
+                    .con2-tt {
+                        color: #ff0000;
+                    }
+                }
+                .read-con {
+                    padding: 20px 0;
+                    line-height: 22px;
+                    color: #333;
+                    font-size: 16px;
+                    span {
+                        display: block;
+                        height: 12px;
+                    }
+                }
+                .read-image {
+                    width: 100%;
+                    padding-bottom: 10px;
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+                .read-list {
+                    dt {
+                        padding-top: 20px;
+                        line-height: 30px;
+                        color: #f00;
+                    }
+                    dd {
+                        line-height: 24px;
+                    }
+                }
+                .choose-h {
+                    font-size: 14px;
+                    padding-top: 26px;
+                    line-height: 24px;
+                    h4 {
+                        color: #f00;
+                    }
+                    i {
+                        display: block;
+                        height: 10px;;
+                    }
+                }
+                .choose-list {
+                    .item {
+                        padding-top: 6px;
+                        .item-tit {
+                            line-height: 40px;
+                            font-size: 16px;
+                            color: #326daf;
+                            font-weight: bold;
+                            text-decoration: underline;
+                        }
+                        .msg {
+                            color: #333;
+                            font-size: 14px;
+                            line-height:24px;
+                            padding-bottom: 10px;
+                        }
+                        .item-dl {
+                            dt {
+                                padding-top: 20px;
+                                line-height: 22px;
+                                color: #ff0000;
+                                font-size: 14px;
+                            }
+                            dd {
+                                line-height: 22px;
+                                color: #333;
+                                font-size: 14px;
+                            }
+                        }
+                        .note {
+                            width: 100%;
+                            margin: 20px auto 24px auto;
+                            height: 40px;
+                            line-height: 38px;
+                            text-align: center;
+                            font-size: 16px;
+                            color: #f00;
+                            background: #fff1cd;
+                            border: 1px solid #f5dfa5;
+                        }
+                        .ch-image {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }
