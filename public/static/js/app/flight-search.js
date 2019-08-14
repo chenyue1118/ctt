@@ -35,6 +35,99 @@ $(function() {
 
 
   // ==========================================================
+  flightSearch('PEK', 'SHA', '2019-08-30')
+  // 飞机票搜索
+  function flightSearch(from, to, time) {
+    var url_ = APIURL + '/api/ticket/queryFlights?StartAirportCode=' + from + '&EndAirportCode=' + to + '&StartDate=' + time + '&StartTime=0000&SeatClass=ALL&AirlineCode=ALL'
+    $.ajax({
+      url: url_,
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        if (data.code == 1) {
+          showFlight(data.data);
+        }
+      }
+    });
+  }
+
+  // 显示飞机票列表
+  function showFlight(data) {
+    console.log(data);
+    var str = '';
+    data && data.forEach(function(item) {
+      console.log(item);
+      var str1 = '<li class="item">'
+        +'<div class="flight-info">'
+          +'<div class="info-name">'
+            +'<i class="icon-flight-name"></i>'
+            +'<span class="txt-flight-name">'+item.FlightNo+'</span>'
+          +'</div>'
+          +'<div class="flight-aircraft">'
+            // +'Aircraft: 33H'
+            +'AirportTax:'+item.AirportTax
+          +'</div>'
+          +'<div class="flight-desc">'
+            +'<div class="flight-desc-wra">'
+              +'<span class="flight-desc-txt">China Southern Airlines</span>'
+            +'</div>'
+          +'</div>'
+        +'</div>'
+        +'<div class="lines">'
+          +'<span class="from"></span>'
+          +'<span class="line"></span>'
+          +'<span class="to"></span>'
+        +'</div>'
+        +'<div class="time">'
+          +'<span class="from">'+item.DepTime.substr(0, 2)+':'+item.DepTime.substr(2, 2)+'</span>'
+          +'<span class="to">'+item.ArrTime.substr(0, 2)+':'+item.ArrTime.substr(2, 2)+'</span>'
+        +'</div>'
+        +'<div class="address">'
+          +'<span class="from">'+item.DepAirportCode+'('+item.DepJetquay+')</span>'
+          +'<span class="to">'+item.ArrAirportCode+'('+item.ArrJetquay+')</span>'
+        +'</div>';
+      var str2 ='';
+      var str3 ='';
+      var str4 ='';
+      var str5 ='';
+      var str6 ='';
+      var str7 ='';
+      var str8 ='';
+      var str9 ='';
+      // '<div class="price-wra">
+      // str2
+      // </div>
+      // <div class="price-wra">
+      // str3
+      // </div>
+      // <div class="economy-wra">
+      // str4
+      // <a class="all-classes">
+      //   All classes
+      //   <i class="icon-all-classes"></i>
+      // </a>
+      // </div>
+      // <div class="flight-tickets"></div>
+      // </li>
+      item.lstCabin && item.lstCabin.forEach(function(list, index) {
+        if (index > 6) {
+          str2 += '<span class="price" data-id="'+list.PolicyID+'">CNY'+list.ParPrice+'</span>';
+          str4 += '<span class="economy">Economy '+Number(list.Discount)*100+'% Off</span>';
+          str6 += '<span class="tickets">'+list.SeatName+'</span>';
+          str8 += '<a class="btn" data-id="'+list.PolicyID+'">book</a>';
+        } else {
+          str3 += '<span class="price" data-id="'+list.PolicyID+'">CNY'+list.ParPrice+'</span>';
+          str5 += '<span class="economy">Economy '+Number(list.Discount)*100+'% Off</span>';
+          str7 += '<span class="tickets">'+list.SeatName+'</span>';
+          str9 += '<a class="btn" data-id="'+list.PolicyID+'">book</a>';
+        }
+      })
+      str1 += '<div class="price-wra">' + str2 + '</div>' + '<div class="economy-wra">' + str4 + '<a class="all-classes">All classes<i class="icon-all-classes"></i></a></div>' + '<div class="flight-tickets">' + str6 + '</div>' + '<div class="seat-btn">' + str8 + '</div></li>';
+      // str1 += '<div class="price-wra">' + str2 + '</div>' + '<div class="price-wra">' + str3 + '</div>' + '<div class="economy-wra">' + str4 + '<a class="all-classes">All classes<i class="icon-all-classes"></i></a></div>' + '<div class="flight-tickets">' + str6 + '</div>' + '<div class="seat-btn">' + str8 + '</div></li>';
+      str += str1;
+    })
+    $(".result-content").html(str);
+  }
 
   //根据时间 显示  time 列表   --> 判断
   function showTimeList(time){               // time -> 2018-01-20
