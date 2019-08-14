@@ -2,7 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 
 const app = express();
 // parse application/x-www-form-urlencoded
