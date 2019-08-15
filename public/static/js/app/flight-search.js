@@ -35,6 +35,80 @@ $(function() {
 
 
   // ==========================================================
+  // Test()
+  function Test() {
+    var data = {
+      "type": "af4d1624-03ae-445f-8504-05443dcea729",
+      "token": null,
+      "train_date": "2019-08-18",
+      "is_accept_standing": "no",
+      "choose_seats": "",
+      "from_station_name": "北京",
+      "from_station_code": "PEK",
+      "to_station_name": "上海",
+      "to_station_code": "AOH",
+      "checi": "CA155",
+      "passengers": [
+        {
+          "passengerid": 1,
+          "passengersename": "CHENXIAO",
+          "piaotype": 1,
+          "piaotypename": "成人票",
+          "passporttypeseid": "B",
+          "passporttypeseidname": "护照",
+          "passportseno": "12345678",
+          "price": 1490,
+          "zwcode": "Y",
+          "zwname": "经济舱"
+        }
+      ],
+      "start_time": "06:43",
+      "arrive_time": "12:40",
+      "run_time": "05:57",
+      "run_time_minute": 357,
+      "arrive_days": 0,
+      "distance": 120,
+      "delivery_method": 1,
+      "delivery_address": {
+        "HotelName": "dsadsa",
+        "HotelAddress": "dsada",
+        "HotelPhone": 123456,
+        "BookName": "dsadas",
+        "CheckInDate": "2019-01-10",
+        "CheckOutDate": "2019-01-10",
+        "HomeAddress": "",
+        "ReceiverName": "",
+        "ReceiverPhone": ""
+      },
+      "email": "1023581658@qq.com",
+      "phone_number": "15600121178",
+    }
+    data = Object.assign(data, getSign("post"))
+    // return false;
+    $.ajax({
+      url:  APIURL + "/api/order/aircreate",
+      data: data,
+      dataType: 'json',
+      type: 'post',
+      success: function(data) {
+        console.log(data);
+      }
+    })
+  }
+
+  // TODO: 查询订单
+  Search()
+  function Search() {
+    $.ajax({
+      url: APIURL + "/api/order/queryV2?order_number="+"CTT20190815203733864"+"&email="+"1023581658@qq.com"+"&phone_number=" +"15600121178"+ getSign("get"),
+      dataType: "json",
+      type: "get",
+      success: function(data) {
+        console.log(data);
+      }
+    })
+  }
+
   flightSearch('PEK', 'SHA', '2019-08-30')
   // 飞机票搜索
   function flightSearch(from, to, time) {
