@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
-    <link rel="stylesheet" href="../static/css/china-flights.css">
-    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../static/css/train-check.css">
   </head>
   <body>
     <!-- 公共头部 -->
     <div class="header_">
       <div class="top-wra">
         <div class="top">
-          <h1 class="title">China Train, China Train Tickets, China Train Tours!</h1>
+          <h1 class="title">China Flight, China Train Tickets, China Train Tours!</h1>
           <div class="contact">
             <i class="contact-icon"></i>
             <a class="text">Contact Us</a>
@@ -54,74 +53,46 @@
       </div>
     </div>
     <div class="header_seize_"></div>
-    <!-- 轮播图位置 -->
-    <div class="banner_">
-      <div class="banner-wra">
-        <img class="image" src="../static/image/flights/icon-flights.jpg" alt="订票">
-      </div>
-      <div class="train">
-        <div class="search">
-          <h4 class="search-title">Domestic Flights</h4>
-          <ul class="search-content">
-            <li class="item book">
-              <ul class="trips">
-                <li class="trip" id="trip1">
-                  <span class="name">Trip 1</span>
-                  <div class="trip-from-wra">
-                    <input class="trip-from" id="trip-from" type="text" placeholder="From">
-                  </div>
-                  <div class="trip-to-wra">
-                    <input class="trip-to" id="trip-to" type="text" placeholder="To">
-                  </div>
-                  <div class="trip-time-wra">
-                    <input class="trip-time" id="trip-time" type="text" readonly="readonly" placeholder="DepartDate">
-                  </div>
-                </li>
-              </ul>
-              <div class="operation">
-                <a class="trip-search">
-                  Find Train
-                  <i class="find-icon"></i>
-                </a>
-              </div>
+    <!-- 搜索订单 -->
+    <div class="check-order_">
+      <div class="check-order-wrapper">
+        <div class="nav">
+          <a class="link home">Home</a> >
+          <a class="link">Check My Booking</a>
+        </div>
+        <div class="check-content">
+          <h4 class="tit">Note: Please enter the Tracking No. and the email address used </h4>
+          <ul class="order-type">
+            <li class="item">Tracking NO.:</li>
+            <li class="item">Email:</li>
+            <!-- <li class="item">Phone:</li> -->
+            <li class="item"></li>
+          </ul>
+          <ul class="order-con">
+            <li class="item">
+              <input class="con-search check-no" type="text">
+            </li>
+            <li class="item">
+              <input class="con-search check-email" type="text">
+            </li>
+            <!-- <li class="item">
+              <input class="con-search check-phone" type="text">
+            </li> -->
+            <li class="item">
+              <a class="con-search-btn">Check order</a>
             </li>
           </ul>
-          <div class="check-wra">
-            <a class="check" href="flight-check.html">
-              Check My Bookings >>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 热门城市 火车票 -->
-    <div class="hotCity_" style="display: none;">
-      <div class="hotCity-wra">
-        <h3 class="title">Hot China Train Routes</h3>
-        <ul class="citys">
-          <li class="item active">Beijing</li>
-          <li class="item">Shanghai</li>
-          <li class="item">Xian</li>
-          <li class="item">Hangzhou</li>
-          <li class="item">Guilin</li>
-          <li class="item">Suzhou</li>
-        </ul>
-        <ul class="flights">
-          <li class="item">
-            <i class="icon-flight"></i>
-            <div class="cont">
-              <div class="info">
-                <span class="address">Shanghai</span>
-                 →
-                <span class="address">Beijing</span>
-              </div>
-              <div class="desc">
-                <span class="time">04-22</span>
-                <a class="price">$ <span class="num">103</span> </a>
+          <div class="book-center">
+            <i class="icon-book-center"></i>
+            <div class="center-txt">
+              <h4 class="title">Train Booking Center</h4>
+              <span class="tel">Tel: (+86)13581910558 or (+86)010-84781892</span>
+              <div class="emails">
+                Email: <a class="email" href="mailto:ctt@cpt-travel.com">ctt@cpt-travel.com</a>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </div>
     <!-- 公共底部 -->
@@ -225,11 +196,10 @@
     </div>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../static/js/lib/flight.city.js"></script>
     <script type="text/javascript" src="../static/js/lib/md5.js"></script>
     <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
     <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
     <script type="text/javascript" src="../static/js/app/common_flight.js"></script>
-    <script type="text/javascript" src="../static/js/app/flight-index.js"></script>
+    <script type="text/javascript" src="../static/js/app/flight-check.js"></script>
   </body>
 </html>

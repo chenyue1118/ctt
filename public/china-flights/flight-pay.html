@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="stylesheet" href="../static/css/reset.css">
     <link rel="stylesheet" href="../static/css/common.css">
-    <link rel="stylesheet" href="../static/css/flight-pay.css">
+    <link rel="stylesheet" href="../static/css/train-pay.css">
   </head>
   <body>
     <!-- 公共头部 -->
@@ -29,8 +29,8 @@
           <div class="list">
             <i class="home-icon"></i>
             <ul class="items">
-              <li class="item">
-                <a class="link" href="../china-trains/train-search.html">China Trains</a>
+              <li class="item ">
+                <a class="link" href="../china-trains/train-booking.html">China Trains</a>
               </li>
               <li class="item active">
                 <a class="link" href="../china-flights/">China Flights</a>
@@ -57,20 +57,19 @@
     <div class="train-pay_">
       <div class="pay-wrapper">
         <div class="nav">
-          <a class="link">Home</a> >
-          <a class="link">China Flights</a> >
+          <a href="./index.html" class="link">Home</a> >
+          <a href="./flight-search.html" class="link">China Flights</a> >
           <a class="link">Submite Finish</a>
         </div>
         <div class="submite-wra">
           <div class="success">
             <i class="icon-success"></i>
             <div class="success-info">
-              <h4 class="title">Thanks for your booking! Please pay!</h4>
-              <span class="info">Your booking request has been submitted successfully. TravelChinaGuide will process your booking request and reply you by e-mail within 12 hours.</span>
-              <span class="info">Since the airfare discount, which is subject to the sale's situation of the airline company, is floating every minute,so the price list on our website is for reference only. For the real discount airfare, it should be based on our quoted pricein the reply.</span>
-              <span class="info">If you do not receive any response or replied email within 12 hours, please contact us soon.</span>
+              <h4 class="title">Thank You! You Have Submitted Successfully! Please pay!</h4>
+              <span class="info">Thanks for booking with ChinaTrainTickets.Net! Our consultant will process your booking request soon. </span>
+              <span class="info">Seat/berth confirmation will be provided once tickets have been successfully purchased.</span>
               <div class="desc">
-                You could check your order status online with the Tracking No. and the email address you provided in the booking form.<br />
+                The booking status can be checked with the Tracking No. and your email.<br />
                 Tracking No.: <span class="number">T190412370</span>
                 <a class="check">Check Order</a>
               </div>
@@ -79,21 +78,21 @@
           <div class="pay-by">
             <h4 class="title">Please select the payment method below</h4>
             <ul class="methods">
-              <li class="item">
+              <li class="item" data-type="ipaylinks">
                 <div class="method active">
                   <i class="icon-pay-method"></i>
                   <span class="txt">VISA/Mastr</span>
                 </div>
                 <span class="desc">Visa/Master bank charge: 3%</span>
               </li>
-              <li class="item">
+              <li class="item" data-type="paypal">
                 <div class="method">
                   <i class="icon-pay-method icon-pay-method-pay"></i>
-                  <span class="txt">VISA/Mastr</span>
+                  <span class="txt">PayPal</span>
                 </div>
                 <span class="desc">Visa/Master bank charge: 3%</span>
               </li>
-              <li class="item">
+              <!-- <li class="item">
                 <div class="method">
                   <i class="icon-pay-method icon-pay-method-wechart"></i>
                   <span class="txt">WeChat</span>
@@ -106,14 +105,14 @@
                   <span class="txt">Alipay</span>
                 </div>
                 <span class="desc">Visa/Master bank charge: 3%</span>
-              </li>
+              </li> -->
             </ul>
             <div class="total-price">
-              Total Price for Tikets: USD156
-              <span class="add-icon">+</span>
-              Service Fee：USD5.49*3
-              <span class="add-icon">+</span>
-              Delivery Charge：USD7
+              <span class="price1">Total Price for Tikets: USD156</span>
+              <!-- <span class="add-icon">+</span> -->
+              <!-- <span class="price2">Service Fee：USD5.49*3</span> -->
+              <span class="add-icon icon3">+</span>
+              <span class="price3">Delivery Charge：USD7</span>
             </div>
             <div class="grand">
               Grand Total： <span class="grand-num">USD170</span>
@@ -251,5 +250,57 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <!-- loading等待 -->
+    <div class="loading">
+      <img class="image" src="../static/image/waiting.gif" alt="">
+    </div>
+    <!-- 贝宝支付 -->
+    <div style="display:none">
+      <!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" id="paypal" style="display:none"> -->
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" id="paypal" style="display:none">
+        <input type="hidden" name="cmd" value="_xclick">
+        <!--商户邮箱-->
+        <!-- <input class="business" type="hidden" name="business" value="chinapleasuretour@gmail.com"> -->
+        <input class="business" type="hidden" name="business" value="1023581658-buyer@qq.com">
+        <input type="hidden" name="lc" value="US"><!--币种-->
+        <input class="item_name" type="hidden" name="item_name" value=""><!--商品名称-->
+        <input class="p-amount" type="hidden" name="amount" value=""><!--总价-->
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="button_subtype" value="services">
+        <input type="hidden" name="no_note" value="0">
+        <input type="hidden" name="tax_rate" value="0.000"><!--税率-->
+        <input type="hidden" name="shipping" value="0.00"><!--运费-->
+        <input class="p-custom" type="hidden" name="custom" value="">
+        <input class="p-return" type="hidden" value="" name="return"/>
+        <input class="p-cancel_return" type="hidden" value="" name="cancel_return"/>
+        <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynow_LG.gif:NonHostedGuest">
+        <input class="p-notify_url" type="hidden" name="notify_url" value="">
+      </form>
+    </div>
+    <!-- 轮训等待 -->
+    <div class="wait-loading">
+      <div class="wait-loading-wrapper">
+        <p class="wait-loading-txt">Please wait, we are issuing your train ticket</p>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+        <span class="wait-loading-item"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
+    <script type="text/javascript" src="../static/js/app/common_flight.js"></script>
+    <script type="text/javascript" src="../static/js/app/flight-pay.js"></script>
   </body>
 </html>

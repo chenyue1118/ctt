@@ -1,5 +1,15 @@
 // api地址
 var APIURL = "http://39.105.54.233:1012";
+var APIURL_IPLINKS = "http://39.105.54.233:1004";
+var APIURL_PAYPAL_RETURN = "http://www.chinatraintickets.net";
+var APIURL_IPAYLINKS_RETURN = "http://www.chinatraintickets.net";
+
+// 汇率
+var ExchangeRate = 6.8;
+if (getCookie('ExchangeRate')) ExchangeRate = getCookie('ExchangeRate');
+// 服务费
+var ServiceFee = 50;
+
 
 // 计算签名的方法返回数据
 function getSign(type) {
@@ -41,6 +51,35 @@ function getTime(index){
   }else{
     return time_format;
   }
+}
+
+// 获取url参数
+function GetQueryString(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]); return null;
+}
+
+// 美元换算
+function priceExchangeRate(num1, num2) {
+  return (num1 / num2).toFixed(2);
+}
+
+// 写cookies  默认是保存30天
+function setCookie(name, value) {
+    var Days = 30;
+    var exp = new Date();
+    exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+    document.cookie = name + "=" + escape(value) + ";path= /;expires=" + exp.toGMTString();
+}
+
+// 读取cookies
+function getCookie(name) {
+    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+    if (arr = document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
 }
 
 $(function() {

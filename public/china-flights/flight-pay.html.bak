@@ -31,7 +31,7 @@
             <i class="home-icon"></i>
             <ul class="items">
               <li class="item ">
-                <a class="link" href="../china-trains/train-booking.html">China Trains</a>
+                <a class="link" href="../china-trains/train-search.html">China Trains</a>
               </li>
               <li class="item active">
                 <a class="link" href="../china-flights/">China Flights</a>
@@ -61,13 +61,13 @@
           <li class="item">
             <span class="trip">Trip1</span>
             <div class="trip-from-wra">
-              <input class="trip-from" id="trip-from" type="text" placeholder="From">
+              <input class="trip-from" type="text" placeholder="From">
             </div>
             <div class="trip-to-wra">
-              <input class="trip-to" id="trip-to" type="text" placeholder="To">
+              <input class="trip-to" type="text" placeholder="To">
             </div>
             <div class="trip-time-wra">
-              <input class="trip-time" id="trip-time" type="text" placeholder="DepartDate">
+              <input class="trip-time" type="text" placeholder="DepartDate">
             </div>
             <a class="trip-search">
               Find Flights
@@ -80,11 +80,11 @@
         <div class="search-detail-wrapper">
           <div class="detail">
             <i class="icon-sea"></i>
-            <span class="detail-address detail-address-from">Beijing</span>
+            <span class="detail-address">Beijing</span>
             <i class="icon-detail-to"></i>
-            <span class="detail-address detail-address-to">Beijing</span>
+            <span class="detail-address">Beijing</span>
             <div class="total">
-              Total Results: <span class="num detail-address-num">0</span>
+              Total Results: <span class="num">0</span>
             </div>
           </div>
         </div>
@@ -100,20 +100,20 @@
             <li class="item">Apr 15,Wed</li>
             <li class="item">Apr 16,Wed</li>
           </ul>
-          <!-- <ul class="screen-select">
+          <ul class="screen-select">
             <li class="item">
               <span class="type-name">Dep. Time:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureTime" value="0"> All
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" id="aa" value="1"> <label for="aa">12：00 - 16：00</label>
+                <input type="checkbox" name="departureTime" id="aa" value="1"> <label for="aa">12：00 -- 16：00</label>
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="2"> 16：01 - 20：00
+                <input type="checkbox" name="departureTime" value="2"> 16：01 -- 20：00
               </div>
               <div class="select">
-                <input type="checkbox" name="departureTime" value="3"> 20：01 - 23：59
+                <input type="checkbox" name="departureTime" value="3"> 20：01 -- 23：59
               </div>
             </li>
             <li class="item">
@@ -148,7 +148,7 @@
               <div class="select">
                 <input type="checkbox" name="departureStation" value="2"> HU
               </div>
-            </li> -->
+            </li>
           </ul>
         </div>
       </div>
@@ -160,14 +160,14 @@
             </li>
             <li class="item">
               <span class="txt">Dep./Arr.</span>
-              <div class="sort" style="opacity: 0;">
+              <div class="sort">
                 <i class="top"></i>
                 <i class="bottom"></i>
               </div>
             </li>
             <li class="item">
               <span class="txt">Price</span>
-              <div class="sort" style="opacity: 0;">
+              <div class="sort">
                 <i class="top"></i>
                 <i class="bottom"></i>
               </div>
@@ -179,8 +179,8 @@
             <li class="item"><span class="txt"></span></li>
           </ul>
           <ul class="result-content">
-            <li class="item">
-              <!-- <div class="flight-info">
+            <!-- <li class="item">
+              <div class="flight-info">
                 <div class="info-name">
                   <i class="icon-flight-name"></i>
                   <span class="txt-flight-name">MU5188</span>
@@ -242,8 +242,8 @@
                 <a class="btn">book</a>
                 <a class="btn">book</a>
                 <a class="btn">book</a>
-              </div> -->
-            </li>
+              </div>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -388,13 +388,8 @@
       </div>
     </div>
     <div class="mask_"></div>
-    <!-- loading等待 -->
-    <div class="loading">
-      <img class="image" src="../static/image/waiting.gif" alt="">
-    </div>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../static/js/lib/flight.city.js"></script>
     <script type="text/javascript" src="../static/js/lib/md5.js"></script>
     <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
     <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>

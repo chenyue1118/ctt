@@ -29,8 +29,8 @@
           <div class="list">
             <i class="home-icon"></i>
             <ul class="items">
-              <li class="item">
-                <a class="link" href="../china-trains/train-search.html">China Trains</a>
+              <li class="item ">
+                <a class="link" href="../china-trains/train-booking.html">China Trains</a>
               </li>
               <li class="item active">
                 <a class="link" href="../china-flights/">China Flights</a>
@@ -68,15 +68,14 @@
               <span class="time">Submit Time: 2019/04/01 10:00:00</span>
             </h3>
             <ul class="trips">
-              <li class="trip">
-                <div class="head">
+              <li class="trip flights-ticket-personnel">
+                <!-- <div class="head">
                   <div class="left">
                     <span class="index">Trip 1</span>
                     <span class="date">May 22, 2019, Wed.</span>
                   </div>
-                  <div class="right">
-                    <span class="status">paid</span>
-                    <a class="change">Cancel/Change</a>
+                  <div class="right details-paid-state">
+                    <span class="status">-</span>
                   </div>
                 </div>
                 <div class="flights">
@@ -128,7 +127,7 @@
                       Total: CNY568/USD87.34
                     </div>
                   </div>
-                </div>
+                </div> -->
               </li>
             </ul>
             <div class="grand-total">
@@ -143,7 +142,7 @@
                 </li>
                 <li class="item">
                   <span class="con">Flight Journey</span>
-                  <a class="con">
+                  <a class="con plant-type">
                     Fight No.
                     <span class="spe">CA1225</span>
                     From
@@ -154,7 +153,7 @@
                 </li>
                 <li class="item">
                   <span class="con">Date&Time</span>
-                  <a class="con">
+                  <a class="con plant-date">
                     Departure:
                     <span class="spe">May 18,2019 15:15</span>
                     &nbsp;&nbsp;&nbsp;&nbsp;
@@ -162,10 +161,10 @@
                     <span class="spe">17:30</span>
                   </a>
                 </li>
-                <li class="item">
+                <!-- <li class="item">
                   <span class="con">Ticket Classs</span>
                   <a class="con">Economy Class(K)X1</a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="detail-ticket">
@@ -173,15 +172,15 @@
               <ul class="ticket-head-wra">
                 <li class="item">
                   <span class="con">Passenger</span>
-                  <span class="con">Last Name</span>
-                  <span class="con">First Name</span>
-                  <span class="con">Middle Name</span>
+                  <span class="con">Surname</span>
+                  <span class="con">Given Names</span>
+                  <span class="con">Nationality</span>
                   <span class="con">Passport No.</span>
                   <span class="con">Birthday</span>
                 </li>
               </ul>
-              <ul class="ticket-body-wra">
-                <li class="item">
+              <ul class="ticket-body-wra ticket-personnel">
+                <!-- <li class="item">
                   <span class="con">Adult1.</span>
                   <span class="con">Susansdhfgfdhsk jfgusans</span>
                   <span class="con">Susansdhfgfdhsk</span>
@@ -204,14 +203,14 @@
                   <span class="con">Susan</span>
                   <span class="con">SUnhgr345</span>
                   <span class="con">01/25/2014</span>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="detail-note">
               <i class="icon-detail-note"></i>
               <div class="note-info">
                 If the passenger's personal information is incorrect, please
-                <a class="note-contact">contact us.</a>
+                <a href="../contact-us/" class="note-contact">contact us.</a>
               </div>
             </div>
             <div class="detail-contact">
@@ -219,31 +218,31 @@
               <ul class="contact-wra">
                 <li class="item">
                   <span class="con">Full Name</span>
-                  <span class="con">TIANJING TIAN</span>
+                  <span class="con">-</span>
                 </li>
                 <li class="item">
                   <span class="con">Nationality</span>
-                  <span class="con">571949926</span>
+                  <span class="con">-</span>
                 </li>
                 <li class="item">
                   <span class="con">E-mail</span>
-                  <span class="con">1152746738@qq.com</span>
+                  <span class="con tic-per-email">-</span>
                 </li>
                 <li class="item">
                   <span class="con">2nd Email</span>
-                  <span class="con">1152746738@qq.com</span>
+                  <span class="con">-</span>
                 </li>
                 <li class="item">
                   <span class="con">Phone No.</span>
-                  <span class="con">1152746738@qq.com</span>
+                  <span class="con tic-per-phone">1152746738@qq.com</span>
                 </li>
-                <li class="item">
+                <!-- <li class="item">
                   <span class="con">WhatsApp</span>
                   <span class="con">1152746738@qq.com</span>
-                </li>
+                </li> -->
                 <li class="item">
                   <span class="con">Other Requirements</span>
-                  <span class="con">15asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd01053031715asjdsfhsd010530317</span>
+                  <span class="con">-</span>
                 </li>
               </ul>
             </div>
@@ -360,5 +359,12 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
+    <script type="text/javascript" src="../static/js/app/common_flight.js"></script>
+    <script type="text/javascript" src="../static/js/app/flight-details.js"></script>
   </body>
 </html>

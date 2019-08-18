@@ -29,10 +29,10 @@
           <div class="list">
             <i class="home-icon"></i>
             <ul class="items">
-              <li class="item active">
-                <a class="link" href="../china-trains/train-search.html">China Trains</a>
+              <li class="item ">
+                <a class="link" href="../china-trains/train-booking.html">China Trains</a>
               </li>
-              <li class="item">
+              <li class="item active">
                 <a class="link" href="../china-flights/">China Flights</a>
               </li>
               <li class="item">
@@ -68,7 +68,7 @@
               <div class="head">
                 <div class="left">
                   <span class="index"></span>
-                  <span class="date">May 22, 2019, Wed.</span>
+                  <span class="date flight-date">May 22, 2019, Wed.</span>
                 </div>
                 <div class="right">
                   <div class="doubt">
@@ -80,7 +80,7 @@
                       </div>
                     </div>
                   </div>
-                  <i class="del"></i>
+                  <!-- <i class="del"></i> -->
                 </div>
               </div>
               <div class="flights">
@@ -94,7 +94,7 @@
                   </div>
                   <div class="flight-desc">
                     <div class="flight-desc-wra">
-                      <span class="flight-desc-txt">China Southern Airlines</span>
+                      <span class="flight-desc-txt">China Airlines</span>
                     </div>
                   </div>
                 </div>
@@ -105,32 +105,34 @@
                     <span class="to"></span>
                   </div>
                   <div class="time">
-                    <span class="from">06:43</span>
-                    <span class="to">12:40</span>
+                    <span class="from flight-from-time">06:43</span>
+                    <span class="to flight-to-time">12:40</span>
                   </div>
                   <div class="address">
-                    <span class="from">PEK(T2)</span>
-                    <span class="to">PEK(T2)</span>
+                    <span class="from flight-from-adress">PEK(T2)</span>
+                    <span class="to flight-to-adress">PEK(T2)</span>
                   </div>
                 </div>
                 <div class="time-seating">
-                  <span class="time">5h56m</span> | <span class="seating">Medium</span>
+                  <span class="seating"></span>
+                  <!-- <span class="time">5h56m</span> | <span class="seating">Medium</span> -->
                 </div>
                 <div class="ticket-price">
                   <div class="price-info-wra">
                     <span class="price-name">Price:</span>
                     <ul class="price-info">
-                      <li class="item">CNY933/US$141 x <span class="num">2</span> Adult</li>
-                      <li class="item">CNY933/US$141 x <span class="num">2</span> Children</li>
-                      <li class="item">CNY933/US$141 x <span class="num">2</span> Infant</li>
+                      <li class="item">CNY <span class="ad-rmb">933</span> x <span class="num">2</span> Adult</li>
+                      <!-- <li class="item">CNY933/US$141 x <span class="num">2</span> Adult</li> -->
+                      <!-- <li class="item">CNY933/US$141 x <span class="num">2</span> Children</li>
+                      <li class="item">CNY933/US$141 x <span class="num">2</span> Infant</li> -->
                     </ul>
                   </div>
                   <div class="price-tax">
                     Tax:	CNY50(US$8) x 2 Adult
                   </div>
-                  <div class="total">
+                  <!-- <div class="total">
                     Total: CNY568/USD87.34
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </li>
@@ -139,13 +141,19 @@
                 <li class="item">
                   <span class="name">Adults</span>
                   <span class="desc">(12yrs+)</span>
-                  <select class="num">
-                    <option value="0">0</option>
+                  <select class="num adults-select">
                     <option value="1">1</option>
                     <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
                   </select>
                 </li>
-                <li class="item">
+                <li class="item" style="opacity: 0;">
                   <span class="name">Children</span>
                   <span class="desc">Children(2-11yrs)</span>
                   <select class="num">
@@ -154,7 +162,7 @@
                     <option value="2">2</option>
                   </select>
                 </li>
-                <li class="item">
+                <li class="item" style="opacity: 0;">
                   <span class="name">Infants</span>
                   <span class="desc">(0-23mo.)</span>
                   <select class="num">
@@ -166,7 +174,7 @@
               </ul>
               <div class="spe-total">
                 Grand Total:
-                <span class="spe-num">CNY660(US$100)</span>
+                <span class="spe-num grand-total-price">CNY660(US$100)</span>
               </div>
             </li>
           </ul>
@@ -191,7 +199,7 @@
               <input class="item-pas" type="text" placeholder="561261226">
               <input class="item-bir" type="text" placeholder="01/25/2017">
             </li>
-            <li class="item">
+            <!-- <li class="item">
               <span class="type">Adult1.</span>
               <input class="item-sur" type="text" placeholder="HODSON">
               <input class="item-giv" type="text" placeholder="LARRY LESTER">
@@ -214,7 +222,7 @@
               <input class="item-nat" type="text" placeholder="UNITED STATES OF AMERICA">
               <input class="item-pas" type="text" placeholder="561261226">
               <input class="item-bir" type="text" placeholder="01/25/2017">
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="contact-info">
@@ -225,7 +233,7 @@
                 <span class="has">*</span>
                 Full Name
               </h4>
-              <input class="val" type="text">
+              <input class="val book-name" type="text">
             </li>
             <li class="item">
               <h4 class="name">
@@ -239,7 +247,7 @@
                 <span class="has">*</span>
                 Email
               </h4>
-              <input class="val" type="text">
+              <input class="val book-email" type="text">
             </li>
             <li class="item">
               <h4 class="name">
@@ -251,10 +259,10 @@
             <span class="item-desc">Gmail is sometimes blocked, please use another email address.</span>
             <li class="item">
               <h4 class="name">
-                <span class="has"></span>
+                <span class="has">*</span>
                 Phone No.
               </h4>
-              <input class="val" type="text">
+              <input class="val book-phone" type="text">
             </li>
             <li class="item">
               <h4 class="name">
@@ -274,9 +282,9 @@
         </div>
         <div class="sub-book">
           <div class="notice">
-            <input class="selet" type="checkbox">
+            <input class="selet book-terms-condition" type="checkbox">
             <span class="con">I have read and accepted booking</span>
-            <a class="link">terms and conditions.</a>
+            <a target="_blank" href="flight-terms-conditions.html" class="link ">terms and conditions.</a>
           </div>
           <a class="sub-book-btn">Submite my booking </a>
         </div>
@@ -381,5 +389,12 @@
         <span class="text">Contact Us</span>
       </a>
     </div>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/md5.js"></script>
+    <script type="text/javascript" src="../static/js/lib/crypto-js.min.js"></script>
+    <script type="text/javascript" src="../static/js/lib/sha256.min.js"></script>
+    <script type="text/javascript" src="../static/js/app/common_flight.js"></script>
+    <script type="text/javascript" src="../static/js/app/flight-booking.js"></script>
   </body>
 </html>

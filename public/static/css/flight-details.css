@@ -161,7 +161,7 @@
                     display: inline-block;
                     width: 30px;
                     height: 22px;
-                    background: pink;
+                    background: url(../image/flights/icon-flight-number.png) no-repeat center;
                     vertical-align: top; }
                   .order-details_ .order-details-wrapper .details-wra .details .trips .trip .flights .flight-info .info-name .txt-flight-name {
                     display: inline-block;

@@ -244,7 +244,7 @@ $(function(){
   });
   // ===========================================================
   // TODO:发送数据
-  Test()
+  // Test()
   function Test() {
     var data = {
       "token": null,
