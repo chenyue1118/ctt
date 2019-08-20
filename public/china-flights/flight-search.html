@@ -100,8 +100,8 @@
             <li class="item">Apr 15,Wed</li>
             <li class="item">Apr 16,Wed</li>
           </ul>
-          <!-- <ul class="screen-select">
-            <li class="item">
+          <ul class="screen-select">
+            <!-- <li class="item">
               <span class="type-name">Dep. Time:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureTime" value="0"> All
@@ -115,8 +115,31 @@
               <div class="select">
                 <input type="checkbox" name="departureTime" value="3"> 20：01 - 23：59
               </div>
-            </li>
+            </li> -->
             <li class="item">
+              <span class="type-name">Departure Time:</span>
+              <div class="select select-one">
+                <input type="checkbox" name="departureTime" value="all" id="time-all">
+                <label for="time-all"> All</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="480-0" id="time-08">
+                <label for="time-08"> 00:00 -- 08:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="720-481" id="time-12">
+                <label for="time-12"> 08:01 -- 12:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="1080-721" id="time-18">
+                <label for="time-18"> 12:01 -- 18:00</label>
+              </div>
+              <div class="select">
+                <input type="checkbox" name="departureTime" value="1440-1081" id="time-24">
+                <label for="time-24"> 18:01 -- 23:59</label>
+              </div>
+            </li>
+            <!-- <li class="item">
               <span class="type-name">Class:</span>
               <div class="select select-one">
                 <input type="checkbox" name="trainType"> All
@@ -130,8 +153,8 @@
               <div class="select">
                 <input type="checkbox" name="trainType"> First Class
               </div>
-            </li>
-            <li class="item">
+            </li> -->
+            <!-- <li class="item">
               <span class="type-name">Airline:</span>
               <div class="select select-one">
                 <input type="checkbox" name="departureStation" value="0"> All
@@ -252,14 +275,14 @@
           <div class="search-no">
             <i class="icon-search-no"></i>
             <h4 class="title">Search No Results</h4>
-            <p class="desc">The train is not daily operation, please select another date.</p>
-            <div class="note-wra">
+            <p class="desc">The flight is not daily operation, please select another date.</p>
+            <!-- <div class="note-wra">
               <span class="note-tit">Notes:</span>
               <ul class="note-list">
                 <li class="list">K3 departs from Beijing Railway Station on Wednesday weekly and arrives at Moscow on next Monday. </li>
                 <li class="list">K19 departs from Beijing Railway Station on Saturday weekly and arrives at Moscow on next Friday.</li>
               </ul>
-            </div>
+            </div> -->
             <div class="error">
               <i class="icon-remind"></i>
               <span class="remind">If you find any errors on this page, please kindly submit errors to us, we will make an update immediately. Thank you.</span>

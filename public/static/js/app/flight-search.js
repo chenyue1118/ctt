@@ -6,6 +6,8 @@ $(function() {
   var flight_to_code = GetQueryString("to_code");
   var flight_date = GetQueryString("date");
   var checkData = {};
+  var flight_data = [];
+  var sel_flight_data = [];
 
   init();
 
@@ -64,6 +66,51 @@ $(function() {
     $(this).parents(".item").find(".flight-tickets .tickets").show();
     $(this).parents(".item").find(".seat-btn .btn").show();
   })
+
+  // 数据筛选
+  $("input[name='departureTime']").on("change", function() {
+    if (!flight_data) return false;
+    if ($(this).val() == 'all') {
+      $("input[name='departureTime']").prop("checked", true);
+      sel_flight_data = flight_data.slice(0);
+      showFlight(sel_flight_data);
+    } else {
+      $("#time-all").prop("checked", false);
+      var time08 = $("#time-08").val()
+      var time12 = $("#time-12").val()
+      var time18 = $("#time-18").val()
+      var time24 = $("#time-24").val()
+      var flightArr = [];
+      var arr = [];
+      if ($("#time-08").prop("checked")) {
+        arr.push($("#time-08").val());
+      }
+      if ($("#time-12").prop("checked")) {
+        arr.push($("#time-12").val());
+      }
+      if ($("#time-18").prop("checked")) {
+        arr.push($("#time-18").val());
+      }
+      if ($("#time-24").prop("checked")) {
+        arr.push($("#time-24").val());
+      }
+      flight_data.forEach(function(item) {
+        arr.forEach(function(list) {
+          var index1 = parseInt(list.split("-")[0]);
+          var index2 = parseInt(list.split("-")[1]);
+          var index3 = parseInt(item.DepTime.substr(0, 2)) * 60 + parseInt(item.DepTime.substr(2, 2));
+          if (index3 >= index2 && index3 < index1) flightArr.push(item)
+        })
+      })
+      showFlight(flightArr);
+      if (flightArr.length == 0) {
+        $(".search-noresult-wrapper").show();
+      } else {
+        $(".search-noresult-wrapper").hide();
+      }
+    }
+  });
+
   // ==========================================================
   function init() {
     // 日期初始化
@@ -117,10 +164,12 @@ $(function() {
     var flight_to_code = $("#trip-to").attr("data-code");
     var flight_date = $("#trip-time").val();
     if (!flight_from_code) {
+       $("#trip-from").val("");
        $("#trip-from").focus();
        return false;
     }
     if (!flight_to_code) {
+       $("#trip-to").val("");
        $("#trip-to").focus();
        return false;
     }
@@ -227,6 +276,8 @@ $(function() {
         if (data.code == 1) {
           if (data.data.length > 0) {
             $(".search-noresult-wrapper").hide();
+            flight_data = data.data.slice(0);
+            sel_flight_data = data.data.slice(0);
             showFlight(data.data);
             $(".detail-address-from").html($("#trip-from").val());
             $(".detail-address-to").html($("#trip-to").val());
@@ -279,7 +330,7 @@ $(function() {
             +'</div>'
             +'<div class="flight-desc">'
               +'<div class="flight-desc-wra">'
-                +'<span class="flight-desc-txt">China Southern Airlines</span>'
+                +'<span class="flight-desc-txt">China Airlines</span>'
               +'</div>'
             +'</div>'
           +'</div>'

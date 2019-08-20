@@ -11,14 +11,17 @@ $(function() {
     var to_code = $("#trip-to").attr("data-code");
     var date = $("#trip-time").val();
     if (!from_code) {
+       $("#trip-from").val("");
        $("#trip-from").focus();
        return false;
     }
     if (!to_code) {
-       $("#trip-to").focus();
-       return false;
+      $("#trip-to").val("");
+      $("#trip-to").focus();
+      return false;
     }
     if (!date) {
+       $("#trip-time").val("");
        $("#trip-time").focus();
        return false;
     }
