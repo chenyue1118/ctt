@@ -93,6 +93,7 @@
               vertical-align: top;
               font-size: 0;
               .doubt {
+                opacity: 0;
                 position: relative;
                 display: inline-block;
                 width: 22px;
@@ -444,6 +445,9 @@
             color: #333333;
             text-indent: 16px;
           }
+          .number {
+            width: 240px;
+          }
         }
       }
       .traveler-txt {
@@ -582,7 +586,7 @@
         .coll-hotel {
           width: 100%;
           .head {
-            padding: 30px;
+            padding: 30px 30px 10px 30px;
             font-size: 0;
             .icon-coll {
               display: inline-block;
@@ -604,6 +608,26 @@
           .active {
             .icon-coll {
               background: url(../image/icon-type-select.png) no-repeat top center;
+            }
+          }
+          .prompt {
+            padding: 10px 0 20px 34px;
+            padding-left: 34px;
+            font-size: 0;
+            .icon-prompt {
+              display: inline-block;
+              width: 20px;
+              height: 24px;
+              background: url(../image/icon-remind.png) no-repeat center;
+              vertical-align: top;
+            }
+            .txt {
+              height: 24px;
+              line-height: 24px;
+              padding-left: 12px;
+              color: #FAAD14;
+              font-size: 16px;
+              font-weight: 500;
             }
           }
           .deliver-hotel {

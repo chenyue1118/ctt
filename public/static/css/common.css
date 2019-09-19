@@ -84,6 +84,8 @@
           cursor: pointer; }
           .header_ .nav-wra .nav .list .home-icon:hover {
             background: url(../image/common/icon-home-page-active.png) no-repeat center; }
+        .header_ .nav-wra .nav .list .home-icon-active {
+          background: url(../image/common/icon-home-page-active.png) no-repeat center; }
         .header_ .nav-wra .nav .list .items {
           display: inline-block;
           width: 860px;

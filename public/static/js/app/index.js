@@ -18,6 +18,10 @@ $(function() {
   queryHotCity(); // 获取热门城市
   showInternationalRoutes();  // 国际路线
 
+  $(".trip-time-wra").on("click", function () {
+    $(".trip-time-wra .trip-time").focus()
+  })
+
   // 添加 trip
   $(".trip-add").on("click", function() {
     var len = $(".trips .trip").length;

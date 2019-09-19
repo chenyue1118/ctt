@@ -82,6 +82,7 @@
               vertical-align: top;
               font-size: 0; }
               .booking_ .booking-wrapper .mytrip .trips .trip .head .right .doubt {
+                opacity: 0;
                 position: relative;
                 display: inline-block;
                 width: 22px;
@@ -374,6 +375,8 @@
             font-size: 16px;
             color: #333333;
             text-indent: 16px; }
+          .booking_ .booking-wrapper .traveler-info .passenger-info .item .number {
+            width: 240px; }
       .booking_ .booking-wrapper .traveler-info .traveler-txt {
         padding: 12px 0;
         line-height: 24px;
@@ -486,7 +489,7 @@
         .booking_ .booking-wrapper .collection .collection-types .coll-hotel {
           width: 100%; }
           .booking_ .booking-wrapper .collection .collection-types .coll-hotel .head {
-            padding: 30px;
+            padding: 30px 30px 10px 30px;
             font-size: 0; }
             .booking_ .booking-wrapper .collection .collection-types .coll-hotel .head .icon-coll {
               display: inline-block;
@@ -504,6 +507,23 @@
               padding-left: 16px; }
           .booking_ .booking-wrapper .collection .collection-types .coll-hotel .active .icon-coll {
             background: url(../image/icon-type-select.png) no-repeat top center; }
+          .booking_ .booking-wrapper .collection .collection-types .coll-hotel .prompt {
+            padding: 10px 0 20px 34px;
+            padding-left: 34px;
+            font-size: 0; }
+            .booking_ .booking-wrapper .collection .collection-types .coll-hotel .prompt .icon-prompt {
+              display: inline-block;
+              width: 20px;
+              height: 24px;
+              background: url(../image/icon-remind.png) no-repeat center;
+              vertical-align: top; }
+            .booking_ .booking-wrapper .collection .collection-types .coll-hotel .prompt .txt {
+              height: 24px;
+              line-height: 24px;
+              padding-left: 12px;
+              color: #FAAD14;
+              font-size: 16px;
+              font-weight: 500; }
           .booking_ .booking-wrapper .collection .collection-types .coll-hotel .deliver-hotel {
             border-top: 1px solid #DBDBDB;
             padding: 2px 68px 30px 68px;

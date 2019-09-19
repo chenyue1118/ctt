@@ -126,3 +126,12 @@ $(function() {
     location.href = "/";
   });
 });
+
+$(window).scroll(function() {
+  console.log();
+  if ($(document).scrollTop() > 2) {
+    $('.header_').css('box-shadow', 'none')
+  } else {
+    $('.header_').css('box-shadow', '0 0 8px rgba(0, 0, 0, 0.6)')
+  }
+})

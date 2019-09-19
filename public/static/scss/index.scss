@@ -31,7 +31,7 @@
           display: inline-block;
           height: 60px;
           line-height: 60px;
-          background: rgba(0, 0, 0, 0.7);
+          background: rgba(0, 0, 0, 0.5);
           font-size: 20px;
           color: #fff;
           font-weight: 500;
@@ -45,6 +45,9 @@
         .inter {
           width: 348px;
           border-radius: 0 6px 0 0;
+          &:hover {
+            background: rgba(0, 0, 0, 0.7);
+          }
         }
         .active {
           height: 66px;
@@ -216,7 +219,8 @@
       display: inline-block;
       width: 332px;
       height: 300px;
-      margin-top: 66px;
+      // margin-top: 66px;
+      margin-top: 5px;
       margin-left: 14px;
       background: rgba(156, 0, 0, 0.8);
       border-radius: 6px;

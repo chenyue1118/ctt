@@ -11,6 +11,7 @@ $(function(){
   computingTime();
   init();
 
+
   // 成年人数改变的时候
   $(".adults-select").on("change", function() {
     var adultsNum = $(this).val();
@@ -381,6 +382,11 @@ $(function(){
     $(".mytrip .trips .trip").remove();
     $(".mytrip .trips").prepend(str);
     $(".price .detail").html("US$" + grandTotal);
+    var strr = ''
+    allCountrys.forEach(function(item) {
+      strr += '<option value="'+item.n+'">'+item.n+'</option>'
+    })
+    $(".nationality-list").html(strr)
   }
 
   // 计算时间 小于72个小时不能选择快递
