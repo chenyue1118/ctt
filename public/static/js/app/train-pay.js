@@ -31,6 +31,11 @@ $(function() {
     $(".pay-by .methods .item .method").removeClass("active");
     $(this).find(".method").addClass("active");
     pay_by = $(this).attr("data-type");
+    var tax = $(this).attr("data-tax");
+    var total = $(this).attr("data-price");
+    $(".total-price .price4").html("Tax：USD" + tax);
+    toalPrice = total;
+    $(".grand .grand-num").html("USD"+toalPrice);
   });
 
   // 跳转支付
@@ -86,19 +91,39 @@ $(function() {
 
   // 展示价格
   function showPrice() {
-    var price1 = orderInfo.orderamountUSD;
     var price2 = priceExchangeRate(ServiceFee, ExchangeRate);
+    var price1 = orderInfo.orderamountUSD - price2 * orderInfo.passengers.length;
     var price3 = 7;
     // $(".grand .grand-num").html("USD"+orderInfo.orderamountUSD);
-    $(".total-price .price1").html("Total Price for Tikets: USD" + price1);
-    $(".total-price .price2").html("");
+    $(".total-price .price1").html("Total Price for Tikets: Tikets: USD" + price1);
+    $(".total-price .price2").html("Service Fee：USD" + price2 + " * " + orderInfo.passengers.length);
+    $(".total-price .price3").html("Delivery Charge：USD" + price3);
     if (orderInfo.delivery_method == 1) {
       price3 = 0;
       $(".total-price .icon3").hide();
       $(".total-price .price3").hide();
     }
-    toalPrice = Number(price1) + Number(price3);
-    toalPrice = toalPrice.toFixed(2);
+    var toalPriceTaxCar = 0;
+    var toalPriceTaxPay = 0;
+    toalPriceTaxCar = (Number(price1) + Number(price2 * orderInfo.passengers.length)  + Number(price3)) * 0.034;
+    toalPriceTaxCar = toalPriceTaxCar.toFixed(2);
+    toalPriceTaxPay = (Number(price1) + Number(price2 * orderInfo.passengers.length) + Number(price3)) * 0.043;
+    toalPriceTaxPay = toalPriceTaxPay.toFixed(2);
+    var toalPriceCar = Number(price1) + Number(price2) + Number(price3) + Number(toalPriceTaxCar);
+    var toalPricePay = Number(price1) + Number(price2) + Number(price3) + Number(toalPriceTaxPay);
+    toalPriceCar = toalPriceCar.toFixed(2);
+    toalPricePay = toalPricePay.toFixed(2);
+    $(".methods .item:eq(0)").attr("data-price", toalPriceCar);
+    $(".methods .item:eq(1)").attr("data-price", toalPricePay);
+    $(".methods .item:eq(0)").attr("data-tax", toalPriceTaxCar);
+    $(".methods .item:eq(1)").attr("data-tax", toalPriceTaxPay);
+    if (pay_by == "ipaylinks") {
+      $(".total-price .price4").html("Tax：USD" + toalPriceTaxCar);
+      toalPrice = toalPriceCar;
+    } else {
+      $(".total-price .price4").html("Tax：USD" + toalPriceTaxPay);
+      toalPrice = toalPricePay;
+    }
     $(".grand .grand-num").html("USD"+toalPrice);
   }
 

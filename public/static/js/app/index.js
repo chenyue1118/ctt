@@ -40,7 +40,6 @@ $(function() {
               +'<input class="trip-time" type="text" readonly="readonly" placeholder="DepartDate">'
             +'</div>'
           +'</li>';
-    //
     $(".trips").append(str);
     $(".trips #trip"+len+" .trip-time").datepicker({
       numberOfMonths: 2,
@@ -99,7 +98,6 @@ $(function() {
         time: timeFormat($(".trips .trip:eq("+i+") .trip-time").val())
       })
     }
-    console.log(arr);
     sessionStorage.setItem("trainInfo", JSON.stringify(arr));
     location.href = "china-trains/train-search.html";
   });
@@ -116,6 +114,26 @@ $(function() {
   $(".check-wra .check").on("click", function() {
     location.href = "china-trains/train-check.html"
   });
+
+  // 热门城市跳转搜索页
+  $(".hotCityTargets").on("click", ".item", function() {
+    var data = new Date();
+    var year_ = data.getUTCFullYear();
+    var month_ = (data.getUTCMonth()+1) > 9 ? data.getUTCMonth()+1 : '0'+(data.getUTCMonth()+1);
+    var date_ = data.getUTCDate() + 1;
+    var date_ =date_ > 9 ?date_ : '0'+date_;
+    var time_ = year_+'-'+month_+'-'+date_;
+    var from = pyGetCode($(this).find(".top .city").text());
+    var to = pyGetCode($(this).find(".bottom .city").text());
+    var time = time_;
+    var arr = [{
+      from: from,
+      to: to,
+      time: time
+    }];
+    sessionStorage.setItem("trainInfo", JSON.stringify(arr));
+    location.href = "china-trains/train-search.html";
+  })
   // ==================================================
   // 初始化数据
   function init() {

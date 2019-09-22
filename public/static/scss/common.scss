@@ -55,11 +55,49 @@
           background: #1890ff;
           vertical-align: top;
         }
+        .share {
+          display: inline-block;
+          display: none;
+          height: 34px;
+          padding: 0 5px;
+          font-size: 0;
+          .share-item {
+            display: inline-block;
+            margin-right: 12px;
+            width: 24px;
+            height: 34px;
+          }
+          .share-item-face {
+            background: url(../image/common/facebook.png) no-repeat center;
+            &:hover {
+              background: url(../image/common/facebook-selected.png) no-repeat center;
+            }
+          }
+          .share-item-twitter {
+            background: url(../image/common/twitter.png) no-repeat center;
+            &:hover {
+              background: url(../image/common/twitter-selected.png) no-repeat center;
+            }
+          }
+          .share-item-inlinked {
+            background: url(../image/common/inlinked.png) no-repeat center;
+            &:hover {
+              background: url(../image/common/inlinked-selected.png) no-repeat center;
+            }
+          }
+        }
         .icon-back {
           display: inline-block;
           width: 22px;
           height: 34px;
           background: url(../image/common/icon-back.png) no-repeat center;
+          cursor: pointer;
+          &:hover {
+            background: url(../image/common/icon-back-selected.png) no-repeat center;
+          }
+        }
+        .icon-back-active {
+          background: url(../image/common/icon-back-selected.png) no-repeat center;
         }
       }
     }

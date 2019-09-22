@@ -1,8 +1,10 @@
 // api地址
 var APIURL = "http://123.57.18.91:1002";
 var APIURL_IPLINKS = "http://39.105.54.233:1004";
-var APIURL_PAYPAL_RETURN = "http://www.chinatraintickets.net";
-var APIURL_IPAYLINKS_RETURN = "http://www.chinatraintickets.net";
+// var APIURL_PAYPAL_RETURN = "http://www.chinatraintickets.net";
+var APIURL_PAYPAL_RETURN = "http://39.105.54.233:1022";
+// var APIURL_IPAYLINKS_RETURN = "http://www.chinatraintickets.net";
+var APIURL_IPAYLINKS_RETURN = "http://39.105.54.233:1022";
 // 汇率
 var ExchangeRate = 6.9;
 if (getCookie('ExchangeRate')) ExchangeRate = getCookie('ExchangeRate');
@@ -124,6 +126,23 @@ $(function() {
   });
   $(".nav-icon").on("click", function() {
     location.href = "/";
+  });
+
+  // 头部分享
+  console.log(location.href);
+  $(".share-item-face").attr("href", "http://www.facebook.com/sharer/sharer.php?title=China Train, China Train Tickets, China Train Tours!&u=" + location.href)
+  $(".share-item-twitter").attr("href", "https://twitter.com/intent/tweet?text=China Train, China Train Tickets, China Train Tours!&url=" + location.href)
+  $(".share-item-inlinked").attr("href", "https://www.linkedin.com/shareArticle?title=China Train, China Train Tickets, China Train Tours!&url=" + location.href)
+  $(".icon-back-share").on("click", function() {
+    var stateShare = $(this).hasClass("icon-back-active");
+    if (stateShare) {
+      $(this).removeClass("icon-back-active");
+      $(".share-items").hide();
+    } else {
+      $(this).addClass("icon-back-active");
+      $(".share-items").css("display", "inline-block");
+    }
+
   });
 });
 
