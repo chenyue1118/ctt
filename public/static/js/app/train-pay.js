@@ -93,7 +93,8 @@ $(function() {
   function showPrice() {
     var price2 = priceExchangeRate(ServiceFee, ExchangeRate);
     var price1 = orderInfo.orderamountUSD - price2 * orderInfo.passengers.length;
-    var price3 = 7;
+    price1 = price1.toFixed(2);
+    var price3 = 5;
     // $(".grand .grand-num").html("USD"+orderInfo.orderamountUSD);
     $(".total-price .price1").html("Total Price for Tikets: Tikets: USD" + price1);
     $(".total-price .price2").html("Service Fee：USD" + price2 + " * " + orderInfo.passengers.length);
@@ -107,7 +108,7 @@ $(function() {
     var toalPriceTaxPay = 0;
     toalPriceTaxCar = (Number(price1) + Number(price2 * orderInfo.passengers.length)  + Number(price3)) * 0.034;
     toalPriceTaxCar = toalPriceTaxCar.toFixed(2);
-    toalPriceTaxPay = (Number(price1) + Number(price2 * orderInfo.passengers.length) + Number(price3)) * 0.043;
+    toalPriceTaxPay = (Number(price1) + Number(price2 * orderInfo.passengers.length) + Number(price3)) * 0.044;
     toalPriceTaxPay = toalPriceTaxPay.toFixed(2);
     var toalPriceCar = Number(price1) + Number(price2) + Number(price3) + Number(toalPriceTaxCar);
     var toalPricePay = Number(price1) + Number(price2) + Number(price3) + Number(toalPriceTaxPay);
