@@ -42,7 +42,7 @@ $(function() {
   $(".pay-now-btn").on("click", function() {
     if (pay_by == "ipaylinks") {
       // http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number=<这是填入CTT订单号>&email=<这里填入客户下单时的邮件地址>&phone_number=<这里填入客户下单的手机号>&ReturnURL=<支付结果返回后回调显示的URL>&Trans_ID=<客户下单后返回的交易ID>
-      var PAYURL = APIURL_IPLINKS + '/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+APIURL+'/api/OrderPay?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
+      var PAYURL = APIURL_IPLINKS + '/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+APIURL_IPAYLINKS_RETURN+'/api/OrderPay?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
       // var PAYURL = APIURL_IPLINKS + '/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+APIURL_IPAYLINKS_RETURN+'/china-trains/train-pay.html?query=ipaylinks**'+orderInfo.order_number+'**'+orderInfo.email+'&Trans_ID='+getCookie('userId');
       // var PAYURL = 'http://39.105.54.233:1004/IPaylinksCTT/Payment?order_number='+orderInfo.order_number+'&email='+orderInfo.email+'&phone_number='+orderInfo.phone_number+'&ReturnURL='+'http://182.61.175.203:8802/china-trains/train-pay.html?pay_type=ipaylinks'+'&Trans_ID='+getCookie('userId');
       window.location.href = PAYURL;

@@ -4,7 +4,8 @@ var APIURL_IPLINKS = "http://39.105.54.233:1004";
 // var APIURL_PAYPAL_RETURN = "http://www.chinatraintickets.net";
 var APIURL_PAYPAL_RETURN = "http://39.105.54.233:1022";
 // var APIURL_IPAYLINKS_RETURN = "http://www.chinatraintickets.net";
-var APIURL_IPAYLINKS_RETURN = "http://39.105.54.233:1022";
+// var APIURL_IPAYLINKS_RETURN = "http://39.105.54.233:1022";
+var APIURL_IPAYLINKS_RETURN = " http://182.61.175.203:8801";
 // 汇率
 var ExchangeRate = 6.9;
 if (getCookie('ExchangeRate')) ExchangeRate = getCookie('ExchangeRate');
